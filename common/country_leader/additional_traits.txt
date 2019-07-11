@@ -1,0 +1,114 @@
+leader_traits = {    
+    recruiter = {
+        random = no
+
+        mobilization_speed=1
+        conscription_factor=0.15
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    instructor = {
+        random = no
+		
+        training_time_army_factor=-0.25
+        training_time_factor=-0.25
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    bound_seller = {
+        random = no
+
+        war_support_weekly=0.002
+        war_support_weekly_factor=0.15
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    investor = {
+        random = no
+
+        local_resources=0.1
+        local_resources_factor=0.1
+
+        industrial_capacity_factory=0.1
+        industrial_capacity_dockyard=0.1
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    factory_production_booster = {
+        random = no
+
+        production_speed_buildings_factor=0.1
+        production_factory_max_efficiency_factor=0.1
+        production_factory_efficiency_gain_factor=0.1
+        production_factory_start_efficiency_factor=0.1
+        production_lack_of_resource_penalty_factor=0.1
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    consumer_goods_reductor = {
+        random = no
+        
+        consumer_goods_factor = -0.05
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    air_trainer {
+        random = no
+
+        air_wing_xp_loss_when_killed_factor=-0.1
+        air_ace_generation_chance_factor=0.1
+        air_training_xp_gain_factor=0.1
+        air_accidents_factor=-0.1
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	air_operations_planner {
+        random = no
+
+		enemy_army_bonus_air_superiority_factor=-0.05
+		army_bonus_air_superiority_factor=0.1
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	spy {
+		random = no
+		
+		encryption_factor=0.2
+		decryption_factor=0.2
+	}
+	
+	attribution_officer {
+		random = no
+		
+		heat_attrition_factor=-0.05
+		winter_attrition_factor=-0.05
+		acclimatization_cold_climate_gain_factor=0.05
+		acclimatization_hot_climate_gain_factor=0.05
+	}
+
+	
+}

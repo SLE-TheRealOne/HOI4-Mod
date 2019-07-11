@@ -1,0 +1,72 @@
+﻿l_french:
+  # =======================================================     Décisions     =======================================================
+  air_experience_usage:0 "Formation de l'armée de l'air"
+  air_experience_usage_desc:0 "L'expérience accumulée par nos pilotes permettent à certains de sortir du lot et d'être un exemple pour leurs camarades"
+  
+  call_ace_flight_instructor:0 "Instructeur de vol"
+  call_ace_flight_instructor_desc:0 "Forme les nouveaux pilotes leur permettant d'être plus agile et précis lorsque nous souhaitons conserver la §Gsupériorité aérienne§!"
+  call_ace_flight_coordinator:0 "Coordinateur de vol"
+  call_ace_flight_coordinator_desc:0 "Permet d'augmenter §Hl'efficacité§! de nos missions aériennes"
+  call_ace_radar_specialist:0 "Spécialiste radar"
+  call_ace_radar_specialist_desc:0 "Réduit les pénalités liées aux §Rmauvaises conditions météorologiques§!, aux §Rmissions de nuit§! et améliore notre §Rdétection§! de l'ennemi"
+  call_ace_radio_specialist:0 "Spécialiste radio"
+  call_ace_radio_specialist_desc:0 "Améliore §Rl'efficacité§! et le §Rtaux de présence§! de nos escadrilles de soutien aux troupes au sol"
+  call_ace_technician:0 "Technicien"
+  call_ace_technician_desc:0 "Réduit §Rle taux d'accidents en vol§!"
+  
+  
+  political_power_usage:0 "Utilisation du poids politique"
+  political_power_usage_desc:0 "Nous pouvons faire jouer nos relations diplomatiques et notre influence pour investir nos efforts dans des domaines spécifiques selon nos besoins"
+  naval_shipyards_boost:0 "Booster la production navale"
+  civil_factories_boost:0 "Booster les usines civiles"
+  military_factories_boost:0 "Booster les usines militaires"
+  add_oil_to_random_state:0 "Augmenter la production de pétrole d'un état"
+  add_oil_to_random_state_desc:0 "Renforçons la production de pétrole d'un état qui en produit déjà; l'investissement sera rapidement rentable"
+  add_oil_to_island:0 "Forer un puit de pétrole insulaire"
+  add_oil_to_island_desc:0 "Les îles sont souvent riches en ressources. Explorer les sous-sols à la recherche de pétrole"
+  add_civilian_factory_to_random_state:0 "Ajouter une usine civile à un état alératoire élligible"
+  add_civilian_factory_to_random_state_desc:0 "Le besoin de faire émerger, ex-nihilo une usine devient impératif. Nous allons devoir réquisitionner des ressources civiles, peut-être relocaliser des travailleurs"
+
+
+
+
+  # =======================================================     Menu politique     =======================================================
+  public_figures:0 "Personnages publics"
+  industry_captain:0 "Capitaine d'industrie"
+  worker_hero:0 "Héro de l'arrière"
+  ace_of_aces:0 "As des as"
+  
+  investor:0 "Investisseur"
+  factory_production_booster:0 "Bourreau des cadences"
+  recruiter:0 "Recruteur" 
+  instructor:0 "Instructeur"
+  bound_seller:0 "Communicant"
+  consumer_goods_reductor:0 "Fée du logis"
+  air_operations_planner:0 "Opérateur de vol"
+  air_trainer:0 "Instructeur de vol"
+  oss_117:0 "OSS 117"
+  oss_117_desc:0 "Hubert Bonisseur de la Batte"
+  spy:0 "Maître espion"
+  attribution_officer:0 "Intendant général"
+  
+  
+  
+  
+  
+  
+  
+  
+  # =======================================================     Bâtiments     =======================================================
+  dry_dock:0 "Cale sèche"
+  dry_dock_desc:0 "Disposer d'un espace supplémentaire permet d'améliorer la productivité du chantier naval"
+  
+  
+  
+  
+  
+  
+  # =======================================================     Event     =======================================================
+  dry_dock.1.title:0 "Utilisation de la cale sèche"
+  dry_dock.1.desc:0 "Chaque cale sèche ajoute 1% à la production navale"
+  dry_dock.1.option.a:0 "Compris !"
+  

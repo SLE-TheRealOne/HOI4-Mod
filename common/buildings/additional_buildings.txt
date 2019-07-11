@@ -1,0 +1,23 @@
+buildings = {
+
+    dry_dock {
+        show_on_map = 0
+        show_on_map_meshes = 0
+        has_destroyed_mesh = no
+        base_cost = 500
+        only_costal = yes
+        icon_frame = 4
+        max_level = 10
+        shares_slots = no
+        value = 2
+        infrastructure_construction_effect = yes
+        per_level_extra_cost = 100
+        provincial = no
+        always_shown = no
+        disabled_in_dmz = no
+
+        show_modifier = yes
+        industrial_capacity_dockyard = 0.01
+    }
+
+}

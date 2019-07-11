@@ -1,0 +1,11 @@
+air_experience_usage = {
+	visible = {
+		has_war = yes
+	}
+}
+
+political_power_usage {
+	visible = {
+		has_political_power > 100
+	}
+}

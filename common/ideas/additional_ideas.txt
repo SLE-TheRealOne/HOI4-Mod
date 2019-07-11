@@ -1,0 +1,114 @@
+ideas = {
+
+    industry_captain = {
+        industry_captain_01 = {
+            cost = 150
+            picture = industry_1
+            traits = { investor }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    
+        industry_captain_02 = {
+            cost= 150
+            picture = industry_2
+            traits = { factory_production_booster }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+    }
+
+    war_hero = {
+        war_hero_01 = {
+            picture = hero_1
+			cost = 150
+            traits = { recruiter }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    
+        war_hero_02 = {
+            picture = hero_2
+			cost = 150
+            traits = { instructor }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        war_hero_03 = {
+            picture = hero_3
+			cost = 125
+            traits = { bound_seller }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    }
+
+	worker_hero = {
+        worker_hero_01 = {
+            picture = worker_1
+			cost = 150
+            traits = { first_lady }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    
+        worker_hero_02 = {
+            picture = worker_2
+			cost = 150
+            traits = { consumer_goods_reductor }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+	}
+
+    ace_of_aces = {
+        ace_of_aces_01 = {
+            picture = ace_1
+			cost = 150
+            traits = { air_operations_planner }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        ace_of_aces_02 = {
+            picture = ace_2
+			cost = 250
+            traits = { air_trainer }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    }
+	
+	
+	
+	high_command = {
+	
+		logistics = {
+			cost = 150
+			traits = { attribution_officer }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		oss_117 = {
+            cost = 200
+            traits = { spy }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+	}
+
+}

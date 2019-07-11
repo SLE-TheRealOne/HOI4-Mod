@@ -1,0 +1,65 @@
+spriteTypes = {	
+    spriteType = {
+        name = "GFX_idea_ace_1"
+        texturefile = "gfx/interface/ideas/ace-club.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_ace_2"
+        texturefile = "gfx/interface/ideas/ace-heart.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_ace_3"
+        texturefile = "gfx/interface/ideas/ace-spade.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_ace_4"
+        texturefile = "gfx/interface/ideas/ace-tiles.dds"
+    }
+	
+	
+	
+
+    spriteType = {
+        name = "GFX_idea_industry_1"
+        texturefile = "gfx/interface/ideas/industry_captain_01.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_industry_2"
+        texturefile = "gfx/interface/ideas/industry_captain_02.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_industry_3"
+        texturefile = "gfx/interface/ideas/industry_captain_03.dds"
+    }
+	
+	
+	
+
+    spriteType = {
+        name = "GFX_idea_worker_1"
+        texturefile = "gfx/interface/ideas/worker-1.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_worker_2"
+        texturefile = "gfx/interface/ideas/worker-2.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_worker_3"
+        texturefile = "gfx/interface/ideas/worker-3.dds"
+    }
+	
+	
+	
+	spriteType = {
+        name = "GFX_idea_hero_1"
+        texturefile = "gfx/interface/ideas/star-bronze.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_hero_2"
+        texturefile = "gfx/interface/ideas/star-silver.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_hero_3"
+        texturefile = "gfx/interface/ideas/star-gold.dds"
+    }
+}

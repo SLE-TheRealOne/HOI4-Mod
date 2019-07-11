@@ -1,0 +1,23 @@
+add_namespace = dry_dock
+
+country_event {
+    id = dry_dock.1
+    picture = GFX_report_event_bunker_01
+    title = dry_dock.1.title
+    desc = dry_dock.1.desc
+    
+    fire_only_once = yes
+    
+    trigger = {
+		dry_dock > 0
+	}
+    
+	immediate = {
+        set_country_flag = flag.event.dry_dock1
+    }
+
+    option = {
+        name=dry_dock.1.option.a
+        activate_decision = dry_dock_usage_01
+	}
+}
