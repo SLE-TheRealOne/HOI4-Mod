@@ -62,4 +62,11 @@ spriteTypes = {
         name = "GFX_idea_hero_3"
         texturefile = "gfx/interface/ideas/star-gold.dds"
     }
+	
+	
+	spriteType = {
+		name = "GFX_additional_technologies_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_navaldoctrine_tab.dds"
+		noOfFrames = 2		
+	}
 }

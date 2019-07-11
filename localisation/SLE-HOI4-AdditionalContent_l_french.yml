@@ -70,3 +70,19 @@
   dry_dock.1.desc:0 "Chaque cale sèche ajoute 1% à la production navale"
   dry_dock.1.option.a:0 "Compris !"
   
+  
+  
+  # =======================================================     Technologies     =======================================================
+  additional_technologies_folder_tab:0 "SL Mod"
+  additional_technologies_folder_tab_desc:0 "Technologies additionnelle"
+  
+  submarines_hunters_tree_title_name:0 "Profondeures sures_name"
+  submarines_hunters_tree_title_text:0 "Profondeures sures_text"
+  submarines_hunters_tree_desc_name:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi_name"
+  submarines_hunters_tree_desc_text:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi_text"
+  
+  ships_speed_tree_title_name:0 "Célérité de flotte_name"
+  ships_speed_tree_title_text:0 "Célérité de flotte_text"
+  ships_speed_tree_desc_name:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée_name"
+  ships_speed_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée_text"
+  
