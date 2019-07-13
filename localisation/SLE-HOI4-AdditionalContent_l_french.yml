@@ -1,4 +1,4 @@
-﻿l_french:
+l_french:
   # =======================================================     Décisions     =======================================================
   air_experience_usage:0 "Formation de l'armée de l'air"
   air_experience_usage_desc:0 "L'expérience accumulée par nos pilotes permettent à certains de sortir du lot et d'être un exemple pour leurs camarades"
@@ -73,16 +73,15 @@
   
   
   # =======================================================     Technologies     =======================================================
-  additional_technologies_folder_tab:0 "SL Mod"
-  additional_technologies_folder_tab_desc:0 "Technologies additionnelle"
+  additional_technologies_folder:0 "SL Mod"
+  additional_technologies_folder_desc:0 "Technologies additionnelles"
   
-  submarines_hunters_tree_title_name:0 "Profondeures sures_name"
-  submarines_hunters_tree_title_text:0 "Profondeures sures_text"
-  submarines_hunters_tree_desc_name:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi_name"
-  submarines_hunters_tree_desc_text:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi_text"
+  submarines_hunters_tree_title_text:0 "Profondeures sures"
+  submarines_hunters_tree_desc_text:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi"
   
-  ships_speed_tree_title_name:0 "Célérité de flotte_name"
-  ships_speed_tree_title_text:0 "Célérité de flotte_text"
-  ships_speed_tree_desc_name:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée_name"
-  ships_speed_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée_text"
+  ships_speed_tree_title_text:0 "Célérité de flotte"
+  ships_speed_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée"
+  
+  ships_firepower_tree_title_text:0 "Guns by the thousands"
+  ships_firepower_tree_desc_text:0 "A mort !!!"
   

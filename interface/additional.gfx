@@ -63,10 +63,50 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/star-gold.dds"
     }
 	
+	# Technologies
 	
 	spriteType = {
 		name = "GFX_additional_technologies_folder_tab"
-		textureFile = "gfx//interface//techtree//techtree_navaldoctrine_tab.dds"
+		texturefile = "gfx/interface/idea_espionage_tab.dds"
 		noOfFrames = 2		
 	}
+	
+	spriteType = {
+        name = "GFX_submarines_hunters_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_submarines_hunters_A_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_submarines_hunters_B_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_speed_ships_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_speed_ships_A_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_speed_ships_B_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_big_guns_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_big_guns_A_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_big_guns_B_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
 }

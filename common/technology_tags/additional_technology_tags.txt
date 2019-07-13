@@ -1,0 +1,3 @@
+technology_folders = {
+	additional_technologies_folder
+}

@@ -1,9 +1,11 @@
 technologies = {
 
-	submarines_hunters_01 = {
-	
+	submarines_hunters = {
+		
+		start_year = 1940
 		doctrine = yes
 		research_cost = 1
+		
 		xp_research_type = navy
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -19,29 +21,28 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = submarines_hunter_02_A
+			leads_to_tech = submarines_hunters_A
 			rearch_cost_coeff = 2
 		}
 		
 		path = {
-			leads_to_tech = submarines_hunter_02_B
+			leads_to_tech = submarines_hunters_B
 			rearch_cost_coeff = 3
 		}
 		
 		folder = {
 			name = additional_technologies_folder
-			position {
-				x=0
-				y=0
-			}
+			position = { x=0 y=0 }
 		}
 		
 	}
 	
-	submarines_hunters_02_A = {
-	
+	submarines_hunters_A = {
+
+		start_year = 1940
 		doctrine = yes
 		research_cost = 1
+		
 		xp_research_type = navy
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -54,18 +55,17 @@ technologies = {
 		
 		folder = {
 			name = additional_technologies_folder
-			position {
-				x = -2
-				y = 2
-			}
+			position = { x = -1 y = 2 }
 		}
 		
 	}
 	
-	submarines_hunters_02_B = {
+	submarines_hunters_B = {
 	
+		start_year = 1940
 		doctrine = yes
 		research_cost = 1
+		
 		xp_research_type = navy
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -78,11 +78,175 @@ technologies = {
 		
 		folder = {
 			name = additional_technologies_folder
-			position {
-				x = -2
-				y = -2
-			}
+			position = { x = 1 y = 2 }
+		}
+	}
+	
+	
+	
+	
+	##################################
+	
+	speed_ships = {
+	
+		start_year = 1940
+		doctrine = yes
+		research_cost = 1
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes 
+		
+		destroyer = {
+			sub_detection = 0.05
 		}
 		
+		submarine = {
+			sub_detection = 0.05
+		}
+		
+		path = {
+			leads_to_tech = speed_ships_A
+			rearch_cost_coeff = 2
+		}
+		
+		path = {
+			leads_to_tech = speed_ships_B
+			rearch_cost_coeff = 3
+		}
+		
+		folder = {
+			name = additional_technologies_folder
+			position = { x=0 y=0 }
+		}
+	}
+	
+	speed_ships_A = {
+	
+		start_year = 1940
+		doctrine = yes
+		research_cost = 1
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes 
+		
+		destroyer = {
+			sub_detection = 0.1
+		}
+		
+		folder = {
+			name = additional_technologies_folder
+			position = { x = -1 y = 2 }
+		}		
+	}
+	
+	speed_ships_B = {
+	
+		start_year = 1940
+		doctrine = yes
+		research_cost = 1
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes 
+		
+		sumarine = {
+			sub_detection = 0.1
+		}
+		
+		folder = {
+			name = additional_technologies_folder
+			position = { x = 1 y = 2 }
+		}
+	}
+	
+	##################################
+	
+	big_guns = {
+	
+		start_year = 1940
+		doctrine = yes
+		research_cost = 1
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes 
+		
+		destroyer = {
+			sub_detection = 0.05
+		}
+		
+		submarine = {
+			sub_detection = 0.05
+		}
+		
+		path = {
+			leads_to_tech = big_guns_A
+			rearch_cost_coeff = 2
+		}
+		
+		path = {
+			leads_to_tech = big_guns_B
+			rearch_cost_coeff = 3
+		}
+		
+		folder = {
+			name = additional_technologies_folder
+			position = { x=0 y=0 }
+		}
+		
+	}
+	
+	big_guns_A = {
+	
+		start_year = 1940
+		doctrine = yes
+		research_cost = 1
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes 
+		
+		destroyer = {
+			sub_detection = 0.1
+		}
+		
+		folder = {
+			name = additional_technologies_folder
+			position = { x = -1 y = 2 }
+		}
+	}
+	
+	big_guns_B = {
+	
+		start_year = 1940
+		doctrine = yes
+		research_cost = 1
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes 
+		
+		sumarine = {
+			sub_detection = 0.1
+		}
+		
+		folder = {
+			name = additional_technologies_folder
+			position = { x = 1 y = 2 }
+		}
 	}
 }
