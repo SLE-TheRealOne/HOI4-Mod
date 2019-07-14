@@ -1,3 +1,7 @@
+technology_categories = {
+	additional_technology_category
+}
+
 technology_folders = {
 	additional_technologies_folder
 }
