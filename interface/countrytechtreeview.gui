@@ -2979,22 +2979,20 @@ guiTypes = {
 		}
 		
 		#################################      SL Mod - Start    #################################
-		
-		### Folder
 		containerWindowType = {
-			name = "additional_technologies_folder"
+			name = "additional_technologies_navy_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
-
+        
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+        
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
@@ -3015,7 +3013,7 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
+        
 			instantTextBoxType = {
 				name = "navy_improvments_tree_desc_name"
 				position = { x = 70 y = 70 }
@@ -3035,37 +3033,58 @@ guiTypes = {
 				size = { width = 550 height = 1000 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-
+        
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
 					position = { x=0 y=-150 }					
 				}					
 			}
+		}
+		
+		containerWindowType = {
+			name = "additional_technologies_industry_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+        
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+        
+			containerWindowType = {
+				name = "size_filler"
+				position = { x=0 y=0 }
+				size = { width = 1565 height = 100% }
+			}
 			
-						#############
+						#####################
 			
 			instantTextBoxType = {
 				name = "industry_improvments_tree_title_name"
-				position = { x = 740 y = 35 }
+				position = { x = 70 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "industry_improvments_tree_title_text"
-				maxWidth = 400
+				maxWidth = 450
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
+        
 			instantTextBoxType = {
 				name = "industry_improvments_tree_desc_name"
-				position = { x = 690 y = 70 }
+				position = { x = 70 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "industry_improvments_tree_desc_text"
-				maxWidth = 480
+				maxWidth = 450
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
@@ -3073,60 +3092,143 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "industry_improvments_01_tree"
-				position = { x=660 y=172 }
+				position = { x=20 y=172 }
 				size = { width = 550 height = 1000 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-
+        
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
 					position = { x=0 y=-150 }					
 				}					
 			}
+		}
+		
+		containerWindowType = {
+			name = "additional_technologies_air_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+        
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+        
+			containerWindowType = {
+				name = "size_filler"
+				position = { x=0 y=0 }
+				size = { width = 1565 height = 100% }
+			}
 			
-						#################
+						#####################
 			
 			instantTextBoxType = {
-				name = "army_improvments_tree_title_name"
-				position = { x = 1370 y = 35 }
+				name = air_improvments_tree_title_name"
+				position = { x = 70 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "army_improvments_tree_title_text"
-				maxWidth = 400
+				text = "air_improvments_tree_title_text"
+				maxWidth = 450
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
+        
 			instantTextBoxType = {
-				name = "army_improvments_tree_desc_name"
-				position = { x = 1343 y = 70 }
+				name = "air_improvments_tree_desc_name"
+				position = { x = 70 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
-				text = "army_improvments_tree_desc_text"
-				maxWidth = 460
+				text = "navy_improvments_tree_desc_text"
+				maxWidth = 450
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
+			
 			gridboxtype = {
-				name = "army_improvments_01_tree"
-				position = { x=1300 y=172 }
+				name = "air_improvments_01_tree"
+				position = { x=20 y=172 }
 				size = { width = 550 height = 1000 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-				
+        
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
 					position = { x=0 y=-150 }					
-				}
+				}					
 			}
-
+		}
+		
+		containerWindowType = {
+			name = "additional_technologies_army_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+        
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+        
+			containerWindowType = {
+				name = "size_filler"
+				position = { x=0 y=0 }
+				size = { width = 1565 height = 100% }
+			}
+			
+						#####################
+			
+			instantTextBoxType = {
+				name = "army_improvments_tree_title_name"
+				position = { x = 70 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "army_improvments_tree_title_text"
+				maxWidth = 450
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+        
+			instantTextBoxType = {
+				name = "army_improvments_tree_desc_name"
+				position = { x = 70 y = 70 }
+				textureFile = ""
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 4}
+				text = "army_improvments_tree_desc_text"
+				maxWidth = 450
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			
+			gridboxtype = {
+				name = "army_improvments_01_tree"
+				position = { x=20 y=172 }
+				size = { width = 550 height = 1000 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+        
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }					
+				}					
+			}
 		}
 		
 		#################################      SL Mod - End    #################################
@@ -3812,9 +3914,30 @@ guiTypes = {
 
 			#################################      SL Mod - Start    #################################
 			buttonType = {
-				name = "additional_technologies_folder_tab"
+				name = "additional_technologies_navy_folder_tab"
 				position = { x = 1121 y = 0 }
-				quadTextureSprite = "GFX_additional_technologies_folder_tab"
+				quadTextureSprite = "GFX_additional_technologies_navy_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "additional_technologies_industry_folder_tab"
+				position = { x = 1210 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_industry_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "additional_technologies_air_folder_tab"
+				position = { x = 1299 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_air_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "additional_technologies_army_folder_tab"
+				position = { x = 1388 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_army_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
@@ -4720,20 +4843,114 @@ guiTypes = {
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	#################################      SL Mod - Start    #################################
 	containerWindowType = {
-		name = "techtree_additional_technologies_folder_small_item"
+		name = "techtree_additional_technologies_navy_folder_small_item"
+		position = { x=0 y=5 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=-1 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+	}
+	containerWindowType = {
+		name = "techtree_additional_technologies_industry_folder_small_item"
+		position = { x=0 y=5 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=-1 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+	}
+	containerWindowType = {
+		name = "techtree_additional_technologies_air_folder_small_item"
+		position = { x=0 y=5 }
+		size = { width = 72 height = 72 }
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+	
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=-1 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+	}
+	containerWindowType = {
+		name = "techtree_additional_technologies_army_folder_small_item"
 		position = { x=0 y=5 }
 		size = { width = 72 height = 72 }
 		clipping = no
@@ -4768,10 +4985,6 @@ guiTypes = {
 		}
 	}
 	#################################      SL Mod - End    #################################
-	
-	
-	
-	
 	
 
 	containerWindowType = {

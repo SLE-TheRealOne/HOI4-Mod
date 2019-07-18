@@ -78,7 +78,37 @@ air_experience_usage = {
 
 political_power_usage = {
 
-    naval_shipyards_boost {
+    additional_technology_speed_bonus {
+		cost = 25
+		available {
+			has_war = yes
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = additional_technology_category
+			}
+		}
+		days_re_enable = 30
+	}
+	
+	additional_naval_technology_speed_bonus {
+		cost = 25
+		available {
+			has_war = yes
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = additional_technology_category_navy
+			}
+		}
+		days_re_enable = 30
+	}
+	
+	naval_shipyards_boost {
         cost = 50
 		available {
 			has_war = yes

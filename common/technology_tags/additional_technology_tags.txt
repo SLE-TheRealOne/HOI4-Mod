@@ -1,7 +1,14 @@
 technology_categories = {
 	additional_technology_category
+	additional_technology_category_navy
+	additional_technology_category_industry
+	additional_technology_category_air
+	additional_technology_category_army
 }
 
 technology_folders = {
-	additional_technologies_folder
+	additional_technologies_navy_folder
+	additional_technologies_industry_folder
+	additional_technologies_air_folder
+	additional_technologies_army_folder
 }

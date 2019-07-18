@@ -73,31 +73,31 @@
   
   
   # =======================================================     Technologies     =======================================================
-  additional_technologies_folder:0 "SL Mod"
-  additional_technologies_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_navy_folder:0 "SL Mod A"
+  additional_technologies_navy_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_industry_folder:0 "SL Mod B"
+  additional_technologies_industry_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_air_folder:0 "SL Mod C"
+  additional_technologies_air_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_army_folder:0 "SL Mod D"
+  additional_technologies_army_folder_desc:0 "Technologies additionnelles"
   
   navy_improvments_tree_title_text:0 "Supériorité des 7 mers"
   navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous ne pourrons pas remporter la victoire sans dominer les mers et y faire transiter notre ravitaillement et nos troupes"
-  
   industry_improvments_tree_title_text:0 "Industries de pointes"
   industry_improvments_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée"
-  
   army_improvments_tree_title_text:0 "Maitrise du champ de bataille"
   army_improvments_tree_desc_text:0 "Nos armées doivent pouvoir s'imposer au combat par l'usage d'armes perfectionnées et modernes"
-  
+  air_improvments_tree_title_text:0 "Debug title"
+  air_improvments_tree_desc_text:0 "Debug desc"
   
   navy_improvments_01:0 "Entrainement permanent"
   navy_improvments_01_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
-  
   sub_detection_01:0 "Profondeurs sures - §MI§!"
   sub_detection_01_desc:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi"
-  
   ships_speed_01:0 "Navires légers rapides - §MI§!"
   ships_speed_01_desc:0 "Nos navires légers doivent pouvoir arriver les premiers sur les lieux du combats et tenir suffisament longtemps pour que la force de frappe puisse les rejoindre"
-  
   navy_reliability_01:0 "Matériel fiable - §MI§!"
   navy_reliability_01_desc:0 "Avoir une flotte importante ne nous servira à rien si le matériel n'est pas fiable et qu'elle passe son temps en réparation"
-  
   convoy_specialists_01:0 "Convois précieux - §MI§!"
-  convoy_specialists_01_desc:0 "La mission qu'assure la branche civile de notre marine est trop importante pour que la négligions. Nous devons protéger nos convois tout en réduisant la capacité commerciale de nos ennemis"
-  
+  convoy_specialists_01_desc:0 "La mission qu'assure la branche civile de notre marine est trop importante pour que la négligions. Nous devons protéger nos convois tout en réduisant la capacité commerciale de nos ennemis"  

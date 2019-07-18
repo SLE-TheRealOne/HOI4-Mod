@@ -27,8 +27,13 @@ technologies = {
 		}
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x=0 y=0 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
 		}
 		
 	}
@@ -58,8 +63,13 @@ technologies = {
 		}
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
 		}
 		
 	}
@@ -90,8 +100,13 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x = -1 y = 4 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
 		}
 	}
 	
@@ -117,8 +132,13 @@ technologies = {
 		show_effect_as_desc = yes
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x = 1 y = 4 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
 		}
 	}
 	
@@ -140,8 +160,13 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
 		}
 	}
 	
@@ -154,7 +179,7 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x = -2 y = 2 }
 		}
 		
@@ -181,6 +206,11 @@ technologies = {
 			leads_to_tech = convoy_specialists_01
 			rearch_cost_coeff = 3
 		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
+		}
 	}
 	
 	tech_minus_1 = {
@@ -191,7 +221,7 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_navy_folder
 			position = { x = 2 y = 2 }
 		}
 		
@@ -217,7 +247,12 @@ technologies = {
 		path = {
 			leads_to_tech = convoy_specialists_01
 			rearch_cost_coeff = 3
-		} 
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
+		}
 	}
 	
 	
@@ -258,8 +293,12 @@ technologies = {
 		}
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_industry_folder
 			position = { x=0 y=0 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -276,8 +315,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_industry_folder
 			position = { x = -3 y = 2 }
+		}
+
+		categories = {
+			additional_technology_category
 		}		
 	}
 	
@@ -294,8 +337,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_industry_folder
 			position = { x =-1 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -312,8 +359,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_industry_folder
 			position = { x = 1 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -330,8 +381,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_industry_folder
 			position = { x = 3 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -370,8 +425,12 @@ technologies = {
 		}
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_army_folder
 			position = { x=0 y=0 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 		
 	}
@@ -389,8 +448,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_army_folder
 			position = { x = -3 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -407,8 +470,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_army_folder
 			position = { x = -1 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -425,8 +492,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_army_folder
 			position = { x = 1 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 	
@@ -443,8 +514,12 @@ technologies = {
 		show_effect_as_desc = yes 
 		
 		folder = {
-			name = additional_technologies_folder
+			name = additional_technologies_army_folder
 			position = { x = 3 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
 		}
 	}
 }
