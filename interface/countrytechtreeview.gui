@@ -2979,6 +2979,7 @@ guiTypes = {
 		}
 		
 		#################################      SL Mod - Start    #################################
+		
 		containerWindowType = {
 			name = "additional_technologies_navy_folder"
 			position = { x=0 y=47 }
@@ -2993,13 +2994,11 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
         
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = { width = 1565 height = 100% }
-			}
-			
-						#####################
+			#containerWindowType = {
+			#	name = "size_filler"
+			#	position = { x=0 y=0 }
+			#	size = { width = 1565 height = 100% }
+			#}
 			
 			instantTextBoxType = {
 				name = "navy_improvments_tree_title_name"
@@ -3030,7 +3029,7 @@ guiTypes = {
 			gridboxtype = {
 				name = "navy_improvments_01_tree"
 				position = { x=20 y=172 }
-				size = { width = 550 height = 1000 }
+				size = { width = 850 height = 1000 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
         
@@ -3041,6 +3040,8 @@ guiTypes = {
 				}					
 			}
 		}
+		
+		#######################
 		
 		containerWindowType = {
 			name = "additional_technologies_industry_folder"
@@ -3061,8 +3062,6 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = { width = 1565 height = 100% }
 			}
-			
-						#####################
 			
 			instantTextBoxType = {
 				name = "industry_improvments_tree_title_name"
@@ -3105,6 +3104,8 @@ guiTypes = {
 			}
 		}
 		
+		#######################
+		
 		containerWindowType = {
 			name = "additional_technologies_air_folder"
 			position = { x=0 y=47 }
@@ -3125,10 +3126,8 @@ guiTypes = {
 				size = { width = 1565 height = 100% }
 			}
 			
-						#####################
-			
 			instantTextBoxType = {
-				name = air_improvments_tree_title_name"
+				name = "air_improvments_tree_title_name"
 				position = { x = 70 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
@@ -3164,9 +3163,11 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
 					position = { x=0 y=-150 }					
-				}					
+				}				
 			}
 		}
+		
+		#########################
 		
 		containerWindowType = {
 			name = "additional_technologies_army_folder"
@@ -3187,8 +3188,6 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = { width = 1565 height = 100% }
 			}
-			
-						#####################
 			
 			instantTextBoxType = {
 				name = "army_improvments_tree_title_name"
@@ -3230,6 +3229,8 @@ guiTypes = {
 				}					
 			}
 		}
+		
+		
 		
 		#################################      SL Mod - End    #################################
 
@@ -4843,6 +4844,17 @@ guiTypes = {
 		}
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	#################################      SL Mod - Start    #################################
 	containerWindowType = {
 		name = "techtree_additional_technologies_navy_folder_small_item"
@@ -4985,6 +4997,10 @@ guiTypes = {
 		}
 	}
 	#################################      SL Mod - End    #################################
+	
+	
+	
+	
 	
 
 	containerWindowType = {

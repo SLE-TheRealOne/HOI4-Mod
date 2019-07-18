@@ -1,4 +1,9 @@
 spriteTypes = {	
+
+	############################################################################################
+	###################################     Ideas     ###################################
+	############################################################################################
+	
     spriteType = {
         name = "GFX_idea_ace_1"
         texturefile = "gfx/interface/ideas/ace-club.dds"
@@ -16,8 +21,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/ace-tiles.dds"
     }
 	
-	
-	
+	######################
 
     spriteType = {
         name = "GFX_idea_industry_1"
@@ -32,8 +36,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/industry_captain_03.dds"
     }
 	
-	
-	
+	######################
 
     spriteType = {
         name = "GFX_idea_worker_1"
@@ -48,7 +51,7 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/worker-3.dds"
     }
 	
-	
+	######################
 	
 	spriteType = {
         name = "GFX_idea_hero_1"
@@ -119,18 +122,7 @@ spriteTypes = {
         name = "GFX_convoy_specialists_01_medium"
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
-	
-					############################
-					
-
-	
-					############################
-	
-
-	
-	
-	
-	
+		
 	############################     Needed for small items     ############################
 	spriteType = {
 		name = "GFX_technology_additional_technologies_navy_folder_small_unavailable_item_bg"
