@@ -1,0 +1,31 @@
+
+
+			buttonType = {
+				name = "additional_technologies_navy_folder_tab"
+				position = { x = 1121 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_navy_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "additional_technologies_industry_folder_tab"
+				position = { x = 1210 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_industry_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "additional_technologies_air_folder_tab"
+				position = { x = 1299 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_air_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+			buttonType = {
+				name = "additional_technologies_army_folder_tab"
+				position = { x = 1388 y = 0 }
+				quadTextureSprite = "GFX_additional_technologies_army_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+
