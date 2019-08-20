@@ -82,8 +82,11 @@
   additional_technologies_army_folder:0 "SL Mod D"
   additional_technologies_army_folder_desc:0 "Technologies additionnelles"
   
+  ################
   navy_improvments_tree_title_text:0 "Supériorité des 7 mers"
-  navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous ne pourrons pas remporter la victoire sans dominer les mers et y faire transiter notre ravitaillement et nos troupes"
+  navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous ne pourrons pas remporter la victoire sans dominer les mers"
+  navy_improvments_bold_fleet_subtree_title_text:0 "Flotte impétueuse"
+  navy_improvments_tiedous_fleet_subtree_title_text:0 "Flotte prudente"
   industry_improvments_tree_title_text:0 "Industries de pointes"
   industry_improvments_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée"
   army_improvments_tree_title_text:0 "Maitrise du champ de bataille"
@@ -91,8 +94,17 @@
   air_improvments_tree_title_text:0 "Debug title"
   air_improvments_tree_desc_text:0 "Debug desc"
   
+  ################
   navy_improvments_01:0 "Entrainement permanent"
   navy_improvments_01_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
+  bold_fleet_01:0 "Flotte prudente - §MI§!"
+  bold_fleet_01_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
+  bold_fleet_02:0 "Flotte prudente - §MII§!"
+  bold_fleet_02_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
+  cautious_fleet_01:0 "Flotte impétueuse - §MI§!"
+  cautious_fleet_01_desc:0 "Nous n'avons pas les ressources suffisantes pour risques nos précieux navires ; adoptons une stratégie prudente qui nous évitera de subir des pertes que nous ne pourrions nous permettre"
+  cautious_fleet_02:0 "Flotte impétueuse - §MII§!"
+  cautious_fleet_02_desc:0 "Nous n'avons pas les ressources suffisantes pour risques nos précieux navires ; adoptons une stratégie prudente qui nous évitera de subir des pertes que nous ne pourrions nous permettre"
   sub_detection_01:0 "Profondeurs sures - §MI§!"
   sub_detection_01_desc:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi"
   ships_speed_01:0 "Navires légers rapides - §MI§!"

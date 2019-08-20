@@ -103,7 +103,15 @@ spriteTypes = {
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
 	spriteType = {
+        name = "GFX_tech_minus_2_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
         name = "GFX_tech_plus_1_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	spriteType = {
+        name = "GFX_tech_plus_2_medium"
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
 	spriteType = {
