@@ -73,30 +73,38 @@
   
   
   # =======================================================     Technologies     =======================================================
+  ####### Tabs #######
   additional_technologies_navy_folder:0 "SL Mod A"
   additional_technologies_navy_folder_desc:0 "Technologies additionnelles"
+  
   additional_technologies_industry_folder:0 "SL Mod B"
   additional_technologies_industry_folder_desc:0 "Technologies additionnelles"
+  
   additional_technologies_air_folder:0 "SL Mod C"
   additional_technologies_air_folder_desc:0 "Technologies additionnelles"
+  
   additional_technologies_army_folder:0 "SL Mod D"
   additional_technologies_army_folder_desc:0 "Technologies additionnelles"
   
-  ################
-  navy_improvments_tree_title_text:0 "Supériorité des 7 mers"
-  navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous ne pourrons pas remporter la victoire sans dominer les mers"
-  navy_improvments_bold_fleet_subtree_title_text:0 "Flotte impétueuse"
-  navy_improvments_tiedous_fleet_subtree_title_text:0 "Flotte prudente"
+  ####### Folders #######
+  light_navy_improvments_tree_title_text:0 "§MHit and run§!"
+  light_navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous devons assurer une couverture étendue et efficace pour permettre à nos navires capitaux de frapper"
+  
+  strike_navy_improvments_tree_title_text:0 "§HShock and awe§!"
+  strike_navy_improvments_tree_desc_text:0 "Exploitons l'avantage offert par nos navires légers : nos navires capitaux doivent l'emporter à chaque engagement"
+  
   industry_improvments_tree_title_text:0 "Industries de pointes"
   industry_improvments_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée"
+  
   army_improvments_tree_title_text:0 "Maitrise du champ de bataille"
   army_improvments_tree_desc_text:0 "Nos armées doivent pouvoir s'imposer au combat par l'usage d'armes perfectionnées et modernes"
+  
   air_improvments_tree_title_text:0 "Debug title"
   air_improvments_tree_desc_text:0 "Debug desc"
   
-  ################
-  navy_improvments_01:0 "Entrainement permanent"
-  navy_improvments_01_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
+  ####### Light navy #######
+  training_program:0 "Entrainement permanent"
+  training_program_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
   bold_fleet_01:0 "Flotte prudente - §MI§!"
   bold_fleet_01_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
   bold_fleet_02:0 "Flotte prudente - §MII§!"
@@ -113,3 +121,7 @@
   navy_reliability_01_desc:0 "Avoir une flotte importante ne nous servira à rien si le matériel n'est pas fiable et qu'elle passe son temps en réparation"
   convoy_specialists_01:0 "Convois précieux - §MI§!"
   convoy_specialists_01_desc:0 "La mission qu'assure la branche civile de notre marine est trop importante pour que la négligions. Nous devons protéger nos convois tout en réduisant la capacité commerciale de nos ennemis"  
+  
+  ####### Strike navy #######
+  strike_navy_tech:0 "Flotte de frappe §HI§!"
+  strike_navy_tech_desc:0 "Différence de 1"

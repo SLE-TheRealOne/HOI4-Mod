@@ -1,7 +1,7 @@
 spriteTypes = {	
 
 	############################################################################################
-	###################################     Ideas     ###################################
+	###################################     Ideas     ##########################################
 	############################################################################################
 	
     spriteType = {
@@ -95,8 +95,8 @@ spriteTypes = {
 	
 	############################     Technologies items     ############################
 	spriteType = {
-        name = "GFX_navy_improvments_01_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        name = "GFX_training_program_medium"
+        texturefile = "gfx/interface/technologies/tech_advanced_special_forces_training.dds"
     }
 	spriteType = {
         name = "GFX_tech_minus_1_medium"
@@ -119,17 +119,24 @@ spriteTypes = {
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
 	spriteType = {
-        name = "GFX_ships_speed_01_medium"
+        name = "GFX_light_ships_speed_01_medium"
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
 	spriteType = {
-        name = "GFX_navy_reliability_01_medium"
+        name = "GFX_light_navy_reliability_01_medium"
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
 	spriteType = {
         name = "GFX_convoy_specialists_01_medium"
         texturefile = "gfx/interface/technologies/naval_air_operations.dds"
     }
+	
+	
+	spriteType = {
+        name = "GFX_strike_starting_tech_tree_medium"
+        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+    }
+	
 		
 	############################     Needed for small items     ############################
 	spriteType = {
@@ -163,7 +170,6 @@ spriteTypes = {
 		play_on_show = yes
 		pause_on_loop = 0.0
 	}
-	
 	
 	            #################
 

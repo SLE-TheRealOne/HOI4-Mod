@@ -1,0 +1,40 @@
+technologies = {
+
+	strike_starting_tech = {
+		
+		start_year = 1940
+		doctrine = yes
+		research_cost = 2
+		
+		xp_research_type = navy
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		show_effect_as_desc = yes
+		
+		modifier = {
+			experience_gain_navy_factor = 0.16
+		}
+		
+		path = {
+			leads_to_tech = tech_minus_1
+			rearch_cost_coeff = 3
+		}
+		
+		path = {
+			leads_to_tech = tech_plus_1
+			rearch_cost_coeff = 3
+		}
+		
+		folder = {
+			name = additional_technologies_navy_folder
+			position = { x=0 y=0 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_navy
+		}
+		
+	}
+}
