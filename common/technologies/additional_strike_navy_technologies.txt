@@ -12,18 +12,20 @@ technologies = {
 		
 		show_effect_as_desc = yes
 		
-		modifier = {
-			experience_gain_navy_factor = 0.16
+		heavy_cruiser = {
+			naval_speed = 0.05
 		}
-		
-		path = {
-			leads_to_tech = tech_minus_1
-			rearch_cost_coeff = 3
+
+		carrier = {
+			naval_speed = 0.05
 		}
-		
-		path = {
-			leads_to_tech = tech_plus_1
-			rearch_cost_coeff = 3
+
+		battle_cruiser = {
+			naval_speed = 0.05
+		}
+
+		battleship = {
+			naval_speed = 0.05
 		}
 		
 		folder = {

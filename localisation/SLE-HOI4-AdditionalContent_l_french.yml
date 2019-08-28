@@ -86,12 +86,16 @@
   additional_technologies_army_folder:0 "SL Mod D"
   additional_technologies_army_folder_desc:0 "Technologies additionnelles"
   
+  
   ####### Folders #######
   light_navy_improvments_tree_title_text:0 "§MHit and run§!"
   light_navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous devons assurer une couverture étendue et efficace pour permettre à nos navires capitaux de frapper"
   
   strike_navy_improvments_tree_title_text:0 "§HShock and awe§!"
   strike_navy_improvments_tree_desc_text:0 "Exploitons l'avantage offert par nos navires légers : nos navires capitaux doivent l'emporter à chaque engagement"
+
+  modern_navy_improvments_tree_title_text:0 "§IMarine moderne§!"
+  modern_navy_improvments_tree_desc_text:0 "Au dernier conflit majeur, les avions n'existaient pas. Modernisons notre marine et prenons l'avanatage"
   
   industry_improvments_tree_title_text:0 "Industries de pointes"
   industry_improvments_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée"
@@ -103,25 +107,43 @@
   air_improvments_tree_desc_text:0 "Debug desc"
   
   ####### Light navy #######
-  training_program:0 "Entrainement permanent"
-  training_program_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
+  light_navy_starting_tech:0 ""
+  light_navy_starting_tech_desc:0 "
+  
   bold_fleet_01:0 "Flotte prudente - §MI§!"
   bold_fleet_01_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
   bold_fleet_02:0 "Flotte prudente - §MII§!"
-  bold_fleet_02_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
+  bold_fleet_02_desc:0 "Continuons nos recherches"
+  
   cautious_fleet_01:0 "Flotte impétueuse - §MI§!"
   cautious_fleet_01_desc:0 "Nous n'avons pas les ressources suffisantes pour risques nos précieux navires ; adoptons une stratégie prudente qui nous évitera de subir des pertes que nous ne pourrions nous permettre"
   cautious_fleet_02:0 "Flotte impétueuse - §MII§!"
-  cautious_fleet_02_desc:0 "Nous n'avons pas les ressources suffisantes pour risques nos précieux navires ; adoptons une stratégie prudente qui nous évitera de subir des pertes que nous ne pourrions nous permettre"
+  cautious_fleet_02_desc:0 "Continuons nos recherches"
+  
   sub_detection_01:0 "Profondeurs sures - §MI§!"
   sub_detection_01_desc:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi"
-  ships_speed_01:0 "Navires légers rapides - §MI§!"
-  ships_speed_01_desc:0 "Nos navires légers doivent pouvoir arriver les premiers sur les lieux du combats et tenir suffisament longtemps pour que la force de frappe puisse les rejoindre"
-  navy_reliability_01:0 "Matériel fiable - §MI§!"
-  navy_reliability_01_desc:0 "Avoir une flotte importante ne nous servira à rien si le matériel n'est pas fiable et qu'elle passe son temps en réparation"
+  sub_detection_02:0 "Profondeurs sures - §MII§!"
+  sub_detection_02_desc:0 ""
+  
+  light_ships_speed_01:0 "Navires légers rapides - §MI§!"
+  light_ships_speed_01_desc:0 "Nos navires légers doivent pouvoir arriver les premiers sur les lieux du combats et tenir suffisament longtemps pour que la force de frappe puisse les rejoindre"
+  light_ships_speed_02:0 "Navires légers rapides - §MII§!"
+  light_ships_speed_02_desc:0 "Continuons nos recherches"
+
+  light_navy_reliability_01:0 "Matériel fiable - §MI§!"
+  light_navy_reliability_01_desc:0 "Avoir une flotte importante ne nous servira à rien si le matériel n'est pas fiable et qu'elle passe son temps en réparation"
+  light_navy_reliability_02:0 "Matériel fiable - §MII§!"
+  light_navy_reliability_02_desc:0 "Continuons nos recherches"
+
   convoy_specialists_01:0 "Convois précieux - §MI§!"
   convoy_specialists_01_desc:0 "La mission qu'assure la branche civile de notre marine est trop importante pour que la négligions. Nous devons protéger nos convois tout en réduisant la capacité commerciale de nos ennemis"  
-  
+  convoy_specialists_02:0 "Convois précieux - §MII§!"
+  convoy_specialists_02_desc:0 "Continuons nos recherches"
+
   ####### Strike navy #######
-  strike_navy_tech:0 "Flotte de frappe §HI§!"
-  strike_navy_tech_desc:0 "Différence de 1"
+  strike_navy_starting_tech:0 ""
+  strike_navy_starting_tech_desc:0 ""
+
+  ####### Modern navy #######
+  modern_navy_starting_tech:0 "Entrainement permanent"
+  modern_navy_starting_tech_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"

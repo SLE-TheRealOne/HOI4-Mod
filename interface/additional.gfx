@@ -92,51 +92,84 @@ spriteTypes = {
 		texturefile = "gfx/interface/idea_military_tab.dds"
 		noOfFrames = 2		
 	}
+	spriteType = {
+		name = "GFX_additional_technologies_gear_folder_tab"
+		texturefile = "gfx/interface/idea_technology_tab.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_additional_technologies_special_folder_tab"
+		texturefile = "gfx/interface/techtree/techtree_special_tab.dds"
+		noOfFrames = 2		
+	}
+	
 	
 	############################     Technologies items     ############################
+
 	spriteType = {
-        name = "GFX_training_program_medium"
-        texturefile = "gfx/interface/technologies/tech_advanced_special_forces_training.dds"
-    }
-	spriteType = {
-        name = "GFX_tech_minus_1_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
-    }
-	spriteType = {
-        name = "GFX_tech_minus_2_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
-    }
-	spriteType = {
-        name = "GFX_tech_plus_1_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
-    }
-	spriteType = {
-        name = "GFX_tech_plus_2_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        name = "GFX_light_navy_starting_tech_tree_medium"
+        texturefile = "gfx/interface/technologies/Start_red.dds"
     }
 	spriteType = {
         name = "GFX_sub_detection_01_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        texturefile = "gfx/interface/technologies/A1_red.dds"
     }
+	spriteType = {
+        name = "GFX_sub_detection_02_medium"
+        texturefile = "gfx/interface/technologies/A2_red.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_03_medium"
+        texturefile = "gfx/interface/technologies/A3_red.dds"
+    }
+						###
 	spriteType = {
         name = "GFX_light_ships_speed_01_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        texturefile = "gfx/interface/technologies/B1_red.dds"
     }
+	spriteType = {
+        name = "GFX_light_ships_speed_02_medium"
+        texturefile = "gfx/interface/technologies/B2_red.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_03_medium"
+        texturefile = "gfx/interface/technologies/B3_red.dds"
+    }
+						###
 	spriteType = {
         name = "GFX_light_navy_reliability_01_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        texturefile = "gfx/interface/technologies/C1_red.dds"
     }
+	spriteType = {
+        name = "GFX_light_navy_reliability_02_medium"
+        texturefile = "gfx/interface/technologies/C2_red.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_03_medium"
+        texturefile = "gfx/interface/technologies/C3_red.dds"
+    }
+						###
 	spriteType = {
         name = "GFX_convoy_specialists_01_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        texturefile = "gfx/interface/technologies/D1_red.dds"
     }
-	
-	
 	spriteType = {
-        name = "GFX_strike_starting_tech_tree_medium"
-        texturefile = "gfx/interface/technologies/naval_air_operations.dds"
+        name = "GFX_convoy_specialists_02_medium"
+        texturefile = "gfx/interface/technologies/D2_red.dds"
     }
-	
+	spriteType = {
+        name = "GFX_convoy_specialists_03_medium"
+        texturefile = "gfx/interface/technologies/D3_red.dds"
+    }
+						###
+	spriteType = {
+        name = "GFX_strike_navy_starting_tech_tree_medium"
+        texturefile = "gfx/interface/technologies/Start_orange.dds"
+    }
+	spriteType = {
+        name = "GFX_modern_navy_starting_tech_medium"
+        texturefile = "gfx/interface/technologies/Start_green.dds"
+    }
 		
 	############################     Needed for small items     ############################
 	spriteType = {
