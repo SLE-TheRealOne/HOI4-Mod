@@ -107,68 +107,97 @@ spriteTypes = {
 	############################     Technologies items     ############################
 
 	spriteType = {
-        name = "GFX_light_navy_starting_tech_tree_medium"
-        texturefile = "gfx/interface/technologies/Start_red.dds"
+        name = "GFX_light_navy_starting_tech_medium"
+        texturefile = "gfx/interface/technologies/Start_Alpha.dds"
     }
+						###
 	spriteType = {
         name = "GFX_sub_detection_01_medium"
-        texturefile = "gfx/interface/technologies/A1_red.dds"
+        texturefile = "gfx/interface/technologies/A1.dds"
     }
 	spriteType = {
         name = "GFX_sub_detection_02_medium"
-        texturefile = "gfx/interface/technologies/A2_red.dds"
+        texturefile = "gfx/interface/technologies/A2.dds"
     }
 	spriteType = {
         name = "GFX_sub_detection_03_medium"
-        texturefile = "gfx/interface/technologies/A3_red.dds"
+        texturefile = "gfx/interface/technologies/A3.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_04_medium"
+        texturefile = "gfx/interface/technologies/A4.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_05_medium"
+        texturefile = "gfx/interface/technologies/A5.dds"
     }
 						###
 	spriteType = {
         name = "GFX_light_ships_speed_01_medium"
-        texturefile = "gfx/interface/technologies/B1_red.dds"
+        texturefile = "gfx/interface/technologies/B1.dds"
     }
 	spriteType = {
         name = "GFX_light_ships_speed_02_medium"
-        texturefile = "gfx/interface/technologies/B2_red.dds"
+        texturefile = "gfx/interface/technologies/B2.dds"
     }
 	spriteType = {
         name = "GFX_light_ships_speed_03_medium"
-        texturefile = "gfx/interface/technologies/B3_red.dds"
+        texturefile = "gfx/interface/technologies/B3.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_04_medium"
+        texturefile = "gfx/interface/technologies/B4.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_05_medium"
+        texturefile = "gfx/interface/technologies/B5.dds"
     }
 						###
 	spriteType = {
         name = "GFX_light_navy_reliability_01_medium"
-        texturefile = "gfx/interface/technologies/C1_red.dds"
+        texturefile = "gfx/interface/technologies/C1.dds"
     }
 	spriteType = {
         name = "GFX_light_navy_reliability_02_medium"
-        texturefile = "gfx/interface/technologies/C2_red.dds"
+        texturefile = "gfx/interface/technologies/C2.dds"
     }
 	spriteType = {
         name = "GFX_light_navy_reliability_03_medium"
-        texturefile = "gfx/interface/technologies/C3_red.dds"
+        texturefile = "gfx/interface/technologies/C3.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_04_medium"
+        texturefile = "gfx/interface/technologies/C4.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_05_medium"
+        texturefile = "gfx/interface/technologies/C5.dds"
     }
 						###
 	spriteType = {
         name = "GFX_convoy_specialists_01_medium"
-        texturefile = "gfx/interface/technologies/D1_red.dds"
+        texturefile = "gfx/interface/technologies/D1.dds"
     }
 	spriteType = {
         name = "GFX_convoy_specialists_02_medium"
-        texturefile = "gfx/interface/technologies/D2_red.dds"
+        texturefile = "gfx/interface/technologies/D2.dds"
     }
 	spriteType = {
         name = "GFX_convoy_specialists_03_medium"
-        texturefile = "gfx/interface/technologies/D3_red.dds"
-    }
-						###
-	spriteType = {
-        name = "GFX_strike_navy_starting_tech_tree_medium"
-        texturefile = "gfx/interface/technologies/Start_orange.dds"
+        texturefile = "gfx/interface/technologies/D3.dds"
     }
 	spriteType = {
-        name = "GFX_modern_navy_starting_tech_medium"
-        texturefile = "gfx/interface/technologies/Start_green.dds"
+        name = "GFX_convoy_specialists_04_medium"
+        texturefile = "gfx/interface/technologies/D4.dds"
+    }
+	spriteType = {
+        name = "GFX_convoy_specialists_05_medium"
+        texturefile = "gfx/interface/technologies/D5.dds"
+    }
+					###
+	spriteType = {
+        name = "GFX_light_navy_ending_tech_medium"
+        texturefile = "gfx/interface/technologies/End_alpha.dds"
     }
 		
 	############################     Needed for small items     ############################
