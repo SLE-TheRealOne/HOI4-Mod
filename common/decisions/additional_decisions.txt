@@ -45,7 +45,7 @@ air_experience_usage = {
 		days_re_enable = 180
     }
 	
-	call_ace_radio_specialit {
+	call_ace_radio_specialist {
 		cost = 50
         available {
             has_air_experience > 50
@@ -78,28 +78,14 @@ air_experience_usage = {
 
 political_power_usage = {
 
-    additional_technology_speed_bonus {
-		cost = 25
+   	additional_navy_technology_speed_bonus {
+		cost = 50
 		available {
 			has_war = yes
 		}
 		complete_effect = {
 			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = additional_technology_category
-			}
-		}
-		days_re_enable = 30
-	}
-	
-	additional_naval_technology_speed_bonus {
-		cost = 25
-		available {
-			has_war = yes
-		}
-		complete_effect = {
-			add_tech_bonus = {
+				name = additional_navy_technology_speed_bonus
 				bonus = 0.5
 				uses = 1
 				category = additional_technology_category_navy

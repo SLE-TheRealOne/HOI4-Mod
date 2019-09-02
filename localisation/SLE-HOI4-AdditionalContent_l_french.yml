@@ -16,7 +16,7 @@
   
   
   political_power_usage:0 "Utilisation du poids politique"
-  political_power_usage_desc:0 "Nous pouvons faire jouer nos relations diplomatiques et notre influence pour investir nos efforts dans des domaines spécifiques selon nos besoins"
+  political_power_usage_desc:0 "Nous pouvons faire jouer nos relations diplomatiques et notre influence pour divers effets"
   naval_shipyards_boost:0 "Booster la production navale"
   civil_factories_boost:0 "Booster les usines civiles"
   military_factories_boost:0 "Booster les usines militaires"
@@ -26,7 +26,8 @@
   add_oil_to_island_desc:0 "Les îles sont souvent riches en ressources. Explorer les sous-sols à la recherche de pétrole"
   add_civilian_factory_to_random_state:0 "Ajouter une usine civile à un état alératoire élligible"
   add_civilian_factory_to_random_state_desc:0 "Le besoin de faire émerger, ex-nihilo une usine devient impératif. Nous allons devoir réquisitionner des ressources civiles, peut-être relocaliser des travailleurs"
-
+  additional_navy_technology_speed_bonus:0 "Accélerer la recherche navale"
+  additional_navy_technology_speed_bonus_desc:0 "L'aéronaval a révolutionné le combat maritime ; nous ne devons pas nous laisser distancer par les chercheurs des pays adverses"
 
 
 
@@ -107,23 +108,29 @@
   air_improvments_tree_desc_text:0 "Debug desc"
   
   ####### Light navy #######
-  light_navy_starting_tech:0 ""
-  light_navy_starting_tech_desc:0 "
+  light_navy_starting_tech:0 "Navires d'escortes améliorés"
+  light_navy_starting_tech_desc:0 ""
   
-  bold_fleet_01:0 "Flotte prudente - §MI§!"
+  bold_fleet_01:0 "Flotte impétueuse - §MI§!"
   bold_fleet_01_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
-  bold_fleet_02:0 "Flotte prudente - §MII§!"
-  bold_fleet_02_desc:0 "Continuons nos recherches"
+  bold_fleet_02:0 "Flotte impétueuse - §MII§!"
+  bold_fleet_02_desc:0 "Recherche améliorée"
+  bold_fleet_03:0 "Flotte impétueuse - §MIII§!"
+  bold_fleet_03_desc:0 "Recherche améliorée"
+  bold_fleet_04:0 "Flotte impétueuse - §MIV§!"
+  bold_fleet_04_desc:0 "Recherche améliorée"
+  bold_fleet_05:0 "Flotte impétueuse - §MV§!"
+  bold_fleet_05_desc:0 "Recherche améliorée"
   
-  cautious_fleet_01:0 "Flotte impétueuse - §MI§!"
+  cautious_fleet_01:0 "Flotte prudente - §MI§!"
   cautious_fleet_01_desc:0 "Nous n'avons pas les ressources suffisantes pour risques nos précieux navires ; adoptons une stratégie prudente qui nous évitera de subir des pertes que nous ne pourrions nous permettre"
-  cautious_fleet_02:0 "Flotte impétueuse - §MII§!"
+  cautious_fleet_02:0 "Flotte prudente - §MII§!"
   cautious_fleet_02_desc:0 "Recherche améliorée"
-  cautious_fleet_03:0 "Flotte impétueuse - §MIII§!"
+  cautious_fleet_03:0 "Flotte prudente - §MIII§!"
   cautious_fleet_03_desc:0 "Recherche améliorée"
-  cautious_fleet_04:0 "Flotte impétueuse - §MIV§!"
+  cautious_fleet_04:0 "Flotte prudente - §MIV§!"
   cautious_fleet_04_desc:0 "Recherche améliorée"
-  cautious_fleet_05:0 "Flotte impétueuse - §MV§!"
+  cautious_fleet_05:0 "Flotte prudente - §MV§!"
   cautious_fleet_05_desc:0 "Recherche améliorée"
   
   sub_detection_01:0 "Profondeurs sures - §MI§!"

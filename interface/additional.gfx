@@ -199,6 +199,11 @@ spriteTypes = {
         name = "GFX_light_navy_ending_tech_medium"
         texturefile = "gfx/interface/technologies/End_alpha.dds"
     }
+					###
+	spriteType = {
+        name = "GFX_modern_navy_starting_tech_medium"
+        texturefile = "gfx/interface/technologies/Start_Delta.dds"
+    }
 		
 	############################     Needed for small items     ############################
 	spriteType = {

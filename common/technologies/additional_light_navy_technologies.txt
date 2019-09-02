@@ -7,8 +7,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 
@@ -17,22 +17,18 @@ technologies = {
 		
 		path = {
 			leads_to_tech = sub_detection_01
-			rearch_cost_coeff = 3
 		}
 
 		path = {
 			leads_to_tech = light_ships_speed_01
-			rearch_cost_coeff = 3
 		}
 
 		path = {
 			leads_to_tech = light_navy_reliability_01
-			rearch_cost_coeff = 3
 		}
 
 		path = {
 			leads_to_tech = convoy_specialists_01
-			rearch_cost_coeff = 3
 		}
 		
 		folder = {
@@ -51,11 +47,11 @@ technologies = {
 
 		start_year = 1941
 		doctrine = yes
-		research_cost = 1
+		research_cost = 0.75
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 1
 		
 		show_effect_as_desc = yes 
 		
@@ -78,7 +74,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = sub_detection_02
-			rearch_cost_coeff = 3
 		}
 		
 		categories = {
@@ -92,11 +87,11 @@ technologies = {
 
 		start_year = 1942
 		doctrine = yes
-		research_cost = 1
+		research_cost = 0.75
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 1
 		
 		show_effect_as_desc = yes 
 		
@@ -124,7 +119,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = sub_detection_03
-			rearch_cost_coeff = 3
 		}
 		
 	}
@@ -133,11 +127,11 @@ technologies = {
 
 		start_year = 1943
 		doctrine = yes
-		research_cost = 1
+		research_cost = 0.75
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 1
 		
 		show_effect_as_desc = yes 
 		
@@ -165,7 +159,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = sub_detection_04
-			rearch_cost_coeff = 3
 		}
 		
 	}
@@ -174,11 +167,11 @@ technologies = {
 
 		start_year = 1944
 		doctrine = yes
-		research_cost = 1
+		research_cost = 0.75
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -206,7 +199,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = sub_detection_05
-			rearch_cost_coeff = 3
 		}
 		
 	}
@@ -215,11 +207,11 @@ technologies = {
 
 		start_year = 1945
 		doctrine = yes
-		research_cost = 1
+		research_cost = 0.75
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 1
 		
 		show_effect_as_desc = yes 
 		
@@ -247,7 +239,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_ending_tech
-			rearch_cost_coeff = 3
 		}
 		
 	}
@@ -272,8 +263,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -289,7 +280,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_ships_speed_02
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -313,8 +303,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -330,7 +320,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_ships_speed_03
-			rearch_cost_coeff = 3
 		}
 	}
 	
@@ -354,8 +343,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -371,7 +360,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_ships_speed_04
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -395,8 +383,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -412,7 +400,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_ships_speed_05
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -436,8 +423,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -453,7 +440,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_ending_tech
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -473,8 +459,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 		
@@ -490,7 +476,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_reliability_02
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -510,8 +495,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 		
@@ -527,7 +512,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_reliability_03
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -546,8 +530,8 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 		
@@ -563,7 +547,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_reliability_04
-			rearch_cost_coeff = 3
 		}
 	}
 	
@@ -583,8 +566,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 		
@@ -600,7 +583,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_reliability_05
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -620,8 +602,8 @@ technologies = {
 		
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 		
@@ -637,7 +619,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_ending_tech
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -653,8 +634,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -665,7 +646,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = convoy_specialists_02
-			rearch_cost_coeff = 3
 		}
 		
 		categories = {
@@ -686,8 +666,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -698,7 +678,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = convoy_specialists_03
-			rearch_cost_coeff = 3
 		}
 		
 		categories = {
@@ -719,8 +698,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes 
 		
@@ -736,7 +715,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = convoy_specialists_04
-			rearch_cost_coeff = 3
 		}
 	}
 
@@ -746,8 +724,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		modifier = {
 			convoy_escort_efficiency = 0.05
@@ -763,7 +741,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = convoy_specialists_05
-			rearch_cost_coeff = 3
 		}
 		
 		categories = {
@@ -778,8 +755,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		modifier = {
 			convoy_escort_efficiency = 0.05
@@ -795,7 +772,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = light_navy_ending_tech
-			rearch_cost_coeff = 3
 		}
 		
 		categories = {
@@ -811,8 +787,8 @@ technologies = {
 		research_cost = 1
 		
 		xp_research_type = navy
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_research_cost = 50
+		xp_research_bonus = 0.75
 		
 		show_effect_as_desc = yes
 
