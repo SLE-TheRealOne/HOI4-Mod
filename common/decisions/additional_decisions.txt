@@ -1,7 +1,7 @@
 air_experience_usage = {
 
 	call_ace_flight_instructor {
-		cost = 50
+		cost = 25
 		available {
 			has_air_experience > 50
         }
@@ -16,7 +16,7 @@ air_experience_usage = {
     }
 	
 	call_ace_flight_coordinator {
-		cost = 50
+		cost = 25
         available {
             has_air_experience > 50
         }
@@ -31,7 +31,7 @@ air_experience_usage = {
     }
 
     call_ace_radar_specialist {
-		cost = 50
+		cost = 25
         available {
             has_air_experience > 50
         }
@@ -46,7 +46,7 @@ air_experience_usage = {
     }
 	
 	call_ace_radio_specialist {
-		cost = 50
+		cost = 25
         available {
             has_air_experience > 50
         }
@@ -61,7 +61,7 @@ air_experience_usage = {
     }
 	
 	call_ace_technician {
-		cost = 50
+		cost = 25
         available {
             has_air_experience > 50
         }

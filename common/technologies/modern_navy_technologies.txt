@@ -3,14 +3,14 @@ technologies = {
     modern_navy_starting_tech = {
 		
 		start_year = 1940
-		doctrine = yes
 		research_cost = 2
+		doctrine = yes
 		
 		xp_research_type = navy
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		
-		show_effect_as_desc = yes
+
+		navy_fuel_consumption_factor = 0.1
 		
 		modifier = {
 			experience_gain_navy_factor = 0.10

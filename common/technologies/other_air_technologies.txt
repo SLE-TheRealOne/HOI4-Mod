@@ -1,0 +1,28 @@
+technologies = {
+	
+	other_air_technologies_starting_tech = {
+	
+		start_year = 1940
+		research_cost = 1
+        doctrine = yes
+		
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+		
+		folder = {
+			name = additional_technologies_air_folder
+			position = { x=0 y=0 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_air
+		}
+
+        air_accidents = 0.1
+		air_training_xp_gain_factor = 0.1
+		air_fuel_consumption_factor = -0.1		
+	}
+
+}

@@ -11,6 +11,8 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		show_effect_as_desc = yes
+
+		navy_anti_air_attack = 0.1
 		
 		heavy_cruiser = {
 			naval_speed = 0.05

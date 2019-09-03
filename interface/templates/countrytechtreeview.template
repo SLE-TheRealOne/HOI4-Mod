@@ -2981,7 +2981,9 @@ guiTypes = {
 		
 		#################################    SL Mod - Start  #################################
 		
-		additionalFolders_fragmentPlaceHolder
+		
+		folders_fragmentPlaceHolder
+
 		
 		###############################      SL Mod - End    #################################
 
@@ -3668,7 +3670,7 @@ guiTypes = {
 			#################################      SL Mod - Start    #################################
 			
 
-			additionalTechnologiesTabs_fragmentPlaceHolder
+			technologiesTabs_fragmentPlaceHolder
 
 
 			#################################      SL Mod - End    #################################
@@ -4577,7 +4579,7 @@ guiTypes = {
 	#################################      SL Mod - Start    #################################
 
 
-    additionalSmallItems_fragmentPlaceHolder
+    smallItems_fragmentPlaceHolder
 
 
 	#################################      SL Mod - End    #################################

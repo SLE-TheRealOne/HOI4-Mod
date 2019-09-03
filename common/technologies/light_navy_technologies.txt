@@ -47,7 +47,7 @@ technologies = {
 
 		start_year = 1941
 		doctrine = yes
-		research_cost = 0.75
+		research_cost = 1
 		
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -87,7 +87,7 @@ technologies = {
 
 		start_year = 1942
 		doctrine = yes
-		research_cost = 0.75
+		research_cost = 1
 		
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -127,7 +127,7 @@ technologies = {
 
 		start_year = 1943
 		doctrine = yes
-		research_cost = 0.75
+		research_cost = 1
 		
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -167,7 +167,7 @@ technologies = {
 
 		start_year = 1944
 		doctrine = yes
-		research_cost = 0.75
+		research_cost = 1
 		
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -207,7 +207,7 @@ technologies = {
 
 		start_year = 1945
 		doctrine = yes
-		research_cost = 0.75
+		research_cost = 1
 		
 		xp_research_type = navy
 		xp_research_cost = 50
