@@ -1,0 +1,375 @@
+spriteTypes = {	
+
+	############################################################################################
+	###################################     Technologies     ###################################
+	############################################################################################
+	
+	############################     Folder tab    ############################
+	spriteType = {
+		name = "GFX_additional_technologies_navy_folder_tab"
+		texturefile = "gfx/interface/idea_country_tab.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_additional_technologies_industry_folder_tab"
+		texturefile = "gfx/interface/idea_political_tab.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_additional_technologies_air_folder_tab"
+		texturefile = "gfx/interface/idea_espionage_tab.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_additional_technologies_army_folder_tab"
+		texturefile = "gfx/interface/idea_military_tab.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_additional_technologies_gear_folder_tab"
+		texturefile = "gfx/interface/idea_technology_tab.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_additional_technologies_special_folder_tab"
+		texturefile = "gfx/interface/techtree/techtree_special_tab.dds"
+		noOfFrames = 2		
+	}
+	
+	
+	############################     Technologies items     ############################
+
+	spriteType = {
+        name = "GFX_light_navy_starting_tech_medium"
+        texturefile = "gfx/interface/technologies/Start_Alpha.dds"
+    }
+						###
+	spriteType = {
+        name = "GFX_sub_detection_01_medium"
+        texturefile = "gfx/interface/technologies/A1.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_02_medium"
+        texturefile = "gfx/interface/technologies/A2.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_03_medium"
+        texturefile = "gfx/interface/technologies/A3.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_04_medium"
+        texturefile = "gfx/interface/technologies/A4.dds"
+    }
+	spriteType = {
+        name = "GFX_sub_detection_05_medium"
+        texturefile = "gfx/interface/technologies/A5.dds"
+    }
+						###
+	spriteType = {
+        name = "GFX_light_ships_speed_01_medium"
+        texturefile = "gfx/interface/technologies/B1.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_02_medium"
+        texturefile = "gfx/interface/technologies/B2.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_03_medium"
+        texturefile = "gfx/interface/technologies/B3.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_04_medium"
+        texturefile = "gfx/interface/technologies/B4.dds"
+    }
+	spriteType = {
+        name = "GFX_light_ships_speed_05_medium"
+        texturefile = "gfx/interface/technologies/B5.dds"
+    }
+						###
+	spriteType = {
+        name = "GFX_light_navy_reliability_01_medium"
+        texturefile = "gfx/interface/technologies/C1.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_02_medium"
+        texturefile = "gfx/interface/technologies/C2.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_03_medium"
+        texturefile = "gfx/interface/technologies/C3.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_04_medium"
+        texturefile = "gfx/interface/technologies/C4.dds"
+    }
+	spriteType = {
+        name = "GFX_light_navy_reliability_05_medium"
+        texturefile = "gfx/interface/technologies/C5.dds"
+    }
+						###
+	spriteType = {
+        name = "GFX_convoy_specialists_01_medium"
+        texturefile = "gfx/interface/technologies/D1.dds"
+    }
+	spriteType = {
+        name = "GFX_convoy_specialists_02_medium"
+        texturefile = "gfx/interface/technologies/D2.dds"
+    }
+	spriteType = {
+        name = "GFX_convoy_specialists_03_medium"
+        texturefile = "gfx/interface/technologies/D3.dds"
+    }
+	spriteType = {
+        name = "GFX_convoy_specialists_04_medium"
+        texturefile = "gfx/interface/technologies/D4.dds"
+    }
+	spriteType = {
+        name = "GFX_convoy_specialists_05_medium"
+        texturefile = "gfx/interface/technologies/D5.dds"
+    }
+					###
+	spriteType = {
+        name = "GFX_light_navy_ending_tech_medium"
+        texturefile = "gfx/interface/technologies/End_alpha.dds"
+    }
+					###
+	spriteType = {
+        name = "GFX_modern_navy_starting_tech_medium"
+        texturefile = "gfx/interface/technologies/Start_Delta.dds"
+    }
+
+					###
+	
+    spriteType = {
+        name = "GFX_tech-fighter-start_medium"
+        texturefile = "gfx/interface/technologies/Start_beta.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-engine_01_medium"
+        texturefile = "gfx/interface/technologies/A1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-engine_02_medium"
+        texturefile = "gfx/interface/technologies/A2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-engine_03_medium"
+        texturefile = "gfx/interface/technologies/A3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-engine_04_medium"
+        texturefile = "gfx/interface/technologies/A4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-engine_05_medium"
+        texturefile = "gfx/interface/technologies/A5.dds"
+    }
+	spriteType = {
+        name = "GFX_tech-fighter-attack_01_medium"
+        texturefile = "gfx/interface/technologies/B1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-attack_02_medium"
+        texturefile = "gfx/interface/technologies/B2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-attack_03_medium"
+        texturefile = "gfx/interface/technologies/B3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-attack_04_medium"
+        texturefile = "gfx/interface/technologies/B4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-attack_05_medium"
+        texturefile = "gfx/interface/technologies/B5.dds"
+    }
+	spriteType = {
+        name = "GFX_tech-fighter-defence_01_medium"
+        texturefile = "gfx/interface/technologies/C1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-defence_02_medium"
+        texturefile = "gfx/interface/technologies/C2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-defence_03_medium"
+        texturefile = "gfx/interface/technologies/C3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-defence_04_medium"
+        texturefile = "gfx/interface/technologies/C4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-defence_05_medium"
+        texturefile = "gfx/interface/technologies/C5.dds"
+    }
+	spriteType = {
+        name = "GFX_tech-fighter-agility_01_medium"
+        texturefile = "gfx/interface/technologies/D1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-agility_02_medium"
+        texturefile = "gfx/interface/technologies/D2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-agility_03_medium"
+        texturefile = "gfx/interface/technologies/D3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-agility_04_medium"
+        texturefile = "gfx/interface/technologies/D4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-agility_05_medium"
+        texturefile = "gfx/interface/technologies/D5.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_detect_factor_01_medium"
+        texturefile = "gfx/interface/technologies/E1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_detect_factor_02_medium"
+        texturefile = "gfx/interface/technologies/E2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_detect_factor_03_medium"
+        texturefile = "gfx/interface/technologies/E3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_detect_factor_04_medium"
+        texturefile = "gfx/interface/technologies/E4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_detect_factor_05_medium"
+        texturefile = "gfx/interface/technologies/E5.dds"
+    }
+	spriteType = {
+        name = "GFX_tech-fighter-air_interception_detect_factor_01_medium"
+        texturefile = "gfx/interface/technologies/E1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_interception_detect_factor_02_medium"
+        texturefile = "gfx/interface/technologies/E2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_interception_detect_factor_03_medium"
+        texturefile = "gfx/interface/technologies/E3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_interception_detect_factor_04_medium"
+        texturefile = "gfx/interface/technologies/E4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_interception_detect_factor_05_medium"
+        texturefile = "gfx/interface/technologies/E5.dds"
+    }
+	spriteType = {
+        name = "GFX_tech-fighter-air_superiority_efficiency_01_medium"
+        texturefile = "gfx/interface/technologies/F1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_efficiency_02_medium"
+        texturefile = "gfx/interface/technologies/F2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_efficiency_03_medium"
+        texturefile = "gfx/interface/technologies/F3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_efficiency_04_medium"
+        texturefile = "gfx/interface/technologies/F4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_efficiency_05_medium"
+        texturefile = "gfx/interface/technologies/F5.dds"
+    }
+	spriteType = {
+        name = "GFX_tech-fighter-air_intercept_efficiency_01_medium"
+        texturefile = "gfx/interface/technologies/F1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_intercept_efficiency_02_medium"
+        texturefile = "gfx/interface/technologies/F2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_intercept_efficiency_03_medium"
+        texturefile = "gfx/interface/technologies/F3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_intercept_efficiency_04_medium"
+        texturefile = "gfx/interface/technologies/F4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_intercept_efficiency_05_medium"
+        texturefile = "gfx/interface/technologies/F5.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-enemy_army_bonus_air_superiority_factor_01_medium"
+        texturefile = "gfx/interface/technologies/G1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-enemy_army_bonus_air_superiority_factor_02_medium"
+        texturefile = "gfx/interface/technologies/G2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-enemy_army_bonus_air_superiority_factor_03_medium"
+        texturefile = "gfx/interface/technologies/G3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-enemy_army_bonus_air_superiority_factor_04_medium"
+        texturefile = "gfx/interface/technologies/G4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-enemy_army_bonus_air_superiority_factor_05_medium"
+        texturefile = "gfx/interface/technologies/G5.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-army_bonus_air_superiority_factor_01_medium"
+        texturefile = "gfx/interface/technologies/G1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-army_bonus_air_superiority_factor_02_medium"
+        texturefile = "gfx/interface/technologies/G2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-army_bonus_air_superiority_factor_03_medium"
+        texturefile = "gfx/interface/technologies/G3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-army_bonus_air_superiority_factor_04_medium"
+        texturefile = "gfx/interface/technologies/G4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-army_bonus_air_superiority_factor_05_medium"
+        texturefile = "gfx/interface/technologies/G5.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_bonus_in_combat_01_medium"
+        texturefile = "gfx/interface/technologies/H1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_bonus_in_combat_02_medium"
+        texturefile = "gfx/interface/technologies/H2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_bonus_in_combat_03_medium"
+        texturefile = "gfx/interface/technologies/H3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_bonus_in_combat_04_medium"
+        texturefile = "gfx/interface/technologies/H4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-fighter-air_superiority_bonus_in_combat_05_medium"
+        texturefile = "gfx/interface/technologies/H5.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-end_alpha_medium"
+        texturefile = "gfx/interface/technologies/End_alpha.dds"
+    }
+     spriteType = {
+        name = "GFX_tech-end_beta_medium"
+        texturefile = "gfx/interface/technologies/End_beta.dds"
+    }
+}

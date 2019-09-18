@@ -75,18 +75,19 @@
   
   # =======================================================     Technologies     =======================================================
   ####### Tabs #######
-  additional_technologies_navy_folder:0 "SL Mod A"
-  additional_technologies_navy_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_navy_folder:0 "Naval"
+  additional_technologies_navy_folder_desc:0 "SL Mod : Technologies additionnelles"
   
-  additional_technologies_industry_folder:0 "SL Mod B"
-  additional_technologies_industry_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_industry_folder:0 "Industrie"
+  additional_technologies_industry_folder_desc:0 "SL Mod : Technologies additionnelles"
   
-  additional_technologies_air_folder:0 "SL Mod C"
-  additional_technologies_air_folder_desc:0 "Technologies additionnelles"
+  additional_technologies_air_folder:0 "Aérien"
+  additional_technologies_air_folder_desc:0 "SL Mod : Technologies additionnelles"
   
-  additional_technologies_army_folder:0 "SL Mod D"
-  additional_technologies_army_folder_desc:0 "Technologies additionnelles"
-  
+  additional_technologies_army_folder:0 "Armée"
+  additional_technologies_army_folder:0_desc "SL Mod : Technologies additionnelles"
+
+
   
   ####### Folders #######
   light_navy_improvments_tree_title_text:0 "§MHit and run§!"
