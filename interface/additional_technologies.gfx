@@ -185,23 +185,23 @@ spriteTypes = {
         texturefile = "gfx/interface/technologies/B5.dds"
     }
 	spriteType = {
-        name = "GFX_tech-fighter-defence_01_medium"
+        name = "GFX_tech-fighter-defense_01_medium"
         texturefile = "gfx/interface/technologies/C1.dds"
     }
     spriteType = {
-        name = "GFX_tech-fighter-defence_02_medium"
+        name = "GFX_tech-fighter-defense_02_medium"
         texturefile = "gfx/interface/technologies/C2.dds"
     }
     spriteType = {
-        name = "GFX_tech-fighter-defence_03_medium"
+        name = "GFX_tech-fighter-defense_03_medium"
         texturefile = "gfx/interface/technologies/C3.dds"
     }
     spriteType = {
-        name = "GFX_tech-fighter-defence_04_medium"
+        name = "GFX_tech-fighter-defense_04_medium"
         texturefile = "gfx/interface/technologies/C4.dds"
     }
     spriteType = {
-        name = "GFX_tech-fighter-defence_05_medium"
+        name = "GFX_tech-fighter-defense_05_medium"
         texturefile = "gfx/interface/technologies/C5.dds"
     }
 	spriteType = {
