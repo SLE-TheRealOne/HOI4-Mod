@@ -77,8 +77,8 @@ air_experience_usage = {
 }
 
 political_power_usage = {
-
-   	additional_navy_technology_speed_bonus {
+   	
+	additional_navy_technology_speed_bonus {
 		cost = 50
 		available {
 			has_war = yes
@@ -187,11 +187,15 @@ political_power_usage = {
 		complete_effect = {
 			random_owned_controlled_state {
 				limit = {
-					has_resources_amount = {
-						resource = oil
-						amount < 1
-						state = THIS
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount < 1
+							state = THIS
+						}
+						is_island_state = yes
 					}
+					
 				}
 				add_resource {
 					type = oil

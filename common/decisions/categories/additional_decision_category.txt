@@ -9,3 +9,9 @@ political_power_usage {
 		has_political_power > 100
 	}
 }
+
+ground_experience_usage {
+	visible = {
+		has_war = yes
+	}
+}

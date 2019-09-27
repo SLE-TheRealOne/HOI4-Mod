@@ -365,11 +365,11 @@ spriteTypes = {
         texturefile = "gfx/interface/technologies/H5.dds"
     }
     spriteType = {
-        name = "GFX_tech-end_alpha_medium"
+        name = "GFX_tech-fighter-end_alpha_medium"
         texturefile = "gfx/interface/technologies/End_alpha.dds"
     }
-     spriteType = {
-        name = "GFX_tech-end_beta_medium"
+    spriteType = {
+        name = "GFX_tech-fighter-end_beta_medium"
         texturefile = "gfx/interface/technologies/End_beta.dds"
     }
 }
