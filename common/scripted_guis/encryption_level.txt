@@ -1,0 +1,10 @@
+scripted_gui = {
+    encryption_level = {
+        window_name = encryption_level_container
+        context_type = player_context
+
+        visible = {
+            always = yes
+		}
+    }
+}

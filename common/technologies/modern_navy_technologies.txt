@@ -1,29 +1,28 @@
 technologies = {
     
-    modern_navy_starting_tech = {
-		
+    tech-modern_navy-start = {
 		start_year = 1940
-		research_cost = 2
+		research_cost = 1
 		doctrine = yes
 		
 		xp_research_type = navy
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-
-		navy_fuel_consumption_factor = 0.1
-		
-		modifier = {
-			experience_gain_navy_factor = 0.10
-		}
 		
 		folder = {
 			name = additional_technologies_navy_folder
-			position = { x=0 y=0 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
 			additional_technology_category
 			additional_technology_category_navy
+		}
+
+		navy_fuel_consumption_factor = 0.1
+		
+		modifier = {
+			experience_gain_navy_factor = 0.10
 		}
 		
 	}

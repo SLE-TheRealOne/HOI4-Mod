@@ -1,4 +1,8 @@
 ﻿l_french:
+  # =======================================================     Top menu     =======================================================
+  top_menu-encryption_level-tooltip:0 "Niveau d'encryption"
+  top_menu-decryption_level-tooltip:0 "Niveau de décryption"
+  
   # =======================================================     Décisions     =======================================================
   air_experience_usage:0 "Formation de l'armée de l'air"
   air_experience_usage_desc:0 "L'expérience accumulée par nos pilotes permettent à certains de sortir du lot et d'être un exemple pour leurs camarades"
@@ -54,14 +58,9 @@
   
   
   
-  
-  
-  
   # =======================================================     Bâtiments     =======================================================
   dry_dock:0 "Cale sèche"
   dry_dock_desc:0 "Disposer d'un espace supplémentaire permet d'améliorer la productivité du chantier naval"
-  
-  
   
   
   
@@ -90,8 +89,8 @@
 
   
   ####### Folders #######
-  light_navy_improvments_tree_title_text:0 "§MHit and run§!"
-  light_navy_improvments_tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous devons assurer une couverture étendue et efficace pour permettre à nos navires capitaux de frapper"
+  tech-light_navy-tree_title_text:0 "§MHit and run§!"
+  tech-light_navy-tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous devons assurer une couverture étendue et efficace pour permettre à nos navires capitaux de frapper"
   
   strike_navy_improvments_tree_title_text:0 "§HShock and awe§!"
   strike_navy_improvments_tree_desc_text:0 "Exploitons l'avantage offert par nos navires légers : nos navires capitaux doivent l'emporter à chaque engagement"
@@ -102,88 +101,64 @@
   industry_improvments_tree_title_text:0 "Industries de pointes"
   industry_improvments_tree_desc_text:0 "Si nous voulons pouvoir frapper à tout moment et réellement étendre notre domination des océans, nous devons améliorer nos navires pour qu'ils puissent s'engager dès qu'une alerte est donnée"
   
-  army_improvments_tree_title_text:0 "Maitrise du champ de bataille"
-  army_improvments_tree_desc_text:0 "Nos armées doivent pouvoir s'imposer au combat par l'usage d'armes perfectionnées et modernes"
+  tech-army_levels_tree_title_text:0 "Maitrise du champ de bataille"
+  tech-army_levels_tree_desc_text:0 "Nos armées doivent pouvoir s'imposer au combat par l'usage d'armes perfectionnées et modernes"
   
   air_improvments_tree_title_text:0 "Debug title"
   air_improvments_tree_desc_text:0 "Debug desc"
-  
-  ####### Light navy #######
-  light_navy_starting_tech:0 "Navires d'escortes améliorés"
-  light_navy_starting_tech_desc:0 ""
-  
-  bold_fleet_01:0 "Flotte impétueuse - §MI§!"
-  bold_fleet_01_desc:0 "Nous devons frapper les flottes ennemis avec fougue partout où elles se trouvent. C'est une stratégie dangereuse mais nos chantiers navals peuvent remplacer les éventuelles pertes que nous aurions"
-  bold_fleet_02:0 "Flotte impétueuse - §MII§!"
-  bold_fleet_02_desc:0 "Recherche améliorée"
-  bold_fleet_03:0 "Flotte impétueuse - §MIII§!"
-  bold_fleet_03_desc:0 "Recherche améliorée"
-  bold_fleet_04:0 "Flotte impétueuse - §MIV§!"
-  bold_fleet_04_desc:0 "Recherche améliorée"
-  bold_fleet_05:0 "Flotte impétueuse - §MV§!"
-  bold_fleet_05_desc:0 "Recherche améliorée"
-  
-  cautious_fleet_01:0 "Flotte prudente - §MI§!"
-  cautious_fleet_01_desc:0 "Nous n'avons pas les ressources suffisantes pour risques nos précieux navires ; adoptons une stratégie prudente qui nous évitera de subir des pertes que nous ne pourrions nous permettre"
-  cautious_fleet_02:0 "Flotte prudente - §MII§!"
-  cautious_fleet_02_desc:0 "Recherche améliorée"
-  cautious_fleet_03:0 "Flotte prudente - §MIII§!"
-  cautious_fleet_03_desc:0 "Recherche améliorée"
-  cautious_fleet_04:0 "Flotte prudente - §MIV§!"
-  cautious_fleet_04_desc:0 "Recherche améliorée"
-  cautious_fleet_05:0 "Flotte prudente - §MV§!"
-  cautious_fleet_05_desc:0 "Recherche améliorée"
-  
-  sub_detection_01:0 "Profondeurs sures - §MI§!"
-  sub_detection_01_desc:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi"
-  sub_detection_02:0 "Profondeurs sures - §MII§!"
-  sub_detection_02_desc:0 "Recherche améliorée"
-  sub_detection_03:0 "Profondeurs sures - §MIII§!"
-  sub_detection_03_desc:0 "Recherche améliorée"
-  sub_detection_04:0 "Profondeurs sures - §MIV§!"
-  sub_detection_04_desc:0 "Recherche améliorée"
-  sub_detection_05:0 "Profondeurs sures - §MV§!"
-  sub_detection_05_desc:0 "Recherche améliorée"
-  
-  light_ships_speed_01:0 "Navires légers rapides - §MI§!"
-  light_ships_speed_01_desc:0 "Nos navires légers doivent pouvoir arriver les premiers sur les lieux du combats et tenir suffisament longtemps pour que la force de frappe puisse les rejoindre"
-  light_ships_speed_02:0 "Navires légers rapides - §MII§!"
-  light_ships_speed_02_desc:0 "Recherche améliorée"
-  light_ships_speed_03:0 "Navires légers rapides - §MIII§!"
-  light_ships_speed_03_desc:0 "Recherche améliorée"
-  light_ships_speed_04:0 "Navires légers rapides - §MIV§!"
-  light_ships_speed_04_desc:0 "Recherche améliorée"
-  light_ships_speed_05:0 "Navires légers rapides - §MV§!"
-  light_ships_speed_05_desc:0 "Recherche améliorée"
 
-  light_navy_reliability_01:0 "Matériel fiable - §MI§!"
-  light_navy_reliability_01_desc:0 "Avoir une flotte importante ne nous servira à rien si le matériel n'est pas fiable et qu'elle passe son temps en réparation"
-  light_navy_reliability_02:0 "Matériel fiable - §MII§!"
-  light_navy_reliability_02_desc:0 "Recherche améliorée"
-  light_navy_reliability_03:0 "Matériel fiable - §MIII§!"
-  light_navy_reliability_03_desc:0 "Recherche améliorée"
-  light_navy_reliability_04:0 "Matériel fiable - §MIV§!"
-  light_navy_reliability_04_desc:0 "Recherche améliorée"
-  light_navy_reliability_05:0 "Matériel fiable - §MV§!"
-  light_navy_reliability_05_desc:0 "Recherche améliorée"
+  
+  ##################################### Light navy #####################################
+  tech-light_navy-start:0 "Démarrage de la recherche sur l'amélioration de nos navires d'escorte"
+  tech-light_navy-start_desc:0 "Démarrons un ambitieux programme de recheche sur nos navires d'escorte. Vitesse, puissance de feu, blindage, protections de convois : les pistes d'amélioration ne manquent pas"
+  
+  tech-light_navy-sub_detection_01:0 "Profondeurs sures - §MI§!"
+  tech-light_navy-sub_detection_01_desc:0 "Les sous-marins sont une plaie pour nos convois de transports et représentent une menace bien trop important pour le succès de nos opérations. Nous devons entrainer nos marins et spécialiser nos navires dans la détection de ce type d'ennemi"
+  tech-light_navy-sub_detection_02:0 "Profondeurs sures - §MII§!"
+  tech-light_navy-sub_detection_02_desc:0 "Recherche améliorée"
+  tech-light_navy-sub_detection_03:0 "Profondeurs sures - §MIII§!"
+  tech-light_navy-sub_detection_03_desc:0 "Recherche améliorée"
+  tech-light_navy-sub_detection_04:0 "Profondeurs sures - §MIV§!"
+  tech-light_navy-sub_detection_04_desc:0 "Recherche améliorée"
+  tech-light_navy-sub_detection_05:0 "Profondeurs sures - §MV§!"
+  tech-light_navy-sub_detection_05_desc:0 "Recherche améliorée"
+  
+  tech-light_navy-speed_01:0 "Navires légers rapides - §MI§!"
+  tech-light_navy-speed_01_desc:0 "Nos navires légers doivent pouvoir arriver les premiers sur les lieux du combats et tenir suffisament longtemps pour que la force de frappe puisse les rejoindre"
+  tech-light_navy-speed_02:0 "Navires légers rapides - §MII§!"
+  tech-light_navy-speed_02_desc:0 "Recherche améliorée"
+  tech-light_navy-speed_03:0 "Navires légers rapides - §MIII§!"
+  tech-light_navy-speed_03_desc:0 "Recherche améliorée"
+  tech-light_navy-speed_04:0 "Navires légers rapides - §MIV§!"
+  tech-light_navy-speed_04_desc:0 "Recherche améliorée"
+  tech-light_navy-speed_05:0 "Navires légers rapides - §MV§!"
+  tech-light_navy-speed_05_desc:0 "Recherche améliorée"
 
-  convoy_specialists_01:0 "Convois précieux - §MI§!"
-  convoy_specialists_01_desc:0 "La mission qu'assure la branche civile de notre marine est trop importante pour que la négligions. Nous devons protéger nos convois tout en réduisant la capacité commerciale de nos ennemis"  
-  convoy_specialists_02:0 "Convois précieux - §MII§!"
-  convoy_specialists_03:0 "Convois précieux - §MIII§!"
-  convoy_specialists_04:0 "Convois précieux - §MIV§!"
-  convoy_specialists_05:0 "Convois précieux - §MV§!"
+  tech-light_navy-reliability_01:0 "Matériel fiable - §MI§!"
+  tech-light_navy-reliability_01_desc:0 "Avoir une flotte importante ne nous servira à rien si le matériel n'est pas fiable et qu'elle passe son temps en réparation"
+  tech-light_navy-reliability_02:0 "Matériel fiable - §MII§!"
+  tech-light_navy-reliability_02_desc:0 "Recherche améliorée"
+  tech-light_navy-reliability_03:0 "Matériel fiable - §MIII§!"
+  tech-light_navy-reliability_03_desc:0 "Recherche améliorée"
+  tech-light_navy-reliability_04:0 "Matériel fiable - §MIV§!"
+  tech-light_navy-reliability_04_desc:0 "Recherche améliorée"
+  tech-light_navy-reliability_05:0 "Matériel fiable - §MV§!"
+  tech-light_navy-reliability_05_desc:0 "Recherche améliorée"
 
-  light_navy_ending_tech:0 ""
-  light_navy_ending_tech_desc:0 "
-
-  ####### Strike navy #######
-  strike_navy_starting_tech:0 ""
-  strike_navy_starting_tech_desc:0 ""
+  tech-light_navy-convoy_specialists_01:0 "Convois précieux - §MI§!"
+  tech-light_navy-convoy_specialists_01_desc:0 "La mission qu'assure la branche civile de notre marine est trop importante pour que la négligions. Nous devons protéger nos convois tout en réduisant la capacité commerciale de nos ennemis"  
+  tech-light_navy-convoy_specialists_02:0 "Convois précieux - §MII§!"
+  tech-light_navy-convoy_specialists_02:0 "Recherche améliorée"
+  tech-light_navy-convoy_specialists_03:0 "Convois précieux - §MIII§!"
+  tech-light_navy-convoy_specialists_03:0 "Recherche améliorée"
+  tech-light_navy-convoy_specialists_04:0 "Convois précieux - §MIV§!"
+  tech-light_navy-convoy_specialists_04:0 "Recherche améliorée"
+  tech-light_navy-convoy_specialists_05:0 "Convois précieux - §MV§!"
+  tech-light_navy-convoy_specialists_05:0 "Recherche améliorée"
 
   ####### Modern navy #######
-  modern_navy_starting_tech:0 "Entrainement permanent"
-  modern_navy_starting_tech_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
+  tech-modern_navy-start:0 "Entrainement permanent"
+  tech-modern_navy-start_desc:0 "Pour que nos marins soient les meilleurs du monde, mettons en place un programme d'entrainement permanent assorti d'exercices quotidiens pour conserver une longueur d'avance sur nos ennemis et nous donner les moyens d'emporter la victoire"
 
   ##################################### Fighter #####################################
   tech-fighter-start:0 "Démarrage de la recherche sur l'amélioration de notre chasse"

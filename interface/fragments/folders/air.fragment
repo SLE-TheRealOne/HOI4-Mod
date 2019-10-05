@@ -38,64 +38,6 @@
 				Orientation = "UPPER_LEFT"
 			}
 
-                    ###
-
-            #instantTextBoxType = {
-			#	name = "air_improvments_center_tree_title_name"
-			#	position = { x = 1100 y = 35 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = {x = 0 y = 4}
-			#	text = "air_improvments_center_tree_title_text"
-			#	maxWidth = 500
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-        
-			#instantTextBoxType = {
-			#	name = "air_improvments_center_tree_desc_name"
-			#	position = { x = 1100 y = 70 }
-			#	textureFile = ""
-			#	font = "hoi_20b"
-			#	borderSize = {x = 0 y = 4}
-			#	text = "air_improvments_center_tree_desc_text"
-			#	maxWidth = 500
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-                    ###
-
-			#instantTextBoxType = {
-			#	name = "air_improvments_right_tree_title_name"
-			#	position = { x = 1205 y = 35 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = {x = 0 y = 4}
-			#	text = "air_improvments_right_tree_title_text"
-			#	maxWidth = 500
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-        
-			#instantTextBoxType = {
-			#	name = "air_improvments_right_tree_desc_name"
-			#	position = { x = 1205 y = 70 }
-			#	textureFile = ""
-			#	font = "hoi_20b"
-			#	borderSize = {x = 0 y = 4}
-			#	text = "air_improvments_right_tree_desc_text"
-			#	maxWidth = 500
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-                    ###
-
 			gridboxtype = {
 				name = "tech-fighter-start_tree"
 				position = { x=315 y=172 }
@@ -103,32 +45,4 @@
 				slotsize = { width=60 height= 60 }
 				format = "UP"				
 			}
-			
-			#gridboxtype = {
-			#	name = "bomber_technologies_starting_tech_tree"
-			#	position = { x=1300 y=172 }
-			#	size = { width = 550 height = 1050 }
-			#	slotsize = { width=60 height= 60 }
-			#	format = "UP"
-        	#
-			#	background = {
-			#		name = "Background"
-			#		quadTextureSprite ="GFX_fullborder_tiled"
-			#		position = { x=0 y=-150 }
-			#	}					
-			#}
-
-			#gridboxtype = {
-			#	name = "other_air_technologies_starting_tech_tree"
-			#	position = { x=1180 y=172 }
-			#	size = { width = 550 height = 1050 }
-			#	slotsize = { width=60 height= 60 }
-			#	format = "UP"
-        	#
-			#	background = {
-			#		name = "Background"
-			#		quadTextureSprite ="GFX_fullborder_tiled"
-			#		position = { x=0 y=-150 }
-			#	}					
-			#}
 		}

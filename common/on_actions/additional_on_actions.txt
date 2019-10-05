@@ -1,0 +1,19 @@
+on_actions = {
+
+    on_ace_killed = {
+        effect = {
+            news_event = { 
+                id = dry_dock.1
+            }
+        }
+    }
+
+    on_ace_promoted = {
+        effect = {
+            country_event = { 
+                id = dry_dock.1
+            }
+        }
+    }
+
+}

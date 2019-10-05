@@ -1,0 +1,1571 @@
+technologies = {
+	
+	tech-army_levels-start = {
+		start_year = 1940
+		research_cost = 0
+        doctrine = yes
+
+		xp_research_type = air
+		xp_research_cost = 100
+		xp_research_bonus = 1.00
+
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 1 y = 0 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		# Visible dans la GUI
+		#no_supply_grace = 24
+		#army_speed_factor = 0.22
+		#planning_speed = 0.10
+		#max_planning = 0.11
+		#dig_in_speed_factor = 0.27
+		#max_dig_in = 2
+		#experience_loss_factor = -0.31
+		#out_of_supply_factor = -0.29
+		#attrition = -0.23
+		#supply_consumption_factor = -0.28
+		#land_reinforce_rate = 0.17
+		
+		# Confirmé
+		#army_org_factor = 0.12
+		#experience_gain_army_factor = 0.30
+		#army_morale_factor = 0.13
+		#recon_factor = 0.14
+
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_tech = advanced_encryption
+				}
+				set_variable = {
+					encrypt_level = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_encryption
+				}
+				set_variable = {
+					encrypt_level = 2
+				}
+			}
+			else = {
+				limit = {
+					has_tech = basic_encryption
+				}
+				set_variable = {
+					encrypt_level = 1
+				}
+			}
+
+			if = {
+				limit = {
+					has_tech = advanced_decryption
+				}
+				set_variable = {
+					decrypt_level = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_decryption
+				}
+				set_variable = {
+					decrypt_level = 2
+				}
+			}
+			else = {
+				limit = {
+					has_tech = basic_decryption
+				}
+				set_variable = {
+					decrypt_level = 1
+				}
+			}
+			
+		}
+
+		army_defence_factor = -0.20
+		army_attack_factor = -0.21
+		
+		path = {
+			leads_to_tech = percentage_tech_01
+		}
+		
+	}
+
+	percentage_tech_01 = {
+		start_year = 1940
+		research_cost = 0
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 0 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = percentage_tech_02
+		}
+
+		decryption_factor = 0.20
+		encryption_factor = 0.20
+
+		on_research_complete = {
+			multiply_variable = {
+				var = encrypt_level
+				value = 1.20
+			}
+			multiply_variable = {
+				var = decrypt_level
+				value = 1.20
+			}
+		}
+	}
+
+	percentage_tech_02 = {
+		start_year = 1940
+		research_cost = 0
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		decryption_factor = 0.40
+		encryption_factor = 0.40
+
+		on_research_complete = {
+			multiply_variable = {
+				var = encrypt_level
+				value = 1.40
+			}
+			multiply_variable = {
+				var = decrypt_level
+				value = 1.40
+			}
+		}
+	}
+
+
+
+
+	
+				#################### RANK 1 ####################
+
+	tech-fighter-air_superiority_detect_factor_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -9 y = 3 }
+		}
+		
+		xor = {
+			tech-fighter-air_interception_detect_factor_01
+		}
+
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_detect_factor_02
+		}
+
+		air_superiority_detect_factor = 0.05
+	}
+
+	tech-fighter-air_interception_detect_factor_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -7 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_detect_factor_01
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_interception_detect_factor_02
+		}
+
+		air_interception_detect_factor = 0.05
+	}
+
+	tech-fighter-engine_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -5 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			maximum_speed = 0.05
+			air_range = 0.05
+			reliability = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-engine_02
+		}
+	}
+	
+	tech-fighter-attack_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -3 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			air_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-attack_02
+		}
+	}
+
+	tech-fighter-defense_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -1 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-defense_02
+		}
+
+		category_fighter = {
+			air_defence = 0.05
+		}
+	}
+
+	tech-fighter-agility_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 1 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-agility_02
+		}
+
+		category_fighter = {
+			air_agility = 0.05
+		}
+	}
+	
+	tech-fighter-air_superiority_efficiency_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_intercept_efficiency_01
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_efficiency_02
+		}
+
+		air_superiority_efficiency = 0.05
+	}
+
+	tech-fighter-air_intercept_efficiency_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 5 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_efficiency_01
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_intercept_efficiency_02
+		}
+
+		air_intercept_efficiency = 0.05
+	}
+
+	tech-fighter-air_superiority_bonus_in_combat_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 7 y = 3 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_02
+		}
+
+		air_superiority_bonus_in_combat = 0.05
+	}
+
+	tech-fighter-enemy_army_bonus_air_superiority_factor_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 9 y = 3 }
+		}
+
+		xor = {
+			tech-fighter-army_bonus_air_superiority_factor_01
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_02
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.05
+	}
+
+	tech-fighter-army_bonus_air_superiority_factor_01 = {
+		start_year = 1941
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 11 y = 3 }
+		}
+
+		xor = {
+			tech-fighter-enemy_army_bonus_air_superiority_factor_01
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_02
+		}
+
+		army_bonus_air_superiority_factor = 0.05
+	}
+
+				#################### RANK 2 ####################
+
+	tech-fighter-air_superiority_detect_factor_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -9 y = 5 }
+		}
+		
+		xor = {
+			tech-fighter-air_interception_detect_factor_02
+		}
+
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_detect_factor_03
+		}
+
+		air_superiority_detect_factor = 0.05
+	}
+
+	tech-fighter-air_interception_detect_factor_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -7 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_detect_factor_02
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_interception_detect_factor_03
+		}
+
+		air_interception_detect_factor = 0.05
+	}
+
+	tech-fighter-engine_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -5 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			maximum_speed = 0.05
+			air_range = 0.05
+			reliability = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-engine_03
+		}
+	}
+
+	tech-fighter-attack_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -3 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			air_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-attack_03
+		}
+	}
+
+	tech-fighter-defense_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -1 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-defense_03
+		}
+
+		category_fighter = {
+			air_defence = 0.05
+		}
+	}
+
+	tech-fighter-agility_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 1 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-agility_03
+		}
+
+		category_fighter = {
+			air_agility = 0.05
+		}
+	}
+
+	tech-fighter-air_superiority_efficiency_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_intercept_efficiency_02
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_efficiency_03
+		}
+
+		air_superiority_efficiency = 0.05
+	}
+
+	tech-fighter-air_intercept_efficiency_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 5 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_efficiency_02
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_intercept_efficiency_03
+		}
+
+		air_intercept_efficiency = 0.05
+	}
+
+	tech-fighter-air_superiority_bonus_in_combat_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 7 y = 5 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_03
+		}
+
+		air_superiority_bonus_in_combat = 0.05
+	}
+
+	tech-fighter-enemy_army_bonus_air_superiority_factor_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 9 y = 5 }
+		}
+
+		xor = {
+			tech-fighter-army_bonus_air_superiority_factor_02
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_03
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.05
+	}
+
+	tech-fighter-army_bonus_air_superiority_factor_02 = {
+		start_year = 1942
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 11 y = 5 }
+		}
+
+		xor = {
+			tech-fighter-enemy_army_bonus_air_superiority_factor_02
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_03
+		}
+
+		army_bonus_air_superiority_factor = 0.05
+	}
+
+
+				#################### RANK 3 ####################
+
+	tech-fighter-air_superiority_detect_factor_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -9 y = 7 }
+		}
+		
+		xor = {
+			tech-fighter-air_interception_detect_factor_03
+		}
+
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_detect_factor_04
+		}
+
+		air_superiority_detect_factor = 0.05
+	}
+
+	tech-fighter-air_interception_detect_factor_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -7 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_detect_factor_03
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_interception_detect_factor_04
+		}
+
+		air_interception_detect_factor = 0.05
+	}
+
+	tech-fighter-engine_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -5 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			maximum_speed = 0.05
+			air_range = 0.05
+			reliability = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-engine_04
+		}
+	}
+
+	tech-fighter-attack_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -3 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			air_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-attack_04
+		}
+	}
+
+	tech-fighter-defense_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -1 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-defense_04
+		}
+
+		category_fighter = {
+			air_defence = 0.05
+		}
+	}
+
+	tech-fighter-agility_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 1 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-agility_04
+		}
+
+		category_fighter = {
+			air_agility = 0.05
+		}
+	}
+
+	tech-fighter-air_superiority_efficiency_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_intercept_efficiency_03
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_efficiency_04
+		}
+
+		air_superiority_efficiency = 0.05
+	}
+
+	tech-fighter-air_intercept_efficiency_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 5 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_efficiency_03
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_intercept_efficiency_04
+		}
+
+		air_intercept_efficiency = 0.05
+	}
+
+	tech-fighter-air_superiority_bonus_in_combat_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 7 y = 7 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_04
+		}
+
+		air_superiority_bonus_in_combat = 0.05
+	}
+
+	tech-fighter-enemy_army_bonus_air_superiority_factor_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 9 y = 7 }
+		}
+
+		xor = {
+			tech-fighter-army_bonus_air_superiority_factor_03
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_04
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.05
+	}
+
+	tech-fighter-army_bonus_air_superiority_factor_03 = {
+		start_year = 1943
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 11 y = 7 }
+		}
+
+		xor = {
+			tech-fighter-enemy_army_bonus_air_superiority_factor_03
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_04
+		}
+
+		army_bonus_air_superiority_factor = 0.05
+	}
+
+				#################### RANK 4 ####################
+
+	tech-fighter-air_superiority_detect_factor_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -9 y = 9 }
+		}
+		
+		xor = {
+			tech-fighter-air_interception_detect_factor_04
+		}
+
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_detect_factor_05
+		}
+
+		air_superiority_detect_factor = 0.05
+	}
+
+	tech-fighter-air_interception_detect_factor_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -7 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_detect_factor_04
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_interception_detect_factor_05
+		}
+
+		air_interception_detect_factor = 0.05
+	}
+
+	tech-fighter-engine_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -5 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			maximum_speed = 0.05
+			air_range = 0.05
+			reliability = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-engine_05
+		}
+	}
+
+	tech-fighter-attack_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -3 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			air_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-attack_05
+		}
+	}
+
+	tech-fighter-defense_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -1 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-defense_05
+		}
+
+		category_fighter = {
+			air_defence = 0.05
+		}
+	}
+
+	tech-fighter-agility_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 1 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-agility_05
+		}
+
+		category_fighter = {
+			air_agility = 0.05
+		}
+	}
+
+	tech-fighter-air_superiority_efficiency_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_intercept_efficiency_04
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_efficiency_05
+		}
+
+		air_superiority_efficiency = 0.05
+	}
+
+	tech-fighter-air_intercept_efficiency_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 5 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_efficiency_04
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_intercept_efficiency_05
+		}
+
+		air_intercept_efficiency = 0.05
+	}
+
+	tech-fighter-air_superiority_bonus_in_combat_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 7 y = 9 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_05
+		}
+
+		air_superiority_bonus_in_combat = 0.05
+	}
+
+	tech-fighter-enemy_army_bonus_air_superiority_factor_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 9 y = 9 }
+		}
+
+		xor = {
+			tech-fighter-army_bonus_air_superiority_factor_04
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_05
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.05
+	}
+
+	tech-fighter-army_bonus_air_superiority_factor_04 = {
+		start_year = 1944
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 11 y = 9 }
+		}
+
+		xor = {
+			tech-fighter-enemy_army_bonus_air_superiority_factor_04
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_05
+		}
+
+		army_bonus_air_superiority_factor = 0.05
+	}
+	
+				#################### RANK 5 ####################
+
+	tech-fighter-air_superiority_detect_factor_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -9 y = 11 }
+		}
+		
+		xor = {
+			tech-fighter-air_interception_detect_factor_05
+		}
+
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		air_superiority_detect_factor = 0.05
+	}
+
+	tech-fighter-air_interception_detect_factor_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -7 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_detect_factor_05
+		}
+
+		air_interception_detect_factor = 0.05
+	}
+
+	tech-fighter-engine_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -5 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			maximum_speed = 0.05
+			air_range = 0.05
+			reliability = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-end_alpha
+		}
+
+	}
+
+	tech-fighter-attack_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -3 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			air_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-end_alpha
+		}
+
+	}
+
+	tech-fighter-defense_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -1 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		category_fighter = {
+			air_defence = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-end_beta
+		}
+	}
+
+	tech-fighter-agility_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 1 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		path = {
+			leads_to_tech = tech-fighter-end_beta
+		}
+
+		category_fighter = {
+			air_agility = 0.05
+		}
+	}
+
+	tech-fighter-air_superiority_efficiency_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 3 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_intercept_efficiency_05
+		}
+
+		air_superiority_efficiency = 0.05
+	}
+
+	tech-fighter-air_intercept_efficiency_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 5 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		xor = {
+			tech-fighter-air_superiority_efficiency_05
+		}
+
+		air_intercept_efficiency = 0.05
+	}
+
+	tech-fighter-air_superiority_bonus_in_combat_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 7 y = 11 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		air_superiority_bonus_in_combat = 0.05
+	}
+
+	tech-fighter-enemy_army_bonus_air_superiority_factor_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 9 y = 11 }
+		}
+
+		xor = {
+			tech-fighter-army_bonus_air_superiority_factor_05
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		enemy_army_bonus_air_superiority_factor = -0.05
+	}
+
+	tech-fighter-army_bonus_air_superiority_factor_05 = {
+		start_year = 1945
+		research_cost = 0.75
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 11 y = 11 }
+		}
+
+		xor = {
+			tech-fighter-enemy_army_bonus_air_superiority_factor_05
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+
+		army_bonus_air_superiority_factor = 0.05
+	}
+
+				#################### Rank 6 #######################
+
+	tech-fighter-end_alpha = {
+		start_year = 1946
+		research_cost = 1
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = -4 y = 13 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+	}
+
+	tech-fighter-end_beta = {
+		start_year = 1946
+		research_cost = 1
+        doctrine = yes
+		
+		folder = {
+			name = additional_technologies_army_folder
+			position = { x = 0 y = 13 }
+		}
+		
+		categories = {
+			additional_technology_category
+			additional_technology_category_army
+		}
+	}
+
+}

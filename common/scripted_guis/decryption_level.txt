@@ -1,0 +1,10 @@
+scripted_gui = {
+    decryption_level = {
+        window_name = decryption_level_container
+        context_type = player_context
+
+        visible = {
+            always = yes
+		}
+    }
+}

@@ -13,12 +13,12 @@
 			}
 
 			instantTextBoxType = {
-				name = "light_navy_improvments_tree_title_name"
+				name = "tech-light_navy-tree_title_name"
 				position = { x = 45 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "light_navy_improvments_tree_title_text"
+				text = "tech-light_navy-tree_title_text"
 				maxWidth = 500
 				maxHeight = 122
 				format = center
@@ -26,12 +26,12 @@
 			}
         
 			instantTextBoxType = {
-				name = "light_navy_improvments_tree_desc_name"
+				name = "tech-light_navy-tree_desc_name"
 				position = { x = 45 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
-				text = "light_navy_improvments_tree_desc_text"
+				text = "tech-light_navy-tree_desc_text"
 				maxWidth = 500
 				maxHeight = 122
 				format = center
@@ -91,7 +91,7 @@
 			}
 			
 			gridboxtype = {
-				name = "light_navy_starting_tech_tree"
+				name = "tech-light_navy-start_tree"
 				position = { x=20 y=172 }
 				size = { width = 550 height = 1050 }
 				slotsize = { width=60 height= 60 }
@@ -105,7 +105,7 @@
 			}
 			
 			gridboxtype = {
-				name = "strike_starting_tech_tree"
+				name = "tech-capital_ships-start_tree"
 				position = { x=600 y=172 }
 				size = { width = 550 height = 1050 }
 				slotsize = { width=60 height= 60 }
@@ -119,7 +119,7 @@
 			}
 
 			gridboxtype = {
-				name = "modern_navy_starting_tech_tree"
+				name = "tech-modern_navy-start_tree"
 				position = { x=1180 y=172 }
 				size = { width = 550 height = 1050 }
 				slotsize = { width=60 height= 60 }
