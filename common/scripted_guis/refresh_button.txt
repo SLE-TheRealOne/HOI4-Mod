@@ -1,0 +1,64 @@
+scripted_gui = {
+    refresh_button = {
+        window_name = refresh_button_container
+        context_type = player_context
+
+        visible = {
+            always = yes
+        }
+
+        effects = {
+            refresh_button_click = {
+                if = {
+                    limit = {
+                        has_tech = advanced_encryption
+                    }
+                    set_variable = {
+                        encrypt_level = 3
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_tech = improved_encryption
+                    }
+                    set_variable = {
+                        encrypt_level = 2
+                    }
+                }
+                else = {
+                    limit = {
+                        has_tech = basic_encryption
+                    }
+                    set_variable = {
+                        encrypt_level = 1
+                    }
+                }
+
+                if = {
+                    limit = {
+                        has_tech = advanced_decryption
+                    }
+                    set_variable = {
+                        decrypt_level = 3
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_tech = improved_decryption
+                    }
+                    set_variable = {
+                        decrypt_level = 2
+                    }
+                }
+                else = {
+                    limit = {
+                        has_tech = basic_decryption
+                    }
+                    set_variable = {
+                        decrypt_level = 1
+                    }
+                }
+            }
+        }
+    }
+}

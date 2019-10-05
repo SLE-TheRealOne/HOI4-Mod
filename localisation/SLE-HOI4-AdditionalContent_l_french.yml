@@ -2,6 +2,7 @@
   # =======================================================     Top menu     =======================================================
   top_menu-encryption_level-tooltip:0 "Niveau d'encryption"
   top_menu-decryption_level-tooltip:0 "Niveau de décryption"
+  top_menu-refresh_button-tooltip:0 "Cliquer pour mettre à jour les niveaux d'encryption et de décryption"
   
   # =======================================================     Décisions     =======================================================
   air_experience_usage:0 "Formation de l'armée de l'air"

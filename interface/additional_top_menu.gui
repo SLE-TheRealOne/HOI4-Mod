@@ -11,13 +11,19 @@ guiTypes = {
             position = { x = 0 y = 0 }
         }
 
+        iconType ={
+            name ="encryption_level_image"
+            spriteType = "GFX_encryption_level"
+            position = { x = 0 y = 0 }
+        }
+
         instantTextBoxType = {
             name ="encryption_level_text"
             position = { x= 22 y = 3 }
             font = "hoi_18mbs"
             text = "[?encrypt_level]"
             format = center
-            maxWidth = 54
+            maxWidth = 46
             maxHeight = 24
             fixedsize = yes
             pdx_tooltip = "top_menu-encryption_level-tooltip"
@@ -31,23 +37,43 @@ guiTypes = {
 		orientation = UPPER_LEFT
         
         iconType ={
-            name ="decryption_level_background"
+            name = "decryption_level_background"
             spriteType = "GFX_generic_box_smallest"
             position = { x = 0 y = 0 }
         }
 
+        iconType ={
+            name ="decryption_level_image"
+            spriteType = "GFX_decryption_level"
+            position = { x = 0 y = 0 }
+        }
+
         instantTextBoxType = {
-            name ="decryption_level_text"
+            name = "decryption_level_text"
             position = { x= 22 y = 3 }
             font = "hoi_18mbs"
             text = "[?decrypt_level]"
             format = center
-            maxWidth = 54
+            maxWidth = 46
             maxHeight = 24
             fixedsize = yes
             pdx_tooltip = "top_menu-decryption_level-tooltip"
         }
     }
 
+    containerWindowType = {
+	    name = "refresh_button_container"
+		position = { x = 1110 y = 4 }
+		orientation = UPPER_LEFT
+        
+        buttonType = {
+            name = "refresh_button"
+            position = { x = 0 y = 0 }
+            orientation = UPPER_LEFT
+            spriteType = "GFX_refresh_icon"
+            buttonText = "Refresh"
+            pdx_tooltip = "top_menu-refresh_button-tooltip"
+        }
+    }
 	
 }
