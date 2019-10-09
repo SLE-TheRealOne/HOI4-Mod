@@ -1,17 +1,121 @@
 technologies = {
-	
+
+    # tech-army_levels-start
 	tech-army_levels-start = {
-		start_year = 1940
-		research_cost = 0
+        start_year = 1938
+        research_cost = 0
         doctrine = yes
 
-		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+        xp_research_type = air
+        xp_research_cost = 100
+        xp_research_bonus = 1.00
 
+        folder = {
+            name = additional_technologies_army_folder
+            position = { x = 1 y = 0 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        # Visible dans la GUI
+        #no_supply_grace = 24
+        #army_speed_factor = 0.22
+        #planning_speed = 0.10
+        #max_planning = 0.11
+        #dig_in_speed_factor = 0.27
+        #max_dig_in = 2
+        #experience_loss_factor = -0.31
+        #out_of_supply_factor = -0.29
+        #attrition = -0.23
+        #supply_consumption_factor = -0.28
+        #land_reinforce_rate = 0.17
+
+        # Confirmé
+        #army_org_factor = 0.12
+        #experience_gain_army_factor = 0.30
+        #army_morale_factor = 0.13
+        #recon_factor = 0.14
+
+        # Non confirmés
+        army_defence_factor = -0.20
+        army_attack_factor = -0.21
+
+        path = {
+            leads_to_tech = tech-army-encryption_01
+        }
+
+        path = {
+            leads_to_tech = tech-army-decryption_01
+        }
+
+        dependencies = {
+            basic_encryption = 1
+            basic_decryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.04
+            }
+            multiply_variable = {
+                var = decrypt_level
+                value = 1.04
+            }
+        }
+
+        encryption_factor = 0.04
+        decryption_factor = 0.04
+    }
+
+				#################### RANK 1 ####################
+
+    # tech-army-encryption_01
+    tech-army-encryption_01 = {
+        start_year = 1938
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -9 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            basic_encryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.09
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-encryption_02
+        }
+
+        encryption_factor = 0.09
+    }
+
+    # tech-army-decryption_01
+	tech-army-decryption_01 = {
+		start_year = 1938
+		research_cost = 0
+        doctrine = yes
+		
 		folder = {
 			name = additional_technologies_army_folder
-			position = { x = 1 y = 0 }
+			position = { x = -7 y = 2 }
 		}
 		
 		categories = {
@@ -19,150 +123,363 @@ technologies = {
 			additional_technology_category_army
 		}
 
-		# Visible dans la GUI
-		#no_supply_grace = 24
-		#army_speed_factor = 0.22
-		#planning_speed = 0.10
-		#max_planning = 0.11
-		#dig_in_speed_factor = 0.27
-		#max_dig_in = 2
-		#experience_loss_factor = -0.31
-		#out_of_supply_factor = -0.29
-		#attrition = -0.23
-		#supply_consumption_factor = -0.28
-		#land_reinforce_rate = 0.17
-		
-		# Confirmé
-		#army_org_factor = 0.12
-		#experience_gain_army_factor = 0.30
-		#army_morale_factor = 0.13
-		#recon_factor = 0.14
-
+        dependencies = {
+            basic_decryption = 1
+        }
 
 		on_research_complete = {
-			if = {
-				limit = {
-					has_tech = advanced_encryption
-				}
-				set_variable = {
-					encrypt_level = 3
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = improved_encryption
-				}
-				set_variable = {
-					encrypt_level = 2
-				}
-			}
-			else = {
-				limit = {
-					has_tech = basic_encryption
-				}
-				set_variable = {
-					encrypt_level = 1
-				}
-			}
-
-			if = {
-				limit = {
-					has_tech = advanced_decryption
-				}
-				set_variable = {
-					decrypt_level = 3
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = improved_decryption
-				}
-				set_variable = {
-					decrypt_level = 2
-				}
-			}
-			else = {
-				limit = {
-					has_tech = basic_decryption
-				}
-				set_variable = {
-					decrypt_level = 1
-				}
-			}
-			
-		}
-
-		army_defence_factor = -0.20
-		army_attack_factor = -0.21
-		
-		path = {
-			leads_to_tech = percentage_tech_01
-		}
-		
-	}
-
-	percentage_tech_01 = {
-		start_year = 1940
-		research_cost = 0
-        doctrine = yes
-		
-		folder = {
-			name = additional_technologies_army_folder
-			position = { x = 3 y = 0 }
-		}
-		
-		categories = {
-			additional_technology_category
-			additional_technology_category_army
-		}
-
-		path = {
-			leads_to_tech = percentage_tech_02
-		}
-
-		decryption_factor = 0.20
-		encryption_factor = 0.20
-
-		on_research_complete = {
-			multiply_variable = {
-				var = encrypt_level
-				value = 1.20
-			}
 			multiply_variable = {
 				var = decrypt_level
-				value = 1.20
+				value = 1.09
 			}
 		}
+
+		path = {
+            leads_to_tech = tech-army-decryption_02
+        }
+
+        decryption_factor = 0.09
 	}
 
-	percentage_tech_02 = {
-		start_year = 1940
-		research_cost = 0
+				#################### RANK 2 ####################
+
+    # tech-army-encryption_02
+	tech-army-encryption_02 = {
+        start_year = 1939
+        research_cost = 0
         doctrine = yes
-		
-		folder = {
-			name = additional_technologies_army_folder
-			position = { x = 3 y = 2 }
-		}
-		
-		categories = {
-			additional_technology_category
-			additional_technology_category_army
-		}
 
-		decryption_factor = 0.40
-		encryption_factor = 0.40
+        folder = {
+            name = additional_technologies_army_folder
+            position = { x = -9 y = 4 }
+        }
 
-		on_research_complete = {
-			multiply_variable = {
-				var = encrypt_level
-				value = 1.40
-			}
-			multiply_variable = {
-				var = decrypt_level
-				value = 1.40
-			}
-		}
-	}
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
 
+        dependencies = {
+            basic_encryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.10
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-encryption_03
+        }
+
+        encryption_factor = 0.10
+    }
+
+    # tech-army-decryption_02
+    tech-army-decryption_02 = {
+        start_year = 1939
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name = additional_technologies_army_folder
+            position = { x = -7 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            basic_decryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = decrypt_level
+                value = 1.10
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-decryption_03
+        }
+
+        decryption_factor = 0.10
+    }
+
+                #################### RANK 3 ####################
+
+    # tech-army-encryption_03
+    tech-army-encryption_03 = {
+        start_year = 1940
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -9 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            improved_encryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.11
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-encryption_04
+        }
+
+        encryption_factor = 0.11
+    }
+
+    # tech-army-decryption_03
+    tech-army-decryption_03 = {
+        start_year = 1940
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -7 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            improved_decryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = decrypt_level
+                value = 1.11
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-decryption_04
+        }
+
+        decryption_factor = 0.11
+    }
+
+                #################### RANK 4 ####################
+
+    # tech-army-encryption_04
+    tech-army-encryption_04 = {
+        start_year = 1941
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -9 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            improved_encryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.12
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-encryption_05
+        }
+
+        encryption_factor = 0.12
+    }
+
+    # tech-army-decryption_04
+    tech-army-decryption_04 = {
+        start_year = 1941
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -7 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        path = {
+            leads_to_tech = tech-army-decryption_05
+        }
+
+        dependencies = {
+            improved_decryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = decrypt_level
+                value = 1.12
+            }
+        }
+
+        decryption_factor = 0.12
+    }
+
+                #################### RANK 5 ####################
+
+    # tech-army-encryption_05
+    tech-army-encryption_05 = {
+        start_year = 1942
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -9 y = 10 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            advanced_encryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.13
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-encryption_06
+        }
+
+        encryption_factor = 0.13
+    }
+
+    # tech-army-decryption_05
+    tech-army-decryption_05 = {
+        start_year = 1942
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -7 y = 10 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            advanced_decryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = decrypt_level
+                value = 1.13
+            }
+        }
+
+        path = {
+            leads_to_tech = tech-army-decryption_06
+        }
+
+        decryption_factor = 0.13
+    }
+
+                #################### RANK 6 ####################
+
+    # tech-army-encryption_06
+    tech-army-encryption_06 = {
+        start_year = 1943
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -9 y = 12 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            advanced_encryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = encrypt_level
+                value = 1.14
+            }
+        }
+
+        encryption_factor = 0.14
+    }
+
+    # tech-army-decryption_06
+    tech-army-decryption_06 = {
+        start_year = 1944
+        research_cost = 0
+        doctrine = yes
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -7 y = 12 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dependencies = {
+            advanced_decryption = 1
+        }
+
+        on_research_complete = {
+            multiply_variable = {
+                var = decrypt_level
+                value = 1.14
+            }
+        }
+
+        decryption_factor = 0.14
+    }
 }
