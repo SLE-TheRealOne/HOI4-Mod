@@ -9,54 +9,67 @@ scripted_gui = {
 
         effects = {
             refresh_button_click = {
+
+                set_variable = { required_convoys_total = num_divisions }
+                multiply_variable = { required_convoys_total = 2.2 }
+                divide_variable = { required_convoys_total = 0.3 }
+
+                set_variable = { required_convoys = required_convoys_total }
+                multiply_variable = { required_convoys = 0.3 }
+
+                set_variable = { required_convoys_neg = required_convoys }
+                multiply_variable = { required_convoys_neg = -1 }
+
+                set_variable = { required_manpower = num_divisions }
+                multiply_variable = { required_manpower = 100 }
+
+                set_variable = { required_manpower_neg = required_manpower }
+                multiply_variable = { required_manpower_neg = -1 }
+
                 if = {
                     limit = {
                         has_tech = advanced_encryption
                     }
-                    set_variable = {
-                        encrypt_level = 3
-                    }
-                }
-                else_if = {
+                    set_variable = { encrypt_level = 3 }
+                    set_variable = { tooltip-advanced_encryption = 1 }
+                    set_variable = { tooltip-improved_encryption = 1 }
+                    set_variable = { tooltip-basic_encryption = 1 }
+                } else_if = {
                     limit = {
                         has_tech = improved_encryption
                     }
-                    set_variable = {
-                        encrypt_level = 2
-                    }
-                }
-                else = {
+                    set_variable = { encrypt_level = 2 }
+                    set_variable = { tooltip-improved_encryption = 1 }
+                    set_variable = { tooltip-basic_encryption = 1 }
+                } else = {
                     limit = {
                         has_tech = basic_encryption
                     }
-                    set_variable = {
-                        encrypt_level = 1
-                    }
+                    set_variable = { encrypt_level = 1 }
+                    set_variable = { tooltip-basic_encryption = 1 }
                 }
 
                 if = {
                     limit = {
                         has_tech = advanced_decryption
                     }
-                    set_variable = {
-                        decrypt_level = 3
-                    }
-                }
-                else_if = {
+                    set_variable = { decrypt_level = 3 }
+                    set_variable = { tooltip-advanced_decryption = 1 }
+                    set_variable = { tooltip-improved_decryption = 1 }
+                    set_variable = { tooltip-basic_decryption = 1 }
+                } else_if = {
                     limit = {
                         has_tech = improved_decryption
                     }
-                    set_variable = {
-                        decrypt_level = 2
-                    }
-                }
-                else = {
+                    set_variable = { decrypt_level = 2 }
+                    set_variable = { tooltip-improved_decryption = 1 }
+                    set_variable = { tooltip-basic_decryption = 1 }
+                } else = {
                     limit = {
                         has_tech = basic_decryption
                     }
-                    set_variable = {
-                        decrypt_level = 1
-                    }
+                    set_variable = { decrypt_level = 1 }
+                    set_variable = { tooltip-basic_decryption = 1 }
                 }
             }
         }

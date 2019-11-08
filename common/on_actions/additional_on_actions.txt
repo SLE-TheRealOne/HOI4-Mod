@@ -3,7 +3,7 @@ on_actions = {
     on_ace_killed = {
         effect = {
             news_event = { 
-                id = dry_dock.1
+                id = test_namespace.1
             }
         }
     }
@@ -11,9 +11,32 @@ on_actions = {
     on_ace_promoted = {
         effect = {
             country_event = { 
-                id = dry_dock.1
+                id = test_namespace.2
             }
         }
     }
 
+    on_aces_killed_each_other = {
+        effect = {
+            news_event = {
+                id = test_namespace.3
+            }
+        }
+    }
+
+    on_ace_killed_by_ace = {
+        effect = {
+            news_event = {
+                id = test_namespace.4
+            }
+        }
+    }
+
+    on_ace_killed_other_ace = {
+        effect = {
+            news_event = {
+                id = test_namespace.5
+            }
+        }
+    }
 }

@@ -36,5 +36,7 @@ technologies = {
 		battleship = {
 			naval_speed = 0.05
 		}
+
+		shore_bombardment_bonus = 0.10
 	}
 }

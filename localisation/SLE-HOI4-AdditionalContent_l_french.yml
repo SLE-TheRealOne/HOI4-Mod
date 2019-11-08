@@ -1,7 +1,7 @@
 ﻿l_french:
   # =======================================================     Top menu     =======================================================
-  top_menu-encryption_level-tooltip:0 "Niveau d'encryption"
-  top_menu-decryption_level-tooltip:0 "Niveau de décryption"
+  top_menu-encryption_level-tooltip:0 "Niveau d'encryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_encryption]§! : Cryptage - codes polyalphabétiques\n £tech_mod §G[?tooltip-advanced_encryption]§! : Cryptage - Modulation d'impulsion codée\n £tech_mod §G[?tooltip-improved_encryption]§! : Cryptage - Permutations cycliques"
+  top_menu-decryption_level-tooltip:0 "Niveau de décryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_decryption]§! : Décryptage - Analyse de fréquence\n £tech_mod §G[?tooltip-advanced_decryption]§! : Décryptage - Attaque par canal auxiliaire\n £tech_mod §G[?tooltip-improved_decryption]§! : Décryptage - Déduction automatisée"
   top_menu-refresh_button-tooltip:0 "Cliquer pour mettre à jour les niveaux d'encryption et de décryption"
   
   # =======================================================     Décisions     =======================================================
@@ -62,6 +62,22 @@
 
   
   # =======================================================     Event     =======================================================
-  dry_dock.1.title:0 "Utilisation de la cale sèche"
-  dry_dock.1.desc:0 "Chaque cale sèche ajoute 1% à la production navale"
-  dry_dock.1.option.a:0 "Compris !"
+  test_namespace.1.title:0 "on_ace_killed"
+  test_namespace.1.desc:0 "on_ace_killed desc"
+  test_namespace.1.option.a:0 "Compris !"
+
+  test_namespace.2.title:0 "on_ace_promoted"
+  test_namespace.2.desc:0 "on_ace_promoted desc"
+  test_namespace.2.option.a:0 "Compris !"
+
+  test_namespace.3.title:0 "on_aces_killed_each_other"
+  test_namespace.3.desc:0 "on_aces_killed_each_other desc"
+  test_namespace.3.option.a:0 "Compris !"
+
+  test_namespace.4.title:0 "on_ace_killed_by_ace"
+  test_namespace.4.desc:0 "on_ace_killed_by_ace desc"
+  test_namespace.4.option.a:0 "Compris !"
+
+  test_namespace.5.title:0 "on_ace_killed_other_ace"
+  test_namespace.5.desc:0 "on_ace_killed_other_ace desc"
+  test_namespace.5.option.a:0 "Compris !"

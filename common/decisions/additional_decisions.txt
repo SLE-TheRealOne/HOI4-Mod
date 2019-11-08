@@ -1,3 +1,4 @@
+# air_experience_usage
 air_experience_usage = {
 
 	call_ace_flight_instructor {
@@ -76,8 +77,10 @@ air_experience_usage = {
     }
 }
 
+# political_power_usage
 political_power_usage = {
-   	
+
+   	# additional_navy_technology_speed_bonus
 	additional_navy_technology_speed_bonus {
 		cost = 50
 		available {
@@ -93,7 +96,8 @@ political_power_usage = {
 		}
 		days_re_enable = 30
 	}
-	
+
+	# naval_shipyards_boost
 	naval_shipyards_boost {
         cost = 50
 		available {
@@ -105,7 +109,8 @@ political_power_usage = {
 		days_remove = 60
 		days_re_enable = 180
     }
-	
+
+	# civil_factories_boost
 	civil_factories_boost {
         cost = 50
 		available {
@@ -117,7 +122,8 @@ political_power_usage = {
 		days_remove = 60
 		days_re_enable = 180
     }
-	
+
+	# military_factories_boost
 	military_factories_boost {
 		cost = 50
 		available {
@@ -129,7 +135,8 @@ political_power_usage = {
 		days_remove = 60
 		days_re_enable = 180
 	}
-	
+
+	# add_oil_to_random_state
 	add_oil_to_random_state {
 		cost = 100
 		available {
@@ -165,7 +172,8 @@ political_power_usage = {
 		}
 		days_re_enable = 180
 	}
-	
+
+	# add_oil_to_island
 	add_oil_to_island {
 		cost = 100
 		available {
@@ -206,7 +214,8 @@ political_power_usage = {
 		}
 		days_re_enable = 180
 	}
-	
+
+	# add_civilian_factory_to_random_state
 	add_civilian_factory_to_random_state {
 		cost = 150
 		available {
@@ -241,5 +250,168 @@ political_power_usage = {
 		days_remove = 35
 		days_re_enable = 180
 	}
+
+	# add_building_slot_to_a_full_state
+	add_building_slot_to_a_full_state {
+        cost = 50
+        available {
+            any_owned_state {
+                free_building_slots = {
+                    building = industrial_complex
+                    size < 1
+                    include_locked = no
+                }
+                is_core_if = FROM
+            }
+        }
+        complete_effect {
+            random_owned_controlled_state {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size < 1
+                        include_locked = no
+                    }
+                    is_core_of = FROM
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        days_remove = 10
+        days_re_enable = 30
+    }
+
+	# population_support
+	population_support {
+	    cost = 30
+	    available = {
+	        has_war_support > 0.99
+	    }
+	    modifier = {
+	        consumer_goods_factor = -0.03
+	        industrial_capacity_factory = 0.10
+	        production_speed_buildings_factor = 0.10
+	    }
+	    days_remove = 60
+	}
+
+
+
+}
+
+# ground_experience_usage
+ground_experience_usage = {
+
+    # supply_units_of_field_marshal
+    supply_units_of_field_marshal = {
+        days_remove = 5
+        days_re_enable = 5
+
+        available = {
+            stockpile_ratio = {
+                archetype = convoy
+                ratio > required_convoys
+            }
+            has_manpower > required_manpower
+            has_army_experience > 10
+            command_power > 3
+            any_enemy_country = {
+                has_war_with = PREV
+                has_capitulated = no
+                enemies_strength_ratio > 2.2
+            }
+        }
+
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = required_convoys_neg
+            }
+            add_manpower = required_manpower_neg
+            add_command_power = -3
+
+            every_army_leader = {
+                limit = {
+                    AND = {
+                        is_leading_army_group = yes
+                        is_field_marshal = yes
+                    }
+                }
+                supply_units = 120
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = required_convoys
+            }
+            add_manpower = required_manpower
+        }
+    }
+}
+
+# manpower_usage
+manpower_usage = {
+
+    # soldiers_workers_conversion
+    soldiers_workers_conversion_A = {
+        available = {
+            has_manpower > 50000
+        }
+        modifier = {
+            industrial_capacity_factory = 0.10
+        }
+        complete_effect = {
+            add_manpower = -50000
+            add_command_power = -2
+        }
+        days_remove = 60
+    }
+
+    # soldiers_scientists_conversion
+    soldiers_scientists_conversion = {
+        available = {
+            has_manpower > 50000
+        }
+        modifier = {
+            research_speed_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = -50000
+            add_command_power = -2
+        }
+        days_remove = 60
+    }
+
+    # soldiers_politics_conversion
+    soldiers_politics_conversion = {
+        available = {
+            has_manpower > 50000
+        }
+        modifier = {
+            political_power_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = -50000
+            add_command_power = -2
+        }
+        days_remove = 60
+    }
+
+    # soldiers_to_workers_conversion_B
+    soldiers_workers_conversion_B = {
+        available = {
+            has_manpower > 50000
+        }
+        modifier = {
+            local_resources_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = -50000
+            add_command_power = -2
+        }
+        days_remove = 60
+    }
 
 }
