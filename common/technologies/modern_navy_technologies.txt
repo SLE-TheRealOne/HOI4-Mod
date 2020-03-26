@@ -18,8 +18,6 @@ technologies = {
 			additional_technology_category
 			additional_technology_category_navy
 		}
-
-		navy_fuel_consumption_factor = 0.1
 		
 		modifier = {
 			experience_gain_navy_factor = 0.10

@@ -138,11 +138,12 @@ political_power_usage = {
 
 	# add_oil_to_random_state
 	add_oil_to_random_state {
-		cost = 100
+		cost = 50
 		available {
 			AND {
 				has_war = yes
 				has_war_support > 0.8
+				has_stability > 0.5
 				any_owned_state {
 					AND = {
 						has_resources_amount = {
@@ -170,7 +171,7 @@ political_power_usage = {
 				}
 			}
 		}
-		days_re_enable = 180
+		days_re_enable = 60
 	}
 
 	# add_oil_to_island
@@ -180,6 +181,7 @@ political_power_usage = {
 			AND {
 				has_war = yes
 				has_war_support > 0.8
+				has_stability > 0.5
 				any_owned_state {
 					is_island_state = yes
 					AND = {
@@ -212,7 +214,7 @@ political_power_usage = {
 				}
 			}
 		}
-		days_re_enable = 180
+		days_re_enable = 90
 	}
 
 	# add_civilian_factory_to_random_state
@@ -281,21 +283,52 @@ political_power_usage = {
         days_re_enable = 30
     }
 
-	# population_support
-	population_support {
-	    cost = 30
+	# use_population_war_support_A
+	use_population_war_support_A {
+	    cost = 40
 	    available = {
-	        has_war_support > 0.99
+	        has_war_support > 0.89
 	    }
 	    modifier = {
-	        consumer_goods_factor = -0.03
-	        industrial_capacity_factory = 0.10
-	        production_speed_buildings_factor = 0.10
+	        consumer_goods_factor = -0.10
+	        industrial_capacity_factory = 0.15
+	        production_speed_buildings_factor = 0.15
+	        war_support_weekly = -0.002
 	    }
 	    days_remove = 60
 	}
 
+	# use_population_war_support_B
+    use_population_war_support_B {
+        cost = 60
+        available = {
+            has_war_support < 0.90
+            has_war_support > 0.85
+        }
+        modifier = {
+            consumer_goods_factor = -0.075
+            industrial_capacity_factory = 0.10
+            production_speed_buildings_factor = 0.10
+            war_support_weekly = -0.002
+        }
+        days_remove = 60
+    }
 
+    # use_population_war_support_C
+    use_population_war_support_C {
+        cost = 80
+        available = {
+            has_war_support < 0.85
+            has_war_support > 0.79
+        }
+        modifier = {
+            consumer_goods_factor = -0.05
+            industrial_capacity_factory = 0.05
+            production_speed_buildings_factor = 0.05
+            war_support_weekly = -0.002
+        }
+        days_remove = 60
+    }
 
 }
 
@@ -349,6 +382,37 @@ ground_experience_usage = {
             add_manpower = required_manpower
         }
     }
+
+    # ground_experience_usage_try_01
+    ground_experience_usage_try = {
+        modifier = {
+            experience_loss_factor = -0.01
+        }
+        complete_effect = {
+            army_experience = -50
+        }
+    }
+
+    # ground_experience_usage_try_02
+    ground_experience_usage_try_02 = {
+        modifier = {
+             org_loss_when_moving = -0.01
+        }
+        complete_effect = {
+            army_experience = -50
+        }
+    }
+
+    # ground_experience_usage_try_02
+    ground_experience_usage_try_03 = {
+        modifier = {
+            max_command_power = 1
+        }
+        complete_effect = {
+            army_experience = -50
+        }
+    }
+
 }
 
 # manpower_usage
@@ -357,61 +421,64 @@ manpower_usage = {
     # soldiers_workers_conversion
     soldiers_workers_conversion_A = {
         available = {
-            has_manpower > 50000
+            has_manpower > required_manpower
         }
         modifier = {
             industrial_capacity_factory = 0.10
         }
         complete_effect = {
-            add_manpower = -50000
-            add_command_power = -2
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_manpower_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
         }
         days_remove = 60
     }
 
     # soldiers_scientists_conversion
-    soldiers_scientists_conversion = {
-        available = {
-            has_manpower > 50000
-        }
-        modifier = {
-            research_speed_factor = 0.10
-        }
-        complete_effect = {
-            add_manpower = -50000
-            add_command_power = -2
-        }
-        days_remove = 60
-    }
+    #soldiers_scientists_conversion = {
+    #    available = {
+    #        has_manpower > 50000
+    #    }
+    #    modifier = {
+    #        research_speed_factor = 0.10
+    #    }
+    #    complete_effect = {
+    #        add_manpower = -50000
+    #        add_command_power = -2
+    #    }
+    #    days_remove = 60
+    #}
 
     # soldiers_politics_conversion
-    soldiers_politics_conversion = {
-        available = {
-            has_manpower > 50000
-        }
-        modifier = {
-            political_power_factor = 0.10
-        }
-        complete_effect = {
-            add_manpower = -50000
-            add_command_power = -2
-        }
-        days_remove = 60
-    }
+    #soldiers_politics_conversion = {
+    #    available = {
+    #        has_manpower > 50000
+    #    }
+    #    modifier = {
+    #        political_power_factor = 0.10
+    #    }
+    #    complete_effect = {
+    #        add_manpower = -50000
+    #        add_command_power = -2
+    #    }
+    #    days_remove = 60
+    #}
 
     # soldiers_to_workers_conversion_B
-    soldiers_workers_conversion_B = {
-        available = {
-            has_manpower > 50000
-        }
-        modifier = {
-            local_resources_factor = 0.10
-        }
-        complete_effect = {
-            add_manpower = -50000
-            add_command_power = -2
-        }
-        days_remove = 60
-    }
+    #soldiers_workers_conversion_B = {
+    #    available = {
+    #        has_manpower > 50000
+    #    }
+    #    modifier = {
+    #        local_resources_factor = 0.10
+    #    }
+    #    complete_effect = {
+    #        add_manpower = -50000
+    #        add_command_power = -2
+    #    }
+    #    days_remove = 60
+    #}
 
 }

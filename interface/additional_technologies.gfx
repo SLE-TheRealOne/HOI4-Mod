@@ -7,32 +7,22 @@ spriteTypes = {
 	############################     Folder tab    ############################
 	spriteType = {
 		name = "GFX_additional_technologies_navy_folder_tab"
-		texturefile = "gfx/interface/idea_country_tab.dds"
+		texturefile = "gfx/interface/techtree/additional_naval_tab.dds"
 		noOfFrames = 2		
 	}
 	spriteType = {
 		name = "GFX_additional_technologies_industry_folder_tab"
-		texturefile = "gfx/interface/idea_political_tab.dds"
+		texturefile = "gfx/interface/techtree/additional_industry_tab.dds"
 		noOfFrames = 2		
 	}
 	spriteType = {
 		name = "GFX_additional_technologies_air_folder_tab"
-		texturefile = "gfx/interface/idea_espionage_tab.dds"
+		texturefile = "gfx/interface/techtree/additional_air_tab.dds"
 		noOfFrames = 2		
 	}
 	spriteType = {
 		name = "GFX_additional_technologies_army_folder_tab"
 		texturefile = "gfx/interface/idea_military_tab.dds"
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_additional_technologies_gear_folder_tab"
-		texturefile = "gfx/interface/idea_technology_tab.dds"
-		noOfFrames = 2		
-	}
-	spriteType = {
-		name = "GFX_additional_technologies_special_folder_tab"
-		texturefile = "gfx/interface/techtree/techtree_special_tab.dds"
 		noOfFrames = 2		
 	}
 	

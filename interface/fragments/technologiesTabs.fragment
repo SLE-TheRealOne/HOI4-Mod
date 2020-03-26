@@ -29,3 +29,42 @@
 				clicksound = click_default
 			}
 
+
+
+			buttonType = {
+            	name = "additional_technologies_espionage_folder_tab"
+            	position = { x = 1477 y = 0 }
+            	quadTextureSprite = "GFX_idea_espionage_tab"
+            	frame = 1
+            	clicksound = click_default
+            }
+            buttonType = {
+                name = "additional_technologies_political_folder_tab"
+                position = { x = 1566 y = 0 }
+                quadTextureSprite = "GFX_idea_political_tab"
+                frame = 1
+                clicksound = click_default
+            }
+            buttonType = {
+                name = "additional_technologies_secret_weapons_folder_tab"
+                position = { x = 1655 y = 0 }
+                quadTextureSprite = "GFX_secret_weapons_folder_tab"
+                frame = 1
+                clicksound = click_default
+            }
+            buttonType = {
+                name = "additional_technologies_gear_folder_tab"
+                position = { x = 1744 y = 0 }
+                quadTextureSprite = "GFX_idea_technology_tab"
+                frame = 1
+                clicksound = click_default
+            }
+            buttonType = {
+                name = "additional_technologies_country_folder_tab"
+                position = { x = 1833 y = 0 }
+                quadTextureSprite = "GFX_idea_country_tab"
+                frame = 1
+                clicksound = click_default
+            }
+
+

@@ -16,17 +16,6 @@ technologies = {
             additional_technology_category_army
         }
 
-        # Visible dans la GUI
-        #army_speed_factor = 0.22
-        #planning_speed = 0.10
-        #max_planning = 0.11
-        #land_reinforce_rate = 0.17
-
-        # Confirmé
-
-        #army_morale_factor = 0.13
-        #recon_factor = 0.14
-
         path = {
             leads_to_tech = tech-army-encryption_01
         }
@@ -67,7 +56,6 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_01
         }
 
-        no_supply_grace = 24
         experience_gain_army_factor = 0.20
         army_speed_factor = 0.20
     }
@@ -255,6 +243,7 @@ technologies = {
 	        leads_to_tech = tech-army-attrition_02
 	    }
 
+        no_supply_grace = 14
 	    attrition = -0.05
 	}
 
@@ -533,6 +522,7 @@ technologies = {
             leads_to_tech = tech-army-attrition_03
         }
 
+        no_supply_grace = 14
         attrition = -0.05
     }
 
@@ -788,6 +778,7 @@ technologies = {
             leads_to_tech = tech-army-attrition_04
         }
 
+        no_supply_grace = 14
         attrition = -0.05
     }
 
@@ -1039,6 +1030,7 @@ technologies = {
             leads_to_tech = tech-army-attrition_05
         }
 
+        no_supply_grace = 14
         attrition = -0.05
     }
 
@@ -1258,6 +1250,7 @@ technologies = {
             additional_technology_category_army
         }
 
+        no_supply_grace = 16
         attrition = -0.05
     }
 

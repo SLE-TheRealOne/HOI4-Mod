@@ -1,42 +1,14 @@
 on_actions = {
-
-    on_ace_killed = {
+    on_monthly = {
         effect = {
-            news_event = { 
-                id = test_namespace.1
-            }
-        }
-    }
 
-    on_ace_promoted = {
-        effect = {
-            country_event = { 
-                id = test_namespace.2
-            }
-        }
-    }
+            # Manpower prerequisite
+            set_variable = { required_manpower = num_battalions }
+            multiply_variable = { required_manpower = 10 }
+            set_variable = { required_manpower_neg = required_manpower }
+            multiply_variable = { required_manpower_neg = -1 }
 
-    on_aces_killed_each_other = {
-        effect = {
-            news_event = {
-                id = test_namespace.3
-            }
-        }
-    }
 
-    on_ace_killed_by_ace = {
-        effect = {
-            news_event = {
-                id = test_namespace.4
-            }
-        }
-    }
-
-    on_ace_killed_other_ace = {
-        effect = {
-            news_event = {
-                id = test_namespace.5
-            }
         }
     }
 }

@@ -1,5 +1,5 @@
 technologies = {
-	
+	# tech-light_navy-start
 	tech-light_navy-start = {
 		start_year = 1940
 		doctrine = yes
@@ -387,6 +387,10 @@ technologies = {
 		submarine = {
 			reliability = 0.05
 		}
+
+		light_cruiser = {
+            reliability = 0.05
+        }
 	}
 
 	tech-light_navy-reliability_02 = {
@@ -415,6 +419,10 @@ technologies = {
 		submarine = {
 			reliability = 0.05
 		}
+
+		light_cruiser = {
+            reliability = 0.05
+        }
 	}
 
 	tech-light_navy-reliability_03 = {
@@ -443,6 +451,10 @@ technologies = {
 		submarine = {
 			reliability = 0.05
 		}
+
+		light_cruiser = {
+            reliability = 0.05
+        }
 	}
 	
 	tech-light_navy-reliability_04 = {
@@ -471,6 +483,10 @@ technologies = {
 		submarine = {
 			reliability = 0.05
 		}
+
+		light_cruiser = {
+            reliability = 0.05
+        }
 	}
 
 	tech-light_navy-reliability_05 = {
@@ -499,6 +515,10 @@ technologies = {
 		submarine = {
 			reliability = 0.05
 		}
+
+		light_cruiser = {
+            reliability = 0.05
+        }
 	}
 
 	tech-light_navy-convoy_specialists_01 = {
