@@ -5,9 +5,7 @@ air_experience_usage = {
 }
 
 political_power_usage = {
-	visible = {
-		has_political_power > 100
-	}
+
 }
 
 ground_experience_usage = {
@@ -18,6 +16,6 @@ ground_experience_usage = {
 
 manpower_usage = {
     visible = {
-        manpower_per_military_factory > 1000
+        has_war = yes
     }
 }

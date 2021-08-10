@@ -1,6 +1,7 @@
 # air_experience_usage
 air_experience_usage = {
 
+    # call_ace_flight_instructor
 	call_ace_flight_instructor {
 		cost = 25
 		available {
@@ -15,7 +16,8 @@ air_experience_usage = {
         }
         days_re_enable = 180
     }
-	
+
+	# call_ace_flight_coordinator
 	call_ace_flight_coordinator {
 		cost = 25
         available {
@@ -31,6 +33,7 @@ air_experience_usage = {
         days_re_enable = 180
     }
 
+    # call_ace_radar_specialist
     call_ace_radar_specialist {
 		cost = 25
         available {
@@ -45,7 +48,8 @@ air_experience_usage = {
         }
 		days_re_enable = 180
     }
-	
+
+	# call_ace_radio_specialist
 	call_ace_radio_specialist {
 		cost = 25
         available {
@@ -60,7 +64,8 @@ air_experience_usage = {
         }
 		days_re_enable = 180
     }
-	
+
+	# call_ace_technician
 	call_ace_technician {
 		cost = 25
         available {
@@ -97,126 +102,6 @@ political_power_usage = {
 		days_re_enable = 30
 	}
 
-	# naval_shipyards_boost
-	naval_shipyards_boost {
-        cost = 50
-		available {
-			has_war = yes
-		}
-		modifier {
-			industrial_capacity_dockyard = 0.15
-		}
-		days_remove = 60
-		days_re_enable = 180
-    }
-
-	# civil_factories_boost
-	civil_factories_boost {
-        cost = 50
-		available {
-			has_war = yes
-		}
-		modifier {
-			production_speed_buildings_factor = 0.15
-		}
-		days_remove = 60
-		days_re_enable = 180
-    }
-
-	# military_factories_boost
-	military_factories_boost {
-		cost = 50
-		available {
-			has_war = yes
-		}
-		modifier {
-			industrial_capacity_factory = 0.15
-		}
-		days_remove = 60
-		days_re_enable = 180
-	}
-
-	# add_oil_to_random_state
-	add_oil_to_random_state {
-		cost = 50
-		available {
-			AND {
-				has_war = yes
-				has_war_support > 0.8
-				has_stability > 0.5
-				any_owned_state {
-					AND = {
-						has_resources_amount = {
-							resource = oil
-							amount > 0
-							state = THIS
-						}
-					}
-				}
-			}
-		}
-		complete_effect = {
-			random_owned_controlled_state {
-				limit = {
-					has_resources_amount = {
-						resource = oil
-						amount > 0
-						state = THIS
-					}
-				}
-				add_resource {
-					type = oil
-					amount = 1
-					state = THIS
-				}
-			}
-		}
-		days_re_enable = 60
-	}
-
-	# add_oil_to_island
-	add_oil_to_island {
-		cost = 100
-		available {
-			AND {
-				has_war = yes
-				has_war_support > 0.8
-				has_stability > 0.5
-				any_owned_state {
-					is_island_state = yes
-					AND = {
-						has_resources_amount = {
-							resource = oil
-							amount < 1
-							state = THIS
-						}
-					}
-				}
-			}
-		}
-		complete_effect = {
-			random_owned_controlled_state {
-				limit = {
-					AND = {
-						has_resources_amount = {
-							resource = oil
-							amount < 1
-							state = THIS
-						}
-						is_island_state = yes
-					}
-					
-				}
-				add_resource {
-					type = oil
-					amount = 1
-					state = THIS
-				}
-			}
-		}
-		days_re_enable = 90
-	}
-
 	# add_civilian_factory_to_random_state
 	add_civilian_factory_to_random_state {
 		cost = 150
@@ -246,42 +131,9 @@ political_power_usage = {
 				}
 			}
 		}
-		modifier {
-			war_support_weekly = -0.01
-		}
 		days_remove = 35
 		days_re_enable = 180
 	}
-
-	# add_building_slot_to_a_full_state
-	add_building_slot_to_a_full_state {
-        cost = 50
-        available {
-            any_owned_state {
-                free_building_slots = {
-                    building = industrial_complex
-                    size < 1
-                    include_locked = no
-                }
-                is_core_if = FROM
-            }
-        }
-        complete_effect {
-            random_owned_controlled_state {
-                limit = {
-                    free_building_slots = {
-                        building = industrial_complex
-                        size < 1
-                        include_locked = no
-                    }
-                    is_core_of = FROM
-                }
-                add_extra_state_shared_building_slots = 1
-            }
-        }
-        days_remove = 10
-        days_re_enable = 30
-    }
 
 	# use_population_war_support_A
 	use_population_war_support_A {
@@ -291,32 +143,32 @@ political_power_usage = {
 	    }
 	    modifier = {
 	        consumer_goods_factor = -0.10
-	        industrial_capacity_factory = 0.15
-	        production_speed_buildings_factor = 0.15
-	        war_support_weekly = -0.002
+	        industrial_capacity_factory = 0.10
+	        production_speed_buildings_factor = 0.10
+	        war_support_weekly = -0.006
 	    }
 	    days_remove = 60
 	}
 
 	# use_population_war_support_B
     use_population_war_support_B {
-        cost = 60
+        cost = 40
         available = {
             has_war_support < 0.90
             has_war_support > 0.85
         }
         modifier = {
-            consumer_goods_factor = -0.075
-            industrial_capacity_factory = 0.10
-            production_speed_buildings_factor = 0.10
-            war_support_weekly = -0.002
+            consumer_goods_factor = -0.07
+            industrial_capacity_factory = 0.07
+            production_speed_buildings_factor = 0.07
+            war_support_weekly = -0.004
         }
         days_remove = 60
     }
 
     # use_population_war_support_C
     use_population_war_support_C {
-        cost = 80
+        cost = 40
         available = {
             has_war_support < 0.85
             has_war_support > 0.79
@@ -383,34 +235,93 @@ ground_experience_usage = {
         }
     }
 
-    # ground_experience_usage_try_01
-    ground_experience_usage_try = {
+    # reduce_experience_loss_factor
+    reduce_experience_loss_factor = {
+        available = {
+            command_power > 5
+            has_army_experience > 50
+         }
         modifier = {
             experience_loss_factor = -0.01
         }
         complete_effect = {
             army_experience = -50
+            add_command_power = -5
         }
+        days_re_enable = 30
     }
 
-    # ground_experience_usage_try_02
-    ground_experience_usage_try_02 = {
+    # reduce_org_loss_when_moving
+    reduce_org_loss_when_moving = {
+        available = {
+            command_power > 5
+            has_army_experience > 50
+        }
         modifier = {
              org_loss_when_moving = -0.01
         }
         complete_effect = {
             army_experience = -50
+            add_command_power = -5
         }
+        days_re_enable = 30
     }
 
-    # ground_experience_usage_try_02
-    ground_experience_usage_try_03 = {
+    # increase_max_command_power
+    increase_max_command_power = {
+        available = {
+            command_power > 5
+            has_army_experience > 50
+        }
         modifier = {
             max_command_power = 1
         }
         complete_effect = {
             army_experience = -50
+            add_command_power = -5
         }
+        days_re_enable = 30
+    }
+
+    # increase_max_command_power
+    increase_max_command_power = {
+        available = {
+            command_power > 5
+            has_army_experience > 50
+        }
+        modifier = {
+            max_command_power = 1
+        }
+        complete_effect = {
+            army_experience = -50
+            add_command_power = -5
+        }
+        days_re_enable = 30
+    }
+
+    # gather_ideas
+    gather_ideas = {
+        available = {
+            command_power > 5
+            has_army_experience > 30
+        }
+         modifier = {
+            experience_gain_army = -1
+            research_speed_factor = 0.02
+        }
+        complete_effect = {
+            add_command_power = -5
+        }
+        remove_effect = {
+            add_tech_bonus = {
+                name = additional_navy_technology_speed_bonus
+                bonus = 0.4
+                uses = 1
+                category = additional_technology_category
+            }
+        }
+        days_remove = 30
+        days_re_enable = 60
     }
 
 }
@@ -418,17 +329,19 @@ ground_experience_usage = {
 # manpower_usage
 manpower_usage = {
 
-    # soldiers_workers_conversion
+    # soldiers_workers_conversion_A
     soldiers_workers_conversion_A = {
+        cost = 10
         available = {
             has_manpower > required_manpower
+            command_power > required_command_power
         }
         modifier = {
             industrial_capacity_factory = 0.10
         }
         complete_effect = {
             add_manpower = required_manpower_neg
-            add_command_power = required_command_manpower_neg
+            add_command_power = required_command_power_neg
         }
         remove_effect = {
             add_manpower = required_manpower
@@ -436,49 +349,460 @@ manpower_usage = {
         days_remove = 60
     }
 
-    # soldiers_scientists_conversion
-    #soldiers_scientists_conversion = {
-    #    available = {
-    #        has_manpower > 50000
-    #    }
-    #    modifier = {
-    #        research_speed_factor = 0.10
-    #    }
-    #    complete_effect = {
-    #        add_manpower = -50000
-    #        add_command_power = -2
-    #    }
-    #    days_remove = 60
-    #}
-
-    # soldiers_politics_conversion
-    #soldiers_politics_conversion = {
-    #    available = {
-    #        has_manpower > 50000
-    #    }
-    #    modifier = {
-    #        political_power_factor = 0.10
-    #    }
-    #    complete_effect = {
-    #        add_manpower = -50000
-    #        add_command_power = -2
-    #    }
-    #    days_remove = 60
-    #}
-
     # soldiers_to_workers_conversion_B
-    #soldiers_workers_conversion_B = {
-    #    available = {
-    #        has_manpower > 50000
-    #    }
-    #    modifier = {
-    #        local_resources_factor = 0.10
-    #    }
-    #    complete_effect = {
-    #        add_manpower = -50000
-    #        add_command_power = -2
-    #    }
-    #    days_remove = 60
-    #}
+    soldiers_workers_conversion_B = {
+        cost = 10
+        available = {
+            has_manpower > required_manpower
+            command_power > required_command_power
+        }
+        modifier = {
+            local_resources_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        days_remove = 60
+    }
+
+    # naval_shipyards_boost
+    naval_shipyards_boost = {
+        cost = 10
+        available = {
+            has_manpower > required_manpower
+            command_power > required_command_power
+        }
+        modifier = {
+            industrial_capacity_dockyard = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        days_remove = 60
+    }
+
+    # civil_factories_boost
+    civil_factories_boost {
+        cost = 10
+        available = {
+            has_manpower > required_manpower
+            command_power > required_command_power
+        }
+        modifier = {
+            production_speed_buildings_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        days_remove = 60
+    }
+
+    # stability_increase
+    stability_increase {
+        cost = 30
+        available = {
+            has_manpower > required_manpower
+            command_power > required_command_power
+        }
+        modifier = {
+            stability_weekly = 0.0025
+            war_support_weekly = -0.0025
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        days_remove = 60
+    }
+
+}
+
+# war_measures
+war_measures = {
+
+    # increase_troops_attack
+    increase_troops_attack = {
+        available = {
+            has_war = yes
+            command_power > required_command_power
+        }
+        modifier = {
+            command_power_gain = -1
+            army_attack_factor = 0.10
+        }
+        days_remove = 30
+    }
+
+    # increase_troops_defence
+    increase_troops_defence = {
+        available = {
+            has_war = yes
+            command_power > required_command_power
+        }
+        modifier = {
+            command_power_gain = -1
+            army_attack_factor = 0.10
+        }
+        days_remove = 30
+    }
+
+    # encrease_encryption
+    increase_encryption = {
+        available = {
+            has_war = yes
+            command_power > required_command_power
+        }
+        modifier = {
+            command_power_gain = -1
+            encryption_factor = 0.10
+        }
+        days_remove = 30
+    }
+
+    # increase_decryption
+    increase_decryption = {
+        available = {
+            has_war = yes
+            command_power > required_command_power
+        }
+        modifier = {
+            command_power_gain = -1
+            decryption_factor = 0.10
+        }
+        days_remove = 30
+    }
+
+}
+
+# prospect_for_resources
+prospect_for_resources = {
+
+    # add_oil_to_random_state
+	add_oil_to_random_state {
+		cost = 30
+		icon = oil
+		available {
+			AND {
+				has_war = yes
+				has_war_support > 0.8
+				has_stability > 0.5
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state {
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state {
+				limit = {
+					has_resources_amount = {
+						resource = oil
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource {
+					type = oil
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 15
+		days_re_enable = 30
+	}
+
+    # add_aluminium_to_random_state
+	add_aluminium_to_random_state {
+		cost = 30
+		icon = aluminium
+		available {
+			AND {
+				has_war = yes
+				has_war_support > 0.8
+				has_stability > 0.5
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state {
+					AND = {
+						has_resources_amount = {
+							resource = aluminium
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state {
+				limit = {
+					has_resources_amount = {
+						resource = aluminium
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource {
+					type = aluminium
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 15
+		days_re_enable = 30
+	}
+
+    # add_rubber_to_random_state
+	add_rubber_to_random_state {
+		cost = 30
+		icon = rubber
+		available {
+			AND {
+				has_war = yes
+				has_war_support > 0.8
+				has_stability > 0.5
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state {
+					AND = {
+						has_resources_amount = {
+							resource = rubber
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state {
+				limit = {
+					has_resources_amount = {
+						resource = rubber
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource {
+					type = rubber
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 15
+		days_re_enable = 30
+	}
+
+    # add_tungsten_to_random_state
+	add_tungsten_to_random_state {
+		cost = 30
+		icon = tungsten
+		available {
+			AND {
+				has_war = yes
+				has_war_support > 0.8
+				has_stability > 0.5
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state {
+					AND = {
+						has_resources_amount = {
+							resource = tungsten
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state {
+				limit = {
+					has_resources_amount = {
+						resource = tungsten
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource {
+					type = tungsten
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 15
+		days_re_enable = 30
+	}
+
+	# add_steel_to_random_state
+    add_steel_to_random_state {
+        cost = 30
+        icon = steel
+        available {
+            AND {
+                has_war = yes
+                has_war_support > 0.8
+                has_stability > 0.5
+                num_of_civilian_factories_available_for_projects > 1
+                any_owned_state {
+                    AND = {
+                        has_resources_amount = {
+                            resource = steel
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 1
+        }
+        remove_effect = {
+            random_owned_controlled_state {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource {
+                    type = steel
+                    amount = 1
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 15
+        days_re_enable = 30
+    }
+
+    # add_chromium_to_random_state
+	add_chromium_to_random_state {
+		cost = 30
+		icon = chromium
+		available {
+			AND {
+				has_war = yes
+				has_war_support > 0.8
+				has_stability > 0.5
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state {
+					AND = {
+						has_resources_amount = {
+							resource = chromium
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state {
+				limit = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource {
+					type = chromium
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 15
+		days_re_enable = 30
+	}
+
+	# add_oil_to_island
+	add_oil_to_island {
+		cost = 100
+		icon = oil
+		available {
+			AND {
+				num_of_civilian_factories_available_for_projects > 2
+				has_war = yes
+				has_war_support > 0.8
+				has_stability > 0.5
+				any_owned_state {
+					is_island_state = yes
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount < 1
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 2
+        }
+		remove_effect = {
+			random_owned_controlled_state {
+				limit = {
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount < 1
+							state = THIS
+						}
+						is_island_state = yes
+					}
+
+				}
+				add_resource {
+					type = oil
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 30
+		days_re_enable = 60
+	}
 
 }

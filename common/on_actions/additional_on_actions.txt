@@ -2,13 +2,18 @@ on_actions = {
     on_monthly = {
         effect = {
 
-            # Manpower prerequisite
+            # Manpower prerequisites
             set_variable = { required_manpower = num_battalions }
             multiply_variable = { required_manpower = 10 }
             set_variable = { required_manpower_neg = required_manpower }
             multiply_variable = { required_manpower_neg = -1 }
 
-
+            # Command power prerequisites
+            set_variable = { required_command_power = 100 }
+            add_to_variable { required_command_power = modifier@max_command_power }
+            multiply_variable = { required_command_power = 0.10 }
+            set_variable = { required_command_power_neg = required_command_power }
+            multiply_variable = { required_command_power_neg = -1 }
         }
     }
 }

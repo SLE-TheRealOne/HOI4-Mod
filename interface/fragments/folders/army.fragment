@@ -14,7 +14,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_levels_tree_title_name"
-                position = { x = 420 y = 35 }
+                position = { x = 750 y = 15 }
                 textureFile = ""
                 font = "hoi_22tech"
                 borderSize = {x = 0 y = 4}
@@ -26,13 +26,13 @@
             }
 
             instantTextBoxType = {
-                name = "tech-army_levels-tree_desc_name"
-                position = { x = 420 y = 70 }
+                name = "tech-army_levels_tree_desc_name"
+                position = { x = 650 y = 40 }
                 textureFile = ""
                 font = "hoi_20b"
                 borderSize = {x = 0 y = 4}
-                text = "tech-army_levels-tree_desc_text"
-                maxWidth = 500
+                text = "tech-army_levels_tree_desc_text"
+                maxWidth = 700
                 maxHeight = 122
                 format = center
                 Orientation = "UPPER_LEFT"
@@ -40,8 +40,8 @@
 
             gridboxtype = {
                 name = "tech-army_levels-start_tree"
-                position = { x=315 y=172 }
-                size = { width = 550 height = 1050 }
+                position = { x=615 y=110 }
+                size = { width = 650 height = 1050 }
                 slotsize = { width=60 height= 60 }
                 format = "UP"
             }

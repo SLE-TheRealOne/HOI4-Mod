@@ -12,42 +12,76 @@
                 quadTextureSprite ="GFX_tiled_window_2b_border"
             }
 
-            containerWindowType = {
-                name = "size_filler"
-                position = { x=0 y=0 }
-                size = { width = 1565 height = 100% }
-            }
-
             instantTextBoxType = {
-                name = "industry_improvments_tree_title_name"
-                position = { x = 70 y = 35 }
+                name = "top_tech_industry_tree_title_name"
+                position = { x = 350 y = 40 }
                 textureFile = ""
                 font = "hoi_22tech"
                 borderSize = {x = 0 y = 4}
-                text = "industry_improvments_tree_title_text"
-                maxWidth = 450
+                text = "top_industry_tree_title_text"
+                maxWidth = 250
                 maxHeight = 122
                 format = center
                 Orientation = "UPPER_LEFT"
             }
 
             instantTextBoxType = {
-                name = "industry_improvments_tree_desc_name"
-                position = { x = 70 y = 70 }
+                name = "top_industry_tree_desc_name"
+                position = { x = 25 y = 75 }
                 textureFile = ""
                 font = "hoi_20b"
                 borderSize = {x = 0 y = 4}
-                text = "industry_improvments_tree_desc_text"
-                maxWidth = 450
+                text = "top_industry_tree_desc_text"
+                maxWidth = 900
+                maxHeight = 122
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "mass_industry_tree_title_name"
+                position = { x = 1300 y = 40 }
+                textureFile = ""
+                font = "hoi_22tech"
+                borderSize = {x = 0 y = 4}
+                text = "mass_industry_tree_title_text"
+                maxWidth = 250
+                maxHeight = 122
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "mass_industry_tree_desc_name"
+                position = { x = 965 y = 75 }
+                textureFile = ""
+                font = "hoi_20b"
+                borderSize = {x = 0 y = 4}
+                text = "mass_industry_tree_desc_text"
+                maxWidth = 900
                 maxHeight = 122
                 format = center
                 Orientation = "UPPER_LEFT"
             }
 
             gridboxtype = {
-                name = "industry_improvments_01_tree"
-                position = { x=20 y=172 }
-                size = { width = 550 height = 1000 }
+                name = "tech-top_industry_start_tree"
+                position = { x=15 y=172 }
+                size = { width = 920 height = 1000 }
+                slotsize = { width=60 height= 60 }
+                format = "UP"
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite ="GFX_fullborder_tiled"
+                    position = { x=0 y=-150 }
+                }
+            }
+
+            gridboxtype = {
+                name = "tech-mass_industry_start_tree"
+                position = { x=955 y=172 }
+                size = { width = 920 height = 1000 }
                 slotsize = { width=60 height= 60 }
                 format = "UP"
 
