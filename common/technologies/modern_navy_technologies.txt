@@ -1,7 +1,7 @@
 technologies = {
     
     tech-modern_navy-start = {
-		start_year = 1940
+		start_year = 1936
 		research_cost = 1
 		doctrine = yes
 		
@@ -18,10 +18,8 @@ technologies = {
 			additional_technology_category
 			additional_technology_category_navy
 		}
-		
-		modifier = {
-			experience_gain_navy_factor = 0.10
-		}
+
+		experience_gain_navy_factor = 0.05
 		
 	}
 

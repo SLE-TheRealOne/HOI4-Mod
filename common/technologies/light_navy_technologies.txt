@@ -1,7 +1,7 @@
 technologies = {
 	# tech-light_navy-start
 	tech-light_navy-start = {
-		start_year = 1940
+		start_year = 1938
 		doctrine = yes
 		research_cost = 1
 

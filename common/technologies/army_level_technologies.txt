@@ -2,9 +2,13 @@ technologies = {
 
     # tech-army_levels-start
 	tech-army_levels-start = {
-        start_year = 1938
-        research_cost = 2
+        start_year = 1936
+        research_cost = 1
         doctrine = yes
+
+        xp_research_type = army
+        xp_research_cost = 100
+        xp_research_bonus = 1.00
 
         folder = {
             name = additional_technologies_army_folder
@@ -56,8 +60,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_01
         }
 
-        experience_gain_army_factor = 0.20
-        army_speed_factor = 0.20
+        experience_gain_army_factor = 0.05
     }
 
 				#################### RANK 1 ####################

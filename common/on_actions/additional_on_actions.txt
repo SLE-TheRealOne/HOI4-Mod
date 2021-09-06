@@ -4,9 +4,21 @@ on_actions = {
 
             # Manpower prerequisites
             set_variable = { required_manpower = num_battalions }
-            multiply_variable = { required_manpower = 10 }
+            multiply_variable = { required_manpower = 100 }
             set_variable = { required_manpower_neg = required_manpower }
             multiply_variable = { required_manpower_neg = -1 }
+
+            set_variable = { returned_manpower_80 = required_manpower }
+            multiply_variable = { returned_manpower_80 = 0.80 }
+
+            set_variable = { returned_manpower_65 = required_manpower }
+            multiply_variable = { returned_manpower_65 = 0.65 }
+
+            set_variable = { manpower_80_cost = required_manpower }
+            subtract_from_variable = { manpower_80_cost = returned_manpower_80 }
+
+            set_variable = { manpower_65_cost = required_manpower }
+            subtract_from_variable = { manpower_65_cost = returned_manpower_65 }
 
             # Command power prerequisites
             set_variable = { required_command_power = 100 }
