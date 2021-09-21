@@ -12,6 +12,7 @@
                 quadTextureSprite ="GFX_tiled_window_2b_border"
             }
 
+            # Top tech
             instantTextBoxType = {
                 name = "top_tech_industry_tree_title_name"
                 position = { x = 350 y = 40 }
@@ -39,6 +40,99 @@
             }
 
             instantTextBoxType = {
+                name = "tech-top_industry_1936"
+                position = { x = 31 y = 190 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1936"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1937"
+                position = { x = 31 y = 430 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1937"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1938"
+                position = { x = 31 y = 548 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1938"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1939"
+                position = { x = 31 y = 666 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1939"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1941"
+                position = { x = 31 y = 912 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1941"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1942"
+                position = { x = 31 y = 1030 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1942"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            gridboxtype = {
+                name = "tech-top_industry_start_tree"
+                position = { x=15 y=172 }
+                size = { width = 920 height = 1100 }
+                slotsize = { width=60 height= 60 }
+                format = "UP"
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite ="GFX_fullborder_tiled"
+                    position = { x=0 y=-150 }
+                }
+            }
+
+            # Mass tech
+            instantTextBoxType = {
                 name = "mass_industry_tree_title_name"
                 position = { x = 1300 y = 40 }
                 textureFile = ""
@@ -64,24 +158,88 @@
                 Orientation = "UPPER_LEFT"
             }
 
-            gridboxtype = {
-                name = "tech-top_industry_start_tree"
-                position = { x=15 y=172 }
-                size = { width = 920 height = 1000 }
-                slotsize = { width=60 height= 60 }
-                format = "UP"
+            instantTextBoxType = {
+                name = "tech-mass_industry_1936"
+                position = { x = 990 y = 190 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1936"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
 
-                background = {
-                    name = "Background"
-                    quadTextureSprite ="GFX_fullborder_tiled"
-                    position = { x=0 y=-150 }
-                }
+            instantTextBoxType = {
+                name = "tech-mass_industry_1937"
+                position = { x = 990 y = 430 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1937"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-mass_industry_1938"
+                position = { x = 990 y = 548 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1938"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-mass_industry_1939"
+                position = { x = 990 y = 666 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1939"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-mass_industry_1941"
+                position = { x = 990 y = 912 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1941"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-mass_industry_1942"
+                position = { x = 990 y = 1030 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1942"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
             }
 
             gridboxtype = {
                 name = "tech-mass_industry_start_tree"
                 position = { x=955 y=172 }
-                size = { width = 920 height = 1000 }
+                size = { width = 920 height = 1100 }
                 slotsize = { width=60 height= 60 }
                 format = "UP"
 

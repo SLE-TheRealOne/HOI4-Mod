@@ -223,7 +223,7 @@ technologies = {
 	        leads_to_tech = tech-army-experience_loss_factor_02
 	    }
 
-	    experience_loss_factor = -0.1
+	    experience_loss_factor = -0.05
 	}
 
 	# tech-army-attrition_01
@@ -246,8 +246,8 @@ technologies = {
 	        leads_to_tech = tech-army-attrition_02
 	    }
 
-        no_supply_grace = 14
-	    attrition = -0.05
+        no_supply_grace = 4
+	    attrition = -0.04
 	}
 
 	# tech-army-defence_factor_01
@@ -270,7 +270,7 @@ technologies = {
 	        leads_to_tech = tech-army-defence_factor_02
 	    }
 
-        army_defence_factor = 0.10
+        army_defence_factor = 0.05
 	}
 
     # tech-army-army_org_factor_01
@@ -316,7 +316,7 @@ technologies = {
 	        leads_to_tech = tech-army-attack_factor_02
 	    }
 
-	    army_attack_factor = 0.10
+	    army_attack_factor = 0.05
 	}
 
 				#################### RANK 2 ####################
@@ -479,7 +479,7 @@ technologies = {
             leads_to_tech = tech-army-experience_loss_factor_03
         }
 
-        experience_loss_factor = -0.1
+        experience_loss_factor = -0.05
     }
 
     # tech-army-experience_loss_factor_02
@@ -525,8 +525,8 @@ technologies = {
             leads_to_tech = tech-army-attrition_03
         }
 
-        no_supply_grace = 14
-        attrition = -0.05
+        no_supply_grace = 4
+        attrition = -0.04
     }
 
     # tech-army-defence_factor_02
@@ -549,7 +549,7 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_03
         }
 
-        army_defence_factor = 0.10
+        army_defence_factor = 0.05
     }
 
     # tech-army-army_org_factor_02
@@ -572,7 +572,7 @@ technologies = {
             leads_to_tech = tech-army-army_org_factor_03
         }
 
-        army_org_factor = 0.07
+        army_org_factor = 0.05
     }
 
     # tech-army-attack_factor_02
@@ -595,7 +595,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_03
         }
 
-        army_attack_factor = 0.10
+        army_attack_factor = 0.05
     }
 
                 #################### RANK 3 ####################
@@ -758,7 +758,7 @@ technologies = {
             leads_to_tech = tech-army-experience_loss_factor_04
         }
 
-        experience_loss_factor = -0.1
+        experience_loss_factor = -0.05
     }
 
     # tech-army-attrition_03
@@ -781,8 +781,8 @@ technologies = {
             leads_to_tech = tech-army-attrition_04
         }
 
-        no_supply_grace = 14
-        attrition = -0.05
+        no_supply_grace = 4
+        attrition = -0.04
     }
 
     # tech-army-defence_factor_03
@@ -805,7 +805,7 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_04
         }
 
-        army_defence_factor = 0.10
+        army_defence_factor = 0.05
     }
 
     # tech-army-army_org_factor_03
@@ -828,7 +828,7 @@ technologies = {
             leads_to_tech = tech-army-army_org_factor_04
         }
 
-        army_org_factor = 0.09
+        army_org_factor = 0.05
     }
 
     # tech-army-attack_factor_03
@@ -851,7 +851,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_04
         }
 
-        army_attack_factor = 0.10
+        army_attack_factor = 0.05
     }
 
                 #################### RANK 4 ####################
@@ -1010,7 +1010,7 @@ technologies = {
             leads_to_tech = tech-army-experience_loss_factor_05
         }
 
-        experience_loss_factor = -0.1
+        experience_loss_factor = -0.05
     }
 
     # tech-army-attrition_04
@@ -1033,8 +1033,8 @@ technologies = {
             leads_to_tech = tech-army-attrition_05
         }
 
-        no_supply_grace = 14
-        attrition = -0.05
+        no_supply_grace = 4
+        attrition = -0.04
     }
 
     # tech-army-defence_factor_04
@@ -1057,7 +1057,7 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_05
         }
 
-        army_defence_factor = 0.10
+        army_defence_factor = 0.05
     }
 
     # tech-army-army_org_factor_04
@@ -1076,7 +1076,7 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_org_factor = 0.11
+        army_org_factor = 0.05
     }
 
     # tech-army-attack_factor_04
@@ -1099,7 +1099,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_05
         }
 
-        army_attack_factor = 0.10
+        army_attack_factor = 0.05
     }
 
                 #################### RANK 5 ####################
@@ -1234,7 +1234,7 @@ technologies = {
             additional_technology_category_army
         }
 
-        experience_loss_factor = -0.1
+        experience_loss_factor = -0.05
     }
 
     # tech-army-attrition_05
@@ -1253,8 +1253,8 @@ technologies = {
             additional_technology_category_army
         }
 
-        no_supply_grace = 16
-        attrition = -0.05
+        no_supply_grace = 4
+        attrition = -0.04
     }
 
     # tech-army-defence_factor_05
@@ -1277,7 +1277,7 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_06
         }
 
-        army_defence_factor = 0.10
+        army_defence_factor = 0.05
     }
 
     # tech-army-attack_factor_05
@@ -1300,7 +1300,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_06
         }
 
-        army_attack_factor = 0.10
+        army_attack_factor = 0.05
     }
 
                 #################### RANK 6 ####################
@@ -1419,7 +1419,7 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_defence_factor = 0.10
+        army_defence_factor = 0.05
     }
 
     # tech-army-attack_factor_06
@@ -1438,7 +1438,7 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_attack_factor = 0.10
+        army_attack_factor = 0.05
     }
 
 }

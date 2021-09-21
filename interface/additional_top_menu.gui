@@ -62,8 +62,72 @@ guiTypes = {
     }
 
     containerWindowType = {
+        name = "dry_dock_counter_container"
+        position = { x = 1109 y = 4 }
+        orientation = UPPER_LEFT
+
+        iconType ={
+            name = "dry_dock_counter_background"
+            spriteType = "GFX_generic_box_smallest"
+            position = { x = 0 y = 0 }
+        }
+
+        iconType ={
+            name ="decryption_level_image"
+            spriteType = "GFX_dockyard_icon"
+            position = { x = 0 y = 2 }
+        }
+        #GFX_navy_anchor
+        #GFX_conversion_mapicon_industry
+
+        instantTextBoxType = {
+            name = "dry_dock_counter_text"
+            position = { x= 22 y = 3 }
+            font = "hoi_18mbs"
+            text = "[?dry_dock_counter]"
+            format = center
+            maxWidth = 46
+            maxHeight = 24
+            fixedsize = yes
+            pdx_tooltip = "top_menu-dry_dock_counter-tooltip"
+        }
+    }
+
+    containerWindowType = {
+        name = "industrial_district_counter_container"
+        position = { x = 1179 y = 4 }
+        orientation = UPPER_LEFT
+
+        iconType ={
+            name = "industrial_district_counter_background"
+            spriteType = "GFX_generic_box_smallest"
+            position = { x = 0 y = 0 }
+        }
+
+        iconType ={
+            name ="decryption_level_image"
+            spriteType = "GFX_construction_speed_icon"
+            position = { x = 0 y = 3 }
+        }
+        #GFX_navy_anchor
+        #GFX_conversion_mapicon_industry
+
+        instantTextBoxType = {
+            name = "industrial_district_counter_text"
+            position = { x= 22 y = 3 }
+            font = "hoi_18mbs"
+            text = "[?industrial_district_counter]"
+            format = center
+            maxWidth = 46
+            maxHeight = 24
+            fixedsize = yes
+            pdx_tooltip = "top_menu-industrial_district_counter-tooltip"
+        }
+    }
+
+    containerWindowType = {
 	    name = "refresh_button_container"
-		position = { x = 1110 y = 4 }
+		position = { x = 1250 y = 4 }
 		orientation = UPPER_LEFT
         
         buttonType = {

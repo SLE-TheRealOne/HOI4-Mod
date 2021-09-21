@@ -8,9 +8,6 @@ air_experience_usage = {
         }
         complete_effect {
             add_ace {
-                name = "Franck"
-                surname = "Ropers"
-                callsign = "Senseï"
                 type = flight_instructor
                 is_female = no
             }
@@ -27,9 +24,6 @@ air_experience_usage = {
         }
         complete_effect {
             add_ace {
-                name = "Samy"
-                surname = "Lerari"
-                callsign = "Stratège"
                 type = flight_coordinator
                 is_female = no
             }
@@ -46,9 +40,6 @@ air_experience_usage = {
         }
         complete_effect {
             add_ace {
-                name = "Jeanne"
-                surname = "Hallier"
-                callsign = "Lumière"
                 type = radar_specialist
                 is_female = yes
             }
@@ -65,9 +56,6 @@ air_experience_usage = {
         }
         complete_effect {
             add_ace {
-                name = "Bernadette"
-                surname = "Gournaud"
-                callsign = "Messagère"
                 type = ground_support_coordinator
                 is_female = yes
             }
@@ -84,9 +72,6 @@ air_experience_usage = {
         }
         complete_effect {
             add_ace {
-                name = "Marie"
-                surname = "Sou"
-                callsign = "Clef à molette"
                 type = technician
                 is_female = yes
             }
@@ -229,6 +214,53 @@ ground_experience_usage = {
                 amount = required_convoys
             }
             add_manpower = required_manpower
+        }
+    }
+
+    # supply_units_of_african_corps
+    supply_units_of_african_corps= {
+        days_remove = 5
+        days_re_enable = 1
+
+        available = {
+            stockpile_ratio = {
+                archetype = convoy
+                ratio > required_convoys
+            }
+            has_manpower > -10000
+            has_army_experience > 10
+            command_power > 3
+            any_enemy_country = {
+                has_war_with = PREV
+                has_capitulated = no
+                enemies_strength_ratio > 2.2
+            }
+        }
+
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = required_convoys_neg
+            }
+            add_manpower = -10000
+            add_command_power = -3
+
+            every_army_leader = {
+                limit = {
+                    AND = {
+                        num_units = 24
+                    }
+                }
+                supply_units = 120
+            }
+        }
+
+        remove_effect = {
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = required_convoys
+            }
+            add_manpower = 9000
         }
     }
 
@@ -591,14 +623,26 @@ prospect_for_resources = {
 		days_re_enable = 60
 	}
 
-    # add_aluminium_to_random_state_1 // 1936
+    # add_aluminium_to_random_state_1
 	add_aluminium_to_random_state_1 {
 		cost = 10
 		icon = aluminium
+		visible = {
+		    AND = {
+		        has_tech = excavation1
+                NOT = {
+                    OR = {
+                        has_tech = excavation2
+                        has_tech = excavation3
+                        has_tech = excavation4
+                        has_tech = excavation5
+                    }
+                }
+            }
+		}
 		available {
 			AND {
 				has_stability > 0.3
-				has_tech = excavation1
 				num_of_civilian_factories_available_for_projects > 1
 				any_owned_state {
 					AND = {
@@ -613,14 +657,6 @@ prospect_for_resources = {
                             state = THIS
                         }
 					}
-				}
-				NOT = {
-				    OR = {
-				        has_tech = excavation2
-				        has_tech = excavation3
-				        has_tech = excavation4
-				        has_tech = excavation5
-				    }
 				}
 			}
 		}
@@ -652,14 +688,25 @@ prospect_for_resources = {
 		fire_only_once = yes
 	}
 
-    # add_aluminium_to_random_state_2 // 1937
+    # add_aluminium_to_random_state_2
 	add_aluminium_to_random_state_2 {
         cost = 20
         icon = aluminium
+        visible = {
+            AND = {
+                has_tech = excavation2
+                NOT = {
+                    OR = {
+                        has_tech = excavation3
+                        has_tech = excavation4
+                        has_tech = excavation5
+                    }
+                }
+            }
+        }
         available {
             AND {
                 has_stability > 0.3
-                has_tech = excavation2
                 num_of_civilian_factories_available_for_projects > 2
                 any_owned_state {
                     AND = {
@@ -674,11 +721,6 @@ prospect_for_resources = {
                             state = THIS
                         }
                     }
-                }
-                NOT = {
-                    has_tech = excavation3
-                    has_tech = excavation4
-                    has_tech = excavation5
                 }
             }
         }
@@ -710,15 +752,25 @@ prospect_for_resources = {
         fire_only_once = yes
     }
 
-    # add_aluminium_to_random_state_3 // 1939
+    # add_aluminium_to_random_state_3
 	add_aluminium_to_random_state_3 {
         cost = 30
         icon = aluminium
+        visible = {
+            AND = {
+                has_tech = excavation3
+                NOT = {
+                    OR = {
+                        has_tech = excavation4
+                        has_tech = excavation5
+                    }
+                }
+            }
+        }
         available {
             AND {
                 has_stability > 0.3
                 num_of_civilian_factories_available_for_projects > 3
-                has_tech = excavation3
                 any_owned_state {
                     AND = {
                         has_resources_amount = {
@@ -732,10 +784,6 @@ prospect_for_resources = {
                             state = THIS
                         }
                     }
-                }
-                NOT = {
-                    has_tech = excavation4
-                    has_tech = excavation5
                 }
             }
         }
@@ -767,15 +815,22 @@ prospect_for_resources = {
         fire_only_once = yes
     }
 
-    # add_aluminium_to_random_state_4 // 1941
+    # add_aluminium_to_random_state_4
     add_aluminium_to_random_state_4 {
         cost = 40
         icon = aluminium
+        visible = {
+            AND = {
+                has_tech = excavation4
+                NOT = {
+                    has_tech = excavation5
+                }
+            }
+        }
         available {
             AND {
                 has_stability > 0.3
                 num_of_civilian_factories_available_for_projects > 4
-                has_tech = excavation4
                 any_owned_state {
                     AND = {
                         has_resources_amount = {
@@ -789,9 +844,6 @@ prospect_for_resources = {
                             state = THIS
                         }
                     }
-                }
-                NOT = {
-                    has_tech = excavation5
                 }
             }
         }
@@ -823,15 +875,17 @@ prospect_for_resources = {
         fire_only_once = yes
     }
 
-    # add_aluminium_to_random_state_5 // 1943
+    # add_aluminium_to_random_state_5
     add_aluminium_to_random_state_5 {
         cost = 50
         icon = aluminium
+        visible = {
+            has_tech = excavation5
+        }
         available {
             AND {
                 has_stability > 0.3
                 num_of_civilian_factories_available_for_projects > 5
-                has_tech = excavation5
                 any_owned_state {
                     AND = {
                         has_resources_amount = {
@@ -876,23 +930,39 @@ prospect_for_resources = {
         fire_only_once = yes
     }
 
-    # add_rubber_to_random_state
-	add_rubber_to_random_state {
-		cost = 25
+    # add_rubber_to_random_state_1
+	add_rubber_to_random_state_1 {
+		cost = 10
 		icon = rubber
+		visible = {
+		    AND = {
+		        has_tech = excavation1
+                NOT = {
+                    OR = {
+                        has_tech = excavation2
+                        has_tech = excavation3
+                        has_tech = excavation4
+                        has_tech = excavation5
+                    }
+                }
+            }
+		}
 		available {
 			AND {
-				has_war = yes
-				has_war_support > 0.8
-				has_stability > 0.5
+				has_stability > 0.3
 				num_of_civilian_factories_available_for_projects > 1
 				any_owned_state {
 					AND = {
 						has_resources_amount = {
 							resource = rubber
-							amount > 0
+							amount < 0
 							state = THIS
 						}
+						has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
 					}
 				}
 			}
@@ -905,9 +975,14 @@ prospect_for_resources = {
 				limit = {
 					has_resources_amount = {
 						resource = rubber
-						amount > 0
+						amount < 10
 						state = THIS
 					}
+					has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
 				}
 				add_resource {
 					type = rubber
@@ -916,9 +991,252 @@ prospect_for_resources = {
 				}
 			}
 		}
-		days_remove = 15
-		days_re_enable = 30
+		days_remove = 30
+		fire_only_once = yes
 	}
+
+	# add_rubber_to_random_state_2
+    add_rubber_to_random_state_2 {
+        cost = 20
+        icon = rubber
+        visible = {
+            AND = {
+                has_tech = excavation2
+                NOT = {
+                    OR = {
+                        has_tech = excavation3
+                        has_tech = excavation4
+                        has_tech = excavation5
+                    }
+                }
+            }
+        }
+        available {
+            AND {
+                has_stability > 0.3
+                num_of_civilian_factories_available_for_projects > 2
+                any_owned_state {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 20
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            random_owned_controlled_state {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 20
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource {
+                    type = rubber
+                    amount = 2
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+	# add_rubber_to_random_state_3
+    add_rubber_to_random_state_3 {
+        cost = 30
+        icon = rubber
+        visible = {
+            AND = {
+                has_tech = excavation3
+                NOT = {
+                    OR = {
+                        has_tech = excavation4
+                        has_tech = excavation5
+                    }
+                }
+            }
+        }
+        available {
+            AND {
+                has_stability > 0.3
+                num_of_civilian_factories_available_for_projects > 3
+                any_owned_state {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 30
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 3
+        }
+        remove_effect = {
+            random_owned_controlled_state {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 30
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource {
+                    type = rubber
+                    amount = 4
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_rubber_to_random_state_4
+    add_rubber_to_random_state_4 {
+        cost = 40
+        icon = rubber
+        visible = {
+            AND = {
+                has_tech = excavation4
+                NOT = {
+                    has_tech = excavation5
+                }
+            }
+        }
+        available {
+            AND {
+                has_stability > 0.3
+                num_of_civilian_factories_available_for_projects > 4
+                any_owned_state {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 40
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 4
+        }
+        remove_effect = {
+            random_owned_controlled_state {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 40
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource {
+                    type = rubber
+                    amount = 6
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    # add_rubber_to_random_state_5
+    add_rubber_to_random_state_5 {
+        cost = 50
+        icon = rubber
+        visible = {
+            has_tech = excavation5
+        }
+        available {
+            AND {
+                has_stability > 0.3
+
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 50
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 50
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource {
+                    type = rubber
+                    amount = 8
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 180
+        fire_only_once = yes
+    }
 
     # add_tungsten_to_random_state_1
 	add_tungsten_to_random_state_1 {
@@ -1260,9 +1578,7 @@ prospect_for_resources = {
                     }
                 }
                 NOT = {
-                    OR = {
-                        has_tech = excavation5
-                    }
+                    has_tech = excavation5
                 }
             }
         }

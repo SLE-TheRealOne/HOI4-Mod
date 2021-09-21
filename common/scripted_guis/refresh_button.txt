@@ -9,7 +9,15 @@ scripted_gui = {
 
         effects = {
             refresh_button_click = {
-                # Works
+
+                country_event = {
+                    id = custom_counters.1
+                }
+
+                country_event = {
+                    id = custom_counters.2
+                }
+
                 set_variable = { required_convoys_total = num_divisions }
                 multiply_variable = { required_convoys_total = 2.2 }
                 divide_variable = { required_convoys_total = 0.3 }
@@ -19,8 +27,6 @@ scripted_gui = {
                 set_variable = { required_convoys_neg = required_convoys }
                 multiply_variable = { required_convoys_neg = -1 }
 
-
-                # Works
                 set_variable = { required_manpower = num_battalions }
                 multiply_variable = { required_manpower = 100 }
                 set_variable = { required_manpower_neg = required_manpower }
@@ -90,6 +96,128 @@ scripted_gui = {
                     }
                     set_variable = { decrypt_level = 1 }
                     set_variable = { tooltip-basic_decryption = 1 }
+                }
+
+                if = {
+                    limit = {
+                        has_tech = tech-army-decryption_01
+                    }
+                    multiply_variable = {
+                        var = decrypt_level
+                        value = 1.13
+                    }
+                    set_variable = { tooltip-tech-army-decryption_01 = 13 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-decryption_02
+                    }
+                    multiply_variable = {
+                        var = decrypt_level
+                        value = 1.11
+                    }
+                    set_variable = { tooltip-tech-army-decryption_02 = 11 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-decryption_03
+                    }
+                    multiply_variable = {
+                        var = decrypt_level
+                        value = 1.11
+                    }
+                    set_variable = { tooltip-tech-army-decryption_03 = 11 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-decryption_04
+                    }
+                    multiply_variable = {
+                        var = decrypt_level
+                        value = 1.11
+                    }
+                    set_variable = { tooltip-tech-army-decryption_04 = 11 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-decryption_05
+                    }
+                    multiply_variable = {
+                        var = decrypt_level
+                        value = 1.12
+                    }
+                    set_variable = { tooltip-tech-army-decryption_05 = 12 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-decryption_06
+                    }
+                    multiply_variable = {
+                        var = decrypt_level
+                        value = 1.16
+                    }
+                    set_variable = { tooltip-tech-army-decryption_06 = 16 }
+                }
+
+                if = {
+                    limit = {
+                        has_tech = tech-army-encryption_01
+                    }
+                    multiply_variable = {
+                        var = encrypt_level
+                        value = 1.13
+                    }
+                    set_variable = { tooltip-tech-army-encryption_01 = 13 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-encryption_02
+                    }
+                    multiply_variable = {
+                        var = encrypt_level
+                        value = 1.11
+                    }
+                    set_variable = { tooltip-tech-army-encryption_02 = 11 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-encryption_03
+                    }
+                    multiply_variable = {
+                        var = encrypt_level
+                        value = 1.11
+                    }
+                    set_variable = { tooltip-tech-army-encryption_03 = 11 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-encryption_04
+                    }
+                    multiply_variable = {
+                        var = encrypt_level
+                        value = 1.11
+                    }
+                    set_variable = { tooltip-tech-army-encryption_04 = 11 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-encryption_05
+                    }
+                    multiply_variable = {
+                        var = encrypt_level
+                        value = 1.12
+                    }
+                    set_variable = { tooltip-tech-army-encryption_05 = 12 }
+                }
+                if = {
+                    limit = {
+                        has_tech = tech-army-encryption_06
+                    }
+                    multiply_variable = {
+                        var = encrypt_level
+                        value = 1.16
+                    }
+                    set_variable = { tooltip-tech-army-encryption_06 = 16 }
                 }
             }
         }

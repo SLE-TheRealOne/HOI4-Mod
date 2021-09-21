@@ -1,7 +1,7 @@
 ﻿l_french:
   # =======================================================     Top menu     =======================================================
-  top_menu-encryption_level-tooltip:0 "Niveau d'encryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_encryption]§! : Cryptage - codes polyalphabétiques\n £tech_mod §G[?tooltip-advanced_encryption]§! : Cryptage - Modulation d'impulsion codée\n £tech_mod §G[?tooltip-improved_encryption]§! : Cryptage - Permutations cycliques"
-  top_menu-decryption_level-tooltip:0 "Niveau de décryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_decryption]§! : Décryptage - Analyse de fréquence\n £tech_mod §G[?tooltip-advanced_decryption]§! : Décryptage - Attaque par canal auxiliaire\n £tech_mod §G[?tooltip-improved_decryption]§! : Décryptage - Déduction automatisée"
+  top_menu-encryption_level-tooltip:0 "Niveau d'encryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_encryption]§! : Cryptage - codes polyalphabétiques\n £tech_mod §G[?tooltip-advanced_encryption]§! : Cryptage - Modulation d'impulsion codée\n £tech_mod §G[?tooltip-improved_encryption]§! : Cryptage - Permutations cycliques\n £tech_mod §G[?tooltip-tech-army-encryption_01] %§! : Encryption renforcée - §CI§!\n £tech_mod §G[?tooltip-tech-army-encryption_02] %§! : Encryption renforcée - §CII§!\n £tech_mod §G[?tooltip-tech-army-encryption_03] %§! : Encryption renforcée - §CIII§!\n £tech_mod §G[?tooltip-tech-army-encryption_04] %§! : Encryption renforcée - §CIV§!\n £tech_mod §G[?tooltip-tech-army-encryption_05] %§! : Encryption renforcée - §CV§!\n £tech_mod §G[?tooltip-tech-army-encryption_06] %§! : Encryption renforcée - §CVI§!"
+  top_menu-decryption_level-tooltip:0 "Niveau de décryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_decryption]§! : Décryptage - Analyse de fréquence\n £tech_mod §G[?tooltip-advanced_decryption]§! : Décryptage - Attaque par canal auxiliaire\n £tech_mod §G[?tooltip-improved_decryption]§! : Décryptage - Déduction automatisée\n £tech_mod §G[?tooltip-tech-army-decryption_01] %§! : Décryption renforcée - §CI§!\n £tech_mod §G[?tooltip-tech-army-decryption_02] %§! : Décryption renforcée - §CII§!\n £tech_mod §G[?tooltip-tech-army-decryption_03] %§! : Décryption renforcée - §CIII§!\n £tech_mod §G[?tooltip-tech-army-decryption_04] %§! : Décryption renforcée - §CIV§!\n £tech_mod §G[?tooltip-tech-army-decryption_05] %§! : Décryption renforcée - §CV§!\n £tech_mod §G[?tooltip-tech-army-decryption_06] %§! : Décryption renforcée - §CVI§!"
   top_menu-refresh_button-tooltip:0 "Cliquer pour mettre à jour les niveaux d'encryption et de décryption"
 
   # =======================================================     Décisions     =======================================================
@@ -42,8 +42,16 @@
   add_aluminium_to_random_state_4_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
   add_aluminium_to_random_state_5:0 "§CProspection d'aluminium - V§!"
   add_aluminium_to_random_state_5_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
-  add_rubber_to_random_state:0 "§CProspection de caoutchouc§!"
-  add_rubber_to_random_state_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
+  add_rubber_to_random_state_1:0 "§CProspection de caoutchouc - I§!"
+  add_rubber_to_random_state_1_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
+  add_rubber_to_random_state_2:0 "§CProspection de caoutchouc - II§!"
+  add_rubber_to_random_state_2_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
+  add_rubber_to_random_state_3:0 "§CProspection de caoutchouc - III§!"
+  add_rubber_to_random_state_3_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
+  add_rubber_to_random_state_4:0 "§CProspection de caoutchouc - IV§!"
+  add_rubber_to_random_state_4_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
+  add_rubber_to_random_state_5:0 "§CProspection de caoutchouc - V§!"
+  add_rubber_to_random_state_5_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
   add_tungsten_to_random_state_1:0 "§CProspection de tungstène - I§!"
   add_tungsten_to_random_state_1_desc:0 "En consacrant de la main d'oeuvre et de la capacité industrielle, il devrait être possible de trouver un gisement de cette ressource dans l'un de nos états"
   add_tungsten_to_random_state_2:0 "§CProspection de tungstène - II§!"
@@ -112,25 +120,22 @@
   manpower_usage_desc:0 "Nous ne pouvons pas encore envoyer tous nos soldats au front ; trouvons leur d'autres missions pour soutenir l'effort de guerre. Notre état-major organisera le transfert et chacun de nos bataillons fournira les soldats"
   resources_production_boost:0 "§CAugmenter la production de ressources§!"
   resources_production_boost_cost:0 "[?required_command_power] £command_power [?manpower_80_cost] £manpower_icon"
-  resources_production_boost_cost_blocked:0 "§Y$DAYS$ jours§!"
+  resources_production_boost_cost_blocked:0 "§R[?required_command_power]§! £command_power §R[?manpower_80_cost]§! £manpower_icon"
   naval_shipyards_boost:0 "§CBooster la production navale§!"
   naval_shipyards_boost_cost:0 "[?required_command_power] £command_power [?manpower_80_cost] £manpower_icon"
-  naval_shipyards_boost_cost_blocked:0 "§Y$DAYS$ jours§!"
+  naval_shipyards_boost_cost_blocked:0 "§R[?required_command_power]§! £command_power §R[?manpower_80_cost]§! £manpower_icon"
   civil_factories_boost:0 "§CAugmenter la vitesse de construction§!"
   civil_factories_boost_cost:0 "[?required_command_power] £command_power [?manpower_80_cost] £manpower_icon"
-  civil_factories_boost_cost_blocked:0 "§Y$DAYS$ jours§!"
+  civil_factories_boost_cost_blocked:0 "§R[?required_command_power]§! £command_power §R[?manpower_80_cost]§! £manpower_icon"
   military_factories_boost:0 "§CBooster les usines militaires§!"
   military_factories_boost_cost:0 "[?required_command_power] £command_power [?manpower_80_cost] £manpower_icon"
-  military_factories_boost_cost_blocked:0 "§Y$DAYS$ jours§!"
+  military_factories_boost_cost_blocked:0 "§R[?required_command_power]§! £command_power §R[?manpower_80_cost]§! £manpower_icon"
   stability_increase:0 "§CFaire taire la grogne§!"
   stability_increase_cost:0 "[?required_command_power] £command_power [?manpower_65_cost] £manpower_icon"
-  stability_increase_cost_blocked:0 "§Y$DAYS$ jours§!"
+  stability_increase_cost_blocked:0 "§R[?required_command_power]§! £command_power §R[?manpower_80_cost]§! £manpower_icon"
 
-  # =======================================================     Menu politique     =======================================================
+  # =======================================================     Ideas    =======================================================
   public_figures:0 "Personnages publics"
-  industry_captain:0 "Capitaine d'industrie"
-  worker_hero:0 "Héro de l'arrière"
-  ace_of_aces:0 "As des as"
 
   investor:0 "Investisseur"
   factory_production_booster:0 "Bourreau des cadences"
@@ -140,16 +145,31 @@
   consumer_goods_reductor:0 "Fée du logis"
   air_operations_planner:0 "Opérateur de vol"
   air_trainer:0 "Instructeur de vol"
-  oss_117:0 "OSS 117"
-  oss_117_desc:0 "Hubert Bonisseur de la Batte"
-  spy:0 "Maître espion"
-  attribution_officer:0 "Intendant général"
 
+  war_hero:0 "Héros de guerre"
+  war_hero_desc:0 "Ses exploits au front sont sur toutes les lèvres, son portrait dans tous les camps d'entrainement et sa réputation flamboyante"
+  worker_hero:0 "Héro de l'arrière"
+  worker_hero_desc:0 "Cette figure d'inspiration montre que tous les efforts et exploits ne sont pas que militaires. Les ouvriers aussi combattent à leur façon"
+  industry_captain:0 "Capitaine d'industrie"
+  industry_captain_desc:0 "Les entrepreneurs, artisans et ouvriers suivront ce capitaine et diffuseront ses idées brillantes dans nos usines"
+  ace_of_aces:0 "As des as"
+  ace_of_aces_desc:0 "Un pilote connu au dela des frontières de l'armée de l'air. Ses exploits aériens inspirent les aspirants pilotes"
+  great_spy:0 "Maître espion"
+  great_spy_desc:0 "Les aventures, plus ou moins romancées, de nos espions encouragent le peuple et l'encourage à soutenir l'effort de guerre"
+  public_ennemy:0 "Ennemi public"
+
+  oss_117:0 "OSS 117"
+  oss_117_desc:0 "Agent célèbre au service du gouvernement à double face, diplomate autant qu'espion"
+  james_bond:0 "James Bond"
+  james_bond_desc:0 "Héros de roman ou véritable agent à notre service ? Personne ne le sait vraiment"
+  la_brume:0 "La Brume"
+  la_brume_desc:0 "La Brume, tout le monde la sent mais personne ne la voit. Idéal pour notre agent"
 
   # =======================================================     Bâtiments     =======================================================
   dry_dock:0 "Cale sèche"
   dry_dock_desc:0 "Disposer d'un espace supplémentaire permet d'améliorer la productivité du chantier naval"
-
+  industrial_district:0 "District industriel"
+  industrial_district_desc:0 "Concentrer les logements des ouvriers près de leurs usines et améliorer les transports collectifs pour aller et venir permettra d'encore accélérer la production"
 
   # =======================================================     Event     =======================================================
   test_namespace.1.title:0 "on_ace_killed"

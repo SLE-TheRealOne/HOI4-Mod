@@ -1,0 +1,335 @@
+add_namespace = custom_counters
+
+# Dry dock event
+country_event = {
+    id = custom_counters.1
+    title = custom_counter.1.title
+    desc = custom_counter.1.desc
+    picture = gre_royal_hellenic_naval_shipyard
+
+    is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+
+        set_variable = { dry_dock_counter = 0 }
+        every_owned_state = {
+            limit = {
+                is_owned_and_controlled_by = ROOT
+            }
+            add_to_variable = {
+                var = ROOT.dry_dock_counter
+                value = building_level@dry_dock
+            }
+        }
+
+        # Palier 01
+        if = {
+            limit = {
+                has_tech = tech-top_industry-dry_dock_threshold_01
+            }
+            if = {
+                limit = {
+                    check_variable = { dry_dock_counter < 5 }
+                }
+                set_variable = { dry_dock_bonus_percentage = 0 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 5
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { dry_dock_counter < 8 }
+                }
+                set_variable = { dry_dock_bonus_percentage = 5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 8
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { dry_dock_bonus_percentage = 7.5 }
+            }
+        }
+
+        # Palier 02
+        if = {
+            limit = {
+                has_tech = tech-top_industry-dry_dock_threshold_02
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 8
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { dry_dock_counter < 20 }
+                }
+                set_variable = { dry_dock_bonus_percentage = 7.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 20
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { dry_dock_counter < 25 }
+                }
+                set_variable = { dry_dock_bonus_percentage = 10 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 25
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { dry_dock_bonus_percentage = 12.5 }
+            }
+        }
+
+        # Palier 03
+        if = {
+            limit = {
+                has_tech = tech-top_industry-dry_dock_threshold_03
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 25
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { dry_dock_counter < 45 }
+                }
+                set_variable = { dry_dock_bonus_percentage = 12.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = dry_dock_counter
+                        value = 45
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { dry_dock_counter < 53 }
+                }
+                set_variable = { dry_dock_bonus_percentage = 15 }
+            } else_if = {
+                 limit = {
+                     check_variable = {
+                         var = dry_dock_counter
+                         value = 53
+                         compare = greater_than_or_equals
+                     }
+                 }
+                 set_variable = { dry_dock_bonus_percentage = 17.5 }
+            }
+        }
+
+        # Palier 04
+        if = {
+            limit = {
+                has_tech = tech-top_industry-dry_dock_threshold_01
+            }
+            if = {
+                 limit = {
+                     check_variable = {
+                         var = dry_dock_counter
+                         value = 53
+                         compare = greater_than_or_equals
+                     }
+                     check_variable = { dry_dock_counter < 80 }
+                 }
+                 set_variable = { dry_dock_bonus_percentage = 17.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                         var = dry_dock_counter
+                         value = 80
+                         compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { dry_dock_bonus_percentage = 20 }
+                set_temp_variable = { delta = dry_dock_counter }
+                subtract_from_temp_variable { delta = 80 }
+                add_to_variable { dry_dock_bonus_percentage = delta }
+            }
+        }
+
+        divide_variable = { dry_dock_bonus_percentage = 100 }
+
+        add_dynamic_modifier = {
+            modifier = dry_dock_counted_modifier
+        }
+    }
+}
+
+# Industrial district event
+country_event = {
+    id = custom_counters.2
+    title = custom_counter.2.title
+    desc = custom_counter.2.desc
+    picture = gre_royal_hellenic_naval_shipyard
+
+    is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+
+        set_variable = { industrial_district_counter = 0 }
+        every_owned_state = {
+            limit = {
+                is_owned_and_controlled_by = ROOT
+            }
+            add_to_variable = {
+                var = ROOT.industrial_district_counter
+                value = building_level@industrial_district
+            }
+        }
+
+        # Palier 01
+        if = {
+            limit = {
+                has_tech = tech-mass_industry-industrial_district_threshold_01
+            }
+            if = {
+                limit = {
+                    check_variable = { industrial_district_counter < 5 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 0 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 5
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { industrial_district_counter < 8 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 8
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { industrial_district_bonus_percentage = 7.5 }
+            }
+        }
+
+        # Palier 02
+        if = {
+            limit = {
+                has_tech = tech-mass_industry-industrial_district_threshold_02
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 8
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { industrial_district_counter < 20 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 7.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 20
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { industrial_district_counter < 25 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 10 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 25
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { industrial_district_bonus_percentage = 12.5 }
+            }
+        }
+
+        # Palier 03
+        if = {
+            limit = {
+                has_tech = tech-mass_industry-industrial_district_threshold_03
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 25
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { industrial_district_counter < 45 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 12.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 45
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { industrial_district_counter < 53 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 15 }
+            } else_if = {
+                 limit = {
+                     check_variable = {
+                         var = industrial_district_counter
+                         value = 53
+                         compare = greater_than_or_equals
+                     }
+                 }
+                 set_variable = { industrial_district_bonus_percentage = 17.5 }
+            }
+        }
+
+        # Palier 04
+        if = {
+            limit = {
+                has_tech = tech-mass_industry-industrial_district_threshold_04
+            }
+            if = {
+                 limit = {
+                     check_variable = {
+                         var = industrial_district_counter
+                         value = 53
+                         compare = greater_than_or_equals
+                     }
+                     check_variable = { industrial_district_counter < 80 }
+                 }
+                 set_variable = { industrial_district_bonus_percentage = 17.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                         var = industrial_district_counter
+                         value = 80
+                         compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { industrial_district_bonus_percentage = 20 }
+                set_temp_variable = { delta = industrial_district_counter }
+                subtract_from_temp_variable { delta = 80 }
+                add_to_variable { industrial_district_bonus_percentage = delta }
+            }
+        }
+
+        divide_variable = { industrial_district_bonus_percentage = 100 }
+
+        add_dynamic_modifier = {
+            modifier = industrial_district_counted_modifier
+        }
+    }
+}

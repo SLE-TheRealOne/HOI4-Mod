@@ -1,0 +1,14 @@
+default = {
+	male = {
+		names = { "Mark" "David" "Antoine" "Christopher" "Franck"}
+		surnames = { }
+		callsigns = { "Ropers" "Hermès" "Prometheus"}
+	}
+	female = {
+		names = { "Victoria" "Abigail" "Rose" "Diana" "Lexa" "Elya" "Emily" "Emilie" "Charlotte" "Coralie" "Sandrine" "Vanessa"}
+		surnames = { }
+		callsigns = { "Light" "Apple" "Hera" "Willow" "Buffy" }
+	}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Senseï" "Hallowed" "Lucky" "Glory" }
+}

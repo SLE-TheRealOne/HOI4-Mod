@@ -41,6 +41,7 @@ technologies = {
 
 				################################################
 
+    # tech-light_navy-sub_detection_01
 	tech-light_navy-sub_detection_01 = {
 		start_year = 1941
 		doctrine = yes
@@ -61,18 +62,19 @@ technologies = {
 		}
 
 		destroyer = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		submarine = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		light_cruiser = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 	}
 
+    # tech-light_navy-sub_detection_02
 	tech-light_navy-sub_detection_02 = {
 		start_year = 1942
 		doctrine = yes
@@ -93,18 +95,19 @@ technologies = {
 		}
 
 		destroyer = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		submarine = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		light_cruiser = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 	}
 
+    # tech-light_navy-sub_detection_03
 	tech-light_navy-sub_detection_03 = {
 		start_year = 1943
 		doctrine = yes
@@ -125,18 +128,19 @@ technologies = {
 		}
 
 		destroyer = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		submarine = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		light_cruiser = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 	}
 
+    # tech-light_navy-sub_detection_04
 	tech-light_navy-sub_detection_04 = {
 		start_year = 1944
 		doctrine = yes
@@ -157,18 +161,19 @@ technologies = {
 		}
 
 		destroyer = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		submarine = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		light_cruiser = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 	}
 
+    # tech-light_navy-sub_detection_05
 	tech-light_navy-sub_detection_05 = {
 		start_year = 1945
 		doctrine = yes
@@ -184,23 +189,20 @@ technologies = {
 			additional_technology_category_navy
 		}
 
-		path = {
-			leads_to_tech = tech-light_navy_end
-		}
-
 		destroyer = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		submarine = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 		
 		light_cruiser = {
-			sub_detection = 0.05
+			sub_detection = 0.03
 		}
 	}
-	
+
+	# tech-light_navy-speed_01
 	tech-light_navy-speed_01 = {
 		start_year = 1941
 		doctrine = yes
@@ -221,18 +223,19 @@ technologies = {
 		}
 
 		destroyer = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		submarine = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		light_cruiser = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 	}
 
+    # tech-light_navy-speed_02
 	tech-light_navy-speed_02 = {
 		start_year = 1942
 		doctrine = yes
@@ -253,18 +256,19 @@ technologies = {
 		}
 
 		destroyer = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		submarine = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		light_cruiser = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 	}
-	
+
+	# tech-light_navy-speed_03
 	tech-light_navy-speed_03 = {
 		start_year = 1943
 		doctrine = yes
@@ -285,18 +289,19 @@ technologies = {
 		}
 
 		destroyer = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		submarine = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		light_cruiser = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 	}
 
+    # tech-light_navy-speed_04
 	tech-light_navy-speed_04 = {
 		start_year = 1944
 		doctrine = yes
@@ -317,18 +322,19 @@ technologies = {
 		}
 
 		destroyer = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		submarine = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		light_cruiser = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 	}
 
+    # tech-light_navy-speed_05
 	tech-light_navy-speed_05 = {
 		start_year = 1945
 		doctrine = yes
@@ -344,23 +350,20 @@ technologies = {
 			additional_technology_category_navy
 		}
 
-		path = {
-			leads_to_tech = tech-light_navy_end
-		}
-
 		destroyer = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		submarine = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 		
 		light_cruiser = {
-			naval_speed = 0.05
+			naval_speed = 0.03
 		}
 	}
 
+    # tech-light_navy-reliability_01
 	tech-light_navy-reliability_01 = {
 		start_year = 1941
 		doctrine = yes
@@ -381,18 +384,19 @@ technologies = {
 		}
 
 		destroyer = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 		
 		submarine = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 
 		light_cruiser = {
-            reliability = 0.05
+            reliability = 0.03
         }
 	}
 
+    # tech-light_navy-reliability_02
 	tech-light_navy-reliability_02 = {
 		start_year = 1942
 		doctrine = yes
@@ -413,18 +417,19 @@ technologies = {
 		}
 
 		destroyer = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 		
 		submarine = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 
 		light_cruiser = {
-            reliability = 0.05
+            reliability = 0.03
         }
 	}
 
+    # tech-light_navy-reliability_03
 	tech-light_navy-reliability_03 = {
 		start_year = 1943
 		doctrine = yes
@@ -445,18 +450,19 @@ technologies = {
 		}
 
 		destroyer = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 		
 		submarine = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 
 		light_cruiser = {
-            reliability = 0.05
+            reliability = 0.03
         }
 	}
-	
+
+	# tech-light_navy-reliability_04
 	tech-light_navy-reliability_04 = {
 		start_year = 1944
 		doctrine = yes
@@ -477,18 +483,19 @@ technologies = {
 		}
 
 		destroyer = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 		
 		submarine = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 
 		light_cruiser = {
-            reliability = 0.05
+            reliability = 0.03
         }
 	}
 
+    # tech-light_navy-reliability_05
 	tech-light_navy-reliability_05 = {
 		start_year = 1944
 		doctrine = yes
@@ -504,23 +511,20 @@ technologies = {
 			additional_technology_category_navy
 		}
 
-		path = {
-			leads_to_tech = tech-light_navy_end
-		}
-
 		destroyer = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 		
 		submarine = {
-			reliability = 0.05
+			reliability = 0.03
 		}
 
 		light_cruiser = {
-            reliability = 0.05
+            reliability = 0.03
         }
 	}
 
+    # tech-light_navy-convoy_specialists_01
 	tech-light_navy-convoy_specialists_01 = {
 		start_year = 1941
 		doctrine = yes
@@ -541,11 +545,12 @@ technologies = {
 		}
 
 		modifier = {
-			convoy_escort_efficiency = 0.05
-			convoy_raiding_efficiency_factor = 0.05
+			convoy_escort_efficiency = 0.03
+			convoy_raiding_efficiency_factor = 0.03
 		}
 	}
 
+    # tech-light_navy-convoy_specialists_02
 	tech-light_navy-convoy_specialists_02 = {
 		start_year = 1942
 		doctrine = yes
@@ -566,11 +571,12 @@ technologies = {
 		}
 
 		modifier = {
-			convoy_escort_efficiency = 0.05
-			convoy_raiding_efficiency_factor = 0.05
+			convoy_escort_efficiency = 0.03
+			convoy_raiding_efficiency_factor = 0.03
 		}
 	}
 
+    # tech-light_navy-convoy_specialists_03
 	tech-light_navy-convoy_specialists_03 = {
 		start_year = 1943
 		doctrine = yes
@@ -591,11 +597,12 @@ technologies = {
 		}
 
 		modifier = {
-			convoy_escort_efficiency = 0.05
-			convoy_raiding_efficiency_factor = 0.05
+			convoy_escort_efficiency = 0.03
+			convoy_raiding_efficiency_factor = 0.03
 		}
 	}
 
+    # tech-light_navy-convoy_specialists_04
 	tech-light_navy-convoy_specialists_04 = {
 		start_year = 1944
 		doctrine = yes
@@ -616,11 +623,12 @@ technologies = {
 		}
 
 		modifier = {
-			convoy_escort_efficiency = 0.05
-			convoy_raiding_efficiency_factor = 0.05
+			convoy_escort_efficiency = 0.03
+			convoy_raiding_efficiency_factor = 0.03
 		}
 	}
 
+    # tech-light_navy-convoy_specialists_05
 	tech-light_navy-convoy_specialists_05 = {
 		start_year = 1945
 		doctrine = yes
@@ -636,34 +644,10 @@ technologies = {
 			additional_technology_category_navy
 		}
 
-		path = {
-			leads_to_tech = tech-light_navy_end
-		}
-
 		modifier = {
-			convoy_escort_efficiency = 0.05
-			convoy_raiding_efficiency_factor = 0.05
+			convoy_escort_efficiency = 0.03
+			convoy_raiding_efficiency_factor = 0.03
 		}
 	}
 
-				################################################
-
-	tech-light_navy_end = {
-		start_year = 1946
-		doctrine = yes
-		research_cost = 1
-
-		folder = {
-			name = additional_technologies_navy_folder
-			position = { x = 0 y = 12 }
-		}
-		
-		categories = {
-			additional_technology_category
-			additional_technology_category_navy
-		}
-
-		navy_screen_attack_factor=0.05
-		navy_screen_defence_factor=0.05
-	}
 }

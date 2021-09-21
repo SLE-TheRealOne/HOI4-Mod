@@ -1,0 +1,19 @@
+dry_dock_counted_modifier = {
+    enable = {
+        dry_dock_bonus_percentage > 0
+    }
+    remove_trigger = {
+        dry_dock_bonus_percentage = 0
+    }
+    industrial_capacity_dockyard = dry_dock_bonus_percentage
+}
+
+industrial_district_counted_modifier = {
+    enable = {
+        industrial_district_bonus_percentage > 0
+    }
+    remove_trigger = {
+        industrial_district_bonus_percentage = 0
+    }
+    production_speed_buildings_factor = industrial_district_bonus_percentage
+}

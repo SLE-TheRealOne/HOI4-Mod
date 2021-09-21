@@ -1,0 +1,10 @@
+scripted_gui = {
+    industrial_district_counter = {
+        window_name = industrial_district_counter_container
+        context_type = player_context
+
+        visible = {
+            always = yes
+		}
+    }
+}

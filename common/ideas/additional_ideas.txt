@@ -68,6 +68,15 @@ ideas = {
                 factor = 0
             }
         }
+
+        worker_hero_03 = {
+            picture = worker_3
+            cost = 150
+            traits = { consumer_goods_reductor }
+            ai_will_do = {
+                factor = 0
+            }
+        }
 	}
 
     ace_of_aces = {
@@ -89,12 +98,30 @@ ideas = {
             }
         }
     }
+
+    public_ennemy = {
+        public_ennemy_01 = {
+            picture = public_ennemy_1
+            cost = 150
+            traits = {  }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        public_ennemy_02 = {
+            picture = public_ennemy_2
+            cost = 250
+            traits = {  }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    }
+
+	great_spy = {
 	
-	
-	
-	high_command = {
-	
-		logistics = {
+		james_bond = {
 			cost = 150
 			traits = { attribution_officer }
 			ai_will_do = {
@@ -103,7 +130,15 @@ ideas = {
 		}
 		
 		oss_117 = {
-            cost = 200
+            cost = 150
+            traits = { spy }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        la_brume = {
+            cost = 150
             traits = { spy }
             ai_will_do = {
                 factor = 0

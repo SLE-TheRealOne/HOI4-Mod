@@ -1,0 +1,10 @@
+scripted_gui = {
+    dry_dock_counter = {
+        window_name = dry_dock_counter_container
+        context_type = player_context
+
+        visible = {
+            always = yes
+		}
+    }
+}

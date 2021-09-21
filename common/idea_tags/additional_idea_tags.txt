@@ -5,6 +5,8 @@ idea_categories = {
         slot = war_hero
         slot = worker_hero
         slot = ace_of_aces
+        slot = public_ennemy
+        slot = great_spy
 
         removal_cost = 50
     }

@@ -27,5 +27,6 @@ on_actions = {
             set_variable = { required_command_power_neg = required_command_power }
             multiply_variable = { required_command_power_neg = -1 }
         }
+
     }
 }

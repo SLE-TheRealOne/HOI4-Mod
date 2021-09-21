@@ -345,3 +345,10 @@
   tech-army-attrition_05_desc:0 "Recherche améliorée"
   tech-army-attrition_06:0 "Toujours creuser, jamais s'enfouir - §CVI§!"
   tech-army-attrition_06_desc:0 "Recherche améliorée"
+
+  # =========================================================       Industry       =========================================================
+  tech-top_industry_start:0 "Démarrage"
+  tech-top_industry_start_desc:0 "Commençons à sonder et à réflechir sur ce que nous pourrions faire"
+
+  tech-mass_industry_start:0 "Démarrage"
+  tech-mass_industry_start_desc:0 "Commençons à sonder et à réflechir sur ce que nous pourrions faire"

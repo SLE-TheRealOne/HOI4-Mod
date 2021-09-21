@@ -1,0 +1,475 @@
+technologies = {
+
+    # tech-mass_industry_start
+    tech-mass_industry_start = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name =  additional_technologies_industry_folder
+            position = { x = 0 y = 0 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_speed_buildings_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_factory_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_dockyard_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-production_oil_factor_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_district_threshold_01
+        }
+    }
+
+     # =========================================
+
+    # tech-mass_industry-industrial_capacity_factory_boost_01
+    tech-mass_industry-industrial_capacity_factory_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -4 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_factory = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_factory_boost_02
+        }
+    }
+
+    # tech-mass_industry-industrial_capacity_factory_boost_02
+    tech-mass_industry-industrial_capacity_factory_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -4 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_factory = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_factory_boost_03
+        }
+    }
+
+    # tech-mass_industry-industrial_capacity_factory_boost_03
+    tech-mass_industry-industrial_capacity_factory_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -4 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_factory = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_factory_boost_04
+        }
+    }
+
+    # tech-mass_industry-industrial_capacity_factory_boost_04
+    tech-mass_industry-industrial_capacity_factory_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -4 y = 14 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_factory = 0.02
+    }
+
+    # tech-mass_industry-industrial_capacity_dockyard_boost_01
+    tech-mass_industry-industrial_capacity_dockyard_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -2 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_dockyard = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_dockyard_boost_02
+        }
+    }
+
+    # tech-mass_industry-industrial_capacity_dockyard_boost_02
+    tech-mass_industry-industrial_capacity_dockyard_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -2 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_dockyard = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_dockyard_boost_03
+        }
+    }
+
+    # tech-mass_industry-industrial_capacity_dockyard_boost_03
+    tech-mass_industry-industrial_capacity_dockyard_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -2 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_dockyard = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_capacity_dockyard_boost_04
+        }
+    }
+
+    # tech-mass_industry-industrial_capacity_dockyard_boost_04
+    tech-mass_industry-industrial_capacity_dockyard_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -2 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        industrial_capacity_dockyard = 0.02
+    }
+
+    # tech-mass_industry-global_building_slots_factor_boost_01
+    tech-mass_industry-global_building_slots_factor_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 0 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        global_building_slots_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_02
+        }
+    }
+
+    # tech-mass_industry-global_building_slots_factor_boost_02
+    tech-mass_industry-global_building_slots_factor_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 0 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        global_building_slots_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_03
+        }
+    }
+
+    # tech-mass_industry-global_building_slots_factor_boost_03
+    tech-mass_industry-global_building_slots_factor_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 0 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        global_building_slots_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_04
+        }
+    }
+
+    # tech-mass_industry-global_building_slots_factor_boost_04
+    tech-mass_industry-global_building_slots_factor_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 0 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        global_building_slots_factor = 0.02
+    }
+
+    # tech-mass_industry-production_oil_factor_boost_01
+    tech-mass_industry-production_oil_factor_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 2 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        fuel_gain_factor_from_states = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-production_oil_factor_boost_02
+        }
+    }
+
+    # tech-mass_industry-production_oil_factor_boost_02
+    tech-mass_industry-production_oil_factor_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 2 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        fuel_gain_factor_from_states = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-production_oil_factor_boost_03
+        }
+    }
+
+    # tech-mass_industry-production_oil_factor_boost_03
+    tech-mass_industry-production_oil_factor_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 2 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        fuel_gain_factor_from_states = 0.02
+
+        path = {
+            leads_to_tech = tech-mass_industry-production_oil_factor_boost_04
+        }
+    }
+
+    # tech-mass_industry-production_oil_factor_boost_04
+    tech-mass_industry-production_oil_factor_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 2 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        fuel_gain_factor_from_states = 0.02
+    }
+
+    # tech-mass_industry-industrial_district_threshold_01
+    tech-mass_industry-industrial_district_threshold_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 4 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_district_threshold_02
+        }
+    }
+
+    # tech-mass_industry-industrial_district_threshold_02
+    tech-mass_industry-industrial_district_threshold_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 4 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_district_threshold_03
+        }
+    }
+
+    # tech-mass_industry-industrial_district_threshold_03
+    tech-mass_industry-industrial_district_threshold_03 = {
+        start_year = 1939
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 4 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        path = {
+            leads_to_tech = tech-mass_industry-industrial_district_threshold_04
+        }
+    }
+
+    # tech-mass_industry-industrial_district_threshold_04
+    tech-mass_industry-industrial_district_threshold_04 = {
+        start_year = 1941
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 4 y = 12 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+    }
+}

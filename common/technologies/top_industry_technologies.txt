@@ -1,0 +1,569 @@
+technologies = {
+
+    # tech-top_industry_start
+    tech-top_industry_start = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name =  additional_technologies_industry_folder
+            position = { x = 0 y = 0 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_start_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-dry_dock_threshold_01
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_max_efficiency_factor_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_start_efficiency_factor_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-equipment_conversion_speed_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_efficiency_gain_factor_boost_01
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-line_change_production_efficiency_factor_boost_01
+        }
+    }
+
+    # =========================================
+
+    # tech-top_industry-dry_dock_threshold_01
+    tech-top_industry-dry_dock_threshold_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -5 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-dry_dock_threshold_02
+        }
+    }
+
+    # tech-top_industry-dry_dock_threshold_02
+    tech-top_industry-dry_dock_threshold_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -5 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-dry_dock_threshold_03
+        }
+    }
+
+    # tech-top_industry-dry_dock_threshold_03
+    tech-top_industry-dry_dock_threshold_03 = {
+        start_year = 1939
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -5 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        path = {
+            leads_to_tech = tech-top_industry-dry_dock_threshold_04
+        }
+    }
+
+    # tech-top_industry-dry_dock_threshold_04
+    tech-top_industry-dry_dock_threshold_04 = {
+        start_year = 1941
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -5 y = 12 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+    }
+
+    # tech-top_industry-production_factory_max_efficiency_factor_boost_01
+    tech-top_industry-production_factory_max_efficiency_factor_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -3 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_max_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_max_efficiency_factor_boost_02
+        }
+    }
+
+    # tech-top_industry-production_factory_max_efficiency_factor_boost_02
+    tech-top_industry-production_factory_max_efficiency_factor_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -3 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_max_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_max_efficiency_factor_boost_03
+        }
+    }
+
+    # tech-top_industry-production_factory_max_efficiency_factor_boost_03
+    tech-top_industry-production_factory_max_efficiency_factor_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -3 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_max_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_max_efficiency_factor_boost_04
+        }
+    }
+
+    # tech-top_industry-production_factory_max_efficiency_factor_boost_04
+    tech-top_industry-production_factory_max_efficiency_factor_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -3 y = 14 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_max_efficiency_factor = 0.02
+
+    }
+
+    # tech-top_industry-line_change_production_efficiency_factor_boost_01
+    tech-top_industry-line_change_production_efficiency_factor_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -1 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        line_change_production_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-line_change_production_efficiency_factor_boost_02
+        }
+    }
+
+    # tech-top_industry-line_change_production_efficiency_factor_boost_02
+    tech-top_industry-line_change_production_efficiency_factor_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -1 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        line_change_production_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-line_change_production_efficiency_factor_boost_03
+        }
+    }
+
+    # tech-top_industry-line_change_production_efficiency_factor_boost_03
+    tech-top_industry-line_change_production_efficiency_factor_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -1 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        line_change_production_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-line_change_production_efficiency_factor_boost_04
+        }
+    }
+
+    # tech-top_industry-line_change_production_efficiency_factor_boost_04
+    tech-top_industry-line_change_production_efficiency_factor_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = -1 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        line_change_production_efficiency_factor = 0.02
+    }
+
+    # tech-top_industry-production_factory_start_efficiency_factor_boost_01
+    tech-top_industry-production_factory_start_efficiency_factor_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 1 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_start_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_start_efficiency_factor_boost_02
+        }
+    }
+
+    # tech-top_industry-production_factory_start_efficiency_factor_boost_02
+    tech-top_industry-production_factory_start_efficiency_factor_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 1 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_start_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_start_efficiency_factor_boost_03
+        }
+    }
+
+    # tech-top_industry-production_factory_start_efficiency_factor_boost_03
+    tech-top_industry-production_factory_start_efficiency_factor_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 1 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_start_efficiency_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_start_efficiency_factor_boost_04
+        }
+    }
+
+    # tech-top_industry-production_factory_start_efficiency_factor_boost_04
+    tech-top_industry-production_factory_start_efficiency_factor_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 1 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_start_efficiency_factor = 0.02
+    }
+
+    # tech-top_industry-equipment_conversion_speed_boost_01
+    tech-top_industry-equipment_conversion_speed_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 3 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        equipment_conversion_speed = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-equipment_conversion_speed_boost_02
+        }
+    }
+
+    # tech-top_industry-equipment_conversion_speed_boost_02
+    tech-top_industry-equipment_conversion_speed_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 3 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        equipment_conversion_speed = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-equipment_conversion_speed_boost_03
+        }
+    }
+
+    # tech-top_industry-equipment_conversion_speed_boost_03
+    tech-top_industry-equipment_conversion_speed_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 3 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        equipment_conversion_speed = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-equipment_conversion_speed_boost_04
+        }
+    }
+
+    # tech-top_industry-equipment_conversion_speed_boost_04
+    tech-top_industry-equipment_conversion_speed_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 3 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        equipment_conversion_speed = 0.02
+    }
+
+    # tech-top_industry-production_factory_efficiency_gain_factor_boost_01
+    tech-top_industry-production_factory_efficiency_gain_factor_boost_01 = {
+        start_year = 1936
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 5 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_efficiency_gain_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_efficiency_gain_factor_boost_02
+        }
+    }
+
+    # tech-top_industry-production_factory_efficiency_gain_factor_boost_02
+    tech-top_industry-production_factory_efficiency_gain_factor_boost_02 = {
+        start_year = 1937
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 5 y = 4 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_efficiency_gain_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_efficiency_gain_factor_boost_03
+        }
+    }
+
+    # tech-top_industry-production_factory_efficiency_gain_factor_boost_03
+    tech-top_industry-production_factory_efficiency_gain_factor_boost_03 = {
+        start_year = 1938
+        doctrine = no
+        research_cost = 0.75
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 5 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_efficiency_gain_factor = 0.02
+
+        path = {
+            leads_to_tech = tech-top_industry-production_factory_efficiency_gain_factor_boost_04
+        }
+    }
+
+    # tech-top_industry-production_factory_efficiency_gain_factor_boost_04
+    tech-top_industry-production_factory_efficiency_gain_factor_boost_04 = {
+        start_year = 1942
+        doctrine = no
+        research_cost = 1
+
+        folder = {
+            name = additional_technologies_industry_folder
+            position = { x = 5 y = 8 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_industry
+        }
+
+        production_factory_efficiency_gain_factor = 0.02
+    }
+}
