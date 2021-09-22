@@ -2,7 +2,11 @@
   # =======================================================     Top menu     =======================================================
   top_menu-encryption_level-tooltip:0 "Niveau d'encryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_encryption]§! : Cryptage - codes polyalphabétiques\n £tech_mod §G[?tooltip-advanced_encryption]§! : Cryptage - Modulation d'impulsion codée\n £tech_mod §G[?tooltip-improved_encryption]§! : Cryptage - Permutations cycliques\n £tech_mod §G[?tooltip-tech-army-encryption_01] %§! : Encryption renforcée - §CI§!\n £tech_mod §G[?tooltip-tech-army-encryption_02] %§! : Encryption renforcée - §CII§!\n £tech_mod §G[?tooltip-tech-army-encryption_03] %§! : Encryption renforcée - §CIII§!\n £tech_mod §G[?tooltip-tech-army-encryption_04] %§! : Encryption renforcée - §CIV§!\n £tech_mod §G[?tooltip-tech-army-encryption_05] %§! : Encryption renforcée - §CV§!\n £tech_mod §G[?tooltip-tech-army-encryption_06] %§! : Encryption renforcée - §CVI§!"
   top_menu-decryption_level-tooltip:0 "Niveau de décryption venant des possibles sources : \n\n £tech_mod §G[?tooltip-basic_decryption]§! : Décryptage - Analyse de fréquence\n £tech_mod §G[?tooltip-advanced_decryption]§! : Décryptage - Attaque par canal auxiliaire\n £tech_mod §G[?tooltip-improved_decryption]§! : Décryptage - Déduction automatisée\n £tech_mod §G[?tooltip-tech-army-decryption_01] %§! : Décryption renforcée - §CI§!\n £tech_mod §G[?tooltip-tech-army-decryption_02] %§! : Décryption renforcée - §CII§!\n £tech_mod §G[?tooltip-tech-army-decryption_03] %§! : Décryption renforcée - §CIII§!\n £tech_mod §G[?tooltip-tech-army-decryption_04] %§! : Décryption renforcée - §CIV§!\n £tech_mod §G[?tooltip-tech-army-decryption_05] %§! : Décryption renforcée - §CV§!\n £tech_mod §G[?tooltip-tech-army-decryption_06] %§! : Décryption renforcée - §CVI§!"
-  top_menu-refresh_button-tooltip:0 "Cliquer pour mettre à jour les niveaux d'encryption et de décryption"
+
+  top_menu-industrial_district_counter-tooltip:0 "Nombre de districts industriels : Octroie un bonus selon le palier technologique recherché \n\n £tech_mod §G[?industrial_district_bonus_percentage] %§! : Vitesse de construction"
+  top_menu-dry_dock_counter-tooltip:0 "Nombre de cales sèches : Octroie un bonus selon le palier technologique recherché \n\n £tech_mod §G[?dry_dock_bonus_percentage] %§! : Production des chantiers navals"
+
+  top_menu-refresh_button-tooltip:0 "Met à jour les calculs relatifs aux niveaux d'encryption, de décryption ainsi que ceux liés aux nombres de Cales sèches et Districts industriels"
 
   # =======================================================     Décisions     =======================================================
   air_experience_usage:0 "§CFormation de l'armée de l'air§!"
@@ -148,6 +152,7 @@
 
   war_hero:0 "Héros de guerre"
   war_hero_desc:0 "Ses exploits au front sont sur toutes les lèvres, son portrait dans tous les camps d'entrainement et sa réputation flamboyante"
+  war_hero_03:0 "§C$bound_seller$§!"
   worker_hero:0 "Héro de l'arrière"
   worker_hero_desc:0 "Cette figure d'inspiration montre que tous les efforts et exploits ne sont pas que militaires. Les ouvriers aussi combattent à leur façon"
   industry_captain:0 "Capitaine d'industrie"

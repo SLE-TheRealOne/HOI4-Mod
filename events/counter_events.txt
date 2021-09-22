@@ -13,6 +13,7 @@ country_event = {
     immediate = {
 
         set_variable = { dry_dock_counter = 0 }
+        set_variable = { dry_dock_bonus_percentage = 0 }
         every_owned_state = {
             limit = {
                 is_owned_and_controlled_by = ROOT
@@ -159,7 +160,8 @@ country_event = {
             }
         }
 
-        divide_variable = { dry_dock_bonus_percentage = 100 }
+        set_variable = { dry_dock_bonus_modifier_value = dry_dock_bonus_percentage }
+        divide_variable = { dry_dock_bonus_modifier_value = 100 }
 
         add_dynamic_modifier = {
             modifier = dry_dock_counted_modifier
@@ -180,6 +182,7 @@ country_event = {
     immediate = {
 
         set_variable = { industrial_district_counter = 0 }
+        set_variable = { industrial_district_bonus_percentage = 0 }
         every_owned_state = {
             limit = {
                 is_owned_and_controlled_by = ROOT
@@ -326,7 +329,8 @@ country_event = {
             }
         }
 
-        divide_variable = { industrial_district_bonus_percentage = 100 }
+        set_variable = { industrial_district_bonus_modifier_value = industrial_district_bonus_percentage }
+        divide_variable = { industrial_district_bonus_modifier_value = 100 }
 
         add_dynamic_modifier = {
             modifier = industrial_district_counted_modifier

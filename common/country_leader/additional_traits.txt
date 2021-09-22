@@ -2,8 +2,8 @@ leader_traits = {
     recruiter = {
         random = no
 
-        mobilization_speed=1
-        conscription_factor=0.15
+        mobilization_speed=0.10
+        conscription_factor=0.10
 
         ai_will_do = {
             factor = 1
@@ -13,8 +13,8 @@ leader_traits = {
     instructor = {
         random = no
 		
-        training_time_army_factor=-0.25
-        training_time_factor=-0.25
+        training_time_army_factor=-0.10
+        training_time_factor=-0.10
 
         ai_will_do = {
             factor = 1
@@ -24,8 +24,7 @@ leader_traits = {
     bound_seller = {
         random = no
 
-        war_support_weekly=0.002
-        war_support_weekly_factor=0.15
+        war_support_weekly=0.001
 
         ai_will_do = {
             factor = 1

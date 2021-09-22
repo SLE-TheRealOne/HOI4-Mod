@@ -16,8 +16,6 @@ technologies = {
             additional_technology_category_industry
         }
 
-        production_factory_start_efficiency_factor = 0.02
-
         path = {
             leads_to_tech = tech-top_industry-dry_dock_threshold_01
         }
@@ -40,6 +38,11 @@ technologies = {
 
         path = {
             leads_to_tech = tech-top_industry-line_change_production_efficiency_factor_boost_01
+        }
+
+        enable_building = {
+            building = dry_dock
+            level = 1
         }
     }
 
@@ -64,6 +67,11 @@ technologies = {
         path = {
             leads_to_tech = tech-top_industry-dry_dock_threshold_02
         }
+
+        enable_building = {
+            building = dry_dock
+            level = 3
+        }
     }
 
     # tech-top_industry-dry_dock_threshold_02
@@ -84,6 +92,11 @@ technologies = {
 
         path = {
             leads_to_tech = tech-top_industry-dry_dock_threshold_03
+        }
+
+        enable_building = {
+            building = dry_dock
+            level = 6
         }
     }
 
@@ -106,6 +119,11 @@ technologies = {
         path = {
             leads_to_tech = tech-top_industry-dry_dock_threshold_04
         }
+
+        enable_building = {
+            building = dry_dock
+            level = 8
+        }
     }
 
     # tech-top_industry-dry_dock_threshold_04
@@ -122,6 +140,11 @@ technologies = {
         categories = {
             additional_technology_category
             additional_technology_category_industry
+        }
+
+        enable_building = {
+            building = dry_dock
+            level = 12
         }
 
     }

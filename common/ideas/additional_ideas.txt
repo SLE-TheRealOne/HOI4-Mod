@@ -42,7 +42,7 @@ ideas = {
 
         war_hero_03 = {
             picture = hero_3
-			cost = 125
+			cost = 100
             traits = { bound_seller }
             ai_will_do = {
                 factor = 0

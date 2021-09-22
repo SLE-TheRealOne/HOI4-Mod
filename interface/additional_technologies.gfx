@@ -29,6 +29,7 @@ spriteTypes = {
 	
 	############################     Technologies items     ############################
 
+
 	                    ##################### Light navy #####################
     
     spriteType = {
@@ -606,5 +607,192 @@ spriteTypes = {
     spriteType = {
         name = "GFX_tech-army-army_org_factor_04_medium"
         texturefile = "gfx/interface/technologies/Q-4.dds"
+    }
+
+                        ##################### Industry #####################
+    spriteType = {
+        name = "GFX_tech-mass_industry_start_medium"
+        texturefile = "gfx/interface/technologies/Start_Alpha.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_district_threshold_01_medium"
+        texturefile = "gfx/interface/technologies/M-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_district_threshold_02_medium"
+        texturefile = "gfx/interface/technologies/M-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_district_threshold_03_medium"
+        texturefile = "gfx/interface/technologies/M-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_district_threshold_04_medium"
+        texturefile = "gfx/interface/technologies/M-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-production_oil_factor_boost_01_medium"
+        texturefile = "gfx/interface/technologies/P-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-production_oil_factor_boost_02_medium"
+        texturefile = "gfx/interface/technologies/P-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-production_oil_factor_boost_03_medium"
+        texturefile = "gfx/interface/technologies/P-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-production_oil_factor_boost_04_medium"
+        texturefile = "gfx/interface/technologies/P-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-global_building_slots_factor_boost_01_medium"
+        texturefile = "gfx/interface/technologies/L-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-global_building_slots_factor_boost_02_medium"
+        texturefile = "gfx/interface/technologies/L-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-global_building_slots_factor_boost_03_medium"
+        texturefile = "gfx/interface/technologies/L-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-global_building_slots_factor_boost_04_medium"
+        texturefile = "gfx/interface/technologies/L-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_dockyard_boost_01_medium"
+        texturefile = "gfx/interface/technologies/A-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_dockyard_boost_02_medium"
+        texturefile = "gfx/interface/technologies/A-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_dockyard_boost_03_medium"
+        texturefile = "gfx/interface/technologies/A-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_dockyard_boost_04_medium"
+        texturefile = "gfx/interface/technologies/A-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_factory_boost_01_medium"
+        texturefile = "gfx/interface/technologies/H-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_factory_boost_02_medium"
+        texturefile = "gfx/interface/technologies/H-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_factory_boost_03_medium"
+        texturefile = "gfx/interface/technologies/H-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-mass_industry-industrial_capacity_factory_boost_04_medium"
+        texturefile = "gfx/interface/technologies/H-4.dds"
+    }
+                    ##################
+    spriteType = {
+        name = "GFX_tech-top_industry_start_medium"
+        texturefile = "gfx/interface/technologies/Start_Beta.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-dry_dock_threshold_01_medium"
+        texturefile = "gfx/interface/technologies/M-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-dry_dock_threshold_02_medium"
+        texturefile = "gfx/interface/technologies/M-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-dry_dock_threshold_03_medium"
+        texturefile = "gfx/interface/technologies/M-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-dry_dock_threshold_04_medium"
+        texturefile = "gfx/interface/technologies/M-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_max_efficiency_factor_boost_01_medium"
+        texturefile = "gfx/interface/technologies/P-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_max_efficiency_factor_boost_02_medium"
+        texturefile = "gfx/interface/technologies/P-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_max_efficiency_factor_boost_03_medium"
+        texturefile = "gfx/interface/technologies/P-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_max_efficiency_factor_boost_04_medium"
+        texturefile = "gfx/interface/technologies/P-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-line_change_production_efficiency_factor_boost_01_medium"
+        texturefile = "gfx/interface/technologies/N-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-line_change_production_efficiency_factor_boost_02_medium"
+        texturefile = "gfx/interface/technologies/N-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-line_change_production_efficiency_factor_boost_03_medium"
+        texturefile = "gfx/interface/technologies/N-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-line_change_production_efficiency_factor_boost_04_medium"
+        texturefile = "gfx/interface/technologies/N-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_start_efficiency_factor_boost_01_medium"
+        texturefile = "gfx/interface/technologies/L-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_start_efficiency_factor_boost_02_medium"
+        texturefile = "gfx/interface/technologies/L-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_start_efficiency_factor_boost_03_medium"
+        texturefile = "gfx/interface/technologies/L-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_start_efficiency_factor_boost_04_medium"
+        texturefile = "gfx/interface/technologies/L-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-equipment_conversion_speed_boost_01_medium"
+        texturefile = "gfx/interface/technologies/A-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-equipment_conversion_speed_boost_02_medium"
+        texturefile = "gfx/interface/technologies/A-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-equipment_conversion_speed_boost_03_medium"
+        texturefile = "gfx/interface/technologies/A-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-equipment_conversion_speed_boost_04_medium"
+        texturefile = "gfx/interface/technologies/A-4.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_efficiency_gain_factor_boost_01_medium"
+        texturefile = "gfx/interface/technologies/H-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_efficiency_gain_factor_boost_02_medium"
+        texturefile = "gfx/interface/technologies/H-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_efficiency_gain_factor_boost_03_medium"
+        texturefile = "gfx/interface/technologies/H-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-top_industry-production_factory_efficiency_gain_factor_boost_04_medium"
+        texturefile = "gfx/interface/technologies/H-4.dds"
     }
 }
