@@ -125,15 +125,25 @@ country_event = {
                          value = 53
                          compare = greater_than_or_equals
                      }
+                     check_variable = { dry_dock_counter < 80 }
                  }
                  set_variable = { dry_dock_bonus_percentage = 17.5 }
+            } else_if = {
+                 limit = {
+                     check_variable = {
+                         var = dry_dock_counter
+                         value = 80
+                         compare = greater_than_or_equals
+                     }
+                 }
+                 set_variable = { dry_dock_bonus_percentage = 20 }
             }
         }
 
         # Palier 04
         if = {
             limit = {
-                has_tech = tech-top_industry-dry_dock_threshold_01
+                has_tech = tech-top_industry-dry_dock_threshold_04
             }
             if = {
                  limit = {
@@ -288,14 +298,24 @@ country_event = {
                 }
                 set_variable = { industrial_district_bonus_percentage = 15 }
             } else_if = {
-                 limit = {
-                     check_variable = {
-                         var = industrial_district_counter
-                         value = 53
-                         compare = greater_than_or_equals
-                     }
-                 }
-                 set_variable = { industrial_district_bonus_percentage = 17.5 }
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 53
+                        compare = greater_than_or_equals
+                    }
+                    check_variable = { industrial_district_counter < 80 }
+                }
+                set_variable = { industrial_district_bonus_percentage = 17.5 }
+            } else_if = {
+                limit = {
+                    check_variable = {
+                        var = industrial_district_counter
+                        value = 80
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_variable = { industrial_district_bonus_percentage = 20 }
             }
         }
 
@@ -305,16 +325,6 @@ country_event = {
                 has_tech = tech-mass_industry-industrial_district_threshold_04
             }
             if = {
-                 limit = {
-                     check_variable = {
-                         var = industrial_district_counter
-                         value = 53
-                         compare = greater_than_or_equals
-                     }
-                     check_variable = { industrial_district_counter < 80 }
-                 }
-                 set_variable = { industrial_district_bonus_percentage = 17.5 }
-            } else_if = {
                 limit = {
                     check_variable = {
                          var = industrial_district_counter

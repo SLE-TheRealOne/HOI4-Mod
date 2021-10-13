@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "encryption_level_container"
-		position = { x = 967 y = 4 }
+		position = { x = 1088 y = 4 }
 		orientation = UPPER_LEFT
         
         iconType ={
@@ -33,7 +33,7 @@ guiTypes = {
 
     containerWindowType = {
 		name = "decryption_level_container"
-		position = { x = 1039 y = 4 }
+		position = { x = 1160 y = 4 }
 		orientation = UPPER_LEFT
         
         iconType ={
@@ -63,7 +63,7 @@ guiTypes = {
 
     containerWindowType = {
         name = "dry_dock_counter_container"
-        position = { x = 1109 y = 4 }
+        position = { x = 1232 y = 4 }
         orientation = UPPER_LEFT
 
         iconType ={
@@ -95,7 +95,7 @@ guiTypes = {
 
     containerWindowType = {
         name = "industrial_district_counter_container"
-        position = { x = 1179 y = 4 }
+        position = { x = 1302 y = 4 }
         orientation = UPPER_LEFT
 
         iconType ={
@@ -127,7 +127,7 @@ guiTypes = {
 
     containerWindowType = {
 	    name = "refresh_button_container"
-		position = { x = 1250 y = 4 }
+		position = { x = 1373 y = 4 }
 		orientation = UPPER_LEFT
         
         buttonType = {

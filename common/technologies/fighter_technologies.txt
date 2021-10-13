@@ -141,6 +141,11 @@ technologies = {
 			air_range = 0.05
 			reliability = 0.05
 		}
+        category_heavy_fighter = {
+            maximum_speed = 0.05
+            air_range = 0.05
+            reliability = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-engine_02
@@ -165,6 +170,10 @@ technologies = {
 		category_fighter = {
 			air_attack = 0.05
 		}
+		category_heavy_fighter = {
+            air_attack = 0.05
+        }
+
 
 		path = {
 			leads_to_tech = tech-fighter-attack_02
@@ -193,6 +202,9 @@ technologies = {
 		category_fighter = {
 			air_defence = 0.05
 		}
+		category_heavy_fighter = {
+            air_defence = 0.05
+        }
 	}
 
 	tech-fighter-agility_01 = {
@@ -215,6 +227,9 @@ technologies = {
 		}
 
 		category_fighter = {
+			air_agility = 0.05
+		}
+		category_heavy_fighter = {
 			air_agility = 0.05
 		}
 	}
@@ -419,6 +434,11 @@ technologies = {
 			air_range = 0.05
 			reliability = 0.05
 		}
+        category_heavy_fighter = {
+            maximum_speed = 0.05
+            air_range = 0.05
+            reliability = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-engine_03
@@ -443,6 +463,9 @@ technologies = {
 		category_fighter = {
 			air_attack = 0.05
 		}
+		category_heavy_fighter = {
+            air_attack = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-attack_03
@@ -471,6 +494,9 @@ technologies = {
 		category_fighter = {
 			air_defence = 0.05
 		}
+		category_heavy_fighter = {
+            air_defence = 0.05
+        }
 	}
 
 	tech-fighter-agility_02 = {
@@ -493,6 +519,9 @@ technologies = {
 		}
 
 		category_fighter = {
+			air_agility = 0.05
+		}
+		category_heavy_fighter = {
 			air_agility = 0.05
 		}
 	}
@@ -698,6 +727,11 @@ technologies = {
 			air_range = 0.05
 			reliability = 0.05
 		}
+        category_heavy_fighter = {
+            maximum_speed = 0.05
+            air_range = 0.05
+            reliability = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-engine_04
@@ -722,6 +756,9 @@ technologies = {
 		category_fighter = {
 			air_attack = 0.05
 		}
+		category_heavy_fighter = {
+            air_attack = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-attack_04
@@ -750,6 +787,9 @@ technologies = {
 		category_fighter = {
 			air_defence = 0.05
 		}
+		category_heavy_fighter = {
+            air_defence = 0.05
+        }
 	}
 
 	tech-fighter-agility_03 = {
@@ -772,6 +812,9 @@ technologies = {
 		}
 
 		category_fighter = {
+			air_agility = 0.05
+		}
+		category_heavy_fighter = {
 			air_agility = 0.05
 		}
 	}
@@ -976,6 +1019,11 @@ technologies = {
 			air_range = 0.05
 			reliability = 0.05
 		}
+        category_heavy_fighter = {
+            maximum_speed = 0.05
+            air_range = 0.05
+            reliability = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-engine_05
@@ -1000,6 +1048,9 @@ technologies = {
 		category_fighter = {
 			air_attack = 0.05
 		}
+		category_heavy_fighter = {
+            air_attack = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-attack_05
@@ -1028,6 +1079,9 @@ technologies = {
 		category_fighter = {
 			air_defence = 0.05
 		}
+        category_heavy_fighter = {
+            air_defence = 0.05
+        }
 	}
 
 	tech-fighter-agility_04 = {
@@ -1052,6 +1106,9 @@ technologies = {
 		category_fighter = {
 			air_agility = 0.05
 		}
+        category_heavy_fighter = {
+            air_agility = 0.05
+        }
 	}
 
 	tech-fighter-air_superiority_efficiency_04 = {
@@ -1246,6 +1303,11 @@ technologies = {
 			air_range = 0.05
 			reliability = 0.05
 		}
+        category_heavy_fighter = {
+            maximum_speed = 0.05
+            air_range = 0.05
+            reliability = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-end_alpha
@@ -1271,6 +1333,9 @@ technologies = {
 		category_fighter = {
 			air_attack = 0.05
 		}
+		category_heavy_fighter = {
+            air_attack = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-end_alpha
@@ -1296,6 +1361,9 @@ technologies = {
 		category_fighter = {
 			air_defence = 0.05
 		}
+		category_heavy_fighter = {
+            air_defence = 0.05
+        }
 
 		path = {
 			leads_to_tech = tech-fighter-end_beta
@@ -1324,6 +1392,9 @@ technologies = {
 		category_fighter = {
 			air_agility = 0.05
 		}
+        category_heavy_fighter = {
+            air_agility = 0.05
+        }
 	}
 
 	tech-fighter-air_superiority_efficiency_05 = {

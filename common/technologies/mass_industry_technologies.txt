@@ -129,7 +129,7 @@ technologies = {
             additional_technology_category_industry
         }
 
-        industrial_capacity_factory = 0.02
+        industrial_capacity_factory = 0.04
     }
 
     # tech-mass_industry-industrial_capacity_dockyard_boost_01
@@ -209,7 +209,7 @@ technologies = {
 
         folder = {
             name = additional_technologies_industry_folder
-            position = { x = -2 y = 8 }
+            position = { x = -2 y = 14 }
         }
 
         categories = {
@@ -217,7 +217,7 @@ technologies = {
             additional_technology_category_industry
         }
 
-        industrial_capacity_dockyard = 0.02
+        industrial_capacity_dockyard = 0.04
     }
 
     # tech-mass_industry-global_building_slots_factor_boost_01
@@ -236,7 +236,7 @@ technologies = {
             additional_technology_category_industry
         }
 
-        global_building_slots_factor = 0.02
+        global_building_slots_factor = 0.05
 
         path = {
             leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_02
@@ -259,7 +259,7 @@ technologies = {
             additional_technology_category_industry
         }
 
-        global_building_slots_factor = 0.02
+        global_building_slots_factor = 0.05
 
         path = {
             leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_03
@@ -268,13 +268,13 @@ technologies = {
 
     # tech-mass_industry-global_building_slots_factor_boost_03
     tech-mass_industry-global_building_slots_factor_boost_03 = {
-        start_year = 1938
+        start_year = 1939
         doctrine = no
         research_cost = 0.75
 
         folder = {
             name = additional_technologies_industry_folder
-            position = { x = 0 y = 6 }
+            position = { x = 0 y = 8 }
         }
 
         categories = {
@@ -282,7 +282,7 @@ technologies = {
             additional_technology_category_industry
         }
 
-        global_building_slots_factor = 0.02
+        global_building_slots_factor = 0.05
 
         path = {
             leads_to_tech = tech-mass_industry-global_building_slots_factor_boost_04
@@ -297,7 +297,7 @@ technologies = {
 
         folder = {
             name = additional_technologies_industry_folder
-            position = { x = 0 y = 8 }
+            position = { x = 0 y = 14 }
         }
 
         categories = {
@@ -305,7 +305,7 @@ technologies = {
             additional_technology_category_industry
         }
 
-        global_building_slots_factor = 0.02
+        global_building_slots_factor = 0.05
     }
 
     # tech-mass_industry-production_oil_factor_boost_01
@@ -385,7 +385,7 @@ technologies = {
 
         folder = {
             name = additional_technologies_industry_folder
-            position = { x = 2 y = 8 }
+            position = { x = 2 y = 14 }
         }
 
         categories = {
@@ -393,14 +393,14 @@ technologies = {
             additional_technology_category_industry
         }
 
-        fuel_gain_factor_from_states = 0.02
+        fuel_gain_factor_from_states = 0.04
     }
 
     # tech-mass_industry-industrial_district_threshold_01
     tech-mass_industry-industrial_district_threshold_01 = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.70
 
         folder = {
             name = additional_technologies_industry_folder
@@ -415,18 +415,13 @@ technologies = {
         path = {
             leads_to_tech = tech-mass_industry-industrial_district_threshold_02
         }
-
-        enable_building = {
-            building = industrial_district
-            level = 2
-        }
     }
 
     # tech-mass_industry-industrial_district_threshold_02
     tech-mass_industry-industrial_district_threshold_02 = {
         start_year = 1937
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.80
 
         folder = {
             name = additional_technologies_industry_folder
@@ -444,7 +439,7 @@ technologies = {
 
         enable_building = {
             building = industrial_district
-            level = 4
+            level = 2
         }
     }
 
@@ -452,7 +447,7 @@ technologies = {
     tech-mass_industry-industrial_district_threshold_03 = {
         start_year = 1939
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.90
 
         folder = {
             name = additional_technologies_industry_folder
@@ -468,10 +463,6 @@ technologies = {
             leads_to_tech = tech-mass_industry-industrial_district_threshold_04
         }
 
-        enable_building = {
-            building = industrial_district
-            level = 6
-        }
     }
 
     # tech-mass_industry-industrial_district_threshold_04
@@ -492,7 +483,7 @@ technologies = {
 
         enable_building = {
             building = industrial_district
-            level = 10
+            level = 3
         }
     }
 }
