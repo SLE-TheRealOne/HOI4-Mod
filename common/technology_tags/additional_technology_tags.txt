@@ -4,6 +4,7 @@ technology_categories = {
 	additional_technology_category_industry
 	additional_technology_category_air
 	additional_technology_category_army
+	additional_technology_category_spy
 }
 
 technology_folders = {
@@ -11,4 +12,5 @@ technology_folders = {
 	additional_technologies_industry_folder
 	additional_technologies_air_folder
 	additional_technologies_army_folder
+	additional_technologies_spy_folder
 }

@@ -35,6 +35,9 @@
   air_improvments_tree_title_text:0 "§OMaîtrise du ciel§!"
   air_improvments_tree_desc_text:0 "L'aviation est une arme récente mais pressentie dévastatrice : nous devons en tirer le meilleur"
 
+  tech_spy_tree_title_text:0 "§CMilitary intelligence§!"
+  tech_spy_tree_desc_text:0 "Description à compléter avec le DLC 'La Résistance'"
+
 
   # =========================================================       Light navy       =========================================================
   tech-light_navy-start:0 "Démarrage de la recherche sur l'amélioration de nos navires d'escorte"
@@ -423,6 +426,9 @@
   tech-top_industry-equipment_conversion_speed_boost_03_desc:0 "Vitesse de conversion du matériel augmentée"
   tech-top_industry-equipment_conversion_speed_boost_04:0 "§CVitesse de conversion du matériel - IV§!"
   tech-top_industry-equipment_conversion_speed_boost_04_desc:0 "Vitesse de conversion du matériel augmentée"
+
+  tech-spy_start:0 "Démarrage arbre espionnage"
+  tech-spy_start_desc:0 "Effet à déterminer avec le DLC 'La Resistance'"
 
   industrial_district_counted_modifier:0 "£tech_mod §CDistricts industriels§!"
   dry_dock_counted_modifier:0 "£tech_mod §CCales sèches§!"
