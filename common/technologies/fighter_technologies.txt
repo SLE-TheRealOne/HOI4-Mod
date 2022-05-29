@@ -70,7 +70,7 @@ technologies = {
 				#################### RANK 1 ####################
 
 	tech-fighter-air_superiority_detect_factor_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -96,7 +96,7 @@ technologies = {
 	}
 
 	tech-fighter-air_interception_detect_factor_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -122,7 +122,7 @@ technologies = {
 	}
 
 	tech-fighter-engine_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -153,7 +153,7 @@ technologies = {
 	}
 	
 	tech-fighter-attack_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -181,7 +181,7 @@ technologies = {
 	}
 
 	tech-fighter-defense_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -208,7 +208,7 @@ technologies = {
 	}
 
 	tech-fighter-agility_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -235,7 +235,7 @@ technologies = {
 	}
 	
 	tech-fighter-air_superiority_efficiency_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -261,7 +261,7 @@ technologies = {
 	}
 
 	tech-fighter-air_intercept_efficiency_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -287,7 +287,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -309,7 +309,7 @@ technologies = {
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -335,7 +335,7 @@ technologies = {
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_01 = {
-		start_year = 1941
+		start_year = 1939
 		research_cost = 0.75
         doctrine = yes
 		
@@ -363,7 +363,7 @@ technologies = {
 				#################### RANK 2 ####################
 
 	tech-fighter-air_superiority_detect_factor_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -389,7 +389,7 @@ technologies = {
 	}
 
 	tech-fighter-air_interception_detect_factor_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -415,7 +415,7 @@ technologies = {
 	}
 
 	tech-fighter-engine_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -446,7 +446,7 @@ technologies = {
 	}
 
 	tech-fighter-attack_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -473,7 +473,7 @@ technologies = {
 	}
 
 	tech-fighter-defense_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -500,7 +500,7 @@ technologies = {
 	}
 
 	tech-fighter-agility_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -527,7 +527,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_efficiency_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -553,7 +553,7 @@ technologies = {
 	}
 
 	tech-fighter-air_intercept_efficiency_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -579,7 +579,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -601,7 +601,7 @@ technologies = {
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -627,7 +627,7 @@ technologies = {
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_02 = {
-		start_year = 1942
+		start_year = 1940
 		research_cost = 0.75
         doctrine = yes
 		
@@ -652,11 +652,10 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.05
 	}
 
-
 				#################### RANK 3 ####################
 
 	tech-fighter-air_superiority_detect_factor_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -682,7 +681,7 @@ technologies = {
 	}
 
 	tech-fighter-air_interception_detect_factor_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -708,7 +707,7 @@ technologies = {
 	}
 
 	tech-fighter-engine_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -739,7 +738,7 @@ technologies = {
 	}
 
 	tech-fighter-attack_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -766,7 +765,7 @@ technologies = {
 	}
 
 	tech-fighter-defense_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -793,7 +792,7 @@ technologies = {
 	}
 
 	tech-fighter-agility_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -820,7 +819,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_efficiency_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -846,7 +845,7 @@ technologies = {
 	}
 
 	tech-fighter-air_intercept_efficiency_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -872,7 +871,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -894,7 +893,7 @@ technologies = {
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -920,7 +919,7 @@ technologies = {
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_03 = {
-		start_year = 1943
+		start_year = 1941
 		research_cost = 0.75
         doctrine = yes
 		
@@ -948,7 +947,7 @@ technologies = {
 				#################### RANK 4 ####################
 
 	tech-fighter-air_superiority_detect_factor_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -974,7 +973,7 @@ technologies = {
 	}
 
 	tech-fighter-air_interception_detect_factor_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1000,7 +999,7 @@ technologies = {
 	}
 
 	tech-fighter-engine_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1031,7 +1030,7 @@ technologies = {
 	}
 
 	tech-fighter-attack_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1058,7 +1057,7 @@ technologies = {
 	}
 
 	tech-fighter-defense_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1085,7 +1084,7 @@ technologies = {
 	}
 
 	tech-fighter-agility_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1112,7 +1111,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_efficiency_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1138,7 +1137,7 @@ technologies = {
 	}
 
 	tech-fighter-air_intercept_efficiency_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1164,7 +1163,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1186,7 +1185,7 @@ technologies = {
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1212,7 +1211,7 @@ technologies = {
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_04 = {
-		start_year = 1944
+		start_year = 1942
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1240,7 +1239,7 @@ technologies = {
 				#################### RANK 5 ####################
 
 	tech-fighter-air_superiority_detect_factor_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1262,7 +1261,7 @@ technologies = {
 	}
 
 	tech-fighter-air_interception_detect_factor_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1284,7 +1283,7 @@ technologies = {
 	}
 
 	tech-fighter-engine_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1316,7 +1315,7 @@ technologies = {
 	}
 
 	tech-fighter-attack_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1344,7 +1343,7 @@ technologies = {
 	}
 
 	tech-fighter-defense_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1371,7 +1370,7 @@ technologies = {
 	}
 
 	tech-fighter-agility_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1398,7 +1397,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_efficiency_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1420,7 +1419,7 @@ technologies = {
 	}
 
 	tech-fighter-air_intercept_efficiency_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1442,7 +1441,7 @@ technologies = {
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1460,7 +1459,7 @@ technologies = {
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1482,7 +1481,7 @@ technologies = {
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_05 = {
-		start_year = 1945
+		start_year = 1943
 		research_cost = 0.75
         doctrine = yes
 		
@@ -1506,7 +1505,7 @@ technologies = {
 				#################### Rank 6 #######################
 
 	tech-fighter-end_alpha = {
-		start_year = 1946
+		start_year = 1943
 		research_cost = 1
         doctrine = yes
 		
@@ -1522,7 +1521,7 @@ technologies = {
 	}
 
 	tech-fighter-end_beta = {
-		start_year = 1946
+		start_year = 1943
 		research_cost = 1
         doctrine = yes
 		

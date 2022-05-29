@@ -26,6 +26,8 @@ technologies = {
 
     }
 
+                #################### RANK 1 ####################
+
     # tech-spy-encryption_01
     tech-spy-encryption_01 = {
         start_year = 1938
@@ -93,6 +95,7 @@ technologies = {
 
         decryption_factor = 0.13
     }
+                #################### RANK 2 ####################
 
     # tech-spy-encryption_02
     tech-spy-encryption_02 = {
@@ -162,6 +165,8 @@ technologies = {
         decryption_factor = 0.11
     }
 
+                #################### RANK 3 ####################
+
     # tech-spy-encryption_03
     tech-spy-encryption_03 = {
         start_year = 1940
@@ -229,6 +234,8 @@ technologies = {
 
         decryption_factor = 0.11
     }
+
+                #################### RANK 4 ####################
 
     # tech-spy-encryption_04
     tech-spy-encryption_04 = {
@@ -298,6 +305,8 @@ technologies = {
         decryption_factor = 0.11
     }
 
+                #################### RANK 5 ####################
+
     # tech-spy-encryption_05
     tech-spy-encryption_05 = {
         start_year = 1942
@@ -365,6 +374,8 @@ technologies = {
 
         decryption_factor = 0.12
     }
+
+                #################### RANK 6 ####################
 
     # tech-spy-encryption_06
     tech-spy-encryption_06 = {

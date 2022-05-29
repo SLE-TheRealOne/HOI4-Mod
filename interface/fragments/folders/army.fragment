@@ -38,6 +38,136 @@
                 Orientation = "UPPER_LEFT"
             }
 
+            instantTextBoxType = {
+                name = "tech-army_1936"
+                position = { x = 800 y = 125 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1936"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1937_left"
+                position = { x = 490 y = 250 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1937"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1938_left"
+                position = { x = 490 y = 370 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1938"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1938_right"
+                position = { x = 1530 y = 425 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1938"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1939_left"
+                position = { x = 490 y = 490 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1939"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1940_left"
+                position = { x = 490 y = 610 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1940"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1940_right"
+                position = { x = 1530 y = 545 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1940"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1941_left"
+                position = { x = 490 y = 730 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1941"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1942_left"
+                position = { x = 490 y = 850 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1942"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-army_1942_right"
+                position = { x = 1530 y = 670 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1942"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
             gridboxtype = {
                 name = "tech-army_levels-start_tree"
                 position = { x=615 y=110 }

@@ -2,11 +2,11 @@
 air_experience_usage = {
 
     # call_ace_flight_instructor
-	call_ace_flight_instructor {
-        custom_cost_trigger {
+	call_ace_flight_instructor = {
+        custom_cost_trigger = {
             has_air_experience > 50
         }
-        complete_effect {
+        complete_effect = {
             add_ace {
                 type = flight_instructor
                 is_female = no
@@ -18,12 +18,12 @@ air_experience_usage = {
     }
 
 	# call_ace_flight_coordinator
-	call_ace_flight_coordinator {
-        custom_cost_trigger {
+	call_ace_flight_coordinator = {
+        custom_cost_trigger = {
             has_air_experience > 50
         }
-        complete_effect {
-            add_ace {
+        complete_effect = {
+            add_ace = {
                 type = flight_coordinator
                 is_female = no
             }
@@ -34,12 +34,12 @@ air_experience_usage = {
     }
 
     # call_ace_radar_specialist
-    call_ace_radar_specialist {
+    call_ace_radar_specialist = {
 		custom_cost_trigger {
             has_air_experience > 50
         }
-        complete_effect {
-            add_ace {
+        complete_effect = {
+            add_ace = {
                 type = radar_specialist
                 is_female = yes
             }
@@ -50,12 +50,12 @@ air_experience_usage = {
     }
 
 	# call_ace_radio_specialist
-	call_ace_radio_specialist {
-		custom_cost_trigger {
+	call_ace_radio_specialist = {
+		custom_cost_trigger = {
             has_air_experience > 50
         }
-        complete_effect {
-            add_ace {
+        complete_effect = {
+            add_ace = {
                 type = ground_support_coordinator
                 is_female = yes
             }
@@ -66,12 +66,12 @@ air_experience_usage = {
     }
 
 	# call_ace_technician
-	call_ace_technician {
-        custom_cost_trigger {
+	call_ace_technician = {
+        custom_cost_trigger = {
             has_air_experience > 50
         }
-        complete_effect {
-            add_ace {
+        complete_effect = {
+            add_ace = {
                 type = technician
                 is_female = yes
             }
@@ -80,16 +80,80 @@ air_experience_usage = {
         custom_cost_text = call_ace_technician_cost
         days_re_enable = 360
     }
+
+    # use_air_experience_25
+    use_air_experience_25 = {
+        available = {
+            command_power > 4
+            has_air_experience > 24
+        }
+        custom_cost_trigger = {
+            has_air_experience > 24
+        }
+        complete_effect = {
+            air_experience = -25
+            add_command_power = -5
+        }
+        modifier = {
+            air_attack_factor = 0.05
+            air_defence_factor = 0.05
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_25_cost
+    }
+
+    # use_air_experience_50
+    use_air_experience_50 = {
+        available = {
+            command_power > 4
+            has_air_experience > 49
+        }
+        custom_cost_trigger = {
+            has_air_experience > 49
+        }
+        complete_effect = {
+            air_experience = -50
+            add_command_power = -5
+        }
+        modifier = {
+            air_attack_factor = 0.10
+            air_defence_factor = 0.10
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_50_cost
+    }
+
+    # use_air_experience_100
+    use_air_experience_100 = {
+        available = {
+            command_power > 4
+            has_air_experience > 99
+        }
+        custom_cost_trigger = {
+            has_air_experience > 99
+        }
+        complete_effect = {
+            air_experience = -100
+            add_command_power = -5
+        }
+        modifier = {
+            air_attack_factor = 0.15
+            air_defence_factor = 0.15
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_100_cost
+    }
+
 }
 
 # political_power_usage
 political_power_usage = {
 
 	# add_civilian_factory_to_random_state
-	add_civilian_factory_to_random_state {
-		cost = 150
-		available {
-			any_owned_state {
+	add_civilian_factory_to_random_state = {
+		cost = 100
+		available = {
+			any_owned_state = {
 				free_building_slots = {
 					building = industrial_complex
 					size > 1
@@ -97,8 +161,8 @@ political_power_usage = {
 				}
 			}
 		}
-		complete_effect {
-			random_owned_controlled_state {
+		complete_effect = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -106,19 +170,19 @@ political_power_usage = {
 						include_locked = no
 					}
 				}
-				add_building_construction {
+				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
 		}
-		days_remove = 35
-		days_re_enable = 180
+		days_remove = 40
+		days_re_enable = 120
 	}
 
 	# use_population_war_support_A
-	use_population_war_support_A {
+	use_population_war_support_A = {
 	    cost = 40
 	    available = {
 	        has_war_support > 0.89
@@ -133,7 +197,7 @@ political_power_usage = {
 	}
 
 	# use_population_war_support_B
-    use_population_war_support_B {
+    use_population_war_support_B = {
         cost = 30
         available = {
             has_war_support < 0.90
@@ -149,7 +213,7 @@ political_power_usage = {
     }
 
     # use_population_war_support_C
-    use_population_war_support_C {
+    use_population_war_support_C = {
         cost = 20
         available = {
             has_war_support < 0.85
@@ -169,189 +233,12 @@ political_power_usage = {
 # ground_experience_usage
 ground_experience_usage = {
 
-    # supply_units_of_field_marshal
-    supply_units_of_field_marshal = {
-        days_remove = 10
-
-        available = {
-            stockpile_ratio = {
-                archetype = convoy
-                ratio > required_convoys
-            }
-            has_manpower > required_manpower
-            has_army_experience > 10
-            command_power > 3
-            any_enemy_country = {
-                has_war_with = PREV
-                has_capitulated = no
-                enemies_strength_ratio > 2.2
-            }
-        }
-
-        complete_effect = {
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = required_convoys_neg
-            }
-            add_manpower = required_manpower_neg
-            add_command_power = -6
-
-            every_army_leader = {
-                limit = {
-                    AND = {
-                        is_leading_army_group = yes
-                        is_field_marshal = yes
-                    }
-                }
-                supply_units = 240
-            }
-        }
-
-        remove_effect = {
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = required_convoys
-            }
-            add_manpower = required_manpower
-        }
-    }
-
-    buff_units = {
-
-        complete_effect = {
-            add_command_power = -1
-
-            every_army_leader = {
-                limit = {
-                    AND = {
-                        num_units = 23
-                        is_leading_army = yes
-                    }
-                }
-                add_temporary_buff_to_units = {
-                    combat_offense = 0.75
-                    combat_breakthrough = 0.75
-                    org_damage_multiplier = -0.75
-                    str_damage_multiplier = -0.75
-                    tooltip = tooltip_temp_string
-                    days = 10
-                }
-            }
-        }
-    }
-
-
-    # supply_units_of_african_corps
-    supply_units_of_african_corps= {
-        days_remove = 5
-        days_re_enable = 1
-
-        available = {
-            stockpile_ratio = {
-                archetype = convoy
-                ratio > required_convoys
-            }
-            has_manpower > -10000
-            has_army_experience > 10
-            command_power > 3
-            any_enemy_country = {
-                has_war_with = PREV
-                has_capitulated = no
-                enemies_strength_ratio > 2.2
-            }
-        }
-
-        complete_effect = {
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = required_convoys_neg
-            }
-            add_manpower = -10000
-            add_command_power = -3
-
-            every_army_leader = {
-                limit = {
-                    AND = {
-                        num_units = 24
-                        #attack_skill_level > 3
-                        #defense_skill_level > 2
-                        #logistics_skill_level > 1
-                        #planning_skill_level > 3
-                        #skill > 3
-                        has_trait = panzer_leader
-                        has_trait = career_officer
-                        has_trait = infantry_officer
-                        #is_assigned = yes
-                        is_leading_army = yes
-                    }
-                }
-                supply_units = 120
-            }
-        }
-
-        remove_effect = {
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = required_convoys
-            }
-            add_manpower = 9000
-        }
-    }
-
-    # supply_units_of_island_corps
-    supply_units_of_island_corps= {
-        days_remove = 5
-        days_re_enable = 1
-
-        available = {
-            stockpile_ratio = {
-                archetype = convoy
-                ratio > required_convoys
-            }
-            has_manpower > -10000
-            has_army_experience > 10
-            command_power > 3
-            any_enemy_country = {
-                has_war_with = PREV
-                has_capitulated = no
-                enemies_strength_ratio > 2.2
-            }
-        }
-
-        complete_effect = {
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = required_convoys_neg
-            }
-            add_manpower = -100000
-            add_command_power = -30
-
-            every_army_leader = {
-                limit = {
-                    AND = {
-                        num_units = 17
-                        is_leading_army = yes
-                    }
-                }
-                supply_units = 1200
-            }
-        }
-
-        remove_effect = {
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = required_convoys
-            }
-            add_manpower = 90000
-        }
-    }
-
     # reduce_experience_loss_factor
     reduce_experience_loss_factor = {
         available = {
             command_power > 20
         }
-        custom_cost_trigger {
+        custom_cost_trigger = {
             has_army_experience > 20
         }
         modifier = {
@@ -371,7 +258,7 @@ ground_experience_usage = {
         available = {
             command_power < 70
         }
-        custom_cost_trigger {
+        custom_cost_trigger = {
             has_army_experience > 49
         }
         modifier = {
@@ -390,7 +277,7 @@ ground_experience_usage = {
         available = {
             command_power > 19
         }
-        custom_cost_trigger {
+        custom_cost_trigger = {
             has_army_experience > 39
         }
         fixed_random_seed = no
@@ -511,7 +398,7 @@ manpower_usage = {
 
     # naval_shipyards_boost
     naval_shipyards_boost = {
-        custom_cost_trigger {
+        custom_cost_trigger = {
             command_power > required_command_power
             has_manpower > required_manpower
         }
@@ -530,8 +417,8 @@ manpower_usage = {
     }
 
     # civil_factories_boost
-    civil_factories_boost {
-        custom_cost_trigger {
+    civil_factories_boost = {
+        custom_cost_trigger = {
             command_power > required_command_power
             has_manpower > required_manpower
         }
@@ -550,10 +437,13 @@ manpower_usage = {
     }
 
     # military_factories_boost
-    military_factories_boost {
-        custom_cost_trigger {
-            command_power > required_command_power
-            has_manpower > required_manpower
+    military_factories_boost = {
+        custom_cost_trigger = {
+            #command_power > required_command_power
+            #has_manpower > required_manpower
+
+            command_power > 1
+            has_manpower > 10
         }
         modifier = {
             industrial_capacity_factory = 0.10
@@ -570,8 +460,8 @@ manpower_usage = {
     }
 
     # stability_increase
-    stability_increase {
-        custom_cost_trigger {
+    stability_increase = {
+        custom_cost_trigger = {
             command_power > required_command_power
             has_manpower > required_manpower
         }
@@ -646,31 +536,23 @@ war_measures = {
         }
         days_remove = 30
     }
-
 }
 
 # prospect_for_resources
 prospect_for_resources = {
 
     # add_oil_to_random_state_1
-	add_oil_to_random_state_1 {
-		cost = 10
+	add_oil_to_random_state_1 = {
+		cost = 25
 		icon = oil
 		visible = {
 		    has_tech = excavation1
-		    NOT = {
-                has_tech = excavation2
-                has_tech = excavation3
-                has_tech = excavation4
-                has_tech = excavation5
-            }
 		}
-		available {
-			AND {
-				has_stability > 0.3
+		available = {
+			AND = {
+				has_stability > 0.40
 				num_of_civilian_factories_available_for_projects > 1
-				has_tech = excavation1
-				any_owned_state {
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = oil
@@ -690,7 +572,7 @@ prospect_for_resources = {
             civilian_factory_use = 1
         }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_controlled_state = {
 				limit = {
 					has_resources_amount = {
 						resource = oil
@@ -703,7 +585,7 @@ prospect_for_resources = {
                         state = THIS
                     }
 				}
-				add_resource {
+				add_resource = {
 					type = oil
 					amount = 1
 					state = THIS
@@ -715,23 +597,17 @@ prospect_for_resources = {
 	}
 
 	# add_oil_to_random_state_2
-    add_oil_to_random_state_2 {
-        cost = 20
+    add_oil_to_random_state_2 = {
+        cost = 25
         icon = oil
         visible = {
             has_tech = excavation2
-            NOT = {
-                has_tech = excavation3
-                has_tech = excavation4
-                has_tech = excavation5
-            }
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 2
-                has_tech = excavation2
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = oil
@@ -751,7 +627,7 @@ prospect_for_resources = {
             civilian_factory_use = 2
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = oil
@@ -764,7 +640,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = oil
                     amount = 2
                     state = THIS
@@ -776,21 +652,17 @@ prospect_for_resources = {
     }
 
     # add_oil_to_random_state_3
-    add_oil_to_random_state_3 {
-        cost = 30
+    add_oil_to_random_state_3 = {
+        cost = 25
         icon = oil
         visible = {
             has_tech = excavation3
-            NOT = {
-               has_tech = excavation4
-               has_tech = excavation5
-           }
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 3
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = oil
@@ -810,7 +682,7 @@ prospect_for_resources = {
             civilian_factory_use = 3
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = oil
@@ -823,7 +695,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = oil
                     amount = 4
                     state = THIS
@@ -835,20 +707,17 @@ prospect_for_resources = {
     }
 
     # add_oil_to_random_state_4
-    add_oil_to_random_state_4 {
-        cost = 40
+    add_oil_to_random_state_4 = {
+        cost = 25
         icon = oil
         visible = {
             has_tech = excavation4
-            NOT = {
-                has_tech = excavation5
-            }
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 4
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = oil
@@ -868,7 +737,7 @@ prospect_for_resources = {
             civilian_factory_use = 4
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = oil
@@ -881,7 +750,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = oil
                     amount = 6
                     state = THIS
@@ -893,17 +762,17 @@ prospect_for_resources = {
     }
 
     # add_oil_to_random_state_5
-    add_oil_to_random_state_5 {
-        cost = 40
+    add_oil_to_random_state_5 = {
+        cost = 25
         icon = oil
         visible = {
             has_tech = excavation5
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 5
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = oil
@@ -923,7 +792,7 @@ prospect_for_resources = {
             civilian_factory_use = 5
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = oil
@@ -936,7 +805,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = oil
                     amount = 8
                     state = THIS
@@ -948,27 +817,17 @@ prospect_for_resources = {
     }
 
     # add_aluminium_to_random_state_1
-	add_aluminium_to_random_state_1 {
-		cost = 10
+	add_aluminium_to_random_state_1 = {
+		cost = 25
 		icon = aluminium
 		visible = {
-		    AND = {
-		        has_tech = excavation1
-                NOT = {
-                    OR = {
-                        has_tech = excavation2
-                        has_tech = excavation3
-                        has_tech = excavation4
-                        has_tech = excavation5
-                    }
-                }
-            }
+            has_tech = excavation1
 		}
-		available {
-			AND {
-				has_stability > 0.3
+		available = {
+			AND = {
+				has_stability > 0.40
 				num_of_civilian_factories_available_for_projects > 1
-				any_owned_state {
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = aluminium
@@ -988,7 +847,7 @@ prospect_for_resources = {
             civilian_factory_use = 1
         }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_controlled_state = {
 				limit = {
 					has_resources_amount = {
 						resource = aluminium
@@ -1001,7 +860,7 @@ prospect_for_resources = {
                         state = THIS
                     }
 				}
-				add_resource {
+				add_resource = {
 					type = aluminium
 					amount = 1
 					state = THIS
@@ -1013,26 +872,17 @@ prospect_for_resources = {
 	}
 
     # add_aluminium_to_random_state_2
-	add_aluminium_to_random_state_2 {
-        cost = 20
+	add_aluminium_to_random_state_2 = {
+        cost = 25
         icon = aluminium
         visible = {
-            AND = {
-                has_tech = excavation2
-                NOT = {
-                    OR = {
-                        has_tech = excavation3
-                        has_tech = excavation4
-                        has_tech = excavation5
-                    }
-                }
-            }
+            has_tech = excavation2
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 2
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = aluminium
@@ -1052,7 +902,7 @@ prospect_for_resources = {
             civilian_factory_use = 2
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = aluminium
@@ -1065,7 +915,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = aluminium
                     amount = 2
                     state = THIS
@@ -1077,25 +927,17 @@ prospect_for_resources = {
     }
 
     # add_aluminium_to_random_state_3
-	add_aluminium_to_random_state_3 {
-        cost = 30
+	add_aluminium_to_random_state_3 = {
+        cost = 25
         icon = aluminium
         visible = {
-            AND = {
-                has_tech = excavation3
-                NOT = {
-                    OR = {
-                        has_tech = excavation4
-                        has_tech = excavation5
-                    }
-                }
-            }
+            has_tech = excavation3
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 3
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = aluminium
@@ -1115,7 +957,7 @@ prospect_for_resources = {
             civilian_factory_use = 3
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = aluminium
@@ -1128,7 +970,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = aluminium
                     amount = 4
                     state = THIS
@@ -1140,22 +982,17 @@ prospect_for_resources = {
     }
 
     # add_aluminium_to_random_state_4
-    add_aluminium_to_random_state_4 {
-        cost = 40
+    add_aluminium_to_random_state_4 = {
+        cost = 25
         icon = aluminium
         visible = {
-            AND = {
-                has_tech = excavation4
-                NOT = {
-                    has_tech = excavation5
-                }
-            }
+            has_tech = excavation4
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 4
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = aluminium
@@ -1175,7 +1012,7 @@ prospect_for_resources = {
             civilian_factory_use = 4
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = aluminium
@@ -1188,7 +1025,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = aluminium
                     amount = 6
                     state = THIS
@@ -1200,17 +1037,17 @@ prospect_for_resources = {
     }
 
     # add_aluminium_to_random_state_5
-    add_aluminium_to_random_state_5 {
-        cost = 50
+    add_aluminium_to_random_state_5 = {
+        cost = 25
         icon = aluminium
         visible = {
             has_tech = excavation5
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 5
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = aluminium
@@ -1230,7 +1067,7 @@ prospect_for_resources = {
             civilian_factory_use = 5
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = aluminium
@@ -1243,7 +1080,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = aluminium
                     amount = 8
                     state = THIS
@@ -1255,27 +1092,17 @@ prospect_for_resources = {
     }
 
     # add_rubber_to_random_state_1
-	add_rubber_to_random_state_1 {
-		cost = 10
+	add_rubber_to_random_state_1 = {
+		cost = 25
 		icon = rubber
 		visible = {
-		    AND = {
-		        has_tech = excavation1
-                NOT = {
-                    OR = {
-                        has_tech = excavation2
-                        has_tech = excavation3
-                        has_tech = excavation4
-                        has_tech = excavation5
-                    }
-                }
-            }
+            has_tech = excavation1
 		}
-		available {
-			AND {
-				has_stability > 0.3
+		available = {
+			AND = {
+				has_stability > 0.40
 				num_of_civilian_factories_available_for_projects > 1
-				any_owned_state {
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = rubber
@@ -1295,7 +1122,7 @@ prospect_for_resources = {
             civilian_factory_use = 1
         }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_controlled_state = {
 				limit = {
 					has_resources_amount = {
 						resource = rubber
@@ -1308,7 +1135,7 @@ prospect_for_resources = {
                         state = THIS
                     }
 				}
-				add_resource {
+				add_resource = {
 					type = rubber
 					amount = 1
 					state = THIS
@@ -1320,26 +1147,17 @@ prospect_for_resources = {
 	}
 
 	# add_rubber_to_random_state_2
-    add_rubber_to_random_state_2 {
-        cost = 20
+    add_rubber_to_random_state_2 = {
+        cost = 25
         icon = rubber
         visible = {
-            AND = {
-                has_tech = excavation2
-                NOT = {
-                    OR = {
-                        has_tech = excavation3
-                        has_tech = excavation4
-                        has_tech = excavation5
-                    }
-                }
-            }
+            has_tech = excavation2
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 2
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = rubber
@@ -1359,7 +1177,7 @@ prospect_for_resources = {
             civilian_factory_use = 2
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = rubber
@@ -1372,7 +1190,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = rubber
                     amount = 2
                     state = THIS
@@ -1384,25 +1202,17 @@ prospect_for_resources = {
     }
 
 	# add_rubber_to_random_state_3
-    add_rubber_to_random_state_3 {
-        cost = 30
+    add_rubber_to_random_state_3 = {
+        cost = 25
         icon = rubber
         visible = {
-            AND = {
-                has_tech = excavation3
-                NOT = {
-                    OR = {
-                        has_tech = excavation4
-                        has_tech = excavation5
-                    }
-                }
-            }
+            has_tech = excavation3
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 3
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = rubber
@@ -1422,7 +1232,7 @@ prospect_for_resources = {
             civilian_factory_use = 3
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = rubber
@@ -1435,7 +1245,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = rubber
                     amount = 4
                     state = THIS
@@ -1447,22 +1257,17 @@ prospect_for_resources = {
     }
 
     # add_rubber_to_random_state_4
-    add_rubber_to_random_state_4 {
-        cost = 40
+    add_rubber_to_random_state_4 = {
+        cost = 25
         icon = rubber
         visible = {
-            AND = {
-                has_tech = excavation4
-                NOT = {
-                    has_tech = excavation5
-                }
-            }
+            has_tech = excavation4
         }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 4
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = rubber
@@ -1482,7 +1287,7 @@ prospect_for_resources = {
             civilian_factory_use = 4
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = rubber
@@ -1495,7 +1300,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = rubber
                     amount = 6
                     state = THIS
@@ -1507,18 +1312,17 @@ prospect_for_resources = {
     }
 
     # add_rubber_to_random_state_5
-    add_rubber_to_random_state_5 {
-        cost = 50
+    add_rubber_to_random_state_5 = {
+        cost = 25
         icon = rubber
         visible = {
             has_tech = excavation5
         }
-        available {
-            AND {
-                has_stability > 0.3
-
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 5
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = rubber
@@ -1538,7 +1342,7 @@ prospect_for_resources = {
             civilian_factory_use = 5
         }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = rubber
@@ -1551,7 +1355,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = rubber
                     amount = 8
                     state = THIS
@@ -1563,24 +1367,18 @@ prospect_for_resources = {
     }
 
     # add_tungsten_to_random_state_1
-	add_tungsten_to_random_state_1 {
+	add_tungsten_to_random_state_1 = {
 		icon = tungsten
+		cost = 25
 		visible = {
 		    has_tech = excavation3
-		    NOT = {
-                has_tech = excavation4
-                has_tech = excavation5
-            }
 		}
-		custom_cost_trigger = {
-            command_power > 20
-        }
-		available {
-			AND {
-				has_stability > 0.4
+		available = {
+			AND = {
+				has_stability > 0.40
 				num_of_civilian_factories_available_for_projects > 3
 
-				any_owned_state {
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = tungsten
@@ -1594,11 +1392,8 @@ prospect_for_resources = {
 		modifier = {
             civilian_factory_use = 3
         }
-        complete_effect {
-            add_command_power = -20
-        }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_controlled_state = {
 				limit = {
 					has_resources_amount = {
 						resource = tungsten
@@ -1606,7 +1401,7 @@ prospect_for_resources = {
 						state = THIS
 					}
 				}
-				add_resource {
+				add_resource = {
 					type = tungsten
 					amount = 4
 					state = THIS
@@ -1614,27 +1409,22 @@ prospect_for_resources = {
 			}
 		}
 		days_remove = 90
-		custom_cost_text = add_tungsten_to_random_state_1_cost
+		fire_only_once = yes
 	}
 
 	# add_tungsten_to_random_state_2
-    add_tungsten_to_random_state_2 {
+    add_tungsten_to_random_state_2 = {
         icon = tungsten
+        cost = 25
         visible = {
             has_tech = excavation4
-            NOT = {
-                has_tech = excavation5
-            }
         }
-		custom_cost_trigger = {
-            command_power > 25
-        }
-        available {
-            AND {
-                has_stability > 0.4
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 4
 
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = tungsten
@@ -1648,11 +1438,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 4
         }
-        complete_effect {
-            add_command_power = -25
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = tungsten
@@ -1660,7 +1447,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = tungsten
                     amount = 6
                     state = THIS
@@ -1668,23 +1455,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 120
-        custom_cost_text = add_tungsten_to_random_state_2_cost
+        fire_only_once = yes
     }
 
     # add_tungsten_to_random_state_3
-    add_tungsten_to_random_state_3 {
+    add_tungsten_to_random_state_3 = {
         icon = tungsten
+        cost = 25
         visible = {
             has_tech = excavation5
         }
-        custom_cost_trigger = {
-            command_power > 30
-        }
-        available {
-            AND {
-                has_stability > 0.4
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 5
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = tungsten
@@ -1698,11 +1483,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 5
         }
-        complete_effect {
-            add_command_power = -30
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = tungsten
@@ -1710,7 +1492,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = tungsten
                     amount = 8
                     state = THIS
@@ -1718,29 +1500,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 180
-        custom_cost_text = add_tungsten_to_random_state_3_cost
+        fire_only_once = yes
     }
 
 	# add_steel_to_random_state_1
-    add_steel_to_random_state_1 {
+    add_steel_to_random_state_1 = {
+        cost = 25
         icon = steel
         visible = {
             has_tech = excavation1
-            NOT = {
-                has_tech = excavation2
-                has_tech = excavation3
-                has_tech = excavation4
-                has_tech = excavation5
-            }
         }
-        custom_cost_trigger = {
-            command_power > 5
-        }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 1
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = steel
@@ -1759,11 +1533,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 1
         }
-        complete_effect {
-            add_command_power = -5
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = steel
@@ -1776,7 +1547,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = steel
                     amount = 1
                     state = THIS
@@ -1784,28 +1555,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 30
-        custom_cost_text = add_steel_to_random_state_1_cost
+        fire_only_once = yes
     }
 
     # add_steel_to_random_state_2
-    add_steel_to_random_state_2 {
+    add_steel_to_random_state_2 = {
         icon = steel
+        cost = 25
         visible = {
             has_tech = excavation2
-            NOT = {
-                has_tech = excavation3
-                has_tech = excavation4
-                has_tech = excavation5
-            }
         }
-        custom_cost_trigger = {
-            command_power > 10
-        }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 2
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = steel
@@ -1824,11 +1588,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 2
         }
-        complete_effect {
-            add_command_power = -10
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = steel
@@ -1841,7 +1602,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = steel
                     amount = 2
                     state = THIS
@@ -1849,28 +1610,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 60
-        custom_cost_text = add_steel_to_random_state_2_cost
+        fire_only_once = yes
     }
 
     # add_steel_to_random_state_3
-    add_steel_to_random_state_3 {
+    add_steel_to_random_state_3 = {
         icon = steel
+        cost = 25
         visible = {
             has_tech = excavation3
-            NOT = {
-                has_tech = excavation4
-                has_tech = excavation5
-            }
         }
-        custom_cost_trigger = {
-            command_power > 15
-        }
-        available {
-            AND {
-                has_stability > 0.3
-
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 3
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = steel
@@ -1889,11 +1643,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 3
         }
-        complete_effect {
-            add_command_power = -15
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = steel
@@ -1906,7 +1657,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = steel
                     amount = 4
                     state = THIS
@@ -1914,26 +1665,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 60
-        custom_cost_text = add_steel_to_random_state_3_cost
+        fire_only_once = yes
     }
 
     # add_steel_to_random_state_4
-    add_steel_to_random_state_4 {
+    add_steel_to_random_state_4 = {
         icon = steel
+        cost = 25
         visible = {
             has_tech = excavation4
-            NOT = {
-                has_tech = excavation5
-            }
         }
-        custom_cost_trigger = {
-            command_power > 20
-        }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 4
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = steel
@@ -1952,11 +1698,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 4
         }
-        complete_effect {
-            add_command_power = -20
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = steel
@@ -1969,7 +1712,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = steel
                     amount = 4
                     state = THIS
@@ -1977,23 +1720,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 90
-        custom_cost_text = add_steel_to_random_state_4_cost
+        fire_only_once = yes
     }
 
     # add_steel_to_random_state_5
-    add_steel_to_random_state_5 {
+    add_steel_to_random_state_5 = {
         icon = steel
+        cost = 25
         visible = {
             has_tech = excavation5
         }
-        custom_cost_trigger = {
-            command_power > 25
-        }
-        available {
-            AND {
-                has_stability > 0.3
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 5
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = steel
@@ -2012,11 +1753,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 5
         }
-        complete_effect {
-            add_command_power = -25
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = steel
@@ -2029,7 +1767,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = steel
                     amount = 8
                     state = THIS
@@ -2037,28 +1775,21 @@ prospect_for_resources = {
             }
         }
         days_remove = 120
-        custom_cost_text = add_steel_to_random_state_5_cost
+        fire_only_once = yes
     }
 
     # add_chromium_to_random_state_1
-	add_chromium_to_random_state_1 {
+	add_chromium_to_random_state_1 = {
 		icon = chromium
+		cost = 25
 		visible = {
 		    has_tech = excavation3
-				NOT = {
-                    has_tech = excavation4
-                    has_tech = excavation5
-                }
 		}
-		custom_cost_trigger = {
-            command_power > 20
-        }
-		available {
-			AND {
-				has_stability > 0.4
-
+		available = {
+			AND = {
+				has_stability > 0.40
 				num_of_civilian_factories_available_for_projects > 3
-				any_owned_state {
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = chromium
@@ -2072,11 +1803,8 @@ prospect_for_resources = {
 		modifier = {
             civilian_factory_use = 3
         }
-        complete_effect {
-            add_command_power = -20
-        }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_controlled_state = {
 				limit = {
 					has_resources_amount = {
 						resource = chromium
@@ -2084,7 +1812,7 @@ prospect_for_resources = {
 						state = THIS
 					}
 				}
-				add_resource {
+				add_resource = {
 					type = chromium
 					amount = 4
 					state = THIS
@@ -2092,27 +1820,21 @@ prospect_for_resources = {
 			}
 		}
 		days_remove = 90
-		custom_cost_text = add_chromium_to_random_state_1_cost
+		fire_only_once = yes
 	}
 
     # add_chromium_to_random_state_2
-	add_chromium_to_random_state_2 {
+	add_chromium_to_random_state_2 = {
 		icon = chromium
+		cost = 25
 		visible = {
 		    has_tech = excavation4
-		    NOT = {
-                has_tech = excavation5
-            }
 		}
-		custom_cost_trigger = {
-            command_power > 25
-        }
-		available {
-			AND {
-				has_stability > 0.4
-
+		available = {
+			AND = {
+				has_stability > 0.40
 				num_of_civilian_factories_available_for_projects > 4
-				any_owned_state {
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = chromium
@@ -2126,11 +1848,8 @@ prospect_for_resources = {
 		modifier = {
             civilian_factory_use = 4
         }
-        complete_effect {
-            add_command_power = -25
-        }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_controlled_state = {
 				limit = {
 					has_resources_amount = {
 						resource = chromium
@@ -2138,7 +1857,7 @@ prospect_for_resources = {
 						state = THIS
 					}
 				}
-				add_resource {
+				add_resource = {
 					type = chromium
 					amount = 6
 					state = THIS
@@ -2146,23 +1865,21 @@ prospect_for_resources = {
 			}
 		}
 		days_remove = 120
-		custom_cost_text = add_chromium_to_random_state_2_cost
+		fire_only_once = yes
 	}
 
     # add_chromium_to_random_state_3
-    add_chromium_to_random_state_3 {
+    add_chromium_to_random_state_3 = {
         icon = chromium
+        cost = 25
         visible = {
             has_tech = excavation5
         }
-		custom_cost_trigger = {
-            command_power > 30
-        }
-        available {
-            AND {
-                has_stability > 0.4
+        available = {
+            AND = {
+                has_stability > 0.40
                 num_of_civilian_factories_available_for_projects > 5
-                any_owned_state {
+                any_owned_state = {
                     AND = {
                         has_resources_amount = {
                             resource = chromium
@@ -2176,11 +1893,8 @@ prospect_for_resources = {
         modifier = {
             civilian_factory_use = 5
         }
-        complete_effect {
-            add_command_power = -30
-        }
         remove_effect = {
-            random_owned_controlled_state {
+            random_owned_controlled_state = {
                 limit = {
                     has_resources_amount = {
                         resource = chromium
@@ -2188,7 +1902,7 @@ prospect_for_resources = {
                         state = THIS
                     }
                 }
-                add_resource {
+                add_resource = {
                     type = chromium
                     amount = 8
                     state = THIS
@@ -2196,27 +1910,25 @@ prospect_for_resources = {
             }
         }
         days_remove = 180
-        custom_cost_text = add_chromium_to_random_state_3_cost
+        fire_only_once = yes
     }
 
 	# add_oil_to_island
-	add_oil_to_island {
-		cost = 100
+	add_oil_to_island = {
+		cost = 25
 		icon = oil
-		available {
-			AND {
+		available = {
+			AND = {
 				num_of_civilian_factories_available_for_projects > 2
-				has_war = yes
-				has_war_support > 0.8
-				has_stability > 0.5
-				any_owned_state {
-					is_island_state = yes
+				has_stability > 0.40
+				any_owned_state = {
 					AND = {
 						has_resources_amount = {
 							resource = oil
 							amount < 1
 							state = THIS
 						}
+						is_island_state = yes
 					}
 				}
 			}
@@ -2224,11 +1936,8 @@ prospect_for_resources = {
 		modifier = {
             civilian_factory_use = 2
         }
-        complete_effect {
-            add_command_power = -30
-        }
 		remove_effect = {
-			random_owned_controlled_state {
+			random_owned_state = {
 				limit = {
 					AND = {
 						has_resources_amount = {
@@ -2238,16 +1947,15 @@ prospect_for_resources = {
 						}
 						is_island_state = yes
 					}
-
 				}
-				add_resource {
+				add_resource = {
 					type = oil
-					amount = 1
+					amount = 2
 					state = THIS
 				}
 			}
 		}
-		days_remove = 30
+		days_remove = 20
 		days_re_enable = 60
 	}
 

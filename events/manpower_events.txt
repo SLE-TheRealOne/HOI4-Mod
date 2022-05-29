@@ -40,7 +40,7 @@ country_event = {
         # Works
         set_variable = { required_command_power = 100 }
         add_to_variable { required_command_power = modifier@max_command_power }
-        multiply_variable = { required_command_power = 0.10 }
+        multiply_variable = { required_command_power = 0.05 }
         set_variable = { required_command_power_neg = required_command_power }
         multiply_variable = { required_command_power_neg = -1 }
     }

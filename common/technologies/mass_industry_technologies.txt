@@ -12,6 +12,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -56,6 +57,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -79,6 +81,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -102,6 +105,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -125,6 +129,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -144,6 +149,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -167,6 +173,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -190,6 +197,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -213,6 +221,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -232,6 +241,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -255,6 +265,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -278,6 +289,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -301,6 +313,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -320,6 +333,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -343,6 +357,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -366,6 +381,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -389,6 +405,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -408,6 +425,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -429,6 +447,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -455,6 +474,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }
@@ -477,6 +497,7 @@ technologies = {
         }
 
         categories = {
+            industry
             additional_technology_category
             additional_technology_category_industry
         }

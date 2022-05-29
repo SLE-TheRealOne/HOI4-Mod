@@ -1,5 +1,9 @@
 technologies = {
 
+    # army_attack_speed_factor
+    # army_attack_against_major_factor
+    # org_loss_when_moving  : Ecoutons nos logisticiens et officiers du génie pour qu'ils nous apprennent comment maintenir l'efficacité de nos forces quand elles font mouvement
+
     # tech-army_levels-start
 	tech-army_levels-start = {
         start_year = 1936
@@ -66,7 +70,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -5 y = 3 }
+            position = { x = 9 y = 3 }
         }
 
         categories = {
@@ -90,7 +94,7 @@ technologies = {
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = -3 y = 2 }
+	        position = { x = 1 y = 2 }
 	    }
 
 	    categories = {
@@ -136,7 +140,7 @@ technologies = {
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = 1 y = 2 }
+	        position = { x = -3 y = 2 }
 	    }
 
 	    categories = {
@@ -229,7 +233,7 @@ technologies = {
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = 9 y = 2 }
+	        position = { x = -5 y = 2 }
 	    }
 
 	    categories = {
@@ -248,13 +252,13 @@ technologies = {
 
     # tech-army-digging_factor_02
     tech-army-digging_factor_02 = {
-        start_year = 1937
+        start_year = 1938
         research_cost = 0.45
         doctrine = yes
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -5 y = 5 }
+            position = { x = 9 y = 5 }
         }
 
         categories = {
@@ -278,7 +282,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -3 y = 4 }
+            position = { x = 1 y = 4 }
         }
 
         categories = {
@@ -324,7 +328,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 1 y = 4 }
+            position = { x = -3 y = 4 }
         }
 
         categories = {
@@ -347,7 +351,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 1 y = 4 }
+            position = { -3 y = 4 }
         }
 
         categories = {
@@ -440,7 +444,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 9 y = 4 }
+            position = { x = -5 y = 4 }
         }
 
         categories = {
@@ -459,13 +463,13 @@ technologies = {
 
     # tech-army-digging_factor_03
     tech-army-digging_factor_03 = {
-        start_year = 1939
+        start_year = 1940
         research_cost = 0.45
         doctrine = yes
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -5 y = 7 }
+            position = { x = 9 y = 7 }
         }
 
         categories = {
@@ -489,7 +493,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -3 y = 6 }
+            position = { x = 1 y = 6 }
         }
 
         categories = {
@@ -535,7 +539,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 1 y = 6 }
+            position = { x = -3 y = 6 }
         }
 
         categories = {
@@ -599,7 +603,7 @@ technologies = {
 
     # tech-army-army_org_factor_03
     tech-army-army_org_factor_03 = {
-        start_year = 1941
+        start_year = 1940
         research_cost = 0.75
         doctrine = yes
 
@@ -628,7 +632,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 9 y = 6 }
+            position = { x = -5 y = 6 }
         }
 
         categories = {
@@ -647,13 +651,13 @@ technologies = {
 
     # tech-army-digging_factor_04
     tech-army-digging_factor_04 = {
-        start_year = 1940
+        start_year = 1942
         research_cost = 0.45
         doctrine = yes
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -5 y = 9 }
+            position = { x = 9 y = 9 }
         }
 
         categories = {
@@ -673,7 +677,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -3 y = 8 }
+            position = { x = 1 y = 8 }
         }
 
         categories = {
@@ -719,7 +723,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 1 y = 8 }
+            position = { x = -3 y = 8 }
         }
 
         categories = {
@@ -783,7 +787,7 @@ technologies = {
 
     # tech-army-army_org_factor_04
     tech-army-army_org_factor_04 = {
-        start_year = 1944
+        start_year = 1942
         research_cost = 0.75
         doctrine = yes
 
@@ -808,7 +812,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 9 y = 8 }
+            position = { x = -5 y = 8 }
         }
 
         categories = {
@@ -834,7 +838,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -3 y = 10 }
+            position = { x = 1 y = 10 }
         }
 
         categories = {
@@ -880,7 +884,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 1 y = 10 }
+            position = { x = -3 y = 10 }
         }
 
         categories = {
@@ -942,7 +946,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 9 y = 10 }
+            position = { x = -5 y = 10 }
         }
 
         categories = {
@@ -959,66 +963,6 @@ technologies = {
 
                 #################### RANK 6 ####################
 
-    # tech-army-encryption_06
-    tech-army-encryption_06 = {
-        start_year = 1943
-        research_cost = 0.75
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -9 y = 12 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        dependencies = {
-            advanced_encryption = 1
-        }
-
-        on_research_complete = {
-            multiply_variable = {
-                var = encrypt_level
-                value = 1.16
-            }
-        }
-
-        encryption_factor = 0.16
-    }
-
-    # tech-army-decryption_06
-    tech-army-decryption_06 = {
-        start_year = 1944
-        research_cost = 0.75
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -7 y = 12 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        dependencies = {
-            advanced_decryption = 1
-        }
-
-        on_research_complete = {
-            multiply_variable = {
-                var = decrypt_level
-                value = 1.16
-            }
-        }
-
-        decryption_factor = 0.16
-    }
-
     # tech-army-consumption_factor_reduction_06
     tech-army-consumption_factor_reduction_06 = {
         start_year = 1942
@@ -1027,7 +971,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -3 y = 12 }
+            position = { x = 1 y = 12 }
         }
 
         categories = {
@@ -1084,7 +1028,7 @@ technologies = {
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 9 y = 12 }
+            position = { x = -5 y = 12 }
         }
 
         categories = {

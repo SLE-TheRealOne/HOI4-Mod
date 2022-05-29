@@ -38,6 +38,86 @@
 				Orientation = "UPPER_LEFT"
 			}
 
+
+			instantTextBoxType = {
+                name = "tech-fighter_1936"
+                position = { x = 750 y = 100 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1936"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1939"
+                position = { x = 200 y = 280 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1939"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1940"
+                position = { x = 200 y = 400 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1940"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1941"
+                position = { x = 200 y = 516 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1941"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1942"
+                position = { x = 200 y = 635 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1942"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-top_industry_1943"
+                position = { x = 200 y = 760 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1943"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+
 			gridboxtype = {
 				name = "tech-fighter-start_tree"
 				position = { x=615 y=80 }

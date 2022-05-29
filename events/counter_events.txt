@@ -14,10 +14,7 @@ country_event = {
 
         set_variable = { dry_dock_counter = 0 }
         set_variable = { dry_dock_bonus_percentage = 0 }
-        every_owned_state = {
-            limit = {
-                is_owned_and_controlled_by = ROOT
-            }
+        every_controlled_state = {
             add_to_variable = {
                 var = ROOT.dry_dock_counter
                 value = building_level@dry_dock
@@ -165,8 +162,8 @@ country_event = {
                 }
                 set_variable = { dry_dock_bonus_percentage = 20 }
                 set_temp_variable = { delta = dry_dock_counter }
-                subtract_from_temp_variable { delta = 80 }
-                add_to_variable { dry_dock_bonus_percentage = delta }
+                subtract_from_temp_variable = { delta = 80 }
+                add_to_variable = { dry_dock_bonus_percentage = delta }
             }
         }
 
@@ -193,10 +190,7 @@ country_event = {
 
         set_variable = { industrial_district_counter = 0 }
         set_variable = { industrial_district_bonus_percentage = 0 }
-        every_owned_state = {
-            limit = {
-                is_owned_and_controlled_by = ROOT
-            }
+        every_controlled_state = {
             add_to_variable = {
                 var = ROOT.industrial_district_counter
                 value = building_level@industrial_district
@@ -333,9 +327,9 @@ country_event = {
                     }
                 }
                 set_variable = { industrial_district_bonus_percentage = 20 }
-                set_temp_variable = { delta = industrial_district_counter }
-                subtract_from_temp_variable { delta = 80 }
-                add_to_variable { industrial_district_bonus_percentage = delta }
+                set_temp_variable = { industrial_district_delta = industrial_district_counter }
+                subtract_from_temp_variable = { industrial_district_delta = 80 }
+                add_to_variable = { industrial_district_bonus_percentage = industrial_district_delta }
             }
         }
 
