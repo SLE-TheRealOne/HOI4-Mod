@@ -4,7 +4,7 @@ technologies = {
     tech-mass_industry_start = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name =  additional_technologies_industry_folder
@@ -49,7 +49,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_factory_boost_01 = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -73,7 +73,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_factory_boost_02 = {
         start_year = 1937
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -97,7 +97,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_factory_boost_03 = {
         start_year = 1938
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -121,7 +121,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_factory_boost_04 = {
         start_year = 1942
         doctrine = no
-        research_cost = 1
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -141,7 +141,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_dockyard_boost_01 = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -165,7 +165,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_dockyard_boost_02 = {
         start_year = 1937
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -189,7 +189,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_dockyard_boost_03 = {
         start_year = 1938
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -213,7 +213,7 @@ technologies = {
     tech-mass_industry-industrial_capacity_dockyard_boost_04 = {
         start_year = 1942
         doctrine = no
-        research_cost = 1
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -233,7 +233,7 @@ technologies = {
     tech-mass_industry-global_building_slots_factor_boost_01 = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -257,7 +257,7 @@ technologies = {
     tech-mass_industry-global_building_slots_factor_boost_02 = {
         start_year = 1937
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -281,7 +281,7 @@ technologies = {
     tech-mass_industry-global_building_slots_factor_boost_03 = {
         start_year = 1939
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -305,7 +305,7 @@ technologies = {
     tech-mass_industry-global_building_slots_factor_boost_04 = {
         start_year = 1942
         doctrine = no
-        research_cost = 1
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -325,7 +325,7 @@ technologies = {
     tech-mass_industry-production_oil_factor_boost_01 = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -349,7 +349,7 @@ technologies = {
     tech-mass_industry-production_oil_factor_boost_02 = {
         start_year = 1937
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -373,7 +373,7 @@ technologies = {
     tech-mass_industry-production_oil_factor_boost_03 = {
         start_year = 1938
         doctrine = no
-        research_cost = 0.75
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -397,7 +397,7 @@ technologies = {
     tech-mass_industry-production_oil_factor_boost_04 = {
         start_year = 1942
         doctrine = no
-        research_cost = 1
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -417,7 +417,7 @@ technologies = {
     tech-mass_industry-industrial_district_threshold_01 = {
         start_year = 1936
         doctrine = no
-        research_cost = 0.70
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -439,7 +439,7 @@ technologies = {
     tech-mass_industry-industrial_district_threshold_02 = {
         start_year = 1937
         doctrine = no
-        research_cost = 0.80
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -466,7 +466,7 @@ technologies = {
     tech-mass_industry-industrial_district_threshold_03 = {
         start_year = 1939
         doctrine = no
-        research_cost = 0.90
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
@@ -489,7 +489,7 @@ technologies = {
     tech-mass_industry-industrial_district_threshold_04 = {
         start_year = 1941
         doctrine = no
-        research_cost = 1
+        research_cost = 0.35
 
         folder = {
             name = additional_technologies_industry_folder
