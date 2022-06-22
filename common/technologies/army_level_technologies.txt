@@ -7,7 +7,7 @@ technologies = {
     # tech-army_levels-start
 	tech-army_levels-start = {
         start_year = 1936
-        research_cost = 1
+        research_cost = 0.45
         doctrine = yes
 
         xp_research_type = army
@@ -89,7 +89,7 @@ technologies = {
 	# tech-army-consumption_factor_reduction_01
 	tech-army-consumption_factor_reduction_01 = {
 	    start_year = 1937
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -106,13 +106,13 @@ technologies = {
 	        leads_to_tech = tech-army-consumption_factor_reduction_02
 	    }
 
-	    supply_consumption_factor = -0.05
+	    supply_consumption_factor = -0.03
 	}
 
 	# tech-army-out_of_supply_factor_reduction_01
 	tech-army-out_of_supply_factor_reduction_01 = {
 	    start_year = 1937
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -129,13 +129,13 @@ technologies = {
 	        leads_to_tech = tech-army-out_of_supply_factor_reduction_02
 	    }
 
-	    out_of_supply_factor = -0.05
+	    out_of_supply_factor = -0.03
 	}
 
 	# tech-army-experience_loss_factor_01
 	tech-army-experience_loss_factor_01 = {
 	    start_year = 1936
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -152,13 +152,13 @@ technologies = {
 	        leads_to_tech = tech-army-experience_loss_factor_02
 	    }
 
-	    experience_loss_factor = -0.05
+	    experience_loss_factor = -0.03
 	}
 
 	# tech-army-attrition_01
 	tech-army-attrition_01 = {
 	    start_year = 1938
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -175,14 +175,14 @@ technologies = {
 	        leads_to_tech = tech-army-attrition_02
 	    }
 
-        no_supply_grace = 4
-	    attrition = -0.04
+        no_supply_grace = 3
+	    attrition = -0.03
 	}
 
 	# tech-army-defence_factor_01
 	tech-army-defence_factor_01 = {
 	    start_year = 1937
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -199,13 +199,13 @@ technologies = {
 	        leads_to_tech = tech-army-defence_factor_02
 	    }
 
-        army_defence_factor = 0.05
+        army_defence_factor = 0.03
 	}
 
     # tech-army-army_org_factor_01
 	tech-army-army_org_factor_01 = {
 	    start_year = 1936
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -228,7 +228,7 @@ technologies = {
 	# tech-army-attack_factor_01
 	tech-army-attack_factor_01 = {
 	    start_year = 1937
-	    research_cost = 0.75
+	    research_cost = 0.45
 	    doctrine = yes
 
 	    folder = {
@@ -245,7 +245,7 @@ technologies = {
 	        leads_to_tech = tech-army-attack_factor_02
 	    }
 
-	    army_attack_factor = 0.05
+	    army_attack_factor = 0.03
 	}
 
 				#################### RANK 2 ####################
@@ -277,7 +277,7 @@ technologies = {
     # tech-army-consumption_factor_reduction_02
     tech-army-consumption_factor_reduction_02 = {
         start_year = 1938
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -294,13 +294,13 @@ technologies = {
             leads_to_tech = tech-army-consumption_factor_reduction_03
         }
 
-        supply_consumption_factor = -0.05
+        supply_consumption_factor = -0.03
     }
 
     # tech-army-out_of_supply_factor_reduction_02
     tech-army-out_of_supply_factor_reduction_02 = {
         start_year = 1938
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -317,13 +317,13 @@ technologies = {
             leads_to_tech = tech-army-out_of_supply_factor_reduction_03
         }
 
-        out_of_supply_factor = -0.05
+        out_of_supply_factor = -0.03
     }
 
     # tech-army-experience_loss_factor_02
     tech-army-experience_loss_factor_02 = {
         start_year = 1937
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -340,7 +340,7 @@ technologies = {
             leads_to_tech = tech-army-experience_loss_factor_03
         }
 
-        experience_loss_factor = -0.05
+        experience_loss_factor = -0.03
     }
 
     # tech-army-experience_loss_factor_02
@@ -369,7 +369,7 @@ technologies = {
     # tech-army-attrition_02
     tech-army-attrition_02 = {
         start_year = 1939
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -386,14 +386,14 @@ technologies = {
             leads_to_tech = tech-army-attrition_03
         }
 
-        no_supply_grace = 4
-        attrition = -0.04
+        no_supply_grace = 3
+        attrition = -0.03
     }
 
     # tech-army-defence_factor_02
     tech-army-defence_factor_02 = {
         start_year = 1938
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -410,13 +410,13 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_03
         }
 
-        army_defence_factor = 0.05
+        army_defence_factor = 0.03
     }
 
     # tech-army-army_org_factor_02
     tech-army-army_org_factor_02 = {
         start_year = 1938
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -439,7 +439,7 @@ technologies = {
     # tech-army-attack_factor_02
     tech-army-attack_factor_02 = {
         start_year = 1938
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -456,7 +456,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_03
         }
 
-        army_attack_factor = 0.05
+        army_attack_factor = 0.03
     }
 
                 #################### RANK 3 ####################
@@ -488,7 +488,7 @@ technologies = {
     # tech-army-consumption_factor_reduction_03
     tech-army-consumption_factor_reduction_03 = {
         start_year = 1939
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -505,13 +505,13 @@ technologies = {
             leads_to_tech = tech-army-consumption_factor_reduction_04
         }
 
-        supply_consumption_factor = -0.05
+        supply_consumption_factor = -0.03
     }
 
     # tech-army-out_of_supply_factor_reduction_03
     tech-army-out_of_supply_factor_reduction_03 = {
         start_year = 1939
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -528,13 +528,13 @@ technologies = {
             leads_to_tech = tech-army-out_of_supply_factor_reduction_04
         }
 
-        out_of_supply_factor = -0.05
+        out_of_supply_factor = -0.03
     }
 
     # tech-army-experience_loss_factor_03
     tech-army-experience_loss_factor_03 = {
         start_year = 1938
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -551,13 +551,13 @@ technologies = {
             leads_to_tech = tech-army-experience_loss_factor_04
         }
 
-        experience_loss_factor = -0.05
+        experience_loss_factor = -0.03
     }
 
     # tech-army-attrition_03
     tech-army-attrition_03 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -574,14 +574,14 @@ technologies = {
             leads_to_tech = tech-army-attrition_04
         }
 
-        no_supply_grace = 4
-        attrition = -0.04
+        no_supply_grace = 3
+        attrition = -0.03
     }
 
     # tech-army-defence_factor_03
     tech-army-defence_factor_03 = {
         start_year = 1939
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -598,13 +598,13 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_04
         }
 
-        army_defence_factor = 0.05
+        army_defence_factor = 0.03
     }
 
     # tech-army-army_org_factor_03
     tech-army-army_org_factor_03 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -621,13 +621,13 @@ technologies = {
             leads_to_tech = tech-army-army_org_factor_04
         }
 
-        army_org_factor = 0.05
+        army_org_factor = 0.03
     }
 
     # tech-army-attack_factor_03
     tech-army-attack_factor_03 = {
         start_year = 1939
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -644,7 +644,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_04
         }
 
-        army_attack_factor = 0.05
+        army_attack_factor = 0.03
     }
 
                 #################### RANK 4 ####################
@@ -672,7 +672,7 @@ technologies = {
     # tech-army-consumption_factor_reduction_04
     tech-army-consumption_factor_reduction_04 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -689,13 +689,13 @@ technologies = {
             leads_to_tech = tech-army-consumption_factor_reduction_05
         }
 
-        supply_consumption_factor = -0.05
+        supply_consumption_factor = -0.03
     }
 
     # tech-army-out_of_supply_factor_reduction_04
     tech-army-out_of_supply_factor_reduction_04 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -712,13 +712,13 @@ technologies = {
             leads_to_tech = tech-army-out_of_supply_factor_reduction_05
         }
 
-        out_of_supply_factor = -0.05
+        out_of_supply_factor = -0.03
     }
 
     # tech-army-experience_loss_factor_04
     tech-army-experience_loss_factor_04 = {
         start_year = 1939
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -735,13 +735,13 @@ technologies = {
             leads_to_tech = tech-army-experience_loss_factor_05
         }
 
-        experience_loss_factor = -0.05
+        experience_loss_factor = -0.03
     }
 
     # tech-army-attrition_04
     tech-army-attrition_04 = {
         start_year = 1941
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -758,14 +758,14 @@ technologies = {
             leads_to_tech = tech-army-attrition_05
         }
 
-        no_supply_grace = 4
-        attrition = -0.04
+        no_supply_grace = 3
+        attrition = -0.03
     }
 
     # tech-army-defence_factor_04
     tech-army-defence_factor_04 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -782,13 +782,13 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_05
         }
 
-        army_defence_factor = 0.05
+        army_defence_factor = 0.03
     }
 
     # tech-army-army_org_factor_04
     tech-army-army_org_factor_04 = {
         start_year = 1942
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -807,7 +807,7 @@ technologies = {
     # tech-army-attack_factor_04
     tech-army-attack_factor_04 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -824,7 +824,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_05
         }
 
-        army_attack_factor = 0.05
+        army_attack_factor = 0.03
     }
 
                 #################### RANK 5 ####################
@@ -833,7 +833,7 @@ technologies = {
     # tech-army-consumption_factor_reduction_05
     tech-army-consumption_factor_reduction_05 = {
         start_year = 1941
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -850,13 +850,13 @@ technologies = {
             leads_to_tech = tech-army-consumption_factor_reduction_06
         }
 
-        supply_consumption_factor = -0.05
+        supply_consumption_factor = -0.03
     }
 
     # tech-army-out_of_supply_factor_reduction_05
     tech-army-out_of_supply_factor_reduction_05 = {
         start_year = 1941
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -873,13 +873,13 @@ technologies = {
             leads_to_tech = tech-army-out_of_supply_factor_reduction_06
         }
 
-        out_of_supply_factor = -0.05
+        out_of_supply_factor = -0.03
     }
 
     # tech-army-experience_loss_factor_05
     tech-army-experience_loss_factor_05 = {
         start_year = 1940
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -892,13 +892,13 @@ technologies = {
             additional_technology_category_army
         }
 
-        experience_loss_factor = -0.05
+        experience_loss_factor = -0.03
     }
 
     # tech-army-attrition_05
     tech-army-attrition_05 = {
         start_year = 1942
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -911,14 +911,14 @@ technologies = {
             additional_technology_category_army
         }
 
-        no_supply_grace = 4
-        attrition = -0.04
+        no_supply_grace = 3
+        attrition = -0.03
     }
 
     # tech-army-defence_factor_05
     tech-army-defence_factor_05 = {
         start_year = 1941
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -935,13 +935,13 @@ technologies = {
             leads_to_tech = tech-army-defence_factor_06
         }
 
-        army_defence_factor = 0.05
+        army_defence_factor = 0.03
     }
 
     # tech-army-attack_factor_05
     tech-army-attack_factor_05 = {
         start_year = 1941
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -958,7 +958,7 @@ technologies = {
             leads_to_tech = tech-army-attack_factor_06
         }
 
-        army_attack_factor = 0.05
+        army_attack_factor = 0.03
     }
 
                 #################### RANK 6 ####################
@@ -966,7 +966,7 @@ technologies = {
     # tech-army-consumption_factor_reduction_06
     tech-army-consumption_factor_reduction_06 = {
         start_year = 1942
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -979,13 +979,13 @@ technologies = {
             additional_technology_category_army
         }
 
-        supply_consumption_factor = -0.05
+        supply_consumption_factor = -0.03
     }
 
     # tech-army-out_of_supply_factor_reduction_06
     tech-army-out_of_supply_factor_reduction_06 = {
         start_year = 1942
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -998,13 +998,13 @@ technologies = {
             additional_technology_category_army
         }
 
-        out_of_supply_factor = -0.05
+        out_of_supply_factor = -0.03
     }
 
     # tech-army-defence_factor_06
     tech-army-defence_factor_06 = {
         start_year = 1942
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -1017,13 +1017,13 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_defence_factor = 0.05
+        army_defence_factor = 0.03
     }
 
     # tech-army-attack_factor_06
     tech-army-attack_factor_06 = {
         start_year = 1942
-        research_cost = 0.75
+        research_cost = 0.45
         doctrine = yes
 
         folder = {
@@ -1036,7 +1036,7 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_attack_factor = 0.05
+        army_attack_factor = 0.03
     }
 
 }

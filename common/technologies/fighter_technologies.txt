@@ -71,7 +71,7 @@ technologies = {
 
 	tech-fighter-air_superiority_detect_factor_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -92,12 +92,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_detect_factor_02
 		}
 
-		air_superiority_detect_factor = 0.05
+		air_superiority_detect_factor = 0.03
 	}
 
 	tech-fighter-air_interception_detect_factor_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -118,12 +118,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_interception_detect_factor_02
 		}
 
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.03
 	}
 
 	tech-fighter-engine_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -137,14 +137,14 @@ technologies = {
 		}
 
 		category_fighter = {
-			maximum_speed = 0.05
-			air_range = 0.05
-			reliability = 0.05
+			maximum_speed = 0.03
+			air_range = 0.03
+			reliability = 0.03
 		}
         category_heavy_fighter = {
-            maximum_speed = 0.05
-            air_range = 0.05
-            reliability = 0.05
+            maximum_speed = 0.03
+            air_range = 0.03
+            reliability = 0.03
         }
 
 		path = {
@@ -154,7 +154,7 @@ technologies = {
 	
 	tech-fighter-attack_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -168,10 +168,10 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_attack = 0.05
+			air_attack = 0.03
 		}
 		category_heavy_fighter = {
-            air_attack = 0.05
+            air_attack = 0.03
         }
 
 
@@ -182,7 +182,7 @@ technologies = {
 
 	tech-fighter-defense_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -200,16 +200,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_defence = 0.05
+			air_defence = 0.03
 		}
 		category_heavy_fighter = {
-            air_defence = 0.05
+            air_defence = 0.03
         }
 	}
 
 	tech-fighter-agility_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -227,16 +227,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
 		category_heavy_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
 	}
 	
 	tech-fighter-air_superiority_efficiency_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -257,12 +257,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_efficiency_02
 		}
 
-		air_superiority_efficiency = 0.05
+		air_superiority_efficiency = 0.03
 	}
 
 	tech-fighter-air_intercept_efficiency_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -283,12 +283,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_intercept_efficiency_02
 		}
 
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.03
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -305,12 +305,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_02
 		}
 
-		air_superiority_bonus_in_combat = 0.05
+		air_superiority_bonus_in_combat = 0.03
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -331,12 +331,12 @@ technologies = {
 			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_02
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.05
+		enemy_army_bonus_air_superiority_factor = -0.03
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_01 = {
 		start_year = 1939
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -357,14 +357,14 @@ technologies = {
 			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_02
 		}
 
-		army_bonus_air_superiority_factor = 0.05
+		army_bonus_air_superiority_factor = 0.03
 	}
 
 				#################### RANK 2 ####################
 
 	tech-fighter-air_superiority_detect_factor_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -385,12 +385,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_detect_factor_03
 		}
 
-		air_superiority_detect_factor = 0.05
+		air_superiority_detect_factor = 0.03
 	}
 
 	tech-fighter-air_interception_detect_factor_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -411,12 +411,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_interception_detect_factor_03
 		}
 
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.03
 	}
 
 	tech-fighter-engine_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -430,14 +430,14 @@ technologies = {
 		}
 
 		category_fighter = {
-			maximum_speed = 0.05
-			air_range = 0.05
-			reliability = 0.05
+			maximum_speed = 0.03
+			air_range = 0.03
+			reliability = 0.03
 		}
         category_heavy_fighter = {
-            maximum_speed = 0.05
-            air_range = 0.05
-            reliability = 0.05
+            maximum_speed = 0.03
+            air_range = 0.03
+            reliability = 0.03
         }
 
 		path = {
@@ -447,7 +447,7 @@ technologies = {
 
 	tech-fighter-attack_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -461,10 +461,10 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_attack = 0.05
+			air_attack = 0.03
 		}
 		category_heavy_fighter = {
-            air_attack = 0.05
+            air_attack = 0.03
         }
 
 		path = {
@@ -474,7 +474,7 @@ technologies = {
 
 	tech-fighter-defense_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -492,16 +492,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_defence = 0.05
+			air_defence = 0.03
 		}
 		category_heavy_fighter = {
-            air_defence = 0.05
+            air_defence = 0.03
         }
 	}
 
 	tech-fighter-agility_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -519,16 +519,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
 		category_heavy_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
 	}
 
 	tech-fighter-air_superiority_efficiency_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -549,12 +549,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_efficiency_03
 		}
 
-		air_superiority_efficiency = 0.05
+		air_superiority_efficiency = 0.03
 	}
 
 	tech-fighter-air_intercept_efficiency_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -575,12 +575,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_intercept_efficiency_03
 		}
 
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.03
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -597,12 +597,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_03
 		}
 
-		air_superiority_bonus_in_combat = 0.05
+		air_superiority_bonus_in_combat = 0.03
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -623,12 +623,12 @@ technologies = {
 			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_03
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.05
+		enemy_army_bonus_air_superiority_factor = -0.03
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_02 = {
 		start_year = 1940
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -649,14 +649,14 @@ technologies = {
 			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_03
 		}
 
-		army_bonus_air_superiority_factor = 0.05
+		army_bonus_air_superiority_factor = 0.03
 	}
 
 				#################### RANK 3 ####################
 
 	tech-fighter-air_superiority_detect_factor_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -677,12 +677,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_detect_factor_04
 		}
 
-		air_superiority_detect_factor = 0.05
+		air_superiority_detect_factor = 0.03
 	}
 
 	tech-fighter-air_interception_detect_factor_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -703,12 +703,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_interception_detect_factor_04
 		}
 
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.03
 	}
 
 	tech-fighter-engine_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -722,14 +722,14 @@ technologies = {
 		}
 
 		category_fighter = {
-			maximum_speed = 0.05
-			air_range = 0.05
-			reliability = 0.05
+			maximum_speed = 0.03
+			air_range = 0.03
+			reliability = 0.03
 		}
         category_heavy_fighter = {
-            maximum_speed = 0.05
-            air_range = 0.05
-            reliability = 0.05
+            maximum_speed = 0.03
+            air_range = 0.03
+            reliability = 0.03
         }
 
 		path = {
@@ -739,7 +739,7 @@ technologies = {
 
 	tech-fighter-attack_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -753,10 +753,10 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_attack = 0.05
+			air_attack = 0.03
 		}
 		category_heavy_fighter = {
-            air_attack = 0.05
+            air_attack = 0.03
         }
 
 		path = {
@@ -766,7 +766,7 @@ technologies = {
 
 	tech-fighter-defense_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -784,16 +784,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_defence = 0.05
+			air_defence = 0.03
 		}
 		category_heavy_fighter = {
-            air_defence = 0.05
+            air_defence = 0.03
         }
 	}
 
 	tech-fighter-agility_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -811,16 +811,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
 		category_heavy_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
 	}
 
 	tech-fighter-air_superiority_efficiency_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -841,12 +841,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_efficiency_04
 		}
 
-		air_superiority_efficiency = 0.05
+		air_superiority_efficiency = 0.03
 	}
 
 	tech-fighter-air_intercept_efficiency_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -867,12 +867,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_intercept_efficiency_04
 		}
 
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.03
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -889,12 +889,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_04
 		}
 
-		air_superiority_bonus_in_combat = 0.05
+		air_superiority_bonus_in_combat = 0.03
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -915,12 +915,12 @@ technologies = {
 			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_04
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.05
+		enemy_army_bonus_air_superiority_factor = -0.03
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_03 = {
 		start_year = 1941
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -941,14 +941,14 @@ technologies = {
 			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_04
 		}
 
-		army_bonus_air_superiority_factor = 0.05
+		army_bonus_air_superiority_factor = 0.03
 	}
 
 				#################### RANK 4 ####################
 
 	tech-fighter-air_superiority_detect_factor_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -969,12 +969,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_detect_factor_05
 		}
 
-		air_superiority_detect_factor = 0.05
+		air_superiority_detect_factor = 0.03
 	}
 
 	tech-fighter-air_interception_detect_factor_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -995,12 +995,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_interception_detect_factor_05
 		}
 
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.03
 	}
 
 	tech-fighter-engine_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1014,14 +1014,14 @@ technologies = {
 		}
 
 		category_fighter = {
-			maximum_speed = 0.05
-			air_range = 0.05
-			reliability = 0.05
+			maximum_speed = 0.03
+			air_range = 0.03
+			reliability = 0.03
 		}
         category_heavy_fighter = {
-            maximum_speed = 0.05
-            air_range = 0.05
-            reliability = 0.05
+            maximum_speed = 0.03
+            air_range = 0.03
+            reliability = 0.03
         }
 
 		path = {
@@ -1031,7 +1031,7 @@ technologies = {
 
 	tech-fighter-attack_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1045,10 +1045,10 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_attack = 0.05
+			air_attack = 0.03
 		}
 		category_heavy_fighter = {
-            air_attack = 0.05
+            air_attack = 0.03
         }
 
 		path = {
@@ -1058,7 +1058,7 @@ technologies = {
 
 	tech-fighter-defense_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1076,16 +1076,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_defence = 0.05
+			air_defence = 0.03
 		}
         category_heavy_fighter = {
-            air_defence = 0.05
+            air_defence = 0.03
         }
 	}
 
 	tech-fighter-agility_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1103,16 +1103,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
         category_heavy_fighter = {
-            air_agility = 0.05
+            air_agility = 0.03
         }
 	}
 
 	tech-fighter-air_superiority_efficiency_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1133,12 +1133,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_efficiency_05
 		}
 
-		air_superiority_efficiency = 0.05
+		air_superiority_efficiency = 0.03
 	}
 
 	tech-fighter-air_intercept_efficiency_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1159,12 +1159,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_intercept_efficiency_05
 		}
 
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.03
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1181,12 +1181,12 @@ technologies = {
 			leads_to_tech = tech-fighter-air_superiority_bonus_in_combat_05
 		}
 
-		air_superiority_bonus_in_combat = 0.05
+		air_superiority_bonus_in_combat = 0.03
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1207,12 +1207,12 @@ technologies = {
 			leads_to_tech = tech-fighter-enemy_army_bonus_air_superiority_factor_05
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.05
+		enemy_army_bonus_air_superiority_factor = -0.03
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_04 = {
 		start_year = 1942
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1233,14 +1233,14 @@ technologies = {
 			leads_to_tech = tech-fighter-army_bonus_air_superiority_factor_05
 		}
 
-		army_bonus_air_superiority_factor = 0.05
+		army_bonus_air_superiority_factor = 0.03
 	}
 	
 				#################### RANK 5 ####################
 
 	tech-fighter-air_superiority_detect_factor_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1257,12 +1257,12 @@ technologies = {
 			additional_technology_category_air
 		}
 
-		air_superiority_detect_factor = 0.05
+		air_superiority_detect_factor = 0.03
 	}
 
 	tech-fighter-air_interception_detect_factor_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1279,12 +1279,12 @@ technologies = {
 			tech-fighter-air_superiority_detect_factor_05
 		}
 
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.03
 	}
 
 	tech-fighter-engine_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1298,14 +1298,14 @@ technologies = {
 		}
 
 		category_fighter = {
-			maximum_speed = 0.05
-			air_range = 0.05
-			reliability = 0.05
+			maximum_speed = 0.03
+			air_range = 0.03
+			reliability = 0.03
 		}
         category_heavy_fighter = {
-            maximum_speed = 0.05
-            air_range = 0.05
-            reliability = 0.05
+            maximum_speed = 0.03
+            air_range = 0.03
+            reliability = 0.03
         }
 
 		path = {
@@ -1316,7 +1316,7 @@ technologies = {
 
 	tech-fighter-attack_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1330,10 +1330,10 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_attack = 0.05
+			air_attack = 0.03
 		}
 		category_heavy_fighter = {
-            air_attack = 0.05
+            air_attack = 0.03
         }
 
 		path = {
@@ -1344,7 +1344,7 @@ technologies = {
 
 	tech-fighter-defense_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1358,10 +1358,10 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_defence = 0.05
+			air_defence = 0.03
 		}
 		category_heavy_fighter = {
-            air_defence = 0.05
+            air_defence = 0.03
         }
 
 		path = {
@@ -1371,7 +1371,7 @@ technologies = {
 
 	tech-fighter-agility_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1389,16 +1389,16 @@ technologies = {
 		}
 
 		category_fighter = {
-			air_agility = 0.05
+			air_agility = 0.03
 		}
         category_heavy_fighter = {
-            air_agility = 0.05
+            air_agility = 0.03
         }
 	}
 
 	tech-fighter-air_superiority_efficiency_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1415,12 +1415,12 @@ technologies = {
 			tech-fighter-air_intercept_efficiency_05
 		}
 
-		air_superiority_efficiency = 0.05
+		air_superiority_efficiency = 0.03
 	}
 
 	tech-fighter-air_intercept_efficiency_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1437,12 +1437,12 @@ technologies = {
 			tech-fighter-air_superiority_efficiency_05
 		}
 
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.03
 	}
 
 	tech-fighter-air_superiority_bonus_in_combat_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1455,12 +1455,12 @@ technologies = {
 			additional_technology_category_air
 		}
 
-		air_superiority_bonus_in_combat = 0.05
+		air_superiority_bonus_in_combat = 0.03
 	}
 
 	tech-fighter-enemy_army_bonus_air_superiority_factor_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1477,12 +1477,12 @@ technologies = {
 			additional_technology_category_air
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.05
+		enemy_army_bonus_air_superiority_factor = -0.03
 	}
 
 	tech-fighter-army_bonus_air_superiority_factor_05 = {
 		start_year = 1943
-		research_cost = 0.75
+		research_cost = 0.45
         doctrine = yes
 		
 		folder = {
@@ -1499,7 +1499,7 @@ technologies = {
 			additional_technology_category_air
 		}
 
-		army_bonus_air_superiority_factor = 0.05
+		army_bonus_air_superiority_factor = 0.03
 	}
 
 				#################### Rank 6 #######################
