@@ -29,6 +29,28 @@ spriteTypes = {
 	
 	############################     Technologies items     ############################
 
+	                    ##################### Intelligence #####################
+
+    spriteType = {
+        name = "GFX_tech-intelligence_start_medium"
+        texturefile = "gfx/interface/technologies/Start_Beta.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tech-intelligence-intel_network_gain_factor_medium"
+        texturefile = "gfx/interface/technologies/M-5.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tech-intelligence-intel_from_operatives_factor_medium"
+        texturefile = "gfx/interface/technologies/P-1.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tech-intelligence-decryption_power_factor_medium"
+        texturefile = "gfx/interface/technologies/H-4.dds"
+    }
+
 
 	                    ##################### Light navy #####################
     
@@ -119,6 +141,28 @@ spriteTypes = {
 	spriteType = {
         name = "GFX_light_navy_ending_tech_medium"
         texturefile = "gfx/interface/technologies/End_alpha.dds"
+    }
+
+	                    ##################### Modern navy #####################
+
+    spriteType = {
+        name = "GFX_tech-modern_navy-amphibious_invasion_medium"
+        texturefile = "gfx/interface/technologies/M-5.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tech-modern_navy_refit_speed_medium"
+        texturefile = "gfx/interface/technologies/P-1.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tech-modern_navy-naval_doctrine_cost_factor_medium"
+        texturefile = "gfx/interface/technologies/H-4.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tech-modern_navy-naval_detection_medium"
+        texturefile = "gfx/interface/technologies/A-4.dds"
     }
 
 					    ##################### Fighter #####################

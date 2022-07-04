@@ -1,5 +1,5 @@
         containerWindowType = {
-            name = "additional_technologies_spy_folder"
+            name = "additional_technologies_intelligence_folder"
             position = { x=0 y=47 }
             size = { width = 100%% height = 100%% }
             margin = { top = 13 left = 13 bottom = 24 right = 25}
@@ -13,12 +13,12 @@
             }
 
             instantTextBoxType = {
-                name = "tech_spy_tree_title_name"
+                name = "tech_intelligence_tree_title_name"
                 position = { x = 350 y = 40 }
                 textureFile = ""
                 font = "hoi_22tech"
                 borderSize = {x = 0 y = 4}
-                text = "tech_spy_tree_title_text"
+                text = "tech_intelligence_tree_title_text"
                 maxWidth = 250
                 maxHeight = 122
                 format = center
@@ -26,12 +26,12 @@
             }
 
             instantTextBoxType = {
-                name = "tech_spy_tree_desc_name"
+                name = "tech_intelligence_tree_desc_name"
                 position = { x = 25 y = 75 }
                 textureFile = ""
                 font = "hoi_20b"
                 borderSize = {x = 0 y = 4}
-                text = "tech_spy_tree_desc_text"
+                text = "tech_intelligence_tree_desc_text"
                 maxWidth = 900
                 maxHeight = 122
                 format = center
@@ -39,7 +39,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-top_industry_1936"
+                name = "tech-intelligence_1936"
                 position = { x = 31 y = 190 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -52,7 +52,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-top_industry_1937"
+                name = "tech-intelligence_1937"
                 position = { x = 31 y = 430 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -65,7 +65,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-top_industry_1938"
+                name = "tech-intelligence_1938"
                 position = { x = 31 y = 548 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -78,7 +78,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-top_industry_1939"
+                name = "tech-intelligence_1939"
                 position = { x = 31 y = 666 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -91,7 +91,20 @@
             }
 
             instantTextBoxType = {
-                name = "tech-top_industry_1941"
+                name = "tech-intelligence_1940"
+                position = { x = 31 y = 784 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1940"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "tech-intelligence_1941"
                 position = { x = 31 y = 912 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -104,7 +117,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-top_industry_1942"
+                name = "tech-intelligence_1942"
                 position = { x = 31 y = 1030 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -117,7 +130,7 @@
             }
 
             gridboxtype = {
-                name = "tech-spy_start_tree"
+                name = "tech-intelligence_start_tree"
                 position = { x=15 y=172 }
                 size = { width = 920 height = 1100 }
                 slotsize = { width=60 height= 60 }

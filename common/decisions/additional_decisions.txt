@@ -178,7 +178,7 @@ political_power_usage = {
 			}
 		}
 		days_remove = 40
-		days_re_enable = 120
+		days_re_enable = 90
 	}
 
 	# use_population_war_support_A

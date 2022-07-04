@@ -32,7 +32,7 @@
 
 
 			buttonType = {
-            	name = "additional_technologies_spy_folder_tab"
+            	name = "additional_technologies_intelligence_folder_tab"
             	position = { x = 1477 y = 0 }
             	quadTextureSprite = "GFX_idea_espionage_tab"
             	frame = 1

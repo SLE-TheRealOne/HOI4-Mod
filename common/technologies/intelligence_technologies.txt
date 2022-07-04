@@ -1,0 +1,89 @@
+technologies = {
+
+    # tech-intelligence_start
+	tech-intelligence_start = {
+        start_year = 1936
+        research_cost = 2
+        doctrine = yes
+
+        folder = {
+            name = additional_technologies_intelligence_folder
+            position = { x = 0 y = 0 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_intelligence
+        }
+
+        path = {
+            leads_to_tech = tech-intelligence-intel_network_gain_factor
+        }
+
+        path = {
+            leads_to_tech = tech-intelligence-intel_from_operatives_factor
+        }
+
+        path = {
+            leads_to_tech = tech-intelligence-decryption_power_factor
+        }
+
+        agency_upgrade_time = -0.10
+    }
+
+    # tech-intelligence-intel_network_gain_factor
+    tech-intelligence-intel_network_gain_factor = {
+        start_year = 1940
+        research_cost = 2
+
+        folder = {
+            name = additional_technologies_intelligence_folder
+            position = { x = -3 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_intelligence
+        }
+
+        intel_network_gain_factor = 0.10
+    }
+
+    # tech-intelligence-intel_from_operatives_factor
+    tech-intelligence-intel_from_operatives_factor = {
+        start_year = 1940
+        research_cost = 2
+
+        folder = {
+            name = additional_technologies_intelligence_folder
+            position = { x = -1 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_intelligence
+        }
+
+        intel_from_operatives_factor = 0.10
+    }
+
+    # tech-intelligence-decryption_power_factor
+    tech-intelligence-decryption_power_factor = {
+        start_year = 1940
+        research_cost = 2
+
+        folder = {
+            name = additional_technologies_intelligence_folder
+            position = { x = 1 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_intelligence
+        }
+
+        decryption_power_factor = 0.10
+    }
+
+
+}

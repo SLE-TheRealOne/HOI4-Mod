@@ -556,7 +556,7 @@ technologies = {
 
     # tech-army-attrition_03
     tech-army-attrition_03 = {
-        start_year = 1940
+        start_year = 1939
         research_cost = 0.45
         doctrine = yes
 
@@ -740,7 +740,7 @@ technologies = {
 
     # tech-army-attrition_04
     tech-army-attrition_04 = {
-        start_year = 1941
+        start_year = 1940
         research_cost = 0.45
         doctrine = yes
 
@@ -897,7 +897,7 @@ technologies = {
 
     # tech-army-attrition_05
     tech-army-attrition_05 = {
-        start_year = 1942
+        start_year = 1941
         research_cost = 0.45
         doctrine = yes
 

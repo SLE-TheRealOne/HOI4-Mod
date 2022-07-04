@@ -1,5 +1,6 @@
 technologies = {
-    
+
+    # tech-modern_navy-start
     tech-modern_navy-start = {
 		start_year = 1936
 		research_cost = 1
@@ -20,7 +21,114 @@ technologies = {
 		}
 
 		experience_gain_navy_factor = 0.05
-		
+
+		path = {
+            leads_to_tech = tech-modern_navy-amphibious_invasion
+        }
+
+        path = {
+            leads_to_tech = tech-modern_navy_refit_speed
+        }
+
+        path = {
+            leads_to_tech = tech-modern_navy-naval_doctrine_cost_factor
+        }
+
+        path = {
+            leads_to_tech = tech-modern_navy-naval_detection
+        }
+
 	}
 
+    # tech-modern_navy-amphibious_invasion
+	tech-modern_navy-amphibious_invasion = {
+	    start_year = 1941
+	    research_cost = 2
+
+	    xp_research_cost = 50
+	    xp_research_type = army
+	    xp_research_bonus = 1.00
+
+	    folder = {
+            name = additional_technologies_navy_folder
+            position = { x = -3 y = 4 }
+        }
+
+        dependencies = {
+            landing_craft = 1
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_navy
+        }
+
+        amphibious_invasion = 0.05
+	}
+
+	# tech-modern_navy_refit_speed
+	tech-modern_navy_refit_speed = {
+        start_year = 1942
+        research_cost = 2
+
+        xp_research_cost = 50
+        xp_research_type = navy
+        xp_research_bonus = 1.00
+
+        folder = {
+            name = additional_technologies_navy_folder
+            position = { x = -1 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_navy
+        }
+
+        navy_refit_speed = 0.05
+    }
+
+    # tech-modern_navy-naval_doctrine_cost_factor
+    tech-modern_navy-naval_doctrine_cost_factor = {
+        start_year = 1940
+        research_cost = 2
+
+        xp_research_cost = 50
+        xp_research_type = navy
+        xp_research_bonus = 1.00
+
+        folder = {
+            name = additional_technologies_navy_folder
+            position = { x = 1 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_navy
+        }
+
+        naval_doctrine_cost_factor = -0.05
+    }
+
+    # tech-modern_navy-naval_detection
+    tech-modern_navy-naval_detection = {
+        start_year = 1940
+        research_cost = 2
+
+        xp_research_cost = 50
+        xp_research_type = navy
+        xp_research_bonus = 1.00
+
+        folder = {
+            name = additional_technologies_navy_folder
+            position = { x = 3 y = 2 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_navy
+        }
+
+        naval_detection = 0.1
+    }
 }
