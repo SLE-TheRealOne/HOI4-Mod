@@ -137,36 +137,6 @@ country_event = {
             }
         }
 
-        # Palier 04
-        if = {
-            limit = {
-                has_tech = tech-top_industry-dry_dock_threshold_04
-            }
-            if = {
-                 limit = {
-                     check_variable = {
-                         var = dry_dock_counter
-                         value = 53
-                         compare = greater_than_or_equals
-                     }
-                     check_variable = { dry_dock_counter < 80 }
-                 }
-                 set_variable = { dry_dock_bonus_percentage = 17.5 }
-            } else_if = {
-                limit = {
-                    check_variable = {
-                         var = dry_dock_counter
-                         value = 80
-                         compare = greater_than_or_equals
-                    }
-                }
-                set_variable = { dry_dock_bonus_percentage = 20 }
-                set_temp_variable = { delta = dry_dock_counter }
-                subtract_from_temp_variable = { delta = 80 }
-                add_to_variable = { dry_dock_bonus_percentage = delta }
-            }
-        }
-
         set_variable = { dry_dock_bonus_modifier_value = dry_dock_bonus_percentage }
         divide_variable = { dry_dock_bonus_modifier_value = 100 }
 
@@ -310,26 +280,6 @@ country_event = {
                     }
                 }
                 set_variable = { industrial_district_bonus_percentage = 20 }
-            }
-        }
-
-        # Palier 04
-        if = {
-            limit = {
-                has_tech = tech-mass_industry-industrial_district_threshold_04
-            }
-            if = {
-                limit = {
-                    check_variable = {
-                         var = industrial_district_counter
-                         value = 80
-                         compare = greater_than_or_equals
-                    }
-                }
-                set_variable = { industrial_district_bonus_percentage = 20 }
-                set_temp_variable = { industrial_district_delta = industrial_district_counter }
-                subtract_from_temp_variable = { industrial_district_delta = 80 }
-                add_to_variable = { industrial_district_bonus_percentage = industrial_district_delta }
             }
         }
 

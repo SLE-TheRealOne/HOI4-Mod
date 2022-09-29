@@ -14,12 +14,15 @@
   
   use_air_experience_25:0 "§CTechniques de chasse - I§!"
   use_air_experience_25_desc:0 "Demandons à nos aces de transmettre ce qu'ils ont appris aux nouvelles recrues. Nous gagnerions un avantage supplémentaire dans notre combat aérien"
-  use_air_experience_25_cost:0 "25 £air_experience"
   use_air_experience_50:0 "§CTechniques de chasse - II§!"
   use_air_experience_50_desc:0 "Demandons à nos aces de transmettre ce qu'ils ont appris aux nouvelles recrues. Nous gagnerions un avantage supplémentaire dans notre combat aérien"
-  use_air_experience_50_cost:0 "50 £air_experience"
   use_air_experience_100:0 "§CTechniques de chasse - III§!"
   use_air_experience_100_desc:0 "Demandons à nos aces de transmettre ce qu'ils ont appris aux nouvelles recrues. Nous gagnerions un avantage supplémentaire dans notre combat aérien"
+  
+  
+  use_air_experience_25_cost:0 "25 £air_experience"
+  use_air_experience_50_cost:0 "50 £air_experience"
+  use_air_experience_75_cost:0 "75 £air_experience"
   use_air_experience_100_cost:0 "100 £air_experience"
 
   call_ace_flight_instructor:0 "§CInstructeur de vol§!"
@@ -169,18 +172,21 @@
   # =======================================================     Ideas    =======================================================
   public_figures:0 "Personnages publics"
 
-  investor:0 "Investisseur"
-  factory_production_booster:0 "Bourreau des cadences"
+  investor:0 "Investisseur habile"
+  production_booster:0 "Bourreau des cadences"
+  factory_booster:0 "Contremaitre de génie"
+  
   recruiter:0 "Recruteur"
   instructor:0 "Instructeur"
   bound_seller:0 "Communicant"
+  combat_operative:0 "Observateur"
+  
   consumer_goods_reductor:0 "Fée du logis"
   air_operations_planner:0 "Opérateur de vol"
   air_trainer:0 "Instructeur de vol"
 
   war_hero:0 "Héros de guerre"
   war_hero_desc:0 "Ses exploits au front sont sur toutes les lèvres, son portrait dans tous les camps d'entrainement et sa réputation flamboyante"
-  war_hero_03:0 "§C$bound_seller$§!"
   worker_hero:0 "Héro de l'arrière"
   worker_hero_desc:0 "Cette figure d'inspiration montre que tous les efforts et exploits ne sont pas que militaires. Les ouvriers aussi combattent à leur façon"
   industry_captain:0 "Capitaine d'industrie"

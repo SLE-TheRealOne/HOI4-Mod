@@ -13,7 +13,16 @@ ideas = {
         industry_captain_02 = {
             cost= 150
             picture = industry_2
-            traits = { factory_production_booster }
+            traits = { production_booster }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        industry_captain_03 = {
+            cost= 150
+            picture = industry_3
+            traits = { factory_booster }
             ai_will_do = {
                 factor = 0
             }
@@ -42,8 +51,16 @@ ideas = {
 
         war_hero_03 = {
             picture = hero_3
-			cost = 100
+			cost = 150
             traits = { bound_seller }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        war_hero_03 = {
+            cost = 150
+            traits = { combat_operative }
             ai_will_do = {
                 factor = 0
             }
@@ -78,46 +95,6 @@ ideas = {
             }
         }
 	}
-
-    ace_of_aces = {
-        ace_of_aces_01 = {
-            picture = ace_1
-			cost = 150
-            traits = { air_operations_planner }
-            ai_will_do = {
-                factor = 0
-            }
-        }
-
-        ace_of_aces_02 = {
-            picture = ace_2
-			cost = 250
-            traits = { air_trainer }
-            ai_will_do = {
-                factor = 0
-            }
-        }
-    }
-
-    public_ennemy = {
-        public_ennemy_01 = {
-            picture = public_ennemy_1
-            cost = 150
-            traits = {  }
-            ai_will_do = {
-                factor = 0
-            }
-        }
-
-        public_ennemy_02 = {
-            picture = public_ennemy_2
-            cost = 250
-            traits = {  }
-            ai_will_do = {
-                factor = 0
-            }
-        }
-    }
 
 	great_spy = {
 	

@@ -144,6 +144,30 @@ air_experience_usage = {
         custom_cost_text = use_air_experience_100_cost
     }
 
+    add_air_defence = {
+        available = {
+            command_power > 4
+            has_air_experience > 74
+        }
+
+        custom_cost_trigger = {
+            has_air_experience > 74
+        }
+
+        complete_effect = {
+            air_experience = -75
+            add_command_power = -5
+        }
+
+        modifier = {
+            static_anti_air_damage_factor = 0.20
+
+        }
+
+        days_remove = 30
+        custom_cost_text = use_air_experience_75_cost
+    }
+
 }
 
 # political_power_usage
@@ -233,39 +257,46 @@ political_power_usage = {
 # ground_experience_usage
 ground_experience_usage = {
 
+	#	heat_attrition_factor=-0.05
+	#	winter_attrition_factor=-0.05
+	#	acclimatization_cold_climate_gain_factor=0.05
+	#	acclimatization_hot_climate_gain_factor=0.05
+    # winter_acclimatation
+    # summer_acclimatation
+
     # reduce_experience_loss_factor
     reduce_experience_loss_factor = {
         available = {
-            command_power > 20
+            command_power > 4
         }
         custom_cost_trigger = {
-            has_army_experience > 20
+            has_army_experience > 29
         }
         modifier = {
-            experience_loss_factor = -0.10
+            experience_loss_factor = -0.15
         }
         complete_effect = {
-            army_experience = -20
-            add_command_power = -10
+            army_experience = -30
+            add_command_power = -5
         }
         custom_cost_text = reduce_experience_loss_factor_cost
-        days_remove = 30
+        days_remove = 60
         days_re_enable = 60
     }
 
     # increase_max_command_power_daily_gain
     increase_max_command_power_daily_gain = {
         available = {
-            command_power < 70
+            command_power > 39
         }
         custom_cost_trigger = {
-            has_army_experience > 49
+            has_army_experience > 39
         }
         modifier = {
             command_power_gain_mult = 0.15
         }
         complete_effect = {
-            army_experience = -50
+            army_experience = -40
         }
         custom_cost_text = increase_max_command_power_daily_gain_cost
         days_remove = 60
