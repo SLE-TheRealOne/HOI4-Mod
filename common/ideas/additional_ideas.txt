@@ -1,5 +1,6 @@
 ideas = {
 
+    # Industry captain
     industry_captain = {
         industry_captain_01 = {
             cost = 150
@@ -30,6 +31,7 @@ ideas = {
 
     }
 
+    # War hero
     war_hero = {
         war_hero_01 = {
             picture = hero_1
@@ -58,19 +60,13 @@ ideas = {
             }
         }
 
-        war_hero_03 = {
-            cost = 150
-            traits = { combat_operative }
-            ai_will_do = {
-                factor = 0
-            }
-        }
     }
 
+	# Worker hero
 	worker_hero = {
         worker_hero_01 = {
             picture = worker_1
-			cost = 150
+			cost = 200
             traits = { first_lady }
             ai_will_do = {
                 factor = 0
@@ -89,18 +85,40 @@ ideas = {
         worker_hero_03 = {
             picture = worker_3
             cost = 150
-            traits = { consumer_goods_reductor }
+            traits = { charm_champion }
             ai_will_do = {
                 factor = 0
             }
         }
 	}
 
+    # Science genius
+    science_genius = {
+        science_genius_01 = {
+            picture = worker_1
+            cost = 200
+            traits = { theorist }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        science_genius_02 = {
+            picture = worker_1
+            cost = 100
+            traits = { nuclearist }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+    }
+
+    # Great spy
 	great_spy = {
 	
 		james_bond = {
 			cost = 150
-			traits = { attribution_officer }
+			traits = { intel_analyst }
 			ai_will_do = {
 				factor = 0
 			}
@@ -108,7 +126,7 @@ ideas = {
 		
 		oss_117 = {
             cost = 150
-            traits = { spy }
+            traits = { decipher_specialist }
             ai_will_do = {
                 factor = 0
             }
@@ -116,7 +134,15 @@ ideas = {
 
         la_brume = {
             cost = 150
-            traits = { spy }
+            traits = { combat_operative }
+            ai_will_do = {
+                factor = 0
+            }
+        }
+
+        spy_04 = {
+            cost = 150
+            traits = { resistance_hunter }
             ai_will_do = {
                 factor = 0
             }

@@ -1,0 +1,112 @@
+manpower_usage = {
+
+    # resources_production_boost
+    resources_production_boost = {
+        custom_cost_trigger {
+            command_power > required_command_power
+            has_manpower > required_manpower
+        }
+        modifier = {
+            local_resources_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        custom_cost_text = resources_production_boost_cost
+        days_remove = 120
+    }
+
+    # naval_shipyards_boost
+    naval_shipyards_boost = {
+        icon = GFX_decision_generic_naval
+        custom_cost_trigger = {
+            command_power > required_command_power
+            has_manpower > required_manpower
+        }
+        modifier = {
+            industrial_capacity_dockyard = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        custom_cost_text = naval_shipyards_boost_cost
+        days_remove = 120
+    }
+
+    # civil_factories_boost
+    civil_factories_boost = {
+        icon = generic_construction
+        custom_cost_trigger = {
+            command_power > required_command_power
+            has_manpower > required_manpower
+        }
+        modifier = {
+            production_speed_buildings_factor = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        custom_cost_text = civil_factories_boost_cost
+        days_remove = 120
+    }
+
+    # military_factories_boost
+    military_factories_boost = {
+        icon = generic_industry
+        custom_cost_trigger = {
+            #command_power > required_command_power
+            #has_manpower > required_manpower
+
+            command_power > 1
+            has_manpower > 10
+        }
+        modifier = {
+            industrial_capacity_factory = 0.10
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        custom_cost_text = military_factories_boost_cost
+        days_remove = 120
+    }
+
+    # stability_increase
+    stability_increase = {
+        icon = generic_civil_support
+        custom_cost_trigger = {
+            command_power > required_command_power
+            has_manpower > required_manpower
+        }
+        modifier = {
+            stability_weekly = 0.005
+            land_reinforce_rate	= -0.05
+            training_time_factor = 0.05
+        }
+        complete_effect = {
+            add_manpower = required_manpower_neg
+            add_command_power = required_command_power_neg
+        }
+        remove_effect = {
+            add_manpower = required_manpower
+        }
+        custom_cost_text = stability_increase_cost
+        days_remove = 120
+    }
+
+}

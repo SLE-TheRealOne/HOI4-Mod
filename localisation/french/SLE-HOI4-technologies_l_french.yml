@@ -14,14 +14,14 @@
 
 
   # =========================================================       Folders       =========================================================
-  tech-light_navy-tree_title_text:0 "§CHit and run§!"
+  tech-light_navy-tree_title_text:0 "§CEssaim§!"
   tech-light_navy-tree_desc_text:0 "Le conflit s'étend à l'échelle mondiale : nous devons assurer une couverture étendue et efficace pour permettre à nos navires capitaux de frapper"
 
-  strike_navy_improvments_tree_title_text:0 "§OShock and awe§!"
+  strike_navy_improvments_tree_title_text:0 "§OTitans§!"
   strike_navy_improvments_tree_desc_text:0 "Exploitons l'avantage offert par nos navires légers : nos navires capitaux doivent l'emporter à chaque engagement"
 
-  modern_navy_improvments_tree_title_text:0 "§GMarine moderne§!"
-  modern_navy_improvments_tree_desc_text:0 "Au dernier conflit majeur, les avions n'existaient pas. Modernisons notre marine et prenons l'avanatage"
+  modern_navy_improvments_tree_title_text:0 "§GModernité§!"
+  modern_navy_improvments_tree_desc_text:0 "Au dernier conflit majeur, les avions n'existaient pas. Modernisons notre marine et prenons l'avantage"
 
   top_industry_tree_title_text:0 "§CIndustrie de pointe§!"
   top_industry_tree_desc_text:0 "Si nous voulons prendre l'avantage sur nos adversaires, nous devons être précurseurs dans le domaine de l'industrie"

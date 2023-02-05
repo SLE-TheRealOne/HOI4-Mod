@@ -1,129 +1,88 @@
 leader_traits = {    
     recruiter = {
-        random = no
-
         mobilization_speed=0.05
         conscription_factor=0.05
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 
     instructor = {
         random = no
-
 		special_forces_training_time_factor = -0.05
         training_time_army_factor= -0.05
         training_time_factor= -0.05
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 
-    combat_operative = {
+    charm_champion = {
         random = no
-
-        intel_from_combat_factor = 0.10
-
-        ai_will_do = {
-            factor = 1
-        }
+        non_core_manpower = 0.02
+        conscription_factor = 0.05
     }
 
     bound_seller = {
         random = no
-
-        war_support_weekly=0.001
-
-        ai_will_do = {
-            factor = 1
-        }
+        war_support_factor = 1
     }
 
     investor = {
         random = no
-
         local_resources_factor=0.05
-        local_resources_factor=0.05
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 
     production_booster = {
         random = no
-
-        production_factory_max_efficiency_factor=0.05
         production_factory_efficiency_gain_factor=0.05
-        production_factory_start_efficiency_factor=0.05
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 
     factory_booster = {
         random = no
-
-        industrial_capacity_factory=0.05
-        industrial_capacity_dockyard=0.05
         production_speed_buildings_factor=0.05
-
-        ai_will_do = {
-            factor = 1
-        }
     }
-
-
 
     consumer_goods_reductor = {
         random = no
-        
         consumer_goods_factor = -0.05
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 
-    air_trainer {
+    air_trainer = {
         random = no
-
         air_wing_xp_loss_when_killed_factor=-0.1
         air_ace_generation_chance_factor=0.1
         air_training_xp_gain_factor=0.1
         air_accidents_factor=-0.1
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 	
-	air_operations_planner {
+	air_operations_planner = {
         random = no
-
 		enemy_army_bonus_air_superiority_factor=-0.05
 		army_bonus_air_superiority_factor=0.1
-
-        ai_will_do = {
-            factor = 1
-        }
     }
 	
-	spy {
+	combat_operative = {
 		random = no
-
-		foreign_subversive_activites = 0.05
-		intel_network_gain_factor = 0.06
-		own_operative_detection_chance_factor = -0.07
-		subversive_activites_upkeep = 0.08
-		operation_cost = 0.09
-		operation_outcome = 0.10
-		intelligence_agency_defense = 0.11
+		intel_from_combat_factor = 0.10
 	}
 
+	intel_analyst = {
+	    random = no
+        operation_cost = 0.10
+        operation_outcome = 0.10
+	}
+
+	decipher_specialist = {
+	    intelligence_agency_defense = 0.75
+	}
+
+	resistance_hunter = {
+	    root_out_resistance_effectiveness_factor = 0.20
+	}
+
+    theorist = {
+        random = no
+        research_speed_factor = 0.05
+    }
+
+    nuclearist = {
+        random = no
+        nuclear_production_factor = 0.05
+    }
 	
 }

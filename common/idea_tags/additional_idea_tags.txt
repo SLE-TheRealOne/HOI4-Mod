@@ -1,11 +1,10 @@
 idea_categories = {
 
-    public_figures {
+    public_figures = {
         slot = industry_captain
         slot = war_hero
         slot = worker_hero
-        slot = ace_of_aces
-        slot = public_ennemy
+        slot = science_genius
         slot = great_spy
 
         removal_cost = 50

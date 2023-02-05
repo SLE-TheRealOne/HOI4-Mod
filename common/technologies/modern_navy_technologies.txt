@@ -85,7 +85,7 @@ technologies = {
             additional_technology_category_navy
         }
 
-        navy_refit_speed = 0.05
+        refit_speed = 0.05
     }
 
     # tech-modern_navy-naval_doctrine_cost_factor

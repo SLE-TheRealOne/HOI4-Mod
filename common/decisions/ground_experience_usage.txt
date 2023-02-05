@@ -1,0 +1,148 @@
+ground_experience_usage = {
+
+	#	heat_attrition_factor=-0.05
+	#	winter_attrition_factor=-0.05
+	#	acclimatization_cold_climate_gain_factor=0.05
+	#	acclimatization_hot_climate_gain_factor=0.05
+    # winter_acclimatation
+    # summer_acclimatation
+
+    # reduce_experience_loss_factor
+    reduce_experience_loss_factor = {
+        icon = generic_industry
+        available = {
+            command_power > 9
+        }
+        custom_cost_trigger = {
+            has_army_experience > 39
+        }
+        modifier = {
+            experience_loss_factor = -0.10
+        }
+        complete_effect = {
+            army_experience = -40
+            add_command_power = -10
+        }
+        custom_cost_text = reduce_experience_loss_factor_cost
+        days_remove = 60
+    }
+
+    # increase_max_command_power_daily_gain
+    increase_max_command_power_daily_gain = {
+        available = {
+            command_power < 39
+        }
+        custom_cost_trigger = {
+            has_army_experience > 39
+        }
+        modifier = {
+            command_power_gain_mult = 0.10
+        }
+        complete_effect = {
+            army_experience = -40
+        }
+        custom_cost_text = increase_max_command_power_daily_gain_cost
+        days_remove = 30
+    }
+
+    # gather_ideas_infantry
+    gather_ideas_infantry = {
+        icon = generic_research
+        available = {
+            command_power > 19
+        }
+        custom_cost_trigger = {
+            has_army_experience > 39
+        }
+        fixed_random_seed = no
+        complete_effect = {
+            add_command_power = -5
+            army_experience = -40
+            random_list = {
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = infantry_weapons
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = infantry_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = engineers_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = recon_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = mountaineers_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = military_police_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = hospital_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = logistics_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = signal_company_tech
+                    }
+                }
+                10 = {
+                    add_tech_bonus = {
+                        name = gather_ideas_infantry
+                        bonus = 0.5
+                        uses = 1
+                        category = maintenance_company_tech
+                    }
+                }
+            }
+        }
+        custom_cost_text = gather_ideas_infantry_cost
+        days_re_enable = 180
+    }
+
+}

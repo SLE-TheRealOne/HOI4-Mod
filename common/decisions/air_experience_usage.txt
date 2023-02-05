@@ -1,0 +1,184 @@
+air_experience_usage = {
+
+    # call_ace_flight_instructor
+	call_ace_flight_instructor = {
+        custom_cost_trigger = {
+            has_air_experience > 50
+        }
+        complete_effect = {
+            add_ace {
+                type = flight_instructor_junior
+                is_female = no
+            }
+            air_experience = -50
+        }
+        custom_cost_text = use_air_experience_50_cost
+        days_re_enable = 360
+    }
+
+	# call_ace_flight_coordinator
+	call_ace_flight_coordinator = {
+        custom_cost_trigger = {
+            has_air_experience > 50
+        }
+        complete_effect = {
+            add_ace = {
+                type = flight_coordinator
+                is_female = no
+            }
+            air_experience = -50
+        }
+        custom_cost_text = use_air_experience_50_cost
+        days_re_enable = 360
+    }
+
+    # call_ace_radar_specialist
+    call_ace_radar_specialist = {
+		custom_cost_trigger {
+            has_air_experience > 50
+        }
+        complete_effect = {
+            add_ace = {
+                type = radar_specialist
+                is_female = yes
+            }
+            air_experience = -50
+        }
+        custom_cost_text = use_air_experience_50_cost
+        days_re_enable = 360
+    }
+
+	# call_ace_radio_specialist
+	call_ace_radio_specialist = {
+		custom_cost_trigger = {
+            has_air_experience > 50
+        }
+        complete_effect = {
+            add_ace = {
+                type = ground_support_coordinator
+                is_female = yes
+            }
+            air_experience = -50
+        }
+        custom_cost_text = use_air_experience_50_cost
+        days_re_enable = 360
+    }
+
+	# call_ace_technician
+	call_ace_technician = {
+        custom_cost_trigger = {
+            has_air_experience > 50
+        }
+        complete_effect = {
+            add_ace = {
+                type = technician_junior
+                is_female = yes
+            }
+            air_experience = -50
+        }
+        custom_cost_text = use_air_experience_50_cost
+        days_re_enable = 360
+    }
+
+    # wings_tactics_I
+    wings_tactics_I = {
+        icon = GFX_decision_generic_air
+        available = {
+            command_power > 4
+            has_air_experience > 49
+            has_deployed_air_force_size = {
+                size > 10
+                type = fighter
+            }
+        }
+        custom_cost_trigger = {
+            has_air_experience > 49
+        }
+        complete_effect = {
+            air_experience = -50
+            add_command_power = -5
+        }
+        modifier = {
+            air_attack_factor = 0.03
+            air_defence_factor = 0.03
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_50_cost
+    }
+
+    # wings_tactics_II
+    wings_tactics_II = {
+        icon = GFX_decision_generic_air
+        available = {
+            command_power > 4
+            has_air_experience > 74
+            has_deployed_air_force_size = {
+                size > 20
+                type = fighter
+            }
+        }
+        custom_cost_trigger = {
+            has_air_experience > 74
+        }
+        complete_effect = {
+            air_experience = -75
+            add_command_power = -5
+        }
+        modifier = {
+            air_attack_factor = 0.07
+            air_defence_factor = 0.07
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_75_cost
+    }
+
+    # wings_tactics_III
+    wings_tactics_III = {
+        icon = GFX_decision_generic_air
+        available = {
+            command_power > 4
+            has_air_experience > 99
+            has_deployed_air_force_size = {
+                size > 30
+                type = fighter
+            }
+        }
+        custom_cost_trigger = {
+            has_air_experience > 99
+        }
+        complete_effect = {
+            air_experience = -100
+            add_command_power = -5
+        }
+        modifier = {
+            air_attack_factor = 0.10
+            air_defence_factor = 0.10
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_100_cost
+    }
+
+    # add_air_defence
+    add_air_defence = {
+        available = {
+            command_power > 9
+            has_air_experience > 74
+        }
+
+        custom_cost_trigger = {
+            has_air_experience > 74
+        }
+
+        complete_effect = {
+            air_experience = -75
+            add_command_power = -10
+        }
+
+        modifier = {
+            static_anti_air_damage_factor = 0.20
+        }
+        days_remove = 30
+        custom_cost_text = use_air_experience_75_cost
+    }
+
+}

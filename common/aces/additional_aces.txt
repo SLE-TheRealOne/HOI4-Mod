@@ -1,14 +1,41 @@
 modifiers = {
 
-	flight_instructor = {
+    # TBD
+    flight_instructor = {
+        type = { fighter interceptor }
+        chance = 0.9
+        effect = {
+            air_air_superiority_agility_factor=0.05
+            air_air_superiority_defence_factor=0.03
+        }
+    }
+
+	flight_instructor_junior = {
 		type = { fighter interceptor }
 		chance = 0.9
 		effect = {
-			air_air_superiority_attack_factor=0.1
-			air_air_superiority_agility_factor=0.1
-			air_air_superiority_defence_factor=0.1
+			air_air_superiority_agility_factor=0.05
+			air_air_superiority_defence_factor=0.03
 		}
 	}
+
+	flight_instructor_senior = {
+        type = { fighter interceptor }
+        chance = 0.4
+        effect = {
+            air_air_superiority_agility_factor=0.10
+            air_air_superiority_defence_factor=0.06
+        }
+    }
+
+    flight_instructor_genius = {
+        type = { fighter interceptor }
+        chance = 0.05
+        effect = {
+            air_air_superiority_agility_factor=0.15
+            air_air_superiority_defence_factor=0.10
+        }
+    }
 
 	flight_coordinator = {
 		type = { fighter interceptor }
@@ -31,13 +58,38 @@ modifiers = {
 		}
 	}
 
-	technician = {
+    # TBD
+    technician = {
+        type = { fighter interceptor }
+        chance = 0.90
+        effect = {
+            air_accidents_factor=-0.04
+        }
+    }
+
+	technician_junior = {
 		type = { fighter interceptor }
-		chance = 0.9
+		chance = 0.90
 		effect = {
-			air_accidents_factor=0.1
+			air_accidents_factor=-0.04
 		}
 	}
+
+    technician_senior = {
+        type = { fighter interceptor }
+        chance = 0.40
+        effect = {
+            air_accidents_factor=-0.07
+        }
+    }
+
+    technician_genius = {
+        type = { fighter interceptor cas tactical_bomber strategic_bomber naval_bomber}
+        chance = 0.05
+        effect = {
+            air_accidents_factor=-0.10
+        }
+    }
 
 	radar_specialist = {
 		type = { fighter interceptor cas tactical_bomber}

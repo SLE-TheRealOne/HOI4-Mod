@@ -1,0 +1,1424 @@
+# Name here comes from base game files
+prospect_for_resources = {
+
+    # add_oil_to_random_state_1
+	add_oil_to_random_state_1 = {
+		cost = 25
+		icon = oil
+		visible = {
+		    has_tech = excavation1
+		}
+		available = {
+			AND = {
+				has_stability > 0.40
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount > 0
+							state = THIS
+						}
+						has_resources_amount = {
+                            resource = oil
+                            amount < 10
+                            state = THIS
+                        }
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = oil
+						amount < 10
+						state = THIS
+					}
+					has_resources_amount = {
+                        resource = oil
+                        amount > 0
+                        state = THIS
+                    }
+				}
+				add_resource = {
+					type = oil
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+
+	# add_oil_to_random_state_2
+    add_oil_to_random_state_2 = {
+        cost = 25
+        icon = oil
+        visible = {
+            has_tech = excavation2
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 2
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = oil
+                            amount > 0
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = oil
+                            amount < 20
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = oil
+                        amount < 20
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = oil
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = oil
+                    amount = 2
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_oil_to_random_state_3
+    add_oil_to_random_state_3 = {
+        cost = 25
+        icon = oil
+        visible = {
+            has_tech = excavation3
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 3
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = oil
+                            amount > 0
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = oil
+                            amount < 30
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 3
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = oil
+                        amount < 30
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = oil
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = oil
+                    amount = 4
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_oil_to_random_state_4
+    add_oil_to_random_state_4 = {
+        cost = 25
+        icon = oil
+        visible = {
+            has_tech = excavation4
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 4
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = oil
+                            amount > 0
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = oil
+                            amount < 40
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 4
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = oil
+                        amount < 40
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = oil
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = oil
+                    amount = 6
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    # add_oil_to_random_state_5
+    add_oil_to_random_state_5 = {
+        cost = 25
+        icon = oil
+        visible = {
+            has_tech = excavation5
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = oil
+                            amount > 0
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = oil
+                            amount < 50
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = oil
+                        amount < 50
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = oil
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = oil
+                    amount = 8
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+    # add_aluminium_to_random_state_1
+	add_aluminium_to_random_state_1 = {
+		cost = 25
+		icon = aluminium
+		visible = {
+            has_tech = excavation1
+		}
+		available = {
+			AND = {
+				has_stability > 0.40
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = aluminium
+							amount < 10
+							state = THIS
+						}
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount > 0
+                            state = THIS
+                        }
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = aluminium
+						amount < 10
+						state = THIS
+					}
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount > 0
+                        state = THIS
+                    }
+				}
+				add_resource = {
+					type = aluminium
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+
+    # add_aluminium_to_random_state_2
+	add_aluminium_to_random_state_2 = {
+        cost = 25
+        icon = aluminium
+        visible = {
+            has_tech = excavation2
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 2
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount < 20
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount < 20
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 2
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_aluminium_to_random_state_3
+	add_aluminium_to_random_state_3 = {
+        cost = 25
+        icon = aluminium
+        visible = {
+            has_tech = excavation3
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 3
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount < 30
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 3
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount < 30
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 4
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_aluminium_to_random_state_4
+    add_aluminium_to_random_state_4 = {
+        cost = 25
+        icon = aluminium
+        visible = {
+            has_tech = excavation4
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 4
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount < 40
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 4
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount < 40
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 6
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    # add_aluminium_to_random_state_5
+    add_aluminium_to_random_state_5 = {
+        cost = 25
+        icon = aluminium
+        visible = {
+            has_tech = excavation5
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount < 50
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = aluminium
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount < 50
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = aluminium
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 8
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+    # add_rubber_to_random_state_1
+	add_rubber_to_random_state_1 = {
+		cost = 25
+		icon = rubber
+		visible = {
+            has_tech = excavation1
+		}
+		available = {
+			AND = {
+				has_stability > 0.40
+				num_of_civilian_factories_available_for_projects > 1
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = rubber
+							amount < 0
+							state = THIS
+						}
+						has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 1
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = rubber
+						amount < 10
+						state = THIS
+					}
+					has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+				}
+				add_resource = {
+					type = rubber
+					amount = 1
+					state = THIS
+				}
+			}
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+
+	# add_rubber_to_random_state_2
+    add_rubber_to_random_state_2 = {
+        cost = 25
+        icon = rubber
+        visible = {
+            has_tech = excavation2
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 2
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 20
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 20
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 2
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+	# add_rubber_to_random_state_3
+    add_rubber_to_random_state_3 = {
+        cost = 25
+        icon = rubber
+        visible = {
+            has_tech = excavation3
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 3
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 30
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 3
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 30
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 4
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_rubber_to_random_state_4
+    add_rubber_to_random_state_4 = {
+        cost = 25
+        icon = rubber
+        visible = {
+            has_tech = excavation4
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 4
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 40
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 4
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 40
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 6
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    # add_rubber_to_random_state_5
+    add_rubber_to_random_state_5 = {
+        cost = 25
+        icon = rubber
+        visible = {
+            has_tech = excavation5
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = rubber
+                            amount < 50
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = rubber
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = rubber
+                        amount < 50
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = rubber
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 8
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 180
+        fire_only_once = yes
+    }
+
+    # add_tungsten_to_random_state_1
+	add_tungsten_to_random_state_1 = {
+		icon = tungsten
+		cost = 25
+		visible = {
+		    has_tech = excavation3
+		}
+		available = {
+			AND = {
+				has_stability > 0.40
+				num_of_civilian_factories_available_for_projects > 3
+
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = tungsten
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 3
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = tungsten
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+					state = THIS
+				}
+			}
+		}
+		days_remove = 90
+		fire_only_once = yes
+	}
+
+	# add_tungsten_to_random_state_2
+    add_tungsten_to_random_state_2 = {
+        icon = tungsten
+        cost = 25
+        visible = {
+            has_tech = excavation4
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 4
+
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = tungsten
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 4
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = tungsten
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = tungsten
+                    amount = 6
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+    # add_tungsten_to_random_state_3
+    add_tungsten_to_random_state_3 = {
+        icon = tungsten
+        cost = 25
+        visible = {
+            has_tech = excavation5
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = tungsten
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = tungsten
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = tungsten
+                    amount = 8
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 180
+        fire_only_once = yes
+    }
+
+	# add_steel_to_random_state_1
+    add_steel_to_random_state_1 = {
+        cost = 25
+        icon = steel
+        visible = {
+            has_tech = excavation1
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 1
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = steel
+                            amount < 10
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = steel
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 1
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount < 10
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 1
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 30
+        fire_only_once = yes
+    }
+
+    # add_steel_to_random_state_2
+    add_steel_to_random_state_2 = {
+        icon = steel
+        cost = 25
+        visible = {
+            has_tech = excavation2
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 2
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = steel
+                            amount < 20
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = steel
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 2
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount < 20
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 2
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_steel_to_random_state_3
+    add_steel_to_random_state_3 = {
+        icon = steel
+        cost = 25
+        visible = {
+            has_tech = excavation3
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 3
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = steel
+                            amount < 30
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = steel
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 3
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount < 30
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 4
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 60
+        fire_only_once = yes
+    }
+
+    # add_steel_to_random_state_4
+    add_steel_to_random_state_4 = {
+        icon = steel
+        cost = 25
+        visible = {
+            has_tech = excavation4
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 4
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = steel
+                            amount < 40
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = steel
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 4
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount < 40
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 4
+                    state = THIS
+                }
+            }
+        }
+        days_remove = 90
+        fire_only_once = yes
+    }
+
+    # add_steel_to_random_state_5
+    add_steel_to_random_state_5 = {
+        icon = steel
+        cost = 25
+        visible = {
+            has_tech = excavation5
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = steel
+                            amount < 50
+                            state = THIS
+                        }
+                        has_resources_amount = {
+                            resource = steel
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = steel
+                        amount < 50
+                        state = THIS
+                    }
+                    has_resources_amount = {
+                        resource = steel
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = steel
+                    amount = 8
+                    state = THIS
+                }
+            }
+            set_global_flag = add_steel_to_random_state_repeatable_active
+        }
+        days_remove = 120
+        fire_only_once = yes
+    }
+
+    # add_chromium_to_random_state_1
+	add_chromium_to_random_state_1 = {
+		icon = chromium
+		cost = 25
+		visible = {
+		    has_tech = excavation3
+		}
+		available = {
+			AND = {
+				has_stability > 0.40
+				num_of_civilian_factories_available_for_projects > 3
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = chromium
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 3
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+					state = THIS
+				}
+			}
+		}
+		days_remove = 90
+		fire_only_once = yes
+	}
+
+    # add_chromium_to_random_state_2
+	add_chromium_to_random_state_2 = {
+		icon = chromium
+		cost = 25
+		visible = {
+		    has_tech = excavation4
+		}
+		available = {
+			AND = {
+				has_stability > 0.40
+				num_of_civilian_factories_available_for_projects > 4
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = chromium
+							amount > 0
+							state = THIS
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 4
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+						state = THIS
+					}
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+					state = THIS
+				}
+			}
+		}
+		days_remove = 120
+		fire_only_once = yes
+	}
+
+    # add_chromium_to_random_state_3
+    add_chromium_to_random_state_3 = {
+        icon = chromium
+        cost = 25
+        visible = {
+            has_tech = excavation5
+        }
+        available = {
+            AND = {
+                has_stability > 0.40
+                num_of_civilian_factories_available_for_projects > 5
+                any_owned_state = {
+                    AND = {
+                        has_resources_amount = {
+                            resource = chromium
+                            amount > 0
+                            state = THIS
+                        }
+                    }
+                }
+            }
+        }
+        modifier = {
+            civilian_factory_use = 5
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_resources_amount = {
+                        resource = chromium
+                        amount > 0
+                        state = THIS
+                    }
+                }
+                add_resource = {
+                    type = chromium
+                    amount = 8
+                    state = THIS
+                }
+            }
+            set_global_flag = add_chromium_to_random_state_repeatable_active
+        }
+        days_remove = 180
+        fire_only_once = yes
+    }
+
+	# add_oil_to_island
+	add_oil_to_island = {
+		cost = 25
+		icon = oil
+		available = {
+			AND = {
+				num_of_civilian_factories_available_for_projects > 2
+				has_stability > 0.40
+				any_owned_state = {
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount < 1
+							state = THIS
+						}
+						is_island_state = yes
+					}
+				}
+			}
+		}
+		modifier = {
+            civilian_factory_use = 2
+        }
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					AND = {
+						has_resources_amount = {
+							resource = oil
+							amount < 1
+							state = THIS
+						}
+						is_island_state = yes
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+					state = THIS
+				}
+			}
+		}
+		days_remove = 20
+		days_re_enable = 60
+	}
+
+}
