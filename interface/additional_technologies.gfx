@@ -410,60 +410,6 @@ spriteTypes = {
                     ################
 
     spriteType = {
-        name = "GFX_tech-army-encryption_01_medium"
-        texturefile = "gfx/interface/technologies/I-1.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-encryption_02_medium"
-        texturefile = "gfx/interface/technologies/I-2.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-encryption_03_medium"
-        texturefile = "gfx/interface/technologies/I-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-encryption_04_medium"
-        texturefile = "gfx/interface/technologies/I-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-encryption_05_medium"
-        texturefile = "gfx/interface/technologies/I-5.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-encryption_06_medium"
-        texturefile = "gfx/interface/technologies/I-6.dds"
-    }
-
-                    ################
-
-    spriteType = {
-        name = "GFX_tech-army-decryption_01_medium"
-        texturefile = "gfx/interface/technologies/J-1.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-decryption_02_medium"
-        texturefile = "gfx/interface/technologies/J-2.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-decryption_03_medium"
-        texturefile = "gfx/interface/technologies/J-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-decryption_04_medium"
-        texturefile = "gfx/interface/technologies/J-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-decryption_05_medium"
-        texturefile = "gfx/interface/technologies/J-5.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-decryption_06_medium"
-        texturefile = "gfx/interface/technologies/J-6.dds"
-    }
-
-                    ################
-
-    spriteType = {
         name = "GFX_tech-army-consumption_factor_reduction_01_medium"
         texturefile = "gfx/interface/technologies/L-1.dds"
     }
