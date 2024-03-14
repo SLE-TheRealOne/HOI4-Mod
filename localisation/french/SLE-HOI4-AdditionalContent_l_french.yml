@@ -141,6 +141,12 @@
   gather_ideas_infantry_cost:0 "5 £command_power 50 £army_experience"
   gather_ideas_infantry_cost_blocked:0 "§R5§! £command_power §R50§! £army_experience"
 
+  # === Navy Experience Usage
+  speed_naval_construction:0 "Conseil aux ouvriers"
+  speed_naval_construction_cost:0 "10 £command_power 50 £navy_experience"
+  speed_refit_speed:0 "Conseil aux ingénieurs"
+  speed_refit_speed_cost:0 "10 £command_power 50 £navy_experience"
+
   # ==== Manpower usage
   manpower_usage:0 "§CUtilisation des réserves§!"
   manpower_usage_desc:0 "Nous ne pouvons pas encore envoyer tous nos soldats au front ; trouvons leur d'autres missions pour soutenir l'effort de guerre. Notre état-major organisera le transfert et chacun de nos bataillons fournira les soldats"

@@ -3,8 +3,7 @@ technologies = {
     # tech-intelligence_start
 	tech-intelligence_start = {
         start_year = 1936
-        research_cost = 2
-        doctrine = yes
+        research_cost = 1.25
 
         folder = {
             name = additional_technologies_intelligence_folder
@@ -56,7 +55,7 @@ technologies = {
 
         folder = {
             name = additional_technologies_intelligence_folder
-            position = { x = -1 y = 2 }
+            position = { x = 0 y = 2 }
         }
 
         categories = {
@@ -74,7 +73,7 @@ technologies = {
 
         folder = {
             name = additional_technologies_intelligence_folder
-            position = { x = 1 y = 2 }
+            position = { x = 3 y = 2 }
         }
 
         categories = {
@@ -84,6 +83,5 @@ technologies = {
 
         decryption_power_factor = 0.10
     }
-
 
 }

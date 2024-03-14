@@ -14,6 +14,12 @@ ground_experience_usage = {
 	}
 }
 
+navy_experience_usage = {
+    visible = {
+        has_war = yes
+    }
+}
+
 manpower_usage = {
     visible = {
         has_war = yes

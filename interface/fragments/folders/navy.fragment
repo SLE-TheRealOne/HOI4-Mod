@@ -39,12 +39,12 @@
 			}
 			
 			instantTextBoxType = {
-				name = "strike_navy_improvments_tree_title_name"
+				name = "tech-strike_navy_tree_title_name"
 				position = { x = 625 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "strike_navy_improvments_tree_title_text"
+				text = "tech-strike_navy_tree_title_text"
 				maxWidth = 500
 				maxHeight = 122
 				format = center
@@ -52,12 +52,12 @@
 			}
         
 			instantTextBoxType = {
-				name = "strike_navy_improvments_tree_desc_name"
+				name = "tech-strike_navy_tree_desc_name"
 				position = { x = 625 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
-				text = "strike_navy_improvments_tree_desc_text"
+				text = "tech-strike_navy_tree_desc_text"
 				maxWidth = 500
 				maxHeight = 122
 				format = center
@@ -65,12 +65,12 @@
 			}
 
 			instantTextBoxType = {
-				name = "modern_navy_improvments_tree_title_name"
+				name = "tech-modern_navy_tree_title_name"
 				position = { x = 1205 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "modern_navy_improvments_tree_title_text"
+				text = "tech-modern_navy_tree_title_text"
 				maxWidth = 500
 				maxHeight = 122
 				format = center
@@ -78,12 +78,12 @@
 			}
         
 			instantTextBoxType = {
-				name = "modern_navy_improvments_tree_desc_name"
+				name = "tech-modern_navy_tree_desc_name"
 				position = { x = 1205 y = 70 }
 				textureFile = ""
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
-				text = "modern_navy_improvments_tree_desc_text"
+				text = "tech-modern_navy_tree_desc_text"
 				maxWidth = 500
 				maxHeight = 122
 				format = center
@@ -91,7 +91,7 @@
 			}
 			
 			gridboxtype = {
-				name = "tech-light_navy-start_tree"
+				name = "tech-light_navy_submarines-start_tree"
 				position = { x=20 y=172 }
 				size = { width = 550 height = 1050 }
 				slotsize = { width=60 height= 60 }
@@ -103,6 +103,22 @@
 					position = { x=0 y=-150 }					
 				}					
 			}
+
+			gridboxtype = {
+                name = "tech-light_navy_light_cruisers-start_tree"
+                position = { x=20 y=410 }
+                size = { width = 550 height = 1050 }
+                slotsize = { width=60 height= 60 }
+                format = "UP"
+            }
+
+            gridboxtype = {
+                name = "tech-light_navy_destroyers-start_tree"
+                position = { x=20 y=648 }
+                size = { width = 550 height = 1050 }
+                slotsize = { width=60 height= 60 }
+                format = "UP"
+            }
 			
 			gridboxtype = {
 				name = "tech-capital_ships-start_tree"

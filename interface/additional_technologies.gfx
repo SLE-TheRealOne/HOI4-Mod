@@ -33,133 +33,117 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_tech-intelligence_start_medium"
+        texturefile = "gfx/interface/technologies/Start_Alpha.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-operations_start_medium"
         texturefile = "gfx/interface/technologies/Start_Beta.dds"
     }
-
     spriteType = {
         name = "GFX_tech-intelligence-intel_network_gain_factor_medium"
         texturefile = "gfx/interface/technologies/M-5.dds"
     }
-
     spriteType = {
         name = "GFX_tech-intelligence-intel_from_operatives_factor_medium"
         texturefile = "gfx/interface/technologies/P-1.dds"
     }
-
     spriteType = {
         name = "GFX_tech-intelligence-decryption_power_factor_medium"
         texturefile = "gfx/interface/technologies/H-4.dds"
     }
 
-
 	                    ##################### Light navy #####################
     
     spriteType = {
-        name = "GFX_tech-light_navy-start_medium"
-        texturefile = "gfx/interface/technologies/Start_Alpha.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-sub_detection_01_medium"
+        name = "GFX_tech-light_navy_submarines-start_medium"
         texturefile = "gfx/interface/technologies/A-1.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-sub_detection_02_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_submarines-reliability_medium"
         texturefile = "gfx/interface/technologies/A-2.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-sub_detection_03_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_submarines-sub_visibility_medium"
         texturefile = "gfx/interface/technologies/A-3.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-sub_detection_04_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_submarines-surface_detection_medium"
         texturefile = "gfx/interface/technologies/A-4.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-sub_detection_05_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_submarines-convoy_raiding_coordination_medium"
         texturefile = "gfx/interface/technologies/A-5.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-speed_01_medium"
+
+
+
+    spriteType = {
+        name = "GFX_tech-light_navy_light_cruisers-start_medium"
+        texturefile = "gfx/interface/technologies/E-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-light_navy_light_cruisers-reliability_medium"
+        texturefile = "gfx/interface/technologies/E-2.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-light_navy_light_cruisers-surface_detection_medium"
+        texturefile = "gfx/interface/technologies/E-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-light_navy_light_cruisers-naval_light_gun_hit_chance_factor_medium"
+        texturefile = "gfx/interface/technologies/E-4.dds"
+    }
+
+
+
+    spriteType = {
+        name = "GFX_tech-light_navy_destroyers-start_medium"
         texturefile = "gfx/interface/technologies/M-1.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-speed_02_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_destroyers-reliability_medium"
         texturefile = "gfx/interface/technologies/M-2.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-speed_03_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_destroyers-surface_detection_medium"
         texturefile = "gfx/interface/technologies/M-3.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-speed_04_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_destroyers-sub_detection_medium"
         texturefile = "gfx/interface/technologies/M-4.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-speed_05_medium"
+    spriteType = {
+        name = "GFX_tech-light_navy_destroyers-naval_light_gun_hit_chance_factor_medium"
         texturefile = "gfx/interface/technologies/M-5.dds"
     }
-	spriteType = {
-        name = "GFX_tech-light_navy-reliability_01_medium"
-        texturefile = "gfx/interface/technologies/L-1.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-reliability_02_medium"
-        texturefile = "gfx/interface/technologies/L-2.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-reliability_03_medium"
-        texturefile = "gfx/interface/technologies/L-3.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-reliability_04_medium"
-        texturefile = "gfx/interface/technologies/L-4.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-reliability_05_medium"
-        texturefile = "gfx/interface/technologies/L-5.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-convoy_specialists_01_medium"
-        texturefile = "gfx/interface/technologies/H-1.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-convoy_specialists_02_medium"
-        texturefile = "gfx/interface/technologies/H-2.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-convoy_specialists_03_medium"
-        texturefile = "gfx/interface/technologies/H-3.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-convoy_specialists_04_medium"
-        texturefile = "gfx/interface/technologies/H-4.dds"
-    }
-	spriteType = {
-        name = "GFX_tech-light_navy-convoy_specialists_05_medium"
-        texturefile = "gfx/interface/technologies/H-5.dds"
-    }
-	spriteType = {
-        name = "GFX_light_navy_ending_tech_medium"
-        texturefile = "gfx/interface/technologies/End_alpha.dds"
-    }
+
 
 	                    ##################### Modern navy #####################
 
     spriteType = {
+        name = "GFX_tech-modern_navy-start_medium"
+        texturefile = "gfx/interface/technologies/A-5.dds"
+    }
+    spriteType = {
         name = "GFX_tech-modern_navy-amphibious_invasion_medium"
         texturefile = "gfx/interface/technologies/M-5.dds"
     }
-
     spriteType = {
         name = "GFX_tech-modern_navy_refit_speed_medium"
         texturefile = "gfx/interface/technologies/P-1.dds"
     }
-
     spriteType = {
         name = "GFX_tech-modern_navy-naval_doctrine_cost_factor_medium"
         texturefile = "gfx/interface/technologies/H-4.dds"
     }
-
+    spriteType = {
+        name = "GFX_tech-modern_navy-navy_anti_air_attack_factor_medium"
+        texturefile = "gfx/interface/technologies/B-3.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-modern_navy_submarine_detection_factor_medium"
+        texturefile = "gfx/interface/technologies/C-3.dds"
+    }
     spriteType = {
         name = "GFX_tech-modern_navy-naval_detection_medium"
         texturefile = "gfx/interface/technologies/A-4.dds"
@@ -407,7 +391,6 @@ spriteTypes = {
         texturefile = "gfx/interface/technologies/Start_alpha.dds"
     }
 
-                    ################
 
     spriteType = {
         name = "GFX_tech-army-consumption_factor_reduction_01_medium"
@@ -417,24 +400,7 @@ spriteTypes = {
         name = "GFX_tech-army-consumption_factor_reduction_02_medium"
         texturefile = "gfx/interface/technologies/L-2.dds"
     }
-    spriteType = {
-        name = "GFX_tech-army-consumption_factor_reduction_03_medium"
-        texturefile = "gfx/interface/technologies/L-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-consumption_factor_reduction_04_medium"
-        texturefile = "gfx/interface/technologies/L-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-consumption_factor_reduction_05_medium"
-        texturefile = "gfx/interface/technologies/L-5.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-consumption_factor_reduction_06_medium"
-        texturefile = "gfx/interface/technologies/L-6.dds"
-    }
 
-                    ################
 
     spriteType = {
         name = "GFX_tech-army-out_of_supply_factor_reduction_01_medium"
@@ -444,101 +410,17 @@ spriteTypes = {
         name = "GFX_tech-army-out_of_supply_factor_reduction_02_medium"
         texturefile = "gfx/interface/technologies/I-2.dds"
     }
-    spriteType = {
-        name = "GFX_tech-army-out_of_supply_factor_reduction_03_medium"
-        texturefile = "gfx/interface/technologies/I-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-out_of_supply_factor_reduction_04_medium"
-        texturefile = "gfx/interface/technologies/I-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-out_of_supply_factor_reduction_05_medium"
-        texturefile = "gfx/interface/technologies/I-5.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-out_of_supply_factor_reduction_06_medium"
-        texturefile = "gfx/interface/technologies/I-6.dds"
-    }
 
-                    ################
 
     spriteType = {
-        name = "GFX_tech-army-defence_factor_01_medium"
-        texturefile = "gfx/interface/technologies/J-1.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-defence_factor_02_medium"
-        texturefile = "gfx/interface/technologies/J-2.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-defence_factor_03_medium"
-        texturefile = "gfx/interface/technologies/J-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-defence_factor_04_medium"
-        texturefile = "gfx/interface/technologies/J-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-defence_factor_05_medium"
-        texturefile = "gfx/interface/technologies/J-5.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-defence_factor_06_medium"
-        texturefile = "gfx/interface/technologies/J-6.dds"
-    }
-
-                    ################
-
-    spriteType = {
-        name = "GFX_tech-army-attack_factor_01_medium"
-        texturefile = "gfx/interface/technologies/L-1.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attack_factor_02_medium"
-        texturefile = "gfx/interface/technologies/L-2.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attack_factor_03_medium"
-        texturefile = "gfx/interface/technologies/L-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attack_factor_04_medium"
-        texturefile = "gfx/interface/technologies/L-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attack_factor_05_medium"
-        texturefile = "gfx/interface/technologies/L-5.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attack_factor_06_medium"
-        texturefile = "gfx/interface/technologies/L-6.dds"
-    }
-
-                ################
-
-    spriteType = {
-        name = "GFX_tech-army-experience_loss_factor_01_medium"
+        name = "GFX_tech-army-org_loss_when_moving_01_medium"
         texturefile = "gfx/interface/technologies/M-1.dds"
     }
     spriteType = {
-        name = "GFX_tech-army-experience_loss_factor_02_medium"
+        name = "GFX_tech-army-org_loss_when_moving_02_medium"
         texturefile = "gfx/interface/technologies/M-2.dds"
     }
-    spriteType = {
-        name = "GFX_tech-army-experience_loss_factor_03_medium"
-        texturefile = "gfx/interface/technologies/M-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-experience_loss_factor_04_medium"
-        texturefile = "gfx/interface/technologies/M-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-experience_loss_factor_05_medium"
-        texturefile = "gfx/interface/technologies/M-5.dds"
-    }
 
-                ################
 
     spriteType = {
         name = "GFX_tech-army-digging_factor_01_medium"
@@ -548,16 +430,27 @@ spriteTypes = {
         name = "GFX_tech-army-digging_factor_02_medium"
         texturefile = "gfx/interface/technologies/N-2.dds"
     }
+
+
     spriteType = {
-        name = "GFX_tech-army-digging_factor_03_medium"
-        texturefile = "gfx/interface/technologies/N-3.dds"
+        name = "GFX_tech-army-planning_speed_01_medium"
+        texturefile = "gfx/interface/technologies/C-1.dds"
     }
     spriteType = {
-        name = "GFX_tech-army-digging_factor_04_medium"
-        texturefile = "gfx/interface/technologies/N-4.dds"
+        name = "GFX_tech-army-planning_speed_02_medium"
+        texturefile = "gfx/interface/technologies/C-2.dds"
     }
 
-                ################
+
+    spriteType = {
+        name = "GFX_tech-army-max_planning_factor_01_medium"
+        texturefile = "gfx/interface/technologies/E-1.dds"
+    }
+    spriteType = {
+        name = "GFX_tech-army-max_planning_factor_02_medium"
+        texturefile = "gfx/interface/technologies/E-2.dds"
+    }
+
 
     spriteType = {
         name = "GFX_tech-army-attrition_01_medium"
@@ -567,20 +460,7 @@ spriteTypes = {
         name = "GFX_tech-army-attrition_02_medium"
         texturefile = "gfx/interface/technologies/P-2.dds"
     }
-    spriteType = {
-        name = "GFX_tech-army-attrition_03_medium"
-        texturefile = "gfx/interface/technologies/P-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attrition_04_medium"
-        texturefile = "gfx/interface/technologies/P-4.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-attrition_05_medium"
-        texturefile = "gfx/interface/technologies/P-5.dds"
-    }
 
-                ################
 
     spriteType = {
         name = "GFX_tech-army-army_org_factor_01_medium"
@@ -589,14 +469,6 @@ spriteTypes = {
     spriteType = {
         name = "GFX_tech-army-army_org_factor_02_medium"
         texturefile = "gfx/interface/technologies/Q-2.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-army_org_factor_03_medium"
-        texturefile = "gfx/interface/technologies/Q-3.dds"
-    }
-    spriteType = {
-        name = "GFX_tech-army-army_org_factor_04_medium"
-        texturefile = "gfx/interface/technologies/Q-4.dds"
     }
 
                         ##################### Industry #####################

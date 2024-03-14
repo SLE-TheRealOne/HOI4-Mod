@@ -1,0 +1,45 @@
+navy_experience_usage = {
+
+    # speed_naval_construction
+    speed_naval_construction = {
+        icon = generic_industry
+        available = {
+            has_war = yes
+            command_power > 9
+        }
+        custom_cost_trigger = {
+            has_navy_experience > 49
+        }
+        modifier = {
+            industrial_capacity_dockyard = 0.20
+        }
+        complete_effect = {
+            navy_experience = -50
+            add_command_power = -10
+        }
+        custom_cost_text = speed_naval_construction_cost
+        days_remove = 60
+    }
+
+    # speed_refit_speed
+    speed_refit_speed = {
+        icon = generic_industry
+        available = {
+            has_war = yes
+            command_power > 9
+        }
+        custom_cost_trigger = {
+            has_navy_experience > 49
+        }
+        modifier = {
+            refit_speed = 0.20
+        }
+        complete_effect = {
+            navy_experience = -50
+            add_command_power = -10
+        }
+        custom_cost_text = speed_refit_speed_cost
+        days_remove = 60
+    }
+
+}

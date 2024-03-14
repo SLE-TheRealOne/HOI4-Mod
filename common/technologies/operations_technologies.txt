@@ -1,0 +1,21 @@
+technologies = {
+
+    # tech-operations_start
+	tech-operations_start = {
+        start_year = 1936
+        research_cost = 2
+
+        folder = {
+            name = additional_technologies_intelligence_folder
+            position = { x = 0 y = 0 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_operations
+        }
+
+
+    }
+
+}

@@ -22,7 +22,7 @@ war_measures = {
             command_power > 14
         }
         modifier = {
-            crypto_strength = 0.5
+            crypto_strength = 1
         }
         days_remove = 30
     }

@@ -53,7 +53,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_1937_left"
-                position = { x = 490 y = 250 }
+                position = { x = 390 y = 250 }
                 textureFile = ""
                 font = "hoi_36header"
                 borderSize = {x = 0 y = 4}
@@ -66,20 +66,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_1938_left"
-                position = { x = 490 y = 370 }
-                textureFile = ""
-                font = "hoi_36header"
-                borderSize = {x = 0 y = 4}
-                text = "1938"
-                maxWidth = 110
-                maxHeight = 32
-                format = center
-                Orientation = "UPPER_LEFT"
-            }
-
-            instantTextBoxType = {
-                name = "tech-army_1938_right"
-                position = { x = 1530 y = 425 }
+                position = { x = 390 y = 370 }
                 textureFile = ""
                 font = "hoi_36header"
                 borderSize = {x = 0 y = 4}
@@ -92,7 +79,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_1939_left"
-                position = { x = 490 y = 490 }
+                position = { x = 390 y = 490 }
                 textureFile = ""
                 font = "hoi_36header"
                 borderSize = {x = 0 y = 4}
@@ -105,20 +92,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_1940_left"
-                position = { x = 490 y = 610 }
-                textureFile = ""
-                font = "hoi_36header"
-                borderSize = {x = 0 y = 4}
-                text = "1940"
-                maxWidth = 110
-                maxHeight = 32
-                format = center
-                Orientation = "UPPER_LEFT"
-            }
-
-            instantTextBoxType = {
-                name = "tech-army_1940_right"
-                position = { x = 1530 y = 545 }
+                position = { x = 390 y = 610 }
                 textureFile = ""
                 font = "hoi_36header"
                 borderSize = {x = 0 y = 4}
@@ -131,7 +105,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_1941_left"
-                position = { x = 490 y = 730 }
+                position = { x = 390 y = 730 }
                 textureFile = ""
                 font = "hoi_36header"
                 borderSize = {x = 0 y = 4}
@@ -144,20 +118,7 @@
 
             instantTextBoxType = {
                 name = "tech-army_1942_left"
-                position = { x = 490 y = 850 }
-                textureFile = ""
-                font = "hoi_36header"
-                borderSize = {x = 0 y = 4}
-                text = "1942"
-                maxWidth = 110
-                maxHeight = 32
-                format = center
-                Orientation = "UPPER_LEFT"
-            }
-
-            instantTextBoxType = {
-                name = "tech-army_1942_right"
-                position = { x = 1530 y = 670 }
+                position = { x = 390 y = 850 }
                 textureFile = ""
                 font = "hoi_36header"
                 borderSize = {x = 0 y = 4}

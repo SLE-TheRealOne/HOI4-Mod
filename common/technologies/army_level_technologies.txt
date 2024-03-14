@@ -1,18 +1,10 @@
 technologies = {
-
-    # army_attack_speed_factor
-    # army_attack_against_major_factor
     # org_loss_when_moving  : Ecoutons nos logisticiens et officiers du génie pour qu'ils nous apprennent comment maintenir l'efficacité de nos forces quand elles font mouvement
 
     # tech-army_levels-start
 	tech-army_levels-start = {
         start_year = 1936
-        research_cost = 0.45
-        doctrine = yes
-
-        xp_research_type = army
-        xp_research_cost = 100
-        xp_research_bonus = 1.00
+        research_cost = 0.75
 
         folder = {
             name = additional_technologies_army_folder
@@ -25,6 +17,14 @@ technologies = {
         }
 
         path = {
+            leads_to_tech = tech-army-digging_factor_01
+        }
+
+        path = {
+            leads_to_tech = tech-army-org_loss_when_moving_01
+        }
+
+        path = {
             leads_to_tech = tech-army-consumption_factor_reduction_01
         }
 
@@ -33,11 +33,7 @@ technologies = {
         }
 
         path = {
-            leads_to_tech = tech-army-digging_factor_01
-        }
-
-        path = {
-            leads_to_tech = tech-army-experience_loss_factor_01
+            leads_to_tech = tech-army-attrition_01
         }
 
         path = {
@@ -45,32 +41,28 @@ technologies = {
         }
 
         path = {
-            leads_to_tech = tech-army-attrition_01
+            leads_to_tech = tech-army-max_planning_factor_01
         }
 
         path = {
-            leads_to_tech = tech-army-defence_factor_01
-        }
-
-        path = {
-            leads_to_tech = tech-army-attack_factor_01
+            leads_to_tech = tech-army-planning_speed_01
         }
 
         experience_gain_army_factor = 0.05
+        max_training = 0.05
+        training_time_army_factor = -0.05
     }
 
-				#################### RANK 1 ####################
-
+        ################## -7 ##############################
 
 	# tech-army-digging_factor_01
     tech-army-digging_factor_01 = {
-        start_year = 1936
-        research_cost = 0.45
-        doctrine = yes
+        start_year = 1937
+        research_cost = 0.75
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = 9 y = 3 }
+            position = { x = -7 y = 2 }
         }
 
         categories = {
@@ -86,15 +78,77 @@ technologies = {
         max_dig_in = 2
     }
 
-	# tech-army-consumption_factor_reduction_01
-	tech-army-consumption_factor_reduction_01 = {
-	    start_year = 1937
-	    research_cost = 0.45
-	    doctrine = yes
+    # tech-army-digging_factor_02
+    tech-army-digging_factor_02 = {
+        start_year = 1939
+        research_cost = 0.75
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -7 y = 6 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        dig_in_speed_factor = 0.05
+        max_dig_in = 2
+    }
+
+        ################## -5 ##############################
+
+	# tech-army-org_loss_when_moving_01
+	tech-army-org_loss_when_moving_01 = {
+	    start_year = 1940
+	    research_cost = 0.75
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = 1 y = 2 }
+	        position = { x = -5 y = 8 }
+	    }
+
+	    categories = {
+	        additional_technology_category
+	        additional_technology_category_army
+	    }
+
+	    path = {
+	        leads_to_tech = tech-army-org_loss_when_moving_02
+	    }
+
+	    org_loss_when_moving = -0.05
+	}
+
+	# tech-army-org_loss_when_moving_02
+    tech-army-org_loss_when_moving_02 = {
+        start_year = 1941
+        research_cost = 0.75
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -5 y = 10 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        org_loss_when_moving = -0.05
+    }
+
+        ################## -3 ##############################
+
+	# tech-army-consumption_factor_reduction_01
+	tech-army-consumption_factor_reduction_01 = {
+	    start_year = 1941
+	    research_cost = 0.75
+
+	    folder = {
+	        name= additional_technologies_army_folder
+	        position = { x = -3 y = 10 }
 	    }
 
 	    categories = {
@@ -106,18 +160,38 @@ technologies = {
 	        leads_to_tech = tech-army-consumption_factor_reduction_02
 	    }
 
-	    supply_consumption_factor = -0.03
+	    supply_consumption_factor = -0.05
 	}
+
+    # tech-army-consumption_factor_reduction_02
+    tech-army-consumption_factor_reduction_02 = {
+        start_year = 1942
+        research_cost = 0.75
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -3 y = 12 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        supply_consumption_factor = -0.05
+    }
+
+        ################## -1 ##############################
 
 	# tech-army-out_of_supply_factor_reduction_01
 	tech-army-out_of_supply_factor_reduction_01 = {
-	    start_year = 1937
-	    research_cost = 0.45
+	    start_year = 1938
+	    research_cost = 0.75
 	    doctrine = yes
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = -1 y = 2 }
+	        position = { x = -1 y = 4 }
 	    }
 
 	    categories = {
@@ -129,41 +203,39 @@ technologies = {
 	        leads_to_tech = tech-army-out_of_supply_factor_reduction_02
 	    }
 
-	    out_of_supply_factor = -0.03
+	    out_of_supply_factor = -0.05
 	}
 
-	# tech-army-experience_loss_factor_01
-	tech-army-experience_loss_factor_01 = {
-	    start_year = 1936
-	    research_cost = 0.45
-	    doctrine = yes
+    # tech-army-out_of_supply_factor_reduction_02
+    tech-army-out_of_supply_factor_reduction_02 = {
+        start_year = 1940
+        research_cost = 0.75
+        doctrine = yes
 
-	    folder = {
-	        name= additional_technologies_army_folder
-	        position = { x = -3 y = 2 }
-	    }
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = -1 y = 8 }
+        }
 
-	    categories = {
-	        additional_technology_category
-	        additional_technology_category_army
-	    }
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
 
-	    path = {
-	        leads_to_tech = tech-army-experience_loss_factor_02
-	    }
+        out_of_supply_factor = -0.05
+    }
 
-	    experience_loss_factor = -0.03
-	}
+        ################## 1 ##############################
 
 	# tech-army-attrition_01
 	tech-army-attrition_01 = {
-	    start_year = 1938
-	    research_cost = 0.45
+	    start_year = 1939
+	    research_cost = 0.75
 	    doctrine = yes
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = 3 y = 2 }
+	        position = { x = 1 y = 6 }
 	    }
 
 	    categories = {
@@ -179,38 +251,40 @@ technologies = {
 	    attrition = -0.03
 	}
 
-	# tech-army-defence_factor_01
-	tech-army-defence_factor_01 = {
-	    start_year = 1937
-	    research_cost = 0.45
-	    doctrine = yes
+	# tech-army-attrition_02
+    tech-army-attrition_02 = {
+        start_year = 1941
+        research_cost = 0.75
+        doctrine = yes
 
-	    folder = {
-	        name= additional_technologies_army_folder
-	        position = { x = 5 y = 2 }
-	    }
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = 1 y = 10 }
+        }
 
-	    categories = {
-	        additional_technology_category
-	        additional_technology_category_army
-	    }
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
 
-	    path = {
-	        leads_to_tech = tech-army-defence_factor_02
-	    }
+        path = {
+            leads_to_tech = tech-army-attrition_02
+        }
 
-        army_defence_factor = 0.03
-	}
+        no_supply_grace = 3
+        attrition = -0.03
+    }
+
+        ################## 3 ##############################
 
     # tech-army-army_org_factor_01
 	tech-army-army_org_factor_01 = {
-	    start_year = 1936
-	    research_cost = 0.45
-	    doctrine = yes
+	    start_year = 1940
+	    research_cost = 0.75
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = 7 y = 3 }
+	        position = { x = 3 y = 8 }
 	    }
 
 	    categories = {
@@ -225,15 +299,34 @@ technologies = {
 	    army_org_factor = 0.05
 	}
 
-	# tech-army-attack_factor_01
-	tech-army-attack_factor_01 = {
-	    start_year = 1937
-	    research_cost = 0.45
-	    doctrine = yes
+    # tech-army-army_org_factor_02
+	tech-army-army_org_factor_02 = {
+	    start_year = 1942
+	    research_cost = 0.75
 
 	    folder = {
 	        name= additional_technologies_army_folder
-	        position = { x = -5 y = 2 }
+	        position = { x = 3 y = 12 }
+	    }
+
+	    categories = {
+	        additional_technology_category
+	        additional_technology_category_army
+	    }
+
+	    army_org_factor = 0.05
+	}
+
+        ################## 5 ##############################
+
+    # tech-army-max_planning_factor_01
+	tech-army-max_planning_factor_01 = {
+	    start_year = 1940
+	    research_cost = 0.75
+
+	    folder = {
+	        name= additional_technologies_army_folder
+	        position = { x = 5 y = 8 }
 	    }
 
 	    categories = {
@@ -242,770 +335,16 @@ technologies = {
 	    }
 
 	    path = {
-	        leads_to_tech = tech-army-attack_factor_02
+	        leads_to_tech = tech-army-max_planning_factor_02
 	    }
 
-	    army_attack_factor = 0.03
+	    max_planning_factor = 0.05
 	}
 
-				#################### RANK 2 ####################
-
-    # tech-army-digging_factor_02
-    tech-army-digging_factor_02 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 9 y = 5 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-digging_factor_03
-        }
-
-        dig_in_speed_factor = 0.05
-        max_dig_in = 2
-    }
-
-    # tech-army-consumption_factor_reduction_02
-    tech-army-consumption_factor_reduction_02 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 1 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-consumption_factor_reduction_03
-        }
-
-        supply_consumption_factor = -0.03
-    }
-
-    # tech-army-out_of_supply_factor_reduction_02
-    tech-army-out_of_supply_factor_reduction_02 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -1 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-out_of_supply_factor_reduction_03
-        }
-
-        out_of_supply_factor = -0.03
-    }
-
-    # tech-army-experience_loss_factor_02
-    tech-army-experience_loss_factor_02 = {
-        start_year = 1937
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -3 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-experience_loss_factor_03
-        }
-
-        experience_loss_factor = -0.03
-    }
-
-    # tech-army-experience_loss_factor_02
-    tech-army-experience_loss_factor_02 = {
-        start_year = 1937
+	# tech-army-max_planning_factor_02
+    tech-army-max_planning_factor_02 = {
+        start_year = 1942
         research_cost = 0.75
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { -3 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-experience_loss_factor_03
-        }
-
-        experience_loss_factor = 0.1
-    }
-
-    # tech-army-attrition_02
-    tech-army-attrition_02 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 3 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attrition_03
-        }
-
-        no_supply_grace = 3
-        attrition = -0.03
-    }
-
-    # tech-army-defence_factor_02
-    tech-army-defence_factor_02 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 5 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-defence_factor_03
-        }
-
-        army_defence_factor = 0.03
-    }
-
-    # tech-army-army_org_factor_02
-    tech-army-army_org_factor_02 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 7 y = 5 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-army_org_factor_03
-        }
-
-        army_org_factor = 0.05
-    }
-
-    # tech-army-attack_factor_02
-    tech-army-attack_factor_02 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -5 y = 4 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attack_factor_03
-        }
-
-        army_attack_factor = 0.03
-    }
-
-                #################### RANK 3 ####################
-
-    # tech-army-digging_factor_03
-    tech-army-digging_factor_03 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 9 y = 7 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-digging_factor_04
-        }
-
-        dig_in_speed_factor = 0.05
-        max_dig_in = 2
-    }
-
-    # tech-army-consumption_factor_reduction_03
-    tech-army-consumption_factor_reduction_03 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 1 y = 6 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-consumption_factor_reduction_04
-        }
-
-        supply_consumption_factor = -0.03
-    }
-
-    # tech-army-out_of_supply_factor_reduction_03
-    tech-army-out_of_supply_factor_reduction_03 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -1 y = 6 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-out_of_supply_factor_reduction_04
-        }
-
-        out_of_supply_factor = -0.03
-    }
-
-    # tech-army-experience_loss_factor_03
-    tech-army-experience_loss_factor_03 = {
-        start_year = 1938
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -3 y = 6 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-experience_loss_factor_04
-        }
-
-        experience_loss_factor = -0.03
-    }
-
-    # tech-army-attrition_03
-    tech-army-attrition_03 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 3 y = 6 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attrition_04
-        }
-
-        no_supply_grace = 3
-        attrition = -0.03
-    }
-
-    # tech-army-defence_factor_03
-    tech-army-defence_factor_03 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 5 y = 6 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-defence_factor_04
-        }
-
-        army_defence_factor = 0.03
-    }
-
-    # tech-army-army_org_factor_03
-    tech-army-army_org_factor_03 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 7 y = 7 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-army_org_factor_04
-        }
-
-        army_org_factor = 0.03
-    }
-
-    # tech-army-attack_factor_03
-    tech-army-attack_factor_03 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -5 y = 6 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attack_factor_04
-        }
-
-        army_attack_factor = 0.03
-    }
-
-                #################### RANK 4 ####################
-
-    # tech-army-digging_factor_04
-    tech-army-digging_factor_04 = {
-        start_year = 1942
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 9 y = 9 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        dig_in_speed_factor = 0.05
-        max_dig_in = 2
-    }
-
-    # tech-army-consumption_factor_reduction_04
-    tech-army-consumption_factor_reduction_04 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 1 y = 8 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-consumption_factor_reduction_05
-        }
-
-        supply_consumption_factor = -0.03
-    }
-
-    # tech-army-out_of_supply_factor_reduction_04
-    tech-army-out_of_supply_factor_reduction_04 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -1 y = 8 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-out_of_supply_factor_reduction_05
-        }
-
-        out_of_supply_factor = -0.03
-    }
-
-    # tech-army-experience_loss_factor_04
-    tech-army-experience_loss_factor_04 = {
-        start_year = 1939
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -3 y = 8 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-experience_loss_factor_05
-        }
-
-        experience_loss_factor = -0.03
-    }
-
-    # tech-army-attrition_04
-    tech-army-attrition_04 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 3 y = 8 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attrition_05
-        }
-
-        no_supply_grace = 3
-        attrition = -0.03
-    }
-
-    # tech-army-defence_factor_04
-    tech-army-defence_factor_04 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 5 y = 8 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-defence_factor_05
-        }
-
-        army_defence_factor = 0.03
-    }
-
-    # tech-army-army_org_factor_04
-    tech-army-army_org_factor_04 = {
-        start_year = 1942
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 7 y = 9 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        army_org_factor = 0.05
-    }
-
-    # tech-army-attack_factor_04
-    tech-army-attack_factor_04 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -5 y = 8 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attack_factor_05
-        }
-
-        army_attack_factor = 0.03
-    }
-
-                #################### RANK 5 ####################
-
-
-    # tech-army-consumption_factor_reduction_05
-    tech-army-consumption_factor_reduction_05 = {
-        start_year = 1941
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 1 y = 10 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-consumption_factor_reduction_06
-        }
-
-        supply_consumption_factor = -0.03
-    }
-
-    # tech-army-out_of_supply_factor_reduction_05
-    tech-army-out_of_supply_factor_reduction_05 = {
-        start_year = 1941
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -1 y = 10 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-out_of_supply_factor_reduction_06
-        }
-
-        out_of_supply_factor = -0.03
-    }
-
-    # tech-army-experience_loss_factor_05
-    tech-army-experience_loss_factor_05 = {
-        start_year = 1940
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -3 y = 10 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        experience_loss_factor = -0.03
-    }
-
-    # tech-army-attrition_05
-    tech-army-attrition_05 = {
-        start_year = 1941
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 3 y = 10 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        no_supply_grace = 3
-        attrition = -0.03
-    }
-
-    # tech-army-defence_factor_05
-    tech-army-defence_factor_05 = {
-        start_year = 1941
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 5 y = 10 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-defence_factor_06
-        }
-
-        army_defence_factor = 0.03
-    }
-
-    # tech-army-attack_factor_05
-    tech-army-attack_factor_05 = {
-        start_year = 1941
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -5 y = 10 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        path = {
-            leads_to_tech = tech-army-attack_factor_06
-        }
-
-        army_attack_factor = 0.03
-    }
-
-                #################### RANK 6 ####################
-
-    # tech-army-consumption_factor_reduction_06
-    tech-army-consumption_factor_reduction_06 = {
-        start_year = 1942
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = 1 y = 12 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        supply_consumption_factor = -0.03
-    }
-
-    # tech-army-out_of_supply_factor_reduction_06
-    tech-army-out_of_supply_factor_reduction_06 = {
-        start_year = 1942
-        research_cost = 0.45
-        doctrine = yes
-
-        folder = {
-            name= additional_technologies_army_folder
-            position = { x = -1 y = 12 }
-        }
-
-        categories = {
-            additional_technology_category
-            additional_technology_category_army
-        }
-
-        out_of_supply_factor = -0.03
-    }
-
-    # tech-army-defence_factor_06
-    tech-army-defence_factor_06 = {
-        start_year = 1942
-        research_cost = 0.45
-        doctrine = yes
 
         folder = {
             name= additional_technologies_army_folder
@@ -1017,18 +356,19 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_defence_factor = 0.03
+        max_planning_factor = 0.05
     }
 
-    # tech-army-attack_factor_06
-    tech-army-attack_factor_06 = {
-        start_year = 1942
-        research_cost = 0.45
-        doctrine = yes
+        ################## 7 ##############################
+
+    # tech-army-planning_speed_01
+    tech-army-planning_speed_01 = {
+        start_year = 1938
+        research_cost = 0.75
 
         folder = {
             name= additional_technologies_army_folder
-            position = { x = -5 y = 12 }
+            position = { x = 7 y = 4 }
         }
 
         categories = {
@@ -1036,7 +376,29 @@ technologies = {
             additional_technology_category_army
         }
 
-        army_attack_factor = 0.03
+        path = {
+            leads_to_tech = tech-army-planning_speed_02
+        }
+
+        planning_speed = 0.05
+    }
+
+    # tech-army-planning_speed_02
+    tech-army-planning_speed_02 = {
+        start_year = 1940
+        research_cost = 0.75
+
+        folder = {
+            name= additional_technologies_army_folder
+            position = { x = 7 y = 12 }
+        }
+
+        categories = {
+            additional_technology_category
+            additional_technology_category_army
+        }
+
+        planning_speed = 0.05
     }
 
 }

@@ -12,26 +12,27 @@
                 quadTextureSprite ="GFX_tiled_window_2b_border"
             }
 
+            # Intels
             instantTextBoxType = {
-                name = "tech_intelligence_tree_title_name"
+                name = "intelligence_tree_title_name"
                 position = { x = 350 y = 40 }
                 textureFile = ""
                 font = "hoi_22tech"
                 borderSize = {x = 0 y = 4}
-                text = "tech_intelligence_tree_title_text"
-                maxWidth = 250
+                text = "intelligence_tree_title_text"
+                maxWidth = 270
                 maxHeight = 122
                 format = center
                 Orientation = "UPPER_LEFT"
             }
 
             instantTextBoxType = {
-                name = "tech_intelligence_tree_desc_name"
+                name = "intelligence_tree_desc_name"
                 position = { x = 25 y = 75 }
                 textureFile = ""
                 font = "hoi_20b"
                 borderSize = {x = 0 y = 4}
-                text = "tech_intelligence_tree_desc_text"
+                text = "intelligence_tree_desc_text"
                 maxWidth = 900
                 maxHeight = 122
                 format = center
@@ -39,7 +40,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1936"
+                name = "intelligence_tree_1936"
                 position = { x = 31 y = 190 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -52,7 +53,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1937"
+                name = "intelligence_tree_1937"
                 position = { x = 31 y = 430 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -65,7 +66,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1938"
+                name = "intelligence_tree_1938"
                 position = { x = 31 y = 548 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -78,7 +79,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1939"
+                name = "intelligence_tree_1939"
                 position = { x = 31 y = 666 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -91,7 +92,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1940"
+                name = "intelligence_tree_1940"
                 position = { x = 31 y = 784 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -104,7 +105,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1941"
+                name = "intelligence_tree_1941"
                 position = { x = 31 y = 912 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -117,7 +118,7 @@
             }
 
             instantTextBoxType = {
-                name = "tech-intelligence_1942"
+                name = "intelligence_tree_1942"
                 position = { x = 31 y = 1030 }
                 textureFile = ""
                 font = "hoi_36header"
@@ -143,4 +144,135 @@
                 }
             }
 
+            # Operations
+            instantTextBoxType = {
+                name = "operations_tree_title_name"
+                position = { x = 1300 y = 40 }
+                textureFile = ""
+                font = "hoi_22tech"
+                borderSize = {x = 0 y = 4}
+                text = "operations_tree_title_text"
+                maxWidth = 250
+                maxHeight = 122
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_tree_desc_name"
+                position = { x = 965 y = 75 }
+                textureFile = ""
+                font = "hoi_20b"
+                borderSize = {x = 0 y = 4}
+                text = "operations_tree_desc_text"
+                maxWidth = 900
+                maxHeight = 122
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1936"
+                position = { x = 990 y = 190 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1936"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1937"
+                position = { x = 990 y = 430 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1937"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1938"
+                position = { x = 990 y = 548 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1938"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1939"
+                position = { x = 990 y = 666 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1939"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1940"
+                position = { x = 990 y = 784 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1940"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1941"
+                position = { x = 990 y = 912 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1941"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            instantTextBoxType = {
+                name = "operations_1942"
+                position = { x = 990 y = 1030 }
+                textureFile = ""
+                font = "hoi_36header"
+                borderSize = {x = 0 y = 4}
+                text = "1942"
+                maxWidth = 110
+                maxHeight = 32
+                format = center
+                Orientation = "UPPER_LEFT"
+            }
+
+            gridboxtype = {
+                name = "tech-operations_start_tree"
+                position = { x=955 y=172 }
+                size = { width = 920 height = 1100 }
+                slotsize = { width=60 height= 60 }
+                format = "UP"
+
+                background = {
+                    name = "Background"
+                    quadTextureSprite ="GFX_fullborder_tiled"
+                    position = { x=0 y=-150 }
+                }
+            }
         }

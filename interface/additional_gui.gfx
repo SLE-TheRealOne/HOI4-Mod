@@ -7,13 +7,4 @@ spriteTypes = {
         texturefile = "gfx/interface/gui/refresh-icon.dds"
     }
 
-    spriteType = {
-        name = "GFX_encryption_level"
-        texturefile = "gfx/interface/gui/spy_encryption.dds"
-    }
-
-    spriteType = {
-        name = "GFX_decryption_level"
-        texturefile = "gfx/interface/gui/spy_decryption.dds"
-    }
 }
